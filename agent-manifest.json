@@ -1,0 +1,358 @@
+{
+  "version": "1.0.0",
+  "name": "Claude Orchestra Agent Pool",
+  "description": "Centralized agent definitions for Claude Orchestra",
+  "lastUpdated": "2024-01-15T10:30:00Z",
+  "author": "turbobeest",
+  "repository": "https://github.com/turbobeest/agents",
+  "categories": {
+    "orchestration-intelligence": {
+      "title": "Orchestration & Intelligence",
+      "description": "Core system coordination and planning agents",
+      "defaultExpanded": false,
+      "subcategories": {
+        "core-orchestration": {
+          "title": "Core Orchestration",
+          "description": "Primary orchestration and coordination agents",
+          "defaultExpanded": false,
+          "agents": [
+            "orchestrator",
+            "agent-selector",
+            "collaborator-coordinator"
+          ]
+        },
+        "planning-assignment": {
+          "title": "Planning & Assignment",
+          "description": "Task planning and agent assignment specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "planning-agent",
+            "assignment-agent",
+            "taskmaster-integrator"
+          ]
+        },
+        "knowledge-management": {
+          "title": "Knowledge Management",
+          "description": "Knowledge curation and learning systems",
+          "defaultExpanded": false,
+          "agents": [
+            "documentation-curator",
+            "first-principles-engineer"
+          ]
+        },
+        "quality-control": {
+          "title": "Quality Control",
+          "description": "Validation and quality assurance systems",
+          "defaultExpanded": false,
+          "agents": [
+            "validation-depth-controller"
+          ]
+        }
+      }
+    },
+    "development-architecture": {
+      "title": "Development Architecture & Design",
+      "description": "System architecture and design specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "system-architecture": {
+          "title": "System Architecture",
+          "description": "Core architecture and design specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "architect-reviewer",
+            "backend-architect",
+            "graphql-architect"
+          ]
+        },
+        "user-experience": {
+          "title": "User Experience Design",
+          "description": "UI/UX design and user experience specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "ui-ux-designer",
+            "frontend-developer"
+          ]
+        }
+      }
+    },
+    "frontend-ecosystems": {
+      "title": "Frontend Ecosystems",
+      "description": "Frontend development and UI specialists",
+      "defaultExpanded": true,
+      "subcategories": {
+        "javascript-frameworks": {
+          "title": "JavaScript Frameworks",
+          "description": "Modern JavaScript framework specialists",
+          "defaultExpanded": true,
+          "agents": [
+            "reactjs-expert",
+            "nextjs-expert",
+            "svelte-expert"
+          ]
+        },
+        "mobile-development": {
+          "title": "Mobile Development",
+          "description": "Cross-platform and native mobile development",
+          "defaultExpanded": false,
+          "agents": [
+            "flutter-expert",
+            "ios-developer",
+            "mobile-developer"
+          ]
+        }
+      }
+    },
+    "backend-ecosystems": {
+      "title": "Backend Ecosystems",
+      "description": "Backend development specialists",
+      "defaultExpanded": true,
+      "subcategories": {
+        "systems-languages": {
+          "title": "Systems Languages",
+          "description": "Low-level systems programming languages",
+          "defaultExpanded": false,
+          "agents": [
+            "rust-pro",
+            "golang-pro",
+            "c-pro",
+            "cpp-pro"
+          ]
+        },
+        "application-languages": {
+          "title": "Application Languages",
+          "description": "High-level application development languages",
+          "defaultExpanded": true,
+          "agents": [
+            "python-pro",
+            "javascript-pro",
+            "typescript-pro"
+          ]
+        },
+        "enterprise-languages": {
+          "title": "Enterprise Languages",
+          "description": "Enterprise-scale development platforms",
+          "defaultExpanded": false,
+          "agents": [
+            "java-pro",
+            "csharp-pro",
+            "scala-pro"
+          ]
+        },
+        "dynamic-languages": {
+          "title": "Dynamic Languages",
+          "description": "Dynamic and scripting languages",
+          "defaultExpanded": false,
+          "agents": [
+            "ruby-pro",
+            "php-pro",
+            "elixir-pro"
+          ]
+        }
+      }
+    },
+    "immersive-spatial": {
+      "title": "Immersive & Spatial Computing",
+      "description": "AR/VR and 3D computing specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "augmented-reality": {
+          "title": "Augmented Reality",
+          "description": "AR platform specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "arkit-expert",
+            "arcore-expert"
+          ]
+        },
+        "3d-visualization": {
+          "title": "3D Visualization",
+          "description": "3D rendering and visualization specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "cesiumjs-expert",
+            "octree-voxel-expert",
+            "unity-developer"
+          ]
+        },
+        "collaborative-3d": {
+          "title": "Collaborative 3D",
+          "description": "Multi-user 3D workflow specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "omniverse-expert"
+          ]
+        }
+      }
+    },
+    "data-intelligence": {
+      "title": "Data & Intelligence Systems",
+      "description": "Data systems and AI specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "database-systems": {
+          "title": "Database Systems",
+          "description": "Database technology specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "neo4j-expert",
+            "falkordb-expert",
+            "sql-pro"
+          ]
+        },
+        "database-operations": {
+          "title": "Database Operations",
+          "description": "Database management and optimization",
+          "defaultExpanded": false,
+          "agents": [
+            "database-optimizer",
+            "database-admin"
+          ]
+        },
+        "data-processing": {
+          "title": "Data Processing",
+          "description": "Data pipelines and analytics",
+          "defaultExpanded": false,
+          "agents": [
+            "data-engineer",
+            "data-scientist"
+          ]
+        },
+        "machine-learning": {
+          "title": "Machine Learning",
+          "description": "ML and AI systems specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "ai-engineer",
+            "ml-engineer",
+            "mlops-engineer"
+          ]
+        },
+        "gpu-computing": {
+          "title": "GPU Computing",
+          "description": "GPU acceleration specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "cuda-expert",
+            "rapids-expert",
+            "jetson-expert",
+            "isaac-expert"
+          ]
+        }
+      }
+    },
+    "infrastructure-security": {
+      "title": "Infrastructure & Security",
+      "description": "DevOps and security specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "cloud-platforms": {
+          "title": "Cloud Platforms",
+          "description": "Cloud service specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "aws-expert",
+            "gcp-expert",
+            "azure-expert"
+          ]
+        },
+        "containerization": {
+          "title": "Containerization",
+          "description": "Container orchestration specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "docker-expert",
+            "kubernetes-expert"
+          ]
+        },
+        "infrastructure-code": {
+          "title": "Infrastructure as Code",
+          "description": "IaC and automation specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "terraform-expert",
+            "ansible-expert",
+            "pulumi-expert"
+          ]
+        },
+        "monitoring-observability": {
+          "title": "Monitoring & Observability",
+          "description": "System monitoring specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "prometheus-expert",
+            "grafana-expert",
+            "elk-expert"
+          ]
+        },
+        "security-compliance": {
+          "title": "Security & Compliance",
+          "description": "Security and compliance specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "security-auditor",
+            "penetration-tester",
+            "compliance-checker",
+            "rust-safety-validator"
+          ]
+        }
+      }
+    },
+    "specialized-domains": {
+      "title": "Specialized Domains",
+      "description": "Domain-specific expertise",
+      "defaultExpanded": false,
+      "subcategories": {
+        "blockchain-web3": {
+          "title": "Blockchain & Web3",
+          "description": "Blockchain technology specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "solidity-expert",
+            "web3-developer",
+            "defi-architect"
+          ]
+        },
+        "game-development": {
+          "title": "Game Development",
+          "description": "Game engine and development specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "unreal-developer",
+            "godot-expert",
+            "game-designer"
+          ]
+        },
+        "scientific-computing": {
+          "title": "Scientific Computing",
+          "description": "Scientific application specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "matlab-expert",
+            "r-statistician",
+            "julia-expert"
+          ]
+        },
+        "performance-optimization": {
+          "title": "Performance Optimization",
+          "description": "Performance and optimization specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "performance-engineer",
+            "memory-optimizer",
+            "cache-expert"
+          ]
+        }
+      }
+    }
+  },
+  "metadata": {
+    "totalAgents": 162,
+    "totalCategories": 8,
+    "totalSubcategories": 29,
+    "supportedModels": ["opus", "sonnet", "haiku"],
+    "requiredFields": ["Description", "Model", "Tools", "Behaviors", "System Prompt", "Knowledge Sources", "Human Interaction"],
+    "version": "1.0.0",
+    "schemaVersion": "1.0"
+  }
+}
