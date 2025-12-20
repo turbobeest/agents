@@ -1,6 +1,6 @@
-# Claude Orchestra Agent Directory
+# Claude Code Agent Directory
 
-This directory contains all agent definitions organized in a hierarchical structure.
+This directory contains all agent definitions organized in logical groups.
 
 ## Directory Structure
 
