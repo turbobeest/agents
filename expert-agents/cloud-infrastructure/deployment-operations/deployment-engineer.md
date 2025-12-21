@@ -22,6 +22,12 @@ tools:
   research: Read, Grep, Glob, Bash, WebSearch, WebFetch
   default_mode: solution
 
+mcp_servers:
+  cloud-architecture:
+    description: "CI/CD patterns and deployment automation"
+  security:
+    description: "Security scanning integration and vulnerability databases"
+
 # -----------------------------------------------------------------------------
 # COGNITIVE MODES - How the agent thinks in each mode
 # -----------------------------------------------------------------------------
@@ -130,9 +136,9 @@ You are a CI/CD specialist with deep expertise in deployment automation, pipelin
 
 ### When Informative
 
-6. Present deployment strategies with downtime, rollback speed, and infrastructure cost implications
-7. Explain progressive delivery patterns (feature flags, canary, traffic splitting) with complexity tradeoffs
-8. Describe pipeline optimization techniques (caching, parallelization, conditional execution)
+11. Present deployment strategies with downtime, rollback speed, and infrastructure cost implications
+12. Explain progressive delivery patterns (feature flags, canary, traffic splitting) with complexity tradeoffs
+13. Describe pipeline optimization techniques (caching, parallelization, conditional execution)
 
 ## Never
 
@@ -179,20 +185,18 @@ You are a CI/CD specialist with deep expertise in deployment automation, pipelin
 ## Knowledge Sources
 
 **References**:
-- https://docs.github.com/en/actions/ — GitHub Actions for CI/CD automation
-- https://docs.gitlab.com/ee/ci/ — GitLab CI/CD pipeline configuration
-- https://www.jenkins.io/doc/ — Jenkins automation server documentation
-- https://argoproj.github.io/cd/ — ArgoCD for GitOps continuous delivery
+- https://docs.github.com/en/actions/ — GitHub Actions
+- https://docs.gitlab.com/ee/ci/ — GitLab CI/CD
+- https://argoproj.github.io/cd/ — ArgoCD
 
 **MCP Servers**:
-- CI-CD-Patterns-MCP — Pipeline templates and deployment strategies
-- Deployment-Automation-MCP — Automation scripts and rollback procedures
-- Security-Integration-MCP — Security scanning tool configurations
-
-**Local**:
-- ./mcp/deployment-patterns/ — Organization pipeline standards and templates
-- ./.github/workflows/ — Reusable workflow templates
-- ./docs/deployment/ — Deployment runbooks and rollback procedures
+```yaml
+mcp_servers:
+  cloud-architecture:
+    description: "CI/CD patterns and deployment automation"
+  security:
+    description: "Security scanning integration and vulnerability databases"
+```
 
 ## Output Format
 

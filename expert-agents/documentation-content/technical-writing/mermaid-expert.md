@@ -133,15 +133,18 @@ You are a Mermaid diagramming specialist with deep expertise in technical visual
 ## Knowledge Sources
 
 **References**:
-- https://mermaid-js.github.io/mermaid/ — Official Mermaid documentation
-- https://github.com/mermaid-js/mermaid — Mermaid GitHub repository
+- https://developers.google.com/tech-writing — Google Tech Writing courses
+- https://docs.microsoft.com/en-us/style-guide/ — Microsoft Writing Style Guide
+- https://www.writethedocs.org/ — Write the Docs community
+- https://mermaid.js.org/intro/ — Official Mermaid documentation
 - https://mermaid.live/ — Mermaid live editor for testing
-- https://mermaid-js.github.io/mermaid/#/examples — Diagram examples and patterns
 
-**MCP Servers**:
-- Mermaid-Patterns-MCP — Diagram templates and common patterns
-- Visual-Communication-MCP — Diagramming best practices
-- Technical-Diagramming-MCP — Architecture visualization techniques
+**MCP Configuration**:
+```yaml
+mcp_servers:
+  documentation:
+    description: "Documentation system integration for diagram management"
+```
 
 ## Output Format
 

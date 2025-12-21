@@ -55,6 +55,12 @@ escalation:
 role: auditor
 load_bearing: true
 
+proactive_triggers:
+  - "*legal*review*"
+  - "*contract*"
+  - "*compliance*"
+  - "*regulatory*"
+
 version: 1.0.0
 ---
 
@@ -147,9 +153,12 @@ You are a legal guidance specialist with expertise in contract law, regulatory c
 - https://www.americanbar.org/ — Legal resources and standards
 - https://www.nist.gov/cyberframework — Cybersecurity legal compliance
 
-**MCP Servers**:
-- Legal-Compliance-MCP — Regulatory requirements and compliance frameworks
-- Contract-Analysis-MCP — Contract templates and negotiation guidance
+**MCP Configuration**:
+```yaml
+mcp_servers:
+  legal-research:
+    description: "Legal research database integration for regulatory compliance"
+```
 
 ## Output Format
 

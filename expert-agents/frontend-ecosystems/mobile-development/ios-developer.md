@@ -188,9 +188,18 @@ Core Data with CloudKit sync, URLSession networking with async/await, push notif
 
 ## Knowledge Sources
 
-**References**: Apple Developer Documentation (developer.apple.com), Human Interface Guidelines, Swift Language Guide, SwiftUI Tutorials, App Store Review Guidelines
+**References**:
+- https://developer.apple.com/swift/ — Swift language documentation
+- https://developer.apple.com/documentation/ — Apple developer documentation
+- https://developer.apple.com/design/human-interface-guidelines/ — iOS Human Interface Guidelines
+- https://developer.apple.com/videos/ — WWDC sessions and tutorials
 
-**MCP Servers**: iOS-Development-MCP (SwiftUI/UIKit patterns), Swift-Patterns-MCP (language features, concurrency), Apple-Ecosystem-MCP (framework integration)
+**MCP Configuration**:
+```yaml
+mcp_servers:
+  ios-development:
+    description: "iOS development environment integration for Xcode and App Store"
+```
 
 ## Output Format
 

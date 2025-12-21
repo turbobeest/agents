@@ -54,6 +54,12 @@ escalation:
 role: executor
 load_bearing: false
 
+proactive_triggers:
+  - "*recruitment*"
+  - "*hr*policy*"
+  - "*employee*"
+  - "*performance*management*"
+
 version: 1.0.0
 ---
 
@@ -144,9 +150,12 @@ You are an HR specialist with expertise in talent management, employment complia
 - https://www.dol.gov/ — US Department of Labor employment law guidance
 - https://www.workforce.com/ — HR trends and best practices
 
-**MCP Servers**:
-- Human-Resources-MCP — HR policy templates and compliance frameworks
-- Employment-Law-MCP — Regulatory requirements and legal updates
+**MCP Configuration**:
+```yaml
+mcp_servers:
+  hr-system:
+    description: "HRIS integration for employee data and HR workflows"
+```
 
 ## Output Format
 

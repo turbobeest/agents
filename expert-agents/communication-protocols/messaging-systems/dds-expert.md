@@ -1,8 +1,23 @@
 ---
+# =============================================================================
+# EXPERT TIER TEMPLATE (~1500 tokens)
+# =============================================================================
+# Use for: Specialized domain work requiring depth
+# Examples: security-auditor, rust-pro, kubernetes-expert, database-optimizer
+# Model: sonnet (default) or opus (complex domains, high-stakes decisions)
+# Instructions: 15-20 maximum
+# =============================================================================
+
 name: dds-expert
 description: Expert in Data Distribution Service (DDS) for real-time, data-centric publish-subscribe models in distributed systems with reliability focus
 model: sonnet
 tier: expert
+
+mcp_servers:
+  protocol-specs:
+    description: "IETF RFCs and protocol specifications"
+  github:
+    description: "Protocol implementation examples"
 
 tools:
   audit: Read, Grep, Glob, Bash
@@ -133,15 +148,9 @@ You are a Data Distribution Service (DDS) specialist with deep expertise in real
 ## Knowledge Sources
 
 **References**:
-- https://www.omg.org/omg-dds-portal/ — Official OMG DDS specification portal
-- https://www.rti.com/products/dds-standard/ — RTI DDS documentation and resources
-- https://opendds.org/ — OpenDDS implementation guide and features
-
-**MCP Servers**:
-- DDS Protocol MCP — QoS policy specifications and semantics
-- Real-time Systems MCP — Deadline and latency budget patterns
-- Distributed Architecture MCP — Domain organization and scaling strategies
-- Pub/Sub Patterns MCP — Data-centric communication models
+- https://www.omg.org/omg-dds-portal/ — OMG DDS Portal
+- https://www.omg.org/spec/DDS/1.4/ — DDS specification
+- https://www.omg.org/spec/DDSI-RTPS/2.5/ — RTPS protocol
 
 **Local**:
 - ./mcp/dds-patterns — QoS configurations, reliability templates, performance strategies

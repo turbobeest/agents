@@ -235,3 +235,18 @@ You are a SONAR systems specialist with deep expertise in underwater acoustics, 
 ## Verification
 {Testing requirements and performance validation approach}
 ```
+
+### For Research Mode
+
+```
+## Research Findings
+
+### Domain Knowledge
+{Relevant SONAR principles and underwater acoustics}
+
+### Technical Resources
+{References consulted and key findings}
+
+### Recommendations
+{Suggested approaches based on research}
+```

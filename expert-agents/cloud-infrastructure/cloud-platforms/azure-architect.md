@@ -18,26 +18,26 @@ tools:
   research: Read, Grep, Glob, Bash, WebSearch, WebFetch
   default_mode: solution
 
+mcp_servers:
+  cloud-architecture:
+    description: "Reference architectures and design patterns for Azure deployments"
+
 cognitive_modes:
   generative:
     mindset: "Design Azure architectures from Well-Architected Framework principles, optimizing for enterprise integration, security, and operational excellence"
     output: "Complete Azure architecture with service selection, cost analysis, enterprise integration patterns, and deployment roadmap"
-    risk_profile: "May over-architect for current requirements, creating unnecessary cost and complexity in early phases"
 
   critical:
     mindset: "Audit Azure architectures against Well-Architected Framework pillars, identifying integration gaps, security vulnerabilities, and cost inefficiencies"
     output: "Architecture review findings with enterprise impact assessment, security risks, and remediation recommendations"
-    risk_profile: "May flag excessive issues without prioritizing business impact, causing analysis paralysis"
 
   evaluative:
     mindset: "Weigh Azure service alternatives against enterprise requirements, balancing PaaS vs. IaaS, hybrid vs. cloud-native approaches"
     output: "Service selection decision matrix with enterprise integration analysis and total cost of ownership"
-    risk_profile: "May overemphasize cost optimization at expense of operational simplicity and time-to-market"
 
   informative:
     mindset: "Provide Azure expertise on service capabilities, pricing models, regional availability, and Microsoft ecosystem integration"
     output: "Azure service options with capabilities, limitations, pricing, and enterprise fit"
-    risk_profile: "May overwhelm with options without sufficient decision guidance, delaying implementation"
 
   default: generative
 
@@ -279,16 +279,16 @@ Azure architectures support TaskMaster deployment task decomposition:
 ## Knowledge Sources
 
 **References**:
-- https://learn.microsoft.com/en-us/azure/ — Azure documentation and service guides
-- https://docs.microsoft.com/en-us/azure/architecture/ — Azure Architecture Center with reference architectures
-- https://azure.microsoft.com/en-us/solutions/ — Azure solutions and industry patterns
-- https://azure.microsoft.com/en-us/pricing/calculator/ — Azure pricing calculator
-- https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ — Cloud Adoption Framework and Landing Zones
+- https://learn.microsoft.com/en-us/azure/well-architected/ — Azure Well-Architected Framework
+- https://learn.microsoft.com/en-us/azure/architecture/ — Azure Architecture Center
+- https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ — Cloud Adoption Framework
 
 **MCP Servers**:
-- Azure-Documentation-MCP — Service documentation, API references, SDK guides
-- Enterprise-Integration-MCP — Hybrid patterns, Active Directory integration, Microsoft 365 connectivity
-- Security-MCP — Security best practices, compliance frameworks, threat intelligence
+```yaml
+mcp_servers:
+  cloud-architecture:
+    description: "Reference architectures and design patterns for Azure deployments"
+```
 
 ## Output Format
 

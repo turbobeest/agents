@@ -171,11 +171,19 @@ You are a static application security testing specialist with deep expertise in 
 - https://codeql.github.com/docs/ — CodeQL query language and security analysis
 - https://cwe.mitre.org/ — Common Weakness Enumeration database
 - https://nvd.nist.gov/ — National Vulnerability Database for CVE lookup
+- https://codeql.github.com/docs/writing-codeql-queries/ — CodeQL queries
+- https://owasp.org/www-community/Source_Code_Analysis_Tools — OWASP SAST
 
 **MCP Servers**:
-- SAST Tools MCP — Security rule templates and tool configurations
-- Security Rules MCP — Custom vulnerability patterns and detection rules
-- Vulnerability Patterns MCP — Known vulnerability signatures and remediation strategies
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

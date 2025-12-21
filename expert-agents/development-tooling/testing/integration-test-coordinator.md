@@ -177,11 +177,19 @@ You are an integration testing specialist with deep expertise in contract testin
 - https://testcontainers.org/ — Container-based integration testing
 - https://playwright.dev/docs/api-testing — API testing with Playwright
 - https://martinfowler.com/articles/microservice-testing/ — Microservice testing strategies
+- https://docs.pact.io/implementation_guides/cli — Pact CLI
+- https://wiremock.org/docs/ — WireMock
 
 **MCP Servers**:
-- Integration-Testing-MCP — Contract templates and testing strategies
-- Contract-Testing-MCP — Consumer-driven contract patterns
-- Service-Architecture-MCP — Integration patterns and service boundaries
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

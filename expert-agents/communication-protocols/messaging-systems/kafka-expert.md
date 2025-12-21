@@ -1,8 +1,23 @@
 ---
+# =============================================================================
+# EXPERT TIER TEMPLATE (~1500 tokens)
+# =============================================================================
+# Use for: Specialized domain work requiring depth
+# Examples: security-auditor, rust-pro, kubernetes-expert, database-optimizer
+# Model: sonnet (default) or opus (complex domains, high-stakes decisions)
+# Instructions: 15-20 maximum
+# =============================================================================
+
 name: kafka-expert
 description: Masters Apache Kafka for distributed event streaming and real-time data pipelines, specializing in high-throughput messaging, stream processing, and scalable data architecture with advanced cluster management
 model: sonnet
 tier: expert
+
+mcp_servers:
+  protocol-specs:
+    description: "IETF RFCs and protocol specifications"
+  github:
+    description: "Protocol implementation examples"
 
 tools:
   audit: Read, Grep, Glob, Bash
@@ -133,15 +148,9 @@ You are an Apache Kafka specialist with deep expertise in distributed event stre
 ## Knowledge Sources
 
 **References**:
-- https://kafka.apache.org/documentation/ — Official Apache Kafka documentation
-- https://docs.confluent.io/ — Confluent platform documentation and best practices
-- https://github.com/apache/kafka — Apache Kafka source code repository
-
-**MCP Servers**:
-- Apache Kafka MCP — Configuration parameters and tuning guides
-- Stream Processing MCP — Kafka Streams and stateful processing patterns
-- Data Pipelines MCP — Integration patterns and connector configurations
-- Distributed Systems MCP — Replication and consensus algorithms
+- https://kafka.apache.org/documentation/ — Kafka docs
+- https://kafka.apache.org/protocol/ — Protocol specification
+- https://docs.confluent.io/kafka/introduction.html — Confluent docs
 
 **Local**:
 - ./mcp/kafka — Cluster templates, stream processing examples, pipeline configurations, performance optimization

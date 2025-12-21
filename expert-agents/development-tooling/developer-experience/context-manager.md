@@ -178,9 +178,15 @@ You are a context optimization specialist with deep expertise in LLM conversatio
 - https://arxiv.org/abs/2307.03172 — Context compression techniques
 
 **MCP Servers**:
-- Context-Optimization-MCP — Compression templates and strategies
-- Conversation-Management-MCP — Continuity patterns and turn management
-- LLM-Efficiency-MCP — Token optimization and budget allocation
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

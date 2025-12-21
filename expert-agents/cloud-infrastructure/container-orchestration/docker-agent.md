@@ -22,6 +22,10 @@ tools:
   research: Read, Grep, Glob, Bash, WebSearch, WebFetch
   default_mode: solution
 
+mcp_servers:
+  security:
+    description: "Container security scanning, vulnerability databases, and threat intelligence"
+
 # -----------------------------------------------------------------------------
 # COGNITIVE MODES - How the agent thinks in each mode
 # -----------------------------------------------------------------------------
@@ -29,22 +33,18 @@ cognitive_modes:
   generative:
     mindset: "Design minimal, secure container images with efficient build processes"
     output: "Optimized Dockerfiles with multi-stage builds, security hardening, and size reduction"
-    risk: "Over-optimization may reduce debuggability or compatibility with deployment platforms"
 
   critical:
     mindset: "Audit container images for security vulnerabilities, bloat, and configuration issues"
     output: "Findings with CVEs, image size issues, and security hardening recommendations"
-    risk: "False positives in vulnerability scanning may block valid base image choices"
 
   evaluative:
     mindset: "Weigh containerization strategies against build time, image size, and security"
     output: "Comparison of base image choices and build patterns with tradeoff analysis"
-    risk: "Analysis paralysis on base image selection may delay deployment timelines"
 
   informative:
     mindset: "Provide container expertise on best practices, security patterns, and optimization"
     output: "Options with security implications, performance characteristics, and operational complexity"
-    risk: "Too many options without clear recommendation may confuse stakeholders"
 
   default: generative
 
@@ -194,19 +194,16 @@ You are a container specialist with deep expertise in Docker image optimization,
 ## Knowledge Sources
 
 **References**:
-- https://docs.docker.com/ — Official Docker documentation and best practices
-- https://docs.docker.com/develop/dev-best-practices/ — Docker development best practices
-- https://snyk.io/blog/10-docker-image-security-best-practices/ — Container security guidelines
-- https://github.com/GoogleContainerTools/distroless — Distroless base images for security
+- https://docs.docker.com/ — Official Docker documentation
+- https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html — OWASP Docker Security
+- https://www.cisecurity.org/benchmark/docker — CIS Docker Benchmarks
 
 **MCP Servers**:
-- Container-Optimization-MCP — Dockerfile templates and build patterns
-- Docker-Security-MCP — Security scanning and hardening configurations
-- Deployment-MCP — Container orchestration and deployment strategies
-
-**Local**:
-- ./mcp/container-patterns/ — Organization Dockerfile standards and templates
-- ./docker/ — Multi-stage build examples and docker-compose configurations
+```yaml
+mcp_servers:
+  security:
+    description: "Container security scanning, vulnerability databases, and threat intelligence"
+```
 
 ## Output Format
 

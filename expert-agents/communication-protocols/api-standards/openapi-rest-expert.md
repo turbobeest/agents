@@ -2,11 +2,22 @@
 # =============================================================================
 # EXPERT TIER TEMPLATE (~1500 tokens)
 # =============================================================================
+# Use for: Specialized domain work requiring depth
+# Examples: security-auditor, rust-pro, kubernetes-expert, database-optimizer
+# Model: sonnet (default) or opus (complex domains, high-stakes decisions)
+# Instructions: 15-20 maximum
+# =============================================================================
 
 name: openapi-rest-expert
 description: Masters OpenAPI specification and RESTful API design, specializing in API documentation, service architecture, HTTP best practices, and comprehensive API lifecycle management with advanced tooling integration
 model: sonnet
 tier: expert
+
+mcp_servers:
+  protocol-specs:
+    description: "IETF RFCs and protocol specifications"
+  github:
+    description: "Protocol implementation examples"
 
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
@@ -155,15 +166,9 @@ You are an OpenAPI and REST specialist with deep expertise in API design, HTTP p
 ## Knowledge Sources
 
 **References**:
-- https://swagger.io/specification/ — OpenAPI 3.x specification and schema standards
-- https://restfulapi.net/ — REST architectural constraints and design principles
-- https://github.com/OAI/OpenAPI-Specification — Official OpenAPI specification repository
-
-**MCP Servers**:
-- OpenAPI Specification MCP — Schema standards and validation rules
-- REST Architecture MCP — HTTP semantics and resource-oriented patterns
-- API Design MCP — Best practices and common patterns
-- Developer Experience MCP — Documentation and SDK generation strategies
+- https://spec.openapis.org/oas/v3.2.0.html — OpenAPI 3.2.0 spec
+- https://www.openapis.org/ — OpenAPI Initiative
+- https://swagger.io/specification/ — Swagger docs
 
 **Local**:
 - ./mcp/openapi-rest — Specification templates, API patterns, documentation strategies, testing frameworks

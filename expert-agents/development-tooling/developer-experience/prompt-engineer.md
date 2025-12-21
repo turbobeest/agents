@@ -169,11 +169,20 @@ You are a prompt engineering specialist with deep expertise in LLM optimization,
 - https://learnprompting.org/ — Interactive prompt engineering course and reference
 - https://platform.openai.com/docs/guides/prompt-engineering — OpenAI official prompting best practices
 - https://docs.anthropic.com/claude/docs/prompt-engineering — Claude-specific prompting guidance
+- https://github.com/openai/openai-cookbook — OpenAI cookbook
+- https://www.anthropic.com/research — Anthropic research
+- https://github.com/brexhq/prompt-engineering — Brex prompting guide
 
 **MCP Servers**:
-- Prompt Engineering MCP — Prompt templates and optimization workflows
-- AI Optimization MCP — Performance testing frameworks and metrics
-- Language Model MCP — Model capability matrices and parameter tuning guides
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

@@ -1,8 +1,23 @@
 ---
+# =============================================================================
+# EXPERT TIER TEMPLATE (~1500 tokens)
+# =============================================================================
+# Use for: Specialized domain work requiring depth
+# Examples: security-auditor, rust-pro, kubernetes-expert, database-optimizer
+# Model: sonnet (default) or opus (complex domains, high-stakes decisions)
+# Instructions: 15-20 maximum
+# =============================================================================
+
 name: grpc-expert
 description: Masters gRPC high-performance RPC framework for microservices communication, specializing in Protocol Buffers, streaming APIs, load balancing, and cross-language service integration with advanced performance optimization
 model: sonnet
 tier: expert
+
+mcp_servers:
+  protocol-specs:
+    description: "IETF RFCs and protocol specifications"
+  github:
+    description: "Protocol implementation examples"
 
 tools:
   audit: Read, Grep, Glob, Bash
@@ -133,15 +148,9 @@ You are a gRPC specialist with deep expertise in high-performance RPC, Protocol 
 ## Knowledge Sources
 
 **References**:
-- https://grpc.io/docs/ — Official gRPC documentation and language guides
-- https://developers.google.com/protocol-buffers — Protocol Buffers language guide and best practices
-- https://github.com/grpc/grpc — gRPC implementation repository and examples
-
-**MCP Servers**:
-- gRPC Framework MCP — Service patterns and configuration options
-- Microservices MCP — Distributed system patterns and anti-patterns
-- Protocol Buffers MCP — Schema design and evolution guidelines
-- Distributed Systems MCP — Load balancing and service mesh patterns
+- https://grpc.io/docs/ — gRPC documentation
+- https://protobuf.dev/programming-guides/proto3/ — Protocol Buffers
+- https://github.com/grpc/grpc — gRPC repository
 
 **Local**:
 - ./mcp/grpc — Service templates, protobuf schemas, streaming examples, performance optimization

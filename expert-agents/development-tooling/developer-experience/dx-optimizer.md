@@ -179,9 +179,15 @@ You are a developer experience specialist with deep expertise in toolchain optim
 - https://pre-commit.com/ — Git hook framework for automation
 
 **MCP Servers**:
-- Developer-Experience-MCP — Tooling templates and productivity patterns
-- Toolchain-Optimization-MCP — Configuration strategies and automation
-- Productivity-MCP — Workflow patterns and efficiency metrics
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

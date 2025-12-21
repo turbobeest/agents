@@ -170,11 +170,19 @@ You are a browser automation specialist with deep expertise in Playwright, cross
 - https://playwright.dev/docs/test-runners — Playwright Test runner configuration
 - https://playwright.dev/docs/trace-viewer — Debugging with trace viewer
 - https://playwright.dev/docs/ci — CI/CD integration patterns
+- https://playwright.dev/docs/test-annotations — Playwright tests
+- https://playwright.dev/docs/api-testing — API testing
 
 **MCP Servers**:
-- Browser Automation MCP — Playwright templates and automation patterns
-- UI Testing MCP — Page object models and test organization strategies
-- Cross-Browser Testing MCP — Browser compatibility matrices and configurations
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

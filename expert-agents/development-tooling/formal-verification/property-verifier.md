@@ -169,11 +169,19 @@ You are a property-based testing specialist with deep expertise in invariant spe
 - https://proper-testing.github.io/ — PropEr property-based testing for Erlang
 - https://fsharpforfunandprofit.com/posts/property-based-testing/ — Property-based testing concepts
 - https://www.hillelwayne.com/post/pbt-contracts/ — Property-based testing and contracts
+- https://hypothesis.readthedocs.io/en/latest/strategies.html — Hypothesis
+- https://propertesting.com/ — Property testing resources
 
 **MCP Servers**:
-- Property Testing MCP — Property specifications and test templates
-- Invariant Analysis MCP — Invariant patterns and verification strategies
-- Specification Verification MCP — Formal specification languages and verification tools
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

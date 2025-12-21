@@ -190,9 +190,15 @@ You are a test automation specialist with deep expertise in comprehensive testin
 - https://testing.googleblog.com/ — Google Testing Blog for industry best practices
 
 **MCP Servers**:
-- Testing Frameworks MCP — Framework-specific test templates and patterns
-- Test Automation MCP — Automation scripts and CI/CD integration templates
-- Quality Metrics MCP — Coverage tracking and quality gate configurations
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

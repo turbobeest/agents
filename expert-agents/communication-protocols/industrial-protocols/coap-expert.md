@@ -1,8 +1,23 @@
 ---
+# =============================================================================
+# EXPERT TIER TEMPLATE (~1500 tokens)
+# =============================================================================
+# Use for: Specialized domain work requiring depth
+# Examples: security-auditor, rust-pro, kubernetes-expert, database-optimizer
+# Model: sonnet (default) or opus (complex domains, high-stakes decisions)
+# Instructions: 15-20 maximum
+# =============================================================================
+
 name: coap-expert
 description: Masters CoAP (Constrained Application Protocol) for IoT and constrained devices, specializing in lightweight HTTP alternative, resource-constrained networking, and efficient machine-to-machine communication
 model: sonnet
 tier: expert
+
+mcp_servers:
+  protocol-specs:
+    description: "IETF RFCs and protocol specifications"
+  github:
+    description: "Protocol implementation examples"
 
 tools:
   audit: Read, Grep, Glob, Bash
@@ -133,15 +148,9 @@ You are a CoAP protocol specialist with deep expertise in constrained devices, l
 ## Knowledge Sources
 
 **References**:
-- https://tools.ietf.org/html/rfc7252 — CoAP protocol specification (RFC 7252)
-- https://github.com/obgm/libcoap — libcoap reference implementation
-- https://coap.technology/ — CoAP implementation guides and tutorials
-
-**MCP Servers**:
-- CoAP Protocol MCP — Message types and protocol features
-- IoT Communication MCP — Constrained device patterns
-- Constrained Devices MCP — Resource optimization strategies
-- M2M Systems MCP — Machine-to-machine communication patterns
+- https://datatracker.ietf.org/doc/rfc7252/ — RFC 7252 CoAP
+- https://datatracker.ietf.org/doc/rfc7641/ — CoAP Observe
+- https://coap.technology/ — CoAP resources
 
 **Local**:
 - ./mcp/coap — Protocol templates, IoT applications, device integration, optimization strategies

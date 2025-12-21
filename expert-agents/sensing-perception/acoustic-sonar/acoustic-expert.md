@@ -235,3 +235,18 @@ You are an acoustic sensor specialist with expertise in underwater, airborne, an
 ## Verification
 {Testing requirements and performance validation approach}
 ```
+
+### For Research Mode
+
+```
+## Research Findings
+
+### Domain Knowledge
+{Relevant acoustic principles and sensor technologies}
+
+### Technical Resources
+{References consulted and key findings}
+
+### Recommendations
+{Suggested approaches based on research}
+```

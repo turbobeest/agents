@@ -22,6 +22,10 @@ tools:
   research: Read, Grep, Glob, Bash, WebSearch, WebFetch
   default_mode: solution
 
+mcp_servers:
+  cloud-architecture:
+    description: "Resilience patterns and chaos engineering frameworks"
+
 # -----------------------------------------------------------------------------
 # COGNITIVE MODES - How the agent thinks in each mode
 # -----------------------------------------------------------------------------
@@ -128,9 +132,9 @@ You are a chaos engineering specialist with deep expertise in resilience testing
 
 ### When Informative
 
-6. Present chaos experiment patterns for different failure modes (network, compute, storage)
-7. Explain resilience design patterns (bulkhead, circuit breaker, retry, timeout) with tradeoffs
-8. Describe chaos maturity model from non-production testing to continuous chaos in production
+11. Present chaos experiment patterns for different failure modes (network, compute, storage)
+12. Explain resilience design patterns (bulkhead, circuit breaker, retry, timeout) with tradeoffs
+13. Describe chaos maturity model from non-production testing to continuous chaos in production
 
 ## Never
 
@@ -177,20 +181,16 @@ You are a chaos engineering specialist with deep expertise in resilience testing
 ## Knowledge Sources
 
 **References**:
-- https://principlesofchaos.org/ — Principles of Chaos Engineering manifesto
-- https://chaos-mesh.org/docs/ — Chaos Mesh for Kubernetes fault injection
-- https://netflix.github.io/chaosmonkey/ — Netflix Chaos Monkey and Simian Army
-- https://litmuschaos.io/ — Litmus chaos engineering for cloud-native environments
+- https://principlesofchaos.org/ — Chaos Engineering principles
+- https://chaos-mesh.org/docs/ — Chaos Mesh documentation
+- https://litmuschaos.io/ — Litmus Chaos documentation
 
 **MCP Servers**:
-- Chaos-Engineering-MCP — Experiment templates and fault injection patterns
-- System-Resilience-MCP — Resilience design patterns and validation strategies
-- Fault-Injection-MCP — Tool configurations and safety procedures
-
-**Local**:
-- ./mcp/chaos-engineering/ — Organization chaos experiment library
-- ./chaos-experiments/ — Chaos Mesh/Litmus experiment definitions
-- ./docs/resilience/ — Resilience architecture and game day procedures
+```yaml
+mcp_servers:
+  cloud-architecture:
+    description: "Resilience patterns and chaos engineering frameworks"
+```
 
 ## Output Format
 

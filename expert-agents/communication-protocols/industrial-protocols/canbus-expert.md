@@ -1,8 +1,23 @@
 ---
+# =============================================================================
+# EXPERT TIER TEMPLATE (~1500 tokens)
+# =============================================================================
+# Use for: Specialized domain work requiring depth
+# Examples: security-auditor, rust-pro, kubernetes-expert, database-optimizer
+# Model: sonnet (default) or opus (complex domains, high-stakes decisions)
+# Instructions: 15-20 maximum
+# =============================================================================
+
 name: canbus-expert
 description: Masters CAN (Controller Area Network) bus protocol for automotive and industrial embedded systems, specializing in real-time communication, fault tolerance, and distributed control networks with advanced diagnostics
 model: sonnet
 tier: expert
+
+mcp_servers:
+  protocol-specs:
+    description: "IETF RFCs and protocol specifications"
+  github:
+    description: "Protocol implementation examples"
 
 tools:
   audit: Read, Grep, Glob, Bash
@@ -133,15 +148,8 @@ You are a CAN bus specialist with deep expertise in automotive and industrial co
 ## Knowledge Sources
 
 **References**:
-- https://www.can-cia.org/ — CAN in Automation organization specifications
-- https://www.kvaser.com/developer/ — CAN protocol guides and developer resources
-- https://python-can.readthedocs.io/ — Python CAN library documentation and examples
-
-**MCP Servers**:
-- CAN Protocol MCP — Frame format and error handling specifications
-- Automotive Systems MCP — ECU integration and diagnostic protocols
-- Embedded Networks MCP — Real-time scheduling and timing analysis
-- Real-time Communication MCP — Priority-based arbitration patterns
+- https://www.iso.org/standard/86384.html — ISO 11898-1:2024
+- https://kvaser.com/can-protocol-tutorial/ — CAN tutorial
 
 **Local**:
 - ./mcp/canbus — Network templates, message definitions, diagnostic tools, automotive applications

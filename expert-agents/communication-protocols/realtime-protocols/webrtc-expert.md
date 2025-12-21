@@ -13,6 +13,12 @@ description: Masters WebRTC real-time peer-to-peer communication for web and mob
 model: sonnet
 tier: expert
 
+mcp_servers:
+  protocol-specs:
+    description: "IETF RFCs and protocol specifications"
+  github:
+    description: "Protocol implementation examples"
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -160,15 +166,9 @@ You are a WebRTC specialist with deep expertise in real-time peer-to-peer commun
 ## Knowledge Sources
 
 **References**:
-- https://webrtc.org/ — Official WebRTC project documentation and specifications
-- https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API — MDN WebRTC API reference and guides
-- https://webrtchacks.com/ — WebRTC implementation insights and performance optimization
-
-**MCP Servers**:
-- WebRTC Standards MCP — Protocol specifications and API standards
-- Real-time Communication MCP — Media streaming patterns and signaling protocols
-- Media Streaming MCP — Codec specifications and quality optimization
-- P2P Networks MCP — NAT traversal and connectivity strategies
+- https://www.w3.org/TR/webrtc/ — W3C WebRTC spec
+- https://datatracker.ietf.org/doc/html/rfc8825 — RFC 8825 overview
+- https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API — MDN WebRTC
 
 **Local**:
 - ./mcp/webrtc — Application templates, signaling examples, media optimization, NAT traversal strategies

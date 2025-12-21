@@ -22,6 +22,10 @@ tools:
   research: Read, Grep, Glob, Bash, WebSearch, WebFetch
   default_mode: solution
 
+mcp_servers:
+  cloud-architecture:
+    description: "Incident response patterns and SRE best practices"
+
 # -----------------------------------------------------------------------------
 # COGNITIVE MODES - How the agent thinks in each mode
 # -----------------------------------------------------------------------------
@@ -128,9 +132,9 @@ You are an incident response specialist with deep expertise in production troubl
 
 ### When Informative
 
-6. Present response options with time-to-recovery estimates and rollback safety assessment
-7. Explain monitoring and alerting improvements to detect similar incidents earlier
-8. Describe automation opportunities to prevent recurrence or enable faster recovery
+11. Present response options with time-to-recovery estimates and rollback safety assessment
+12. Explain monitoring and alerting improvements to detect similar incidents earlier
+13. Describe automation opportunities to prevent recurrence or enable faster recovery
 
 ## Never
 
@@ -178,19 +182,14 @@ You are an incident response specialist with deep expertise in production troubl
 
 **References**:
 - https://response.pagerduty.com/ — PagerDuty incident response best practices
-- https://landing.google.com/sre/ — Google SRE book on incident management and postmortems
-- https://www.atlassian.com/incident-management — Atlassian incident management handbook
-- https://github.com/dastergon/awesome-sre — Curated SRE resources and postmortem examples
+- https://landing.google.com/sre/ — Google SRE Book
 
 **MCP Servers**:
-- Incident-Management-MCP — Response templates and runbook patterns
-- System-Monitoring-MCP — Metrics, logs, and trace correlation for diagnosis
-- Recovery-Procedures-MCP — Rollback automation and restoration strategies
-
-**Local**:
-- ./mcp/incident-response/ — Organization runbooks and escalation procedures
-- ./docs/postmortems/ — Historical incident reports and learnings
-- ./monitoring/runbooks/ — Service-specific diagnostic and recovery procedures
+```yaml
+mcp_servers:
+  cloud-architecture:
+    description: "Incident response patterns and SRE best practices"
+```
 
 ## Output Format
 

@@ -220,17 +220,17 @@ Coordinate with TaskMaster for decomposition of complex multi-platform features 
 ## Knowledge Sources
 
 **References**:
-- https://flutter.dev/docs — Official Flutter documentation with widget catalog and guides
-- https://api.flutter.dev/ — Complete Flutter API reference with all widgets and classes
+- https://docs.flutter.dev/ — Official Flutter documentation and widget catalog
 - https://dart.dev/guides — Dart language guide and best practices
-- https://docs.flutter.dev/development/ui/widgets-intro — Widget framework introduction
-- https://docs.flutter.dev/perf — Performance best practices and optimization techniques
-- https://docs.flutter.dev/platform-integration/platform-channels — Platform channel integration guide
+- https://m3.material.io/ — Material Design 3 guidelines
+- https://developer.apple.com/design/human-interface-guidelines/ — iOS HIG
 
-**MCP Servers**:
-- Flutter-Ecosystem-MCP — Widget patterns, state management, performance optimization
-- Dart-Optimization-MCP — Language features, async patterns, compilation optimization
-- Mobile-Platform-MCP — iOS and Android integration patterns, deployment configurations
+**MCP Configuration**:
+```yaml
+mcp_servers:
+  mobile-deployment:
+    description: "Mobile platform integration for iOS and Android deployment"
+```
 
 ## Output Format
 

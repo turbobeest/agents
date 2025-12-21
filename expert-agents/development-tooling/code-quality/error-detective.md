@@ -178,9 +178,15 @@ You are an error detection specialist with deep expertise in edge case analysis,
 - https://en.wikipedia.org/wiki/Defensive_programming — Defensive programming patterns
 
 **MCP Servers**:
-- Error-Detection-MCP — Analysis templates and edge case strategies
-- Edge-Case-Analysis-MCP — Boundary condition patterns
-- Failure-Prevention-MCP — Prevention frameworks and robustness patterns
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

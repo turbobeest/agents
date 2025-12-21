@@ -179,9 +179,15 @@ You are a legacy modernization specialist with deep expertise in systematic refa
 - https://trunkbaseddevelopment.com/ — Incremental development practices
 
 **MCP Servers**:
-- Legacy-Modernization-MCP — Refactoring templates and migration strategies
-- Refactoring-Strategies-MCP — Pattern catalog and technical debt analysis
-- Technology-Standards-MCP — Current standards and upgrade paths
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

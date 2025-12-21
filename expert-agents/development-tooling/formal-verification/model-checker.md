@@ -169,11 +169,19 @@ You are a formal verification specialist with deep expertise in model checking, 
 - https://lamport.azurewebsites.net/tla/tla.html — TLA+ specification language and model checker
 - https://web.mit.edu/6.005/www/fa15/classes/15-specifications/ — Formal specifications course materials
 - https://formalverification.cs.utah.edu/ — Formal verification research and techniques
+- https://model-checking.github.io/kani/getting-started.html — Kani tutorial
+- https://lamport.azurewebsites.net/tla/tutorial/home.html — TLA+ tutorial
 
 **MCP Servers**:
-- Formal Verification MCP — Verification templates and proof strategies
-- Model Checking MCP — Tool configurations and specification patterns
-- Mathematical Proof MCP — Theorem proving techniques and proof libraries
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

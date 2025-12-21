@@ -54,6 +54,12 @@ escalation:
 role: auditor
 load_bearing: false
 
+proactive_triggers:
+  - "*requirements*"
+  - "*business*analysis*"
+  - "*stakeholder*"
+  - "*specifications*"
+
 version: 1.0.0
 ---
 
@@ -140,13 +146,16 @@ You are a business analysis specialist with expertise in requirements engineerin
 ## Knowledge Sources
 
 **References**:
-- https://www.iiba.org/ — International Institute of Business Analysis
-- https://www.pmi.org/learning/library/effective-business-requirements-documents-3925 — Requirements best practices
+- https://www.iiba.org/ — International Institute of Business Analysis standards
+- https://www.pmi.org/learning/library/effective-business-requirements-documents-3925 — Requirements practices
 - https://www.bridging-the-gap.com/ — Business analysis resources
 
-**MCP Servers**:
-- Business-Analysis-MCP — Requirements templates and process models
-- Stakeholder-Management-MCP — Stakeholder analysis frameworks
+**MCP Configuration**:
+```yaml
+mcp_servers:
+  project-management:
+    description: "Project management tool integration for requirements tracking"
+```
 
 ## Output Format
 

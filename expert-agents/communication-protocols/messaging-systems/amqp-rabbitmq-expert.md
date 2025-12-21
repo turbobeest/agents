@@ -1,8 +1,23 @@
 ---
+# =============================================================================
+# EXPERT TIER TEMPLATE (~1500 tokens)
+# =============================================================================
+# Use for: Specialized domain work requiring depth
+# Examples: security-auditor, rust-pro, kubernetes-expert, database-optimizer
+# Model: sonnet (default) or opus (complex domains, high-stakes decisions)
+# Instructions: 15-20 maximum
+# =============================================================================
+
 name: amqp-rabbitmq-expert
 description: Masters AMQP protocol and RabbitMQ message broker for enterprise messaging systems, specializing in reliable message delivery, complex routing, and scalable asynchronous communication architectures
 model: sonnet
 tier: expert
+
+mcp_servers:
+  protocol-specs:
+    description: "IETF RFCs and protocol specifications"
+  github:
+    description: "Protocol implementation examples"
 
 tools:
   audit: Read, Grep, Glob, Bash
@@ -133,15 +148,8 @@ You are an AMQP and RabbitMQ specialist with deep expertise in enterprise messag
 ## Knowledge Sources
 
 **References**:
-- https://www.rabbitmq.com/documentation.html — Official RabbitMQ documentation
-- https://www.amqp.org/ — AMQP protocol specification and resources
-- https://github.com/rabbitmq — RabbitMQ server and plugin repositories
-
-**MCP Servers**:
-- AMQP Protocol MCP — Message format and exchange specifications
-- RabbitMQ Systems MCP — Broker configuration and clustering patterns
-- Enterprise Messaging MCP — Integration patterns and reliability strategies
-- Async Communication MCP — Publish-subscribe and queue-based patterns
+- https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-complete-v1.0-os.pdf — AMQP 1.0
+- https://www.rabbitmq.com/documentation.html — RabbitMQ docs
 
 **Local**:
 - ./mcp/amqp-rabbitmq — Messaging templates, routing configurations, clustering patterns, performance optimization

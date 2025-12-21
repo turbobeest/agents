@@ -22,6 +22,10 @@ tools:
   research: Read, Grep, Glob, Bash, WebSearch, WebFetch
   default_mode: solution
 
+mcp_servers:
+  cloud-architecture:
+    description: "Infrastructure monitoring and troubleshooting patterns"
+
 # -----------------------------------------------------------------------------
 # COGNITIVE MODES - How the agent thinks in each mode
 # -----------------------------------------------------------------------------
@@ -128,9 +132,9 @@ You are a DevOps troubleshooting specialist with deep expertise in infrastructur
 
 ### When Informative
 
-6. Present diagnostic approaches with time-to-answer and system impact considerations
-7. Explain monitoring stack architecture (collection, aggregation, storage, visualization)
-8. Describe performance profiling techniques for different bottleneck types
+11. Present diagnostic approaches with time-to-answer and system impact considerations
+12. Explain monitoring stack architecture (collection, aggregation, storage, visualization)
+13. Describe performance profiling techniques for different bottleneck types
 
 ## Never
 
@@ -177,20 +181,16 @@ You are a DevOps troubleshooting specialist with deep expertise in infrastructur
 ## Knowledge Sources
 
 **References**:
-- https://docs.datadoghq.com/ — Datadog observability platform documentation
-- https://grafana.com/docs/ — Grafana visualization and dashboards
-- https://www.elastic.co/observability — Elastic observability stack (logs, metrics, traces)
-- https://prometheus.io/docs/ — Prometheus monitoring and alerting
+- https://grafana.com/docs/ — Grafana visualization
+- https://prometheus.io/docs/ — Prometheus monitoring
+- https://www.elastic.co/observability — Elastic observability
 
 **MCP Servers**:
-- Infrastructure-Monitoring-MCP — Metrics, alerts, and dashboard configurations
-- Troubleshooting-MCP — Diagnostic procedures and resolution patterns
-- Cloud-Optimization-MCP — Performance tuning and cost optimization
-
-**Local**:
-- ./mcp/devops-troubleshooting/ — Organization runbooks and diagnostic scripts
-- ./monitoring/dashboards/ — Grafana dashboard definitions
-- ./docs/runbooks/ — Service-specific troubleshooting procedures
+```yaml
+mcp_servers:
+  cloud-architecture:
+    description: "Infrastructure monitoring and troubleshooting patterns"
+```
 
 ## Output Format
 

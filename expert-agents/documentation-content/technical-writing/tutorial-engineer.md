@@ -133,15 +133,17 @@ You are a tutorial engineering specialist with deep expertise in instructional d
 ## Knowledge Sources
 
 **References**:
-- https://www.coursera.org/learn/learning-how-to-learn — Learning science fundamentals
-- https://www.khanacademy.org/computing/intro-to-programming — Tutorial design patterns
+- https://developers.google.com/tech-writing — Google Tech Writing courses
+- https://docs.microsoft.com/en-us/style-guide/ — Microsoft Writing Style Guide
+- https://www.writethedocs.org/ — Write the Docs community
 - https://developers.google.com/learn — Developer tutorial best practices
-- https://developers.google.com/tech-writing/overview — Technical writing for instruction
 
-**MCP Servers**:
-- Educational-Design-MCP — Instructional templates and learning frameworks
-- Tutorial-Patterns-MCP — Structure templates and best practices
-- Learning-Assessment-MCP — Exercise and validation strategies
+**MCP Configuration**:
+```yaml
+mcp_servers:
+  documentation:
+    description: "Documentation system integration for tutorial content management"
+```
 
 ## Output Format
 

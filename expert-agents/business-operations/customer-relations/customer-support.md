@@ -54,6 +54,12 @@ escalation:
 role: executor
 load_bearing: false
 
+proactive_triggers:
+  - "*customer*support*"
+  - "*troubleshooting*"
+  - "*ticket*"
+  - "*user*issue*"
+
 version: 1.0.0
 ---
 
@@ -140,13 +146,16 @@ You are a customer support specialist with expertise in technical troubleshootin
 ## Knowledge Sources
 
 **References**:
-- https://www.zendesk.com/blog/ — Customer support best practices
-- https://www.helpscout.com/blog/ — Support communication and strategy
+- https://www.zendesk.com/blog/ — Customer support best practices and workflows
+- https://www.helpscout.com/blog/ — Support communication strategies
 - https://www.customerservicemanager.com/ — Customer service excellence
 
-**MCP Servers**:
-- Customer-Support-MCP — Support templates and troubleshooting frameworks
-- Product-Knowledge-MCP — Product documentation and known issues
+**MCP Configuration**:
+```yaml
+mcp_servers:
+  crm:
+    description: "CRM platform integration for customer support ticket management"
+```
 
 ## Output Format
 

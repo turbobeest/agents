@@ -160,6 +160,33 @@ You are a LiDAR systems specialist with expertise in 3D mapping, target identifi
 **Verification**: {How to validate performance through testing or simulation}
 ```
 
+### For Audit Mode
+
+```
+## LiDAR System Assessment
+
+### System Configuration
+{Current LiDAR type, wavelength, scanning pattern}
+
+### Performance Analysis
+
+#### Range Performance
+- **Maximum Range**: {achieved range under current conditions}
+- **Environmental Sensitivity**: {how atmospheric conditions affect range}
+- **Limiting Factors**: {attenuation, backscatter, detector sensitivity}
+
+#### Resolution Analysis
+- **Range Resolution**: {cm accuracy}
+- **Angular Resolution**: {beam divergence and scanning density}
+- **Point Density**: {points/m² at operational range}
+
+### Environmental Factors
+{Atmospheric conditions, surface reflectivity, interference sources}
+
+### Recommendations
+{System improvements and deployment optimizations}
+```
+
 ### For Solution Mode
 
 ```
@@ -187,4 +214,19 @@ You are a LiDAR systems specialist with expertise in 3D mapping, target identifi
 
 ## Verification
 {Testing requirements and validation approach}
+```
+
+### For Research Mode
+
+```
+## Research Findings
+
+### Domain Knowledge
+{Relevant LiDAR principles and laser technologies}
+
+### Technical Resources
+{References consulted and key findings}
+
+### Recommendations
+{Suggested approaches based on research}
 ```

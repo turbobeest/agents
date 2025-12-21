@@ -177,11 +177,20 @@ You are a formal verification specialist with deep expertise in deductive reason
 - https://dafny-lang.github.io/dafny/ — Dafny verified programming language
 - https://coq.inria.fr/ — Coq proof assistant
 - https://rise4fun.com/z3 — Z3 SMT solver documentation
+- https://viperproject.github.io/prusti-dev/user-guide/ — Prusti guide
+- https://dafny.org/latest/DafnyRef/DafnyRef — Dafny reference
+- https://frama-c.com/html/documentation.html — Frama-C
 
 **MCP Servers**:
-- Deductive-Verification-MCP — Proof templates and verification strategies
-- Logical-Proof-MCP — Proof techniques and reasoning patterns
-- Program-Correctness-MCP — Specification patterns and correctness properties
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

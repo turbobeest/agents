@@ -13,6 +13,12 @@ description: Expert in Zenoh protocol for scalable, peer-to-peer communication e
 model: sonnet
 tier: expert
 
+mcp_servers:
+  protocol-specs:
+    description: "IETF RFCs and protocol specifications"
+  github:
+    description: "Protocol implementation examples"
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -160,14 +166,8 @@ You are a Zenoh protocol specialist with deep expertise in edge-to-cloud communi
 ## Knowledge Sources
 
 **References**:
-- https://zenoh.io/docs/ — Official Zenoh documentation and protocol specifications
-- https://github.com/eclipse-zenoh/zenoh — Reference implementation and examples
-- https://zenoh.io/blog/ — Edge computing patterns and performance benchmarks
-
-**MCP Servers**:
-- Zenoh Protocol MCP — Protocol specifications and configuration patterns
-- Edge Computing MCP — Edge deployment strategies and device constraints
-- P2P Communication MCP — Peer-to-peer networking patterns and discovery mechanisms
+- https://zenoh.io/docs/ — Zenoh documentation
+- https://github.com/eclipse-zenoh/zenoh — Zenoh repository
 
 **Local**:
 - ./mcp/zenoh-patterns — Routing configurations, edge templates, performance optimization strategies

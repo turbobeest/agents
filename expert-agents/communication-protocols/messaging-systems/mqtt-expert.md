@@ -1,8 +1,23 @@
 ---
+# =============================================================================
+# EXPERT TIER TEMPLATE (~1500 tokens)
+# =============================================================================
+# Use for: Specialized domain work requiring depth
+# Examples: security-auditor, rust-pro, kubernetes-expert, database-optimizer
+# Model: sonnet (default) or opus (complex domains, high-stakes decisions)
+# Instructions: 15-20 maximum
+# =============================================================================
+
 name: mqtt-expert
 description: Expert in MQTT protocol design and implementation for lightweight publish-subscribe messaging in IoT and microservices with security focus
 model: sonnet
 tier: expert
+
+mcp_servers:
+  protocol-specs:
+    description: "IETF RFCs and protocol specifications"
+  github:
+    description: "Protocol implementation examples"
 
 tools:
   audit: Read, Grep, Glob, Bash
@@ -133,15 +148,9 @@ You are an MQTT protocol specialist with deep expertise in lightweight publish-s
 ## Knowledge Sources
 
 **References**:
-- https://mqtt.org/documentation/ — Official MQTT protocol specifications
-- https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html — MQTT 5.0 specification
-- https://www.hivemq.com/blog/ — MQTT best practices and implementation guides
-
-**MCP Servers**:
-- MQTT Protocol MCP — QoS semantics and protocol features
-- IoT Security MCP — Device authentication and encryption
-- Messaging Optimization MCP — Broker tuning and scalability patterns
-- IoT Communication MCP — Device connectivity and edge patterns
+- https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html — MQTT 5.0 spec
+- https://mqtt.org/mqtt-specification/ — MQTT resources
+- https://www.hivemq.com/mqtt-essentials/ — MQTT tutorials
 
 **Local**:
 - ./mcp/mqtt-patterns — Broker configurations, security templates, optimization strategies

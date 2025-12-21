@@ -22,6 +22,10 @@ tools:
   research: Read, Grep, Glob, Bash, WebSearch, WebFetch
   default_mode: solution
 
+mcp_servers:
+  cloud-architecture:
+    description: "Reference architectures and design patterns for OCI deployments"
+
 # -----------------------------------------------------------------------------
 # COGNITIVE MODES - How the agent thinks in each mode
 # -----------------------------------------------------------------------------
@@ -177,19 +181,15 @@ You are an Oracle Cloud Infrastructure architect with deep expertise in OCI-nati
 ## Knowledge Sources
 
 **References**:
-- https://docs.oracle.com/en-us/iaas/ — Official OCI documentation and service guides
-- https://www.oracle.com/cloud/architecture/ — OCI reference architectures and design patterns
-- https://blogs.oracle.com/cloud-infrastructure/ — OCI product updates and best practices
-- https://docs.oracle.com/en/solutions/ — Oracle Cloud solutions library with industry-specific patterns
+- https://docs.oracle.com/en-us/iaas/ — Official OCI documentation
+- https://www.oracle.com/cloud/architecture/ — OCI reference architectures
 
 **MCP Servers**:
-- OCI-Documentation-MCP — Service reference and API documentation
-- Enterprise-Database-MCP — Oracle database patterns and migration strategies
-- Security-MCP — OCI security best practices and compliance frameworks
-
-**Local**:
-- ./mcp/oci-patterns/ — Organization OCI standards and approved architectures
-- ./docs/enterprise/ — Enterprise architecture principles and database integration guides
+```yaml
+mcp_servers:
+  cloud-architecture:
+    description: "Reference architectures and design patterns for OCI deployments"
+```
 
 ## Output Format
 

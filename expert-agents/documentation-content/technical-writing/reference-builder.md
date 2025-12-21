@@ -133,15 +133,18 @@ You are a reference documentation specialist with deep expertise in information 
 ## Knowledge Sources
 
 **References**:
-- https://readme.so/ — README templates and best practices
+- https://developers.google.com/tech-writing — Google Tech Writing courses
+- https://docs.microsoft.com/en-us/style-guide/ — Microsoft Writing Style Guide
+- https://www.writethedocs.org/ — Write the Docs community
 - https://docs.github.com/en/rest — Reference documentation examples
 - https://www.makeareadme.com/ — Quick start guide principles
-- https://developers.google.com/tech-writing — Technical writing for developers
 
-**MCP Servers**:
-- Developer-Resources-MCP — Reference templates and API doc patterns
-- Documentation-Structure-MCP — Information architecture frameworks
-- Code-Example-MCP — Example generation and validation
+**MCP Configuration**:
+```yaml
+mcp_servers:
+  documentation:
+    description: "Documentation system integration for reference documentation"
+```
 
 ## Output Format
 

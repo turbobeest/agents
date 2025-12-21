@@ -171,8 +171,15 @@ You are a code integration specialist with deep expertise in merge strategies, c
 - https://martinfowler.com/articles/branching-patterns.html — Integration patterns for continuous delivery
 
 **MCP Servers**:
-- Code Integration MCP — Merge templates and conflict resolution strategies
-- Quality Assurance MCP — Integration testing patterns and quality gates
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

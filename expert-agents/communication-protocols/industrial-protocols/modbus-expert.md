@@ -1,8 +1,23 @@
 ---
+# =============================================================================
+# EXPERT TIER TEMPLATE (~1500 tokens)
+# =============================================================================
+# Use for: Specialized domain work requiring depth
+# Examples: security-auditor, rust-pro, kubernetes-expert, database-optimizer
+# Model: sonnet (default) or opus (complex domains, high-stakes decisions)
+# Instructions: 15-20 maximum
+# =============================================================================
+
 name: modbus-expert
 description: Masters Modbus protocol for industrial control systems, specializing in PLC communication, sensor networks, SCADA integration, and reliable serial/Ethernet industrial data exchange
 model: sonnet
 tier: expert
+
+mcp_servers:
+  protocol-specs:
+    description: "IETF RFCs and protocol specifications"
+  github:
+    description: "Protocol implementation examples"
 
 tools:
   audit: Read, Grep, Glob, Bash
@@ -133,15 +148,8 @@ You are a Modbus protocol specialist with deep expertise in industrial control s
 ## Knowledge Sources
 
 **References**:
-- https://modbus.org/ — Official Modbus organization specifications
-- https://www.simplymodbus.ca/ — Modbus protocol tutorial and calculator tools
-- https://github.com/riptideio/pymodbus — Python Modbus library implementation
-
-**MCP Servers**:
-- Modbus Protocol MCP — Function codes and register specifications
-- Industrial Control MCP — PLC integration patterns
-- PLC Systems MCP — Vendor-specific register mapping
-- Industrial Networks MCP — RS-485 and Ethernet topology design
+- https://www.modbus.org/specs.php — Modbus specifications
+- https://modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf — Protocol spec
 
 **Local**:
 - ./mcp/modbus — Protocol templates, PLC integration, network configurations, diagnostic tools

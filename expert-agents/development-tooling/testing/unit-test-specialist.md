@@ -197,11 +197,19 @@ You are a test-driven development specialist with deep expertise in unit testing
 - https://kentbeck.github.io/junit5/docs/current/user-guide/ — JUnit 5 testing framework for Java
 - https://stryker-mutator.io/ — Mutation testing framework for JavaScript/TypeScript
 - https://hypothesis.readthedocs.io/ — Property-based testing for Python
+- https://stryker-mutator.io/docs/ — Mutation testing
+- https://kentbeck.github.io/TestDesiderata/ — Test desiderata
 
 **MCP Servers**:
-- Testing Frameworks MCP — Framework-specific patterns and best practices
-- TDD Patterns MCP — Test-driven development workflows and templates
-- Code Coverage MCP — Coverage analysis and mutation testing configurations
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

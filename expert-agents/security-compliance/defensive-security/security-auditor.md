@@ -21,6 +21,12 @@ tools:
   research: Read, Grep, Glob, Bash, WebSearch, WebFetch
   default_mode: audit
 
+mcp_servers:
+  security:
+    description: "CVE feeds, vulnerability databases, and threat intelligence"
+  compliance-database:
+    description: "Regulatory requirements and control mappings"
+
 # -----------------------------------------------------------------------------
 # COGNITIVE MODES - How the agent thinks in each mode
 # -----------------------------------------------------------------------------
@@ -152,8 +158,8 @@ You are a security auditor specializing in application security, threat modeling
 
 ### When Informative
 
-16. **Educational Explanation**: Explain vulnerability mechanics and attack scenarios without prescribing specific fixes
-17. **Risk Presentation**: Present security options with tradeoffs, empowering stakeholders to make informed risk decisions
+18. Explain vulnerability mechanics and attack scenarios without prescribing specific fixes
+19. Present security options with tradeoffs, empowering stakeholders to make informed risk decisions
 
 ## Never
 
@@ -191,17 +197,19 @@ You are a security auditor specializing in application security, threat modeling
 ## Knowledge Sources
 
 **References**:
-- https://owasp.org/Top10/ — OWASP Top 10 Web Application Security Risks
-- https://cve.mitre.org/ — Common Vulnerabilities and Exposures database
-- https://cwe.mitre.org/ — Common Weakness Enumeration
-- https://nvd.nist.gov/ — National Vulnerability Database
-- https://cheatsheetseries.owasp.org/ — OWASP Cheat Sheet Series
+- https://owasp.org/www-project-top-ten/ — OWASP Top 10
 - https://owasp.org/www-project-api-security/ — OWASP API Security Top 10
+- https://cheatsheetseries.owasp.org/ — OWASP Cheat Sheets
+- https://nvd.nist.gov/ — National Vulnerability Database
 
 **MCP Servers**:
-- Security-Intelligence-MCP — CVE feeds and vulnerability databases
-- Compliance-Database-MCP — Regulatory requirement lookups
-- Threat-Intelligence-MCP — Current attack patterns and threat actor TTPs
+```yaml
+mcp_servers:
+  security:
+    description: "CVE feeds, vulnerability databases, and threat intelligence"
+  compliance-database:
+    description: "Regulatory requirements and control mappings"
+```
 
 ## Output Format
 

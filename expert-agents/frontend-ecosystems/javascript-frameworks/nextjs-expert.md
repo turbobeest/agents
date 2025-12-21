@@ -169,9 +169,18 @@ Server components (default, zero JS for non-interactive), client components ('us
 
 ## Knowledge Sources
 
-**References**: nextjs.org/docs (rendering strategies), web.dev/vitals (Core Web Vitals), vercel.com/docs (edge deployment)
+**References**:
+- https://nextjs.org/docs — Official Next.js documentation with rendering strategies
+- https://react.dev/ — React documentation for component patterns
+- https://web.dev/vitals/ — Core Web Vitals performance metrics
+- https://vercel.com/docs — Vercel edge deployment and optimization
 
-**MCP Servers**: NextJS-Patterns-MCP (rendering, caching), Web-Performance-MCP (CWV, bundles), SEO-Optimization-MCP (metadata, structured data)
+**MCP Configuration**:
+```yaml
+mcp_servers:
+  web-performance:
+    description: "Web performance monitoring for Core Web Vitals tracking"
+```
 
 ## Pipeline Integration
 

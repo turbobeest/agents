@@ -22,6 +22,10 @@ tools:
   research: Read, Grep, Glob, Bash, WebSearch, WebFetch
   default_mode: solution
 
+mcp_servers:
+  cloud-architecture:
+    description: "Reference architectures and design patterns for GCP deployments"
+
 # -----------------------------------------------------------------------------
 # COGNITIVE MODES - How the agent thinks in each mode
 # -----------------------------------------------------------------------------
@@ -29,22 +33,18 @@ cognitive_modes:
   generative:
     mindset: "Design cloud-native GCP architectures leveraging Google's data and ML ecosystem"
     output: "Complete architecture with GCP services, data pipelines, and serverless patterns"
-    risk: "Over-engineering with unnecessary services, ignoring cost implications, missing OpenSpec compliance"
 
   critical:
     mindset: "Audit GCP deployments for security, cost inefficiency, and architectural anti-patterns"
     output: "Architecture review findings with GCP-specific optimizations and cost recommendations"
-    risk: "False positives on security findings, overlooking org-specific policies, blocking valid patterns"
 
   evaluative:
     mindset: "Weigh GCP services against scalability, cost, and data analytics requirements"
     output: "Service selection analysis with performance, cost, and ecosystem integration tradeoffs"
-    risk: "Analysis paralysis delaying decisions, bias toward familiar services, missing hybrid requirements"
 
   informative:
     mindset: "Provide GCP expertise on cloud-native patterns, data services, and ML integration"
     output: "Architecture options with GCP ecosystem advantages and migration complexity"
-    risk: "Information overload without actionable guidance, outdated service recommendations"
 
   default: generative
 
@@ -207,19 +207,15 @@ When GCP architecture spans multiple independent services (e.g., separate micros
 ## Knowledge Sources
 
 **References**:
-- https://cloud.google.com/docs — Official GCP documentation and service guides
-- https://cloud.google.com/architecture/ — GCP reference architectures and design patterns
-- https://cloud.google.com/solutions/ — Industry and workload-specific solution guides
-- https://cloud.google.com/blog/ — GCP product updates and best practices
+- https://docs.cloud.google.com/architecture/framework — GCP Well-Architected Framework
+- https://docs.cloud.google.com/architecture — GCP Architecture Center
 
 **MCP Servers**:
-- GCP-Documentation-MCP — Service reference and API documentation
-- Cloud-Native-MCP — Serverless and container orchestration patterns
-- Data-Analytics-MCP — BigQuery, Dataflow, and ML pipeline patterns
-
-**Local**:
-- ./mcp/gcp-patterns/ — Organization GCP standards and approved architectures
-- ./docs/data-governance/ — Data classification and compliance requirements
+```yaml
+mcp_servers:
+  cloud-architecture:
+    description: "Reference architectures and design patterns for GCP deployments"
+```
 
 ## Output Format
 

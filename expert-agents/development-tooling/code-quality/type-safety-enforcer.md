@@ -168,10 +168,19 @@ You are a type system specialist with deep expertise in static type analysis, gr
 - https://www.typescriptlang.org/docs/handbook/2/everyday-types.html — TypeScript type system fundamentals
 - https://peps.python.org/pep-0484/ — Python type hints specification
 - https://github.com/python/typeshed — Type stubs for Python standard library and third-party packages
+- https://typing.readthedocs.io/en/latest/ — Python typing
+- https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html — mypy cheat sheet
 
 **MCP Servers**:
-- Type System MCP — Type checker configuration and annotation patterns
-- Static Analysis MCP — Cross-language type safety analysis
+```yaml
+mcp_servers:
+  github:
+    description: "Repository access and code examples"
+  code-quality:
+    description: "Static analysis and linting integration"
+  testing:
+    description: "Test framework integration and coverage"
+```
 
 ## Output Format
 

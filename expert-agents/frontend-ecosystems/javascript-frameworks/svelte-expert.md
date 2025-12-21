@@ -177,6 +177,20 @@ You are a Svelte specialist with deep expertise in compilation-first architectur
 - SSR control: disable SSR per route with export const ssr = false
 - Type safety: generated types from load functions, automatic route type inference
 
+## Knowledge Sources
+
+**References**:
+- https://svelte.dev/docs — Official Svelte documentation and reactive patterns
+- https://kit.svelte.dev/docs — SvelteKit routing and server-side features
+- https://web.dev/vitals/ — Core Web Vitals performance metrics
+
+**MCP Configuration**:
+```yaml
+mcp_servers:
+  web-performance:
+    description: "Web performance monitoring for bundle size and Core Web Vitals"
+```
+
 ## Pipeline Integration
 
 ### Phase 6-7 Responsibilities (Implementation)
