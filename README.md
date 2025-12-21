@@ -2,6 +2,24 @@
 
 This directory contains all agent definitions organized in logical groups.
 
+## Creating Agents
+
+See **[AGENT-CREATION-GUIDE.md](./AGENT-CREATION-GUIDE.md)** for comprehensive documentation on:
+- Tier selection (Focused, Expert, PhD)
+- Modular tool system (audit/solution modes)
+- Identity and instruction design
+- Knowledge grounding
+
+## Templates
+
+Use templates in `/templates/` as starting points:
+
+| Template | Tier | Tokens | Use Case |
+|----------|------|--------|----------|
+| [TEMPLATE-focused.md](./templates/TEMPLATE-focused.md) | Focused | ~500 | Bounded tasks |
+| [TEMPLATE-expert.md](./templates/TEMPLATE-expert.md) | Expert | ~1500 | Domain specialization |
+| [TEMPLATE-phd.md](./templates/TEMPLATE-phd.md) | PhD | ~3000 | Research-level depth |
+
 ## Directory Structure
 
 ### Orchestration Intelligence
