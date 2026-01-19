@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import AgentEditor from '$lib/components/agent/AgentEditor.svelte';
 	import { isStaticBuild, generateIssueUrl, generateGhCommand } from '$lib/config';
 
@@ -19,7 +20,7 @@
 		}
 
 		// Local mode: save to filesystem
-		const response = await fetch(`/api/agents/${data.agent.id}`, {
+		const response = await fetch(`${base}/api/agents/${data.agent.id}`, {
 			method: 'PUT',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ content })
@@ -73,17 +74,17 @@
 
 	<!-- Breadcrumbs -->
 	<nav class="flex items-center gap-2 text-sm text-gray-400 mb-4">
-		<a href="/" class="hover:text-gray-300">Home</a>
+		<a href="{base}/" class="hover:text-gray-300">Home</a>
 		<span>/</span>
-		<a href="/agents/{data.agent.category}" class="hover:text-gray-300 capitalize">
+		<a href="{base}/agents/{data.agent.category}" class="hover:text-gray-300 capitalize">
 			{data.agent.category.replace(/-/g, ' ')}
 		</a>
 		<span>/</span>
-		<a href="/agents/{data.agent.category}/{data.agent.subcategory}" class="hover:text-gray-300 capitalize">
+		<a href="{base}/agents/{data.agent.category}/{data.agent.subcategory}" class="hover:text-gray-300 capitalize">
 			{data.agent.subcategory.replace(/-/g, ' ')}
 		</a>
 		<span>/</span>
-		<a href="/agents/{data.agent.category}/{data.agent.subcategory}/{data.agent.slug}" class="hover:text-gray-300">
+		<a href="{base}/agents/{data.agent.category}/{data.agent.subcategory}/{data.agent.slug}" class="hover:text-gray-300">
 			{data.agent.frontmatter.name}
 		</a>
 		<span>/</span>

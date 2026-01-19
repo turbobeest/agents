@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { marked } from 'marked';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	let { data } = $props();
 
@@ -50,7 +51,7 @@
 			.replace(/{Agent Name}/g, agentName);
 
 		try {
-			const response = await fetch('/api/agents/create', {
+			const response = await fetch(`${base}/api/agents/create`, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify({
@@ -64,7 +65,7 @@
 			const result = await response.json();
 
 			if (result.success) {
-				goto(`/agents/${selectedCategory}/${selectedSubcategory}/${agentName.toLowerCase().replace(/\s+/g, '-')}`);
+				goto(`${base}/agents/${selectedCategory}/${selectedSubcategory}/${agentName.toLowerCase().replace(/\s+/g, '-')}`);
 			} else {
 				error = result.error || 'Failed to create agent';
 			}
@@ -93,7 +94,7 @@
 	<!-- Header -->
 	<div class="flex items-center justify-between mb-4">
 		<div class="flex items-center gap-3">
-			<a href="/create" class="text-gray-400 hover:text-gray-300">
+			<a href="{base}/create" class="text-gray-400 hover:text-gray-300">
 				<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
 				</svg>

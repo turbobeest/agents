@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import AgentCard from '$lib/components/agent/AgentCard.svelte';
 
 	let { data } = $props();
@@ -11,9 +12,9 @@
 <div>
 	<!-- Breadcrumbs -->
 	<nav class="flex items-center gap-2 text-sm text-gray-400 mb-6">
-		<a href="/" class="hover:text-gray-300">Home</a>
+		<a href="{base}/" class="hover:text-gray-300">Home</a>
 		<span>/</span>
-		<a href="/agents/{data.categoryId}" class="hover:text-gray-300">{data.category.title}</a>
+		<a href="{base}/agents/{data.categoryId}" class="hover:text-gray-300">{data.category.title}</a>
 		<span>/</span>
 		<span class="text-gray-100">{data.subcategory.title}</span>
 	</nav>

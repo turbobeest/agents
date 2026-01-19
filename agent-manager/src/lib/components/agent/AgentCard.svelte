@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Agent } from '$lib/types';
+	import { base } from '$app/paths';
 
 	let { agent, showCategory = false }: { agent: Agent; showCategory?: boolean } = $props();
 
@@ -31,7 +32,7 @@
 </script>
 
 <a
-	href="/agents/{agent.category}/{agent.subcategory}/{agent.slug}"
+	href="{base}/agents/{agent.category}/{agent.subcategory}/{agent.slug}"
 	class="block p-4 bg-gray-800 border border-gray-700 rounded-lg hover:border-blue-500 transition-all"
 >
 	<div class="flex items-start justify-between mb-2">

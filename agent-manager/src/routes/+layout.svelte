@@ -4,6 +4,7 @@
 	import Sidebar from '$lib/components/layout/Sidebar.svelte';
 	import { navigation, syncStatus, user, errorMessage, clearError } from '$lib/stores';
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	let { children, data } = $props();
 
@@ -20,11 +21,13 @@
 		}
 	});
 
-	// Periodic sync status check
+	// Periodic sync status check (only in local mode)
 	onMount(() => {
+		if (base) return; // Skip in static mode (base path is set)
+
 		const interval = setInterval(async () => {
 			try {
-				const response = await fetch('/api/sync');
+				const response = await fetch(`${base}/api/sync`);
 				const result = await response.json();
 				if (result.success) {
 					syncStatus.set(result.data);

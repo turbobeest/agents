@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	let { data } = $props();
 </script>
 
@@ -9,7 +10,7 @@
 <div>
 	<!-- Breadcrumbs -->
 	<nav class="flex items-center gap-2 text-sm text-gray-400 mb-6">
-		<a href="/" class="hover:text-gray-300">Home</a>
+		<a href="{base}/" class="hover:text-gray-300">Home</a>
 		<span>/</span>
 		<span class="text-gray-100">{data.category.title}</span>
 	</nav>
@@ -22,7 +23,7 @@
 	<div class="grid gap-4">
 		{#each data.category.subcategories as subcategory}
 			<a
-				href="/agents/{data.categoryId}/{subcategory.id}"
+				href="{base}/agents/{data.categoryId}/{subcategory.id}"
 				class="block bg-gray-800 rounded-lg border border-gray-700 p-4 hover:border-blue-500 hover:bg-gray-750 transition-all"
 			>
 				<div class="flex items-center justify-between">

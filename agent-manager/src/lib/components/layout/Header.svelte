@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { syncStatus, syncStatusText, user, searchQuery } from '$lib/stores';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	let searchInput = $state('');
 
@@ -8,7 +9,7 @@
 		e.preventDefault();
 		if (searchInput.trim()) {
 			searchQuery.set(searchInput.trim());
-			goto(`/search?q=${encodeURIComponent(searchInput.trim())}`);
+			goto(`${base}/search?q=${encodeURIComponent(searchInput.trim())}`);
 		}
 	}
 
@@ -43,7 +44,7 @@
 
 <header class="bg-gray-800 border-b border-gray-700 px-4 py-3 flex items-center justify-between">
 	<div class="flex items-center gap-4">
-		<a href="/" class="flex items-center gap-2">
+		<a href="{base}/" class="flex items-center gap-2">
 			<svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path
 					stroke-linecap="round"
@@ -106,7 +107,7 @@
 
 		<!-- Create Button -->
 		<a
-			href="/create"
+			href="{base}/create"
 			class="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
 		>
 			<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,11 +121,11 @@
 			<div class="flex items-center gap-2">
 				<img src={$user.avatar_url} alt={$user.login} class="w-8 h-8 rounded-full" />
 				<span class="text-sm text-gray-300">{$user.login}</span>
-				<a href="/auth/logout" class="text-sm text-gray-400 hover:text-gray-300">Logout</a>
+				<a href="{base}/auth/logout" class="text-sm text-gray-400 hover:text-gray-300">Logout</a>
 			</div>
 		{:else}
 			<a
-				href="/auth/login"
+				href="{base}/auth/login"
 				class="flex items-center gap-2 px-4 py-2 border border-gray-600 text-gray-300 text-sm font-medium rounded-lg hover:bg-gray-700 transition-colors"
 			>
 				<svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">

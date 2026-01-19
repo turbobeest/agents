@@ -2,6 +2,7 @@
 	import type { NavCategory } from '$lib/types';
 	import { sidebarExpanded } from '$lib/stores';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	let { categories = [] }: { categories: NavCategory[] } = $props();
 
@@ -104,7 +105,7 @@
 											<div class="ml-3 mt-1 space-y-0.5">
 												{#each subcategory.agents as agent}
 													<a
-														href="/agents/{category.id}/{subcategory.id}/{agent.id.split('/').pop()}"
+														href="{base}/agents/{category.id}/{subcategory.id}/{agent.id.split('/').pop()}"
 														class="flex items-center gap-2 px-3 py-1.5 text-sm rounded transition-colors
 															{$page.url.pathname.includes(agent.id.split('/').pop() || '')
 															? 'bg-blue-900/50 text-blue-300'
@@ -192,7 +193,7 @@
 										<div class="ml-3 mt-1 space-y-0.5">
 											{#each subcategory.agents as agent}
 												<a
-													href="/agents/{category.id}/{subcategory.id}/{agent.id.split('/').pop()}"
+													href="{base}/agents/{category.id}/{subcategory.id}/{agent.id.split('/').pop()}"
 													class="flex items-center gap-2 px-3 py-1.5 text-sm rounded transition-colors
 														{$page.url.pathname.includes(agent.id.split('/').pop() || '')
 														? 'bg-blue-900/50 text-blue-300'

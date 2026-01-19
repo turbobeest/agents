@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	let { data } = $props();
 
 	// Get all agents flat for stats
@@ -36,7 +37,7 @@
 	function handleSearch(e: Event) {
 		e.preventDefault();
 		if (searchQuery.trim()) {
-			window.location.href = `/search?q=${encodeURIComponent(searchQuery)}`;
+			window.location.href = `${base}/search?q=${encodeURIComponent(searchQuery)}`;
 		}
 	}
 </script>
@@ -74,7 +75,7 @@
 
 			<!-- Create Button -->
 			<a
-				href="/create"
+				href="{base}/create"
 				class="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20"
 			>
 				<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -351,7 +352,7 @@
 						Persona × Tools × Knowledge × Output Format = Qualitatively different output
 					</p>
 				</div>
-				<a href="/create" class="text-sm text-blue-400 hover:text-blue-300 font-medium">
+				<a href="{base}/create" class="text-sm text-blue-400 hover:text-blue-300 font-medium">
 					Create your first agent →
 				</a>
 			</div>

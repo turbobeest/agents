@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import AgentDetail from '$lib/components/agent/AgentDetail.svelte';
 
 	let { data } = $props();
@@ -12,13 +13,13 @@
 <div class="max-w-5xl">
 	<!-- Breadcrumbs -->
 	<nav class="flex items-center gap-2 text-sm text-gray-400 mb-6">
-		<a href="/" class="hover:text-gray-300">Home</a>
+		<a href="{base}/" class="hover:text-gray-300">Home</a>
 		<span>/</span>
-		<a href="/agents/{data.agent.category}" class="hover:text-gray-300 capitalize">
+		<a href="{base}/agents/{data.agent.category}" class="hover:text-gray-300 capitalize">
 			{data.agent.category.replace(/-/g, ' ')}
 		</a>
 		<span>/</span>
-		<a href="/agents/{data.agent.category}/{data.agent.subcategory}" class="hover:text-gray-300 capitalize">
+		<a href="{base}/agents/{data.agent.category}/{data.agent.subcategory}" class="hover:text-gray-300 capitalize">
 			{data.agent.subcategory.replace(/-/g, ' ')}
 		</a>
 		<span>/</span>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	const tiers = [
 		{
 			id: 'focused',
@@ -52,7 +53,7 @@
 	<div class="grid gap-6">
 		{#each tiers as tier}
 			<a
-				href="/create/{tier.id}"
+				href="{base}/create/{tier.id}"
 				class="block p-6 bg-gray-800 border border-gray-700 rounded-lg hover:border-blue-500 hover:bg-gray-750 transition-all"
 			>
 				<div class="flex items-start gap-4">
