@@ -48,7 +48,8 @@ escalation:
 role: executor
 load_bearing: true
 
-proactive_triggers:  - "*isaac*"
+proactive_triggers:
+  - "*isaac*"
   - "*robotics*sim*"
   - "*omniverse*"
   - "*autonomous*"

@@ -48,7 +48,8 @@ escalation:
 role: executor
 load_bearing: false
 
-proactive_triggers:  - "*.cu"
+proactive_triggers:
+  - "*.cu"
   - "*cuda*"
   - "*kernel*"
   - "*gpu*optim*"

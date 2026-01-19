@@ -48,7 +48,8 @@ escalation:
 role: executor
 load_bearing: false
 
-proactive_triggers:  - "*rapids*"
+proactive_triggers:
+  - "*rapids*"
   - "*cudf*"
   - "*cuml*"
   - "*gpu*data*"

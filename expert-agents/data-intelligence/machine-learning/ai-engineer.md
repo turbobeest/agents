@@ -48,7 +48,8 @@ escalation:
 role: executor
 load_bearing: true
 
-proactive_triggers:  - "*ai*system*"
+proactive_triggers:
+  - "*ai*system*"
   - "*model*serving*"
   - "*inference*"
 

@@ -48,7 +48,8 @@ escalation:
 role: executor
 load_bearing: false
 
-proactive_triggers:  - "*jetson*"
+proactive_triggers:
+  - "*jetson*"
   - "*edge*ai*"
   - "*tensorrt*"
   - "*embedded*"

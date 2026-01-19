@@ -48,7 +48,8 @@ escalation:
 role: executor
 load_bearing: false
 
-proactive_triggers:  - "*mlops*"
+proactive_triggers:
+  - "*mlops*"
   - "*mlflow*"
   - "*kubeflow*"
   - "*model*deploy*"

@@ -2,13 +2,13 @@ import { Octokit } from '@octokit/rest';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 import type { GitStatus, GitHubIssue, SyncStatus, Agent } from '$lib/types';
-import { AGENTS_REPO_PATH, GITHUB_TOKEN } from '$env/static/private';
+import { AGENTS_REPO_PATH } from '$env/static/private';
 
 const execAsync = promisify(exec);
 const REPO_PATH = AGENTS_REPO_PATH || '/mnt/walnut-drive/dev/agents';
 
-// GitHub owner and repo - these default to the agents repo
-// Can be overridden via environment but defaults work for most setups
+// GitHub configuration - all optional with sensible defaults
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '';
 const GITHUB_OWNER = process.env.GITHUB_OWNER || process.env.VITE_GITHUB_OWNER || 'turbobeest';
 const GITHUB_REPO = process.env.GITHUB_REPO || process.env.VITE_GITHUB_REPO || 'agents';
 
