@@ -1,8 +1,12 @@
 import { redirect } from '@sveltejs/kit';
 export const prerender = false;
 import type { RequestHandler } from './$types';
-import { GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET, ORIGIN } from '$env/static/private';
 import { exchangeCodeForToken } from '$lib/server/github';
+
+// Use process.env for optional auth config
+const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID || '';
+const GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET || '';
+const ORIGIN = process.env.ORIGIN || 'http://localhost:5173';
 
 export const GET: RequestHandler = async ({ url, cookies }) => {
 	const code = url.searchParams.get('code');
@@ -30,7 +34,7 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 	cookies.set('github_token', accessToken, {
 		path: '/',
 		httpOnly: true,
-		secure: (ORIGIN || '').startsWith('https'),
+		secure: ORIGIN.startsWith('https'),
 		sameSite: 'lax',
 		maxAge: 60 * 60 * 24 * 7 // 1 week
 	});

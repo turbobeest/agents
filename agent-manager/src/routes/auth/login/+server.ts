@@ -1,7 +1,10 @@
 import { redirect } from '@sveltejs/kit';
 export const prerender = false;
 import type { RequestHandler } from './$types';
-import { GITHUB_CLIENT_ID, ORIGIN } from '$env/static/private';
+
+// Use process.env for optional auth config
+const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID || '';
+const ORIGIN = process.env.ORIGIN || 'http://localhost:5173';
 
 export const GET: RequestHandler = async () => {
 	if (!GITHUB_CLIENT_ID) {
@@ -10,7 +13,7 @@ export const GET: RequestHandler = async () => {
 
 	const params = new URLSearchParams({
 		client_id: GITHUB_CLIENT_ID,
-		redirect_uri: `${ORIGIN || 'http://localhost:5173'}/auth/callback`,
+		redirect_uri: `${ORIGIN}/auth/callback`,
 		scope: 'repo'
 	});
 
