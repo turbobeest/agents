@@ -1,9 +1,14 @@
-name: Deploy to GitHub Pages
+name: Deploy Agent Manager to GitHub Pages
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'agent-manager/**'
+      - 'expert-agents/**'
+      - 'pipeline-agents/**'
+      - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
 # Allow only one concurrent deployment
@@ -15,16 +20,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout agent-manager
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          path: agent-manager
-
-      - name: Checkout agents repo
-        uses: actions/checkout@v4
-        with:
-          repository: ${{ github.repository_owner }}/agents
-          path: agents
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -44,8 +41,8 @@ jobs:
           VITE_BUILD_MODE: static
           VITE_GITHUB_OWNER: ${{ github.repository_owner }}
           VITE_GITHUB_REPO: agents
-          AGENTS_REPO_PATH: ${{ github.workspace }}/agents
-          BASE_PATH: '/agent-manager'
+          AGENTS_REPO_PATH: ${{ github.workspace }}
+          BASE_PATH: '/agents'
         run: npm run build
 
       - name: Upload artifact
