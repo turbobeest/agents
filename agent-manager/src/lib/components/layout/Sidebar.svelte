@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { NavCategory } from '$lib/types';
-	import { sidebarExpanded } from '$lib/stores';
+	import { sidebarExpanded, sidebarCollapsed } from '$lib/stores';
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
 
@@ -42,7 +42,9 @@
 	}
 </script>
 
-<aside class="w-72 bg-gray-800 border-r border-gray-700 overflow-y-auto h-full">
+<aside
+	class="bg-gray-800 border-r border-gray-700 overflow-y-auto h-full transition-all duration-300 ease-in-out {$sidebarCollapsed ? 'w-0 opacity-0 overflow-hidden' : 'w-72 opacity-100'}"
+>
 	<div class="p-4">
 		<!-- Pipeline Categories (Atomic Claude, Pipeline Core) -->
 		{#if pipelineCategories.length > 0}

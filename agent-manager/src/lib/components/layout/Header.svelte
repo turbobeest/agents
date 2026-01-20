@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { syncStatus, syncStatusText, user, searchQuery } from '$lib/stores';
+	import { syncStatus, syncStatusText, user, searchQuery, sidebarCollapsed, toggleSidebar } from '$lib/stores';
 	import { goto } from '$app/navigation';
 	import { base } from '$app/paths';
 
@@ -44,6 +44,26 @@
 
 <header class="bg-gray-800 border-b border-gray-700 px-4 py-3 flex items-center justify-between">
 	<div class="flex items-center gap-4">
+		<!-- Hamburger Menu Button -->
+		<button
+			type="button"
+			onclick={toggleSidebar}
+			class="p-2 text-gray-400 hover:text-gray-200 hover:bg-gray-700 rounded-lg transition-colors"
+			aria-label={$sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+		>
+			{#if $sidebarCollapsed}
+				<!-- Menu icon (3 lines) -->
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+				</svg>
+			{:else}
+				<!-- Close/collapse icon -->
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+				</svg>
+			{/if}
+		</button>
+
 		<a href="{base}/" class="flex items-center gap-2">
 			<svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path

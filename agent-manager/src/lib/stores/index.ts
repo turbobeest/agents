@@ -30,8 +30,13 @@ export const searchResults = writable<Agent[]>([]);
 
 // UI state
 export const sidebarExpanded = writable<Record<string, boolean>>({});
+export const sidebarCollapsed = writable<boolean>(false);
 export const isLoading = writable<boolean>(false);
 export const errorMessage = writable<string | null>(null);
+
+export function toggleSidebar() {
+	sidebarCollapsed.update((collapsed) => !collapsed);
+}
 
 // Auth state
 export const user = writable<{ login: string; avatar_url: string } | null>(null);
