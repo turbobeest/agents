@@ -1,12 +1,24 @@
 import type { LayoutServerLoad } from './$types';
 import { buildNavigation } from '$lib/server/fileSystem';
 import { getGitStatus } from '$lib/server/github';
+import { building } from '$app/environment';
+
+export const prerender = true;
 
 export const load: LayoutServerLoad = async ({ cookies }) => {
 	const [navigation, syncStatus] = await Promise.all([
 		buildNavigation(),
 		getGitStatus()
 	]);
+
+	// Skip user session during prerendering (static build)
+	if (building) {
+		return {
+			navigation,
+			syncStatus,
+			user: null
+		};
+	}
 
 	// Check for user session
 	const accessToken = cookies.get('github_token');

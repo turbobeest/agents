@@ -26,7 +26,7 @@ const config = {
 
 		// Prerender all pages for static build
 		prerender: {
-			entries: isStatic ? ['*'] : [],
+			entries: isStatic ? ['/', '*'] : [],
 			// Ignore missing anchor IDs (from markdown content)
 			handleMissingId: 'ignore',
 			// Log but continue on HTTP errors (some pages may reference non-existent routes)
