@@ -1,3 +1,8 @@
+
+![Uploading agents.jpg…]()
+
+
+
 # Claude Code Agent Directory
 
 This directory contains all agent definitions organized in logical groups.
