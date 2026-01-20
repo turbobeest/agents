@@ -1,40 +1,105 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import AgentCardSimple from '$lib/components/agent/AgentCardSimple.svelte';
+
 	let { data } = $props();
 
-	// Get all agents flat for stats
+	// Get all agents flat for filtering
 	let allAgents = $derived(
 		data.navigation.flatMap((cat) =>
 			cat.subcategories.flatMap((sub) =>
 				sub.agents.map((agent) => ({
 					...agent,
 					category: cat.id,
-					categoryTitle: cat.title
+					categoryTitle: cat.title,
+					subcategory: sub.id,
+					subcategoryTitle: sub.title
 				}))
 			)
 		)
 	);
 
-	// Stats by tier
-	let tierStats = $derived({
-		phd: allAgents.filter((a) => a.tier === 'phd').length,
-		expert: allAgents.filter((a) => a.tier === 'expert').length,
-		focused: allAgents.filter((a) => a.tier === 'focused').length
+	// Get unique categories for filter dropdown
+	let categories = $derived(
+		data.navigation.map((cat) => ({ id: cat.id, title: cat.title }))
+	);
+
+	// Filter state
+	let searchQuery = $state('');
+	let selectedTiers = $state<string[]>([]);
+	let selectedModels = $state<string[]>([]);
+	let selectedCategory = $state('');
+
+	// Toggle functions for multi-select filters
+	function toggleTier(tier: string) {
+		if (selectedTiers.includes(tier)) {
+			selectedTiers = selectedTiers.filter((t) => t !== tier);
+		} else {
+			selectedTiers = [...selectedTiers, tier];
+		}
+	}
+
+	function toggleModel(model: string) {
+		if (selectedModels.includes(model)) {
+			selectedModels = selectedModels.filter((m) => m !== model);
+		} else {
+			selectedModels = [...selectedModels, model];
+		}
+	}
+
+	function clearFilters() {
+		searchQuery = '';
+		selectedTiers = [];
+		selectedModels = [];
+		selectedCategory = '';
+	}
+
+	// Filter agents based on all criteria
+	let filteredAgents = $derived(() => {
+		let result = allAgents;
+
+		// Text search
+		if (searchQuery.trim()) {
+			const query = searchQuery.toLowerCase();
+			result = result.filter(
+				(a) =>
+					a.name.toLowerCase().includes(query) ||
+					a.description?.toLowerCase().includes(query) ||
+					a.categoryTitle.toLowerCase().includes(query) ||
+					a.subcategoryTitle.toLowerCase().includes(query)
+			);
+		}
+
+		// Tier filter
+		if (selectedTiers.length > 0) {
+			result = result.filter((a) => selectedTiers.includes(a.tier));
+		}
+
+		// Model filter
+		if (selectedModels.length > 0) {
+			result = result.filter((a) => selectedModels.includes(a.model));
+		}
+
+		// Category filter
+		if (selectedCategory) {
+			result = result.filter((a) => a.category === selectedCategory);
+		}
+
+		return result;
 	});
 
-	// Stats by model
-	let modelStats = $derived({
-		opus: allAgents.filter((a) => a.model === 'opus').length,
-		sonnet: allAgents.filter((a) => a.model === 'sonnet').length,
-		haiku: allAgents.filter((a) => a.model === 'haiku').length
-	});
+	// Check if any filters are active
+	let hasActiveFilters = $derived(
+		searchQuery.trim() !== '' ||
+			selectedTiers.length > 0 ||
+			selectedModels.length > 0 ||
+			selectedCategory !== ''
+	);
 
 	let totalAgents = $derived(allAgents.length);
 
-	// Search functionality
-	let searchQuery = $state('');
-
-	function handleSearch(e: Event) {
+	// Search redirect for full search page
+	function handleSearchSubmit(e: Event) {
 		e.preventDefault();
 		if (searchQuery.trim()) {
 			window.location.href = `${base}/search?q=${encodeURIComponent(searchQuery)}`;
@@ -43,11 +108,11 @@
 </script>
 
 <div class="space-y-6">
-	<!-- Quick Actions Hub -->
+	<!-- Search Bar Section -->
 	<section class="bg-gradient-to-r from-blue-900/40 to-purple-900/40 rounded-xl border border-gray-700 p-6">
 		<div class="flex items-center justify-between gap-8">
 			<!-- Search -->
-			<form class="flex-1 max-w-xl" onsubmit={handleSearch}>
+			<form class="flex-1 max-w-xl" onsubmit={handleSearchSubmit}>
 				<div class="relative">
 					<input
 						type="text"
@@ -86,116 +151,150 @@
 		</div>
 	</section>
 
-	<!-- Dashboard Grid -->
-	<div class="grid grid-cols-3 gap-6">
-		<!-- Tier Distribution -->
-		<section class="bg-gray-800 rounded-xl border border-gray-700 p-5">
-			<h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">By Tier</h3>
-			<div class="space-y-3">
-				<div class="flex items-center gap-3">
-					<div class="w-16 text-sm text-purple-300 font-medium">PhD</div>
-					<div class="flex-1 bg-gray-700 rounded-full h-4 overflow-hidden">
-						<div
-							class="h-full bg-gradient-to-r from-purple-600 to-purple-400 rounded-full transition-all"
-							style="width: {totalAgents ? (tierStats.phd / totalAgents) * 100 : 0}%"
-						></div>
-					</div>
-					<div class="w-10 text-right text-sm text-gray-300">{tierStats.phd}</div>
-				</div>
-				<div class="flex items-center gap-3">
-					<div class="w-16 text-sm text-blue-300 font-medium">Expert</div>
-					<div class="flex-1 bg-gray-700 rounded-full h-4 overflow-hidden">
-						<div
-							class="h-full bg-gradient-to-r from-blue-600 to-blue-400 rounded-full transition-all"
-							style="width: {totalAgents ? (tierStats.expert / totalAgents) * 100 : 0}%"
-						></div>
-					</div>
-					<div class="w-10 text-right text-sm text-gray-300">{tierStats.expert}</div>
-				</div>
-				<div class="flex items-center gap-3">
-					<div class="w-16 text-sm text-green-300 font-medium">Focused</div>
-					<div class="flex-1 bg-gray-700 rounded-full h-4 overflow-hidden">
-						<div
-							class="h-full bg-gradient-to-r from-green-600 to-green-400 rounded-full transition-all"
-							style="width: {totalAgents ? (tierStats.focused / totalAgents) * 100 : 0}%"
-						></div>
-					</div>
-					<div class="w-10 text-right text-sm text-gray-300">{tierStats.focused}</div>
-				</div>
-			</div>
-		</section>
+	<!-- Filters Section -->
+	<section class="bg-gray-800 rounded-xl border border-gray-700 p-5">
+		<div class="flex items-center justify-between mb-4">
+			<h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wide">Filter Agents</h3>
+			{#if hasActiveFilters}
+				<button
+					type="button"
+					onclick={clearFilters}
+					class="text-sm text-blue-400 hover:text-blue-300 transition-colors"
+				>
+					Clear all filters
+				</button>
+			{/if}
+		</div>
 
-		<!-- Model Distribution -->
-		<section class="bg-gray-800 rounded-xl border border-gray-700 p-5">
-			<h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">By Model</h3>
-			<div class="space-y-3">
-				<div class="flex items-center gap-3">
-					<div class="w-16 text-sm text-orange-300 font-medium">Opus</div>
-					<div class="flex-1 bg-gray-700 rounded-full h-4 overflow-hidden">
-						<div
-							class="h-full bg-gradient-to-r from-orange-600 to-orange-400 rounded-full transition-all"
-							style="width: {totalAgents ? (modelStats.opus / totalAgents) * 100 : 0}%"
-						></div>
-					</div>
-					<div class="w-10 text-right text-sm text-gray-300">{modelStats.opus}</div>
-				</div>
-				<div class="flex items-center gap-3">
-					<div class="w-16 text-sm text-indigo-300 font-medium">Sonnet</div>
-					<div class="flex-1 bg-gray-700 rounded-full h-4 overflow-hidden">
-						<div
-							class="h-full bg-gradient-to-r from-indigo-600 to-indigo-400 rounded-full transition-all"
-							style="width: {totalAgents ? (modelStats.sonnet / totalAgents) * 100 : 0}%"
-						></div>
-					</div>
-					<div class="w-10 text-right text-sm text-gray-300">{modelStats.sonnet}</div>
-				</div>
-				<div class="flex items-center gap-3">
-					<div class="w-16 text-sm text-teal-300 font-medium">Haiku</div>
-					<div class="flex-1 bg-gray-700 rounded-full h-4 overflow-hidden">
-						<div
-							class="h-full bg-gradient-to-r from-teal-600 to-teal-400 rounded-full transition-all"
-							style="width: {totalAgents ? (modelStats.haiku / totalAgents) * 100 : 0}%"
-						></div>
-					</div>
-					<div class="w-10 text-right text-sm text-gray-300">{modelStats.haiku}</div>
-				</div>
+		<div class="flex flex-wrap items-center gap-6">
+			<!-- Tier Filter -->
+			<div class="flex items-center gap-2">
+				<span class="text-sm text-gray-400 mr-1">Tier:</span>
+				<button
+					type="button"
+					onclick={() => toggleTier('phd')}
+					class="px-3 py-1.5 text-sm rounded-lg border transition-all {selectedTiers.includes('phd')
+						? 'bg-purple-600 border-purple-500 text-white'
+						: 'bg-gray-700 border-gray-600 text-gray-300 hover:border-purple-500'}"
+				>
+					PhD
+				</button>
+				<button
+					type="button"
+					onclick={() => toggleTier('expert')}
+					class="px-3 py-1.5 text-sm rounded-lg border transition-all {selectedTiers.includes('expert')
+						? 'bg-blue-600 border-blue-500 text-white'
+						: 'bg-gray-700 border-gray-600 text-gray-300 hover:border-blue-500'}"
+				>
+					Expert
+				</button>
+				<button
+					type="button"
+					onclick={() => toggleTier('focused')}
+					class="px-3 py-1.5 text-sm rounded-lg border transition-all {selectedTiers.includes('focused')
+						? 'bg-green-600 border-green-500 text-white'
+						: 'bg-gray-700 border-gray-600 text-gray-300 hover:border-green-500'}"
+				>
+					Focused
+				</button>
 			</div>
-		</section>
 
-		<!-- Tier Guide -->
-		<section class="bg-gray-800 rounded-xl border border-gray-700 p-5">
-			<h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-4">Tier Guide</h3>
-			<div class="space-y-3">
-				<div class="flex items-start gap-3">
-					<div class="w-8 h-8 bg-purple-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-						<span class="text-sm font-bold text-purple-400">P</span>
-					</div>
-					<div>
-						<div class="text-sm font-medium text-gray-200">PhD</div>
-						<div class="text-xs text-gray-400">Research-grade depth</div>
-					</div>
-				</div>
-				<div class="flex items-start gap-3">
-					<div class="w-8 h-8 bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-						<span class="text-sm font-bold text-blue-400">E</span>
-					</div>
-					<div>
-						<div class="text-sm font-medium text-gray-200">Expert</div>
-						<div class="text-xs text-gray-400">Deep domain knowledge</div>
-					</div>
-				</div>
-				<div class="flex items-start gap-3">
-					<div class="w-8 h-8 bg-green-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-						<span class="text-sm font-bold text-green-400">F</span>
-					</div>
-					<div>
-						<div class="text-sm font-medium text-gray-200">Focused</div>
-						<div class="text-xs text-gray-400">Single-purpose specialist</div>
-					</div>
-				</div>
+			<!-- Divider -->
+			<div class="w-px h-8 bg-gray-700"></div>
+
+			<!-- Model Filter -->
+			<div class="flex items-center gap-2">
+				<span class="text-sm text-gray-400 mr-1">Model:</span>
+				<button
+					type="button"
+					onclick={() => toggleModel('opus')}
+					class="px-3 py-1.5 text-sm rounded-lg border transition-all {selectedModels.includes('opus')
+						? 'bg-orange-600 border-orange-500 text-white'
+						: 'bg-gray-700 border-gray-600 text-gray-300 hover:border-orange-500'}"
+				>
+					Opus
+				</button>
+				<button
+					type="button"
+					onclick={() => toggleModel('sonnet')}
+					class="px-3 py-1.5 text-sm rounded-lg border transition-all {selectedModels.includes('sonnet')
+						? 'bg-indigo-600 border-indigo-500 text-white'
+						: 'bg-gray-700 border-gray-600 text-gray-300 hover:border-indigo-500'}"
+				>
+					Sonnet
+				</button>
+				<button
+					type="button"
+					onclick={() => toggleModel('haiku')}
+					class="px-3 py-1.5 text-sm rounded-lg border transition-all {selectedModels.includes('haiku')
+						? 'bg-teal-600 border-teal-500 text-white'
+						: 'bg-gray-700 border-gray-600 text-gray-300 hover:border-teal-500'}"
+				>
+					Haiku
+				</button>
 			</div>
+
+			<!-- Divider -->
+			<div class="w-px h-8 bg-gray-700"></div>
+
+			<!-- Category Filter -->
+			<div class="flex items-center gap-2">
+				<span class="text-sm text-gray-400 mr-1">Category:</span>
+				<select
+					bind:value={selectedCategory}
+					class="px-3 py-1.5 text-sm bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+				>
+					<option value="">All Categories</option>
+					{#each categories as category}
+						<option value={category.id}>{category.title}</option>
+					{/each}
+				</select>
+			</div>
+		</div>
+	</section>
+
+	<!-- Filtered Results -->
+	{#if hasActiveFilters}
+		<section class="bg-gray-800/50 rounded-xl border border-gray-700 p-5">
+			<div class="flex items-center justify-between mb-4">
+				<h3 class="text-sm font-semibold text-gray-300">
+					{filteredAgents().length} {filteredAgents().length === 1 ? 'agent' : 'agents'} found
+				</h3>
+			</div>
+
+			{#if filteredAgents().length > 0}
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+					{#each filteredAgents().slice(0, 12) as agent}
+						<AgentCardSimple {agent} />
+					{/each}
+				</div>
+				{#if filteredAgents().length > 12}
+					<div class="mt-4 text-center">
+						<a
+							href="{base}/search?q={encodeURIComponent(searchQuery)}&tier={selectedTiers.join(',')}&model={selectedModels.join(',')}&category={selectedCategory}"
+							class="text-sm text-blue-400 hover:text-blue-300"
+						>
+							View all {filteredAgents().length} results →
+						</a>
+					</div>
+				{/if}
+			{:else}
+				<div class="text-center py-8 text-gray-400">
+					<svg class="w-12 h-12 mx-auto mb-3 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+					</svg>
+					<p>No agents match your filters</p>
+					<button
+						type="button"
+						onclick={clearFilters}
+						class="mt-2 text-sm text-blue-400 hover:text-blue-300"
+					>
+						Clear filters
+					</button>
+				</div>
+			{/if}
 		</section>
-	</div>
+	{/if}
 
 	<!-- Educational Introduction -->
 	<section class="bg-gradient-to-br from-gray-800 to-gray-800/50 rounded-xl border border-gray-700 overflow-hidden">
@@ -349,7 +448,7 @@
 					</svg>
 					<p class="text-sm text-gray-300">
 						<span class="font-semibold text-gray-200">The Compounding Effect:</span>
-						Persona × Tools × Knowledge × Output Format = Qualitatively different output
+						Persona x Tools x Knowledge x Output Format = Qualitatively different output
 					</p>
 				</div>
 				<a href="{base}/create" class="text-sm text-blue-400 hover:text-blue-300 font-medium">
