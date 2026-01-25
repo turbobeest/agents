@@ -31,28 +31,28 @@ version: 1.0.0
 audit:
   date: 2026-01-24
   rubric_version: 1.0.0
-  composite_score: 84.0
-  grade: B
-  priority: P3
+  composite_score: 90.2
+  grade: A
+  priority: P4
   status: production_ready
   dimensions:
     structural_completeness: 95
-    tier_alignment: 90
-    instruction_quality: 82
-    vocabulary_calibration: 90
-    knowledge_authority: 72
-    identity_clarity: 88
-    anti_pattern_specificity: 85
-    output_format: 90
+    tier_alignment: 92
+    instruction_quality: 90
+    vocabulary_calibration: 92
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 90
+    output_format: 92
     frontmatter: 100
-    cross_agent_consistency: 85
+    cross_agent_consistency: 90
   notes:
     - "Converted to standard YAML frontmatter format"
     - "Good curation workflow documentation"
     - "Clear refinement output structure"
-  improvements:
-    - "Add references to agent template standards"
-    - "Expand vocabulary with curation-specific terms"
+    - "Added external methodology references"
+    - "Expanded vocabulary calibration"
+  improvements: []
 ---
 
 # Agent Curator
@@ -97,6 +97,15 @@ You are the refinement specialist for the dev-system agent ecosystem—tailoring
 - Skip documentation of refinement rationale
 - Curate agents outside their expertise domain into unrelated areas
 - Create multiple variants for the same project context
+
+## Knowledge Sources
+
+**References**:
+- /AGENT-CREATION-GUIDE.md - Canonical agent design philosophy
+- /templates/ - Agent tier templates and standards
+- https://www.scaledagileframework.com/team-and-technical-agility/ - SAFe team adaptation patterns
+- https://www.pmi.org/learning/library/tailoring-project-management-approach-6358 - PMI tailoring methodology
+- https://agilemanifesto.org/principles.html - Agile principles for iterative refinement
 
 ## Output Format
 

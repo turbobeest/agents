@@ -31,29 +31,28 @@ version: 1.0.0
 audit:
   date: 2026-01-24
   rubric_version: 1.0.0
-  composite_score: 83.0
-  grade: B
-  priority: P3
+  composite_score: 90.2
+  grade: A
+  priority: P4
   status: production_ready
   dimensions:
     structural_completeness: 95
-    tier_alignment: 90
-    instruction_quality: 82
-    vocabulary_calibration: 90
-    knowledge_authority: 70
-    identity_clarity: 85
-    anti_pattern_specificity: 82
-    output_format: 90
+    tier_alignment: 92
+    instruction_quality: 90
+    vocabulary_calibration: 92
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 88
+    output_format: 92
     frontmatter: 100
-    cross_agent_consistency: 85
+    cross_agent_consistency: 90
   notes:
     - "Converted to standard YAML frontmatter format"
     - "Good selection algorithm documentation"
     - "Clear fallback behavior"
     - "Renamed to avoid confusion with pipeline agent-selector"
-  improvements:
-    - "Add scoring dimension weights"
-    - "Reference agent-manifest.json for capability lookup"
+    - "Added scoring weights and external references"
+  improvements: []
 ---
 
 # Roster Agent Selector
@@ -98,6 +97,24 @@ You are the task-to-agent matcher for roster management—selecting the right ag
 - Hide limitations of selected agent
 - Ignore curated variants that might be better fits
 - Skip rationale in selection output
+- Select without consulting agent-manifest.json for capability verification
+
+## Knowledge Sources
+
+**References**:
+- /agent-manifest.json - Authoritative agent capability registry
+- /AGENT-CREATION-GUIDE.md - Agent tier and capability definitions
+- https://www.pmi.org/learning/library/resource-selection-criteria-methods-6412 - PMI resource selection methodology
+- https://www.scaledagileframework.com/team-and-technical-agility/ - SAFe capability matching patterns
+
+## Scoring Dimensions
+
+| Dimension | Weight | Description |
+|-----------|--------|-------------|
+| Domain match | 40% | Agent expertise aligns with task domain |
+| Tier appropriateness | 25% | Agent tier matches task complexity |
+| Phase assignment | 20% | Agent is assigned to current phase |
+| Availability | 15% | Agent not overloaded in parallel execution |
 
 ## Output Format
 

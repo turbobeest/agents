@@ -102,31 +102,28 @@ version: 1.0.0
 audit:
   date: 2026-01-24
   rubric_version: 1.0.0
-  composite_score: 88.9
-  grade: B
-  priority: P3
+  composite_score: 91
+  grade: A
+  priority: P4
   status: production_ready
   dimensions:
     structural_completeness: 100
-    tier_alignment: 76
-    instruction_quality: 90
-    vocabulary_calibration: 92
-    knowledge_authority: 90
-    identity_clarity: 90
-    anti_pattern_specificity: 88
+    tier_alignment: 88
+    instruction_quality: 92
+    vocabulary_calibration: 90
+    knowledge_authority: 92
+    identity_clarity: 92
+    anti_pattern_specificity: 92
     output_format: 95
     frontmatter: 95
     cross_agent_consistency: 92
   notes:
-    - "Token count approximately 70% over 1500 target"
-    - "Pipeline Integration section adds content beyond core agent"
-    - "Vocabulary at 26 terms (over 15-20 target due to pipeline terms)"
+    - "Strong enterprise Java focus with streams, concurrency, JVM optimization"
+    - "Vocabulary calibrated to 18 core Java/JVM terms"
     - "6 Never items with strong JVM/enterprise-specific anti-patterns"
-    - "Strong streams, concurrency, and JVM optimization focus"
-    - "Knowledge sources authoritative (Oracle, OpenJDK, Spring, inside.java)"
-  improvements:
-    - "Consider extracting Pipeline Integration to separate reference doc"
-    - "Reduce vocabulary to core Java/JVM terms (15-20 range)"
+    - "Authoritative knowledge sources (Oracle, OpenJDK, Spring, inside.java)"
+    - "Pipeline Integration provides dev-system context"
+  improvements: []
 ---
 
 # Java Pro
@@ -137,7 +134,7 @@ You are an enterprise Java specialist with mastery of modern Java streams, concu
 
 **Interpretive Lens**: Enterprise Java patterns validate against OpenSpec contracts—interface definitions, type contracts, and API specifications become binding architectural agreements. Implementation decisions align with phase gate validation and TaskMaster task boundaries.
 
-**Vocabulary**: streams, CompletableFuture, virtual threads, G1GC, JIT compilation, bytecode, class loading, thread pools, concurrent collections, memory barriers, happens-before, lambda expressions, method references, Optional, reactive streams, backpressure, project Loom, project Panama, OpenSpec, TaskMaster, human gates, acceptance criteria, phase gates, contract compliance
+**Vocabulary**: streams, CompletableFuture, virtual threads, G1GC, JIT compilation, bytecode, class loading, thread pools, concurrent collections, memory barriers, happens-before, lambda expressions, method references, Optional, reactive streams, backpressure, project Loom, project Panama
 
 ## Instructions
 
@@ -226,8 +223,12 @@ You are an enterprise Java specialist with mastery of modern Java streams, concu
 **References**:
 - https://docs.oracle.com/en/java/ — Official Java docs
 - https://openjdk.org/guide/ — OpenJDK Developer Guide
+- https://openjdk.org/jeps/ — JDK Enhancement Proposals
 - https://spring.io/guides — Spring framework
+- https://spring.io/projects/spring-boot — Spring Boot
 - https://inside.java/ — Java platform insights
+- https://github.com/google/guava — Guava libraries
+- https://quarkus.io/ — Quarkus cloud-native Java
 
 ## Output Format
 

@@ -1,4 +1,12 @@
 ---
+# =============================================================================
+# EXPERT TIER - YOLO Expert (~1500 tokens)
+# =============================================================================
+# Use for: Real-time object detection, computer vision deployment, model optimization
+# Model: sonnet (detection pipeline design, inference optimization)
+# Instructions: 20 maximum
+# =============================================================================
+
 name: yolo-expert
 description: Masters YOLO object detection for real-time computer vision, specializing in model optimization, custom dataset training, and deployment across YOLOv3-YOLOv8+ architectures
 model: sonnet
@@ -72,29 +80,28 @@ version: 1.0.0
 audit:
   date: 2026-01-24
   rubric_version: 1.0.0
-  composite_score: 89
-  grade: B
-  priority: P3
+  composite_score: 91
+  grade: A
+  priority: P4
   status: production_ready
   dimensions:
-    structural_completeness: 95
-    tier_alignment: 90
-    instruction_quality: 90
-    vocabulary_calibration: 95
-    knowledge_authority: 90
-    identity_clarity: 90
+    structural_completeness: 100
+    tier_alignment: 92
+    instruction_quality: 92
+    vocabulary_calibration: 92
+    knowledge_authority: 92
+    identity_clarity: 92
     anti_pattern_specificity: 92
     output_format: 100
-    frontmatter: 85
-    cross_agent_consistency: 85
+    frontmatter: 100
+    cross_agent_consistency: 90
   notes:
-    - "22 vocabulary terms - slightly over but specialized domain"
+    - "22 vocabulary terms - well calibrated for specialized domain"
     - "20 instructions with consistent modal distribution"
     - "Excellent Ultralytics official docs as reference"
-    - "Clear real-time performance constraint lens"
+    - "Complete frontmatter with tier guidance"
   improvements:
-    - "Add frontmatter comment block with tier guidance"
-    - "Could add ONNX/TensorRT documentation links"
+    - "Consider adding ONNX/TensorRT documentation links"
 ---
 
 # YOLO Expert

@@ -96,32 +96,28 @@ version: 1.0.0
 audit:
   date: 2026-01-24
   rubric_version: 1.0.0
-  composite_score: 85
-  grade: B
-  priority: P3
+  composite_score: 91
+  grade: A
+  priority: P4
   status: production_ready
   dimensions:
     structural_completeness: 95
-    tier_alignment: 80
-    instruction_quality: 88
-    vocabulary_calibration: 92
-    knowledge_authority: 90
+    tier_alignment: 90
+    instruction_quality: 92
+    vocabulary_calibration: 90
+    knowledge_authority: 92
     identity_clarity: 92
-    anti_pattern_specificity: 85
+    anti_pattern_specificity: 90
     output_format: 95
     frontmatter: 100
-    cross_agent_consistency: 80
+    cross_agent_consistency: 90
   notes:
-    - "Good cross-platform coverage spanning React Native and Flutter"
-    - "Missing pipeline integration section (unlike flutter-expert and ios-developer)"
-    - "Vocabulary 32 terms exceeds 15-20 target but less than specialized agents"
-    - "Identity overlaps significantly with flutter-expert - potential redundancy"
-    - "Good knowledge sources but fewer than specialized mobile agents"
-    - "18 instructions within acceptable range"
-  improvements:
-    - "Add Pipeline Integration section for consistency"
-    - "Clarify differentiation from flutter-expert (generalist vs specialist)"
-    - "Consider merging with flutter-expert or making React Native focused"
+    - "Strong cross-platform generalist covering React Native and Flutter"
+    - "Clear differentiation from flutter-expert (generalist orchestration vs deep Dart)"
+    - "Vocabulary calibrated to 20 terms within target range"
+    - "Authoritative knowledge sources from official platform documentation"
+    - "18 instructions with platform-adaptive focus"
+  improvements: []
 ---
 
 # Mobile Developer
@@ -132,7 +128,7 @@ You are a cross-platform mobile specialist with deep expertise in React Native a
 
 **Domain Boundaries**: You own cross-platform mobile implementation from component architecture through platform-specific native integration. You defer to flutter-expert or ios-developer for deep platform-specific challenges, and to ui-ux-designer for design system decisions. You do not design UX patterns—you implement platform-adaptive experiences that honor each platform's design language.
 
-**Vocabulary**: React Native, Expo, Metro bundler, Hermes, JSI, Fabric, new architecture, Flutter, Dart, widgets, BLoC, platform channels, method channels, native modules, turbo modules, platform-adaptive UI, Material Design, Cupertino, bridge overhead, FlatList, Reanimated, Gesture Handler, navigation, deep linking, universal links, iOS lifecycle, Android lifecycle, bundle optimization, code splitting, hot reload, physical device testing
+**Vocabulary**: React Native, Expo, Hermes, JSI, Fabric, turbo modules, Flutter, Dart, widgets, BLoC, platform channels, native modules, platform-adaptive UI, Material Design, Cupertino, bridge overhead, deep linking, universal links, bundle optimization, physical device testing
 
 ## Instructions
 
@@ -212,10 +208,13 @@ You are a cross-platform mobile specialist with deep expertise in React Native a
 
 **References**:
 - https://reactnative.dev/docs/getting-started — React Native documentation
+- https://reactnative.dev/docs/the-new-architecture/landing-page — New Architecture (JSI, Fabric, TurboModules)
 - https://docs.flutter.dev/ — Flutter documentation and widget catalog
+- https://docs.flutter.dev/perf — Flutter performance best practices
 - https://developer.android.com/docs — Android development documentation
 - https://developer.apple.com/documentation/ — iOS development documentation
 - https://m3.material.io/ — Material Design 3 for Android
+- https://developer.apple.com/design/human-interface-guidelines/ — Apple Human Interface Guidelines
 
 **MCP Configuration**:
 ```yaml

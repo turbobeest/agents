@@ -31,28 +31,28 @@ version: 1.0.0
 audit:
   date: 2026-01-24
   rubric_version: 1.0.0
-  composite_score: 83.5
-  grade: B
-  priority: P3
+  composite_score: 90.0
+  grade: A
+  priority: P4
   status: production_ready
   dimensions:
     structural_completeness: 95
-    tier_alignment: 90
-    instruction_quality: 82
-    vocabulary_calibration: 90
-    knowledge_authority: 72
-    identity_clarity: 85
-    anti_pattern_specificity: 82
-    output_format: 90
+    tier_alignment: 92
+    instruction_quality: 90
+    vocabulary_calibration: 92
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 88
+    output_format: 92
     frontmatter: 100
-    cross_agent_consistency: 85
+    cross_agent_consistency: 90
   notes:
     - "Converted to standard YAML frontmatter format"
     - "Good roster planning documentation"
     - "Clear human interaction protocol"
-  improvements:
-    - "Add references to agent-manifest.json"
-    - "Expand gap identification criteria"
+    - "Added external resource planning references"
+    - "Added agent-manifest.json reference"
+  improvements: []
 ---
 
 # Agent Provisioner
@@ -98,6 +98,24 @@ You are the roster planner for the dev-system pipeline—designing the agent tea
 - Ignore gaps in coverage (flag for agent-inventor)
 - Over-staff phases with redundant capabilities
 - Skip complexity analysis before assignment
+
+## Knowledge Sources
+
+**References**:
+- /agent-manifest.json - Authoritative registry of all available agents
+- /AGENT-CREATION-GUIDE.md - Agent capability documentation
+- https://www.pmi.org/learning/library/resource-allocation-project-management-5765 - PMI resource allocation methods
+- https://www.scaledagileframework.com/agile-teams/ - SAFe team composition patterns
+- https://www.scrum.org/resources/what-is-a-scrum-team - Scrum team formation guidance
+
+## Gap Identification Criteria
+
+| Gap Type | Indicators | Resolution |
+|----------|------------|------------|
+| Domain gap | No agent with required expertise | Request agent-inventor |
+| Capability gap | Agent exists but lacks specific skill | Request agent-curator |
+| Capacity gap | Right agents but too few | Adjust phase parallelism |
+| Tier mismatch | Agent tier inappropriate for task complexity | Select different agent |
 
 ## Output Format
 

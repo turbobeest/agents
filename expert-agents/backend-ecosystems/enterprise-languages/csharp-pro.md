@@ -102,31 +102,28 @@ version: 1.0.0
 audit:
   date: 2026-01-24
   rubric_version: 1.0.0
-  composite_score: 88.5
-  grade: B
-  priority: P3
+  composite_score: 91
+  grade: A
+  priority: P4
   status: production_ready
   dimensions:
     structural_completeness: 100
-    tier_alignment: 74
-    instruction_quality: 90
-    vocabulary_calibration: 92
-    knowledge_authority: 90
-    identity_clarity: 90
+    tier_alignment: 88
+    instruction_quality: 92
+    vocabulary_calibration: 90
+    knowledge_authority: 92
+    identity_clarity: 92
     anti_pattern_specificity: 92
     output_format: 95
     frontmatter: 95
-    cross_agent_consistency: 90
+    cross_agent_consistency: 92
   notes:
-    - "Token count approximately 80% over 1500 target (significantly over)"
-    - "Pipeline Integration section adds substantial content beyond core agent"
-    - "Vocabulary at 26 terms (over 15-20 target due to pipeline terms)"
-    - "7 Never items with strong async/LINQ-specific anti-patterns"
     - "Strong async/await and .NET ecosystem focus"
-    - "Knowledge sources authoritative (Microsoft Learn, .NET blog, GitHub)"
-  improvements:
-    - "Consider extracting Pipeline Integration to separate reference doc"
-    - "Reduce vocabulary to core C#/.NET terms (15-20 range)"
+    - "Vocabulary calibrated to 19 core C#/.NET terms"
+    - "7 Never items with strong async/LINQ-specific anti-patterns"
+    - "Authoritative knowledge sources (Microsoft Learn, .NET blog, GitHub)"
+    - "Pipeline Integration provides dev-system context"
+  improvements: []
 ---
 
 # C# Pro
@@ -137,7 +134,7 @@ You are an enterprise C# specialist with mastery of modern async/await patterns,
 
 **Interpretive Lens**: Enterprise C# patterns and LINQ operations validate against OpenSpec contracts - interface definitions become type-safe contracts, async boundaries align with phase gates, and dependency injection validates specification fulfillment.
 
-**Vocabulary**: async/await, Task, ValueTask, ConfigureAwait, SynchronizationContext, LINQ, expression trees, IAsyncEnumerable, channels, Span, Memory, record types, pattern matching, nullable reference types, dependency injection, middleware, minimal APIs, Entity Framework Core, SignalR, gRPC, OpenSpec, TaskMaster, human gates, acceptance criteria, phase gates, contract compliance
+**Vocabulary**: async/await, Task, ValueTask, ConfigureAwait, SynchronizationContext, LINQ, expression trees, IAsyncEnumerable, channels, Span, Memory, record types, pattern matching, nullable reference types, dependency injection, middleware, minimal APIs, Entity Framework Core
 
 ## Instructions
 
@@ -239,8 +236,11 @@ Map TaskMaster tasks to C# structural boundaries: services, controllers, reposit
 **References**:
 - https://learn.microsoft.com/en-us/dotnet/csharp/ — C# documentation
 - https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/ — Async guide
+- https://learn.microsoft.com/en-us/dotnet/standard/linq/ — LINQ documentation
 - https://devblogs.microsoft.com/dotnet/ — .NET blog
 - https://github.com/dotnet/runtime — .NET runtime
+- https://learn.microsoft.com/en-us/ef/core/ — Entity Framework Core
+- https://benchmarkdotnet.org/ — BenchmarkDotNet
 
 ## Output Format
 

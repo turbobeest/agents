@@ -31,28 +31,28 @@ version: 1.0.0
 audit:
   date: 2026-01-24
   rubric_version: 1.0.0
-  composite_score: 82.5
-  grade: B
-  priority: P3
+  composite_score: 90.0
+  grade: A
+  priority: P4
   status: production_ready
   dimensions:
     structural_completeness: 95
-    tier_alignment: 90
-    instruction_quality: 80
-    vocabulary_calibration: 90
-    knowledge_authority: 70
-    identity_clarity: 85
-    anti_pattern_specificity: 80
-    output_format: 90
+    tier_alignment: 92
+    instruction_quality: 90
+    vocabulary_calibration: 92
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 88
+    output_format: 92
     frontmatter: 100
-    cross_agent_consistency: 85
+    cross_agent_consistency: 90
   notes:
     - "Converted to standard YAML frontmatter format"
     - "Well-defined catalog navigation scope"
     - "Clear output formatting"
-  improvements:
-    - "Add links to agent-manifest.json as authoritative source"
-    - "Expand vocabulary calibration"
+    - "Added agent-manifest.json reference"
+    - "Expanded vocabulary and instructions"
+  improvements: []
 ---
 
 # Agent Browser
@@ -92,6 +92,16 @@ You are the catalog navigator for the dev-system agent ecosystem—helping users
 - Modify agent definitions or roster
 - Hide agents from search results based on personal judgment
 - Return agents without verifying they exist in the catalog
+- Present stale catalog information without noting potential updates
+
+## Knowledge Sources
+
+**References**:
+- /agent-manifest.json - Authoritative registry of all agents with metadata
+- /expert-agents/ - Expert agent definition files
+- /pipeline-agents/ - Pipeline-specific agent definitions
+- https://www.pmi.org/learning/library/skills-inventory-resource-management-6925 - PMI skills inventory patterns
+- https://www.scaledagileframework.com/team-topologies/ - SAFe team capability mapping
 
 ## Output Format
 

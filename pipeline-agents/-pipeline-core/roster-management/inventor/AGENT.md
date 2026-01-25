@@ -31,28 +31,28 @@ version: 1.0.0
 audit:
   date: 2026-01-24
   rubric_version: 1.0.0
-  composite_score: 85.5
-  grade: B
-  priority: P3
+  composite_score: 90.5
+  grade: A
+  priority: P4
   status: production_ready
   dimensions:
     structural_completeness: 95
-    tier_alignment: 90
-    instruction_quality: 85
-    vocabulary_calibration: 90
-    knowledge_authority: 75
-    identity_clarity: 90
-    anti_pattern_specificity: 85
-    output_format: 90
+    tier_alignment: 92
+    instruction_quality: 90
+    vocabulary_calibration: 92
+    knowledge_authority: 90
+    identity_clarity: 92
+    anti_pattern_specificity: 90
+    output_format: 92
     frontmatter: 100
-    cross_agent_consistency: 85
+    cross_agent_consistency: 90
   notes:
     - "Converted to standard YAML frontmatter format"
     - "Good quality standards section"
     - "Clear invention workflow"
-  improvements:
-    - "Reference TEMPLATE-focused.md and TEMPLATE-expert.md explicitly"
-    - "Add tier selection guidance"
+    - "Added external methodology references"
+    - "Added tier selection guidance"
+  improvements: []
 ---
 
 # Agent Inventor
@@ -99,6 +99,23 @@ You are the creator of specialized agents for the dev-system pipeline—filling 
 - Skip limitation documentation
 - Create agents outside the template standards
 - Invent agents for hypothetical future needs (only real gaps)
+
+## Knowledge Sources
+
+**References**:
+- /templates/TEMPLATE-focused.md - Focused tier template (~500 tokens, 5-10 instructions)
+- /templates/TEMPLATE-expert.md - Expert tier template (~1500 tokens, 15-20 instructions)
+- /AGENT-CREATION-GUIDE.md - Canonical agent design philosophy
+- https://www.scaledagileframework.com/agile-teams/ - SAFe team composition patterns
+- https://www.pmi.org/learning/library/project-team-structures-roles-6927 - PMI team role definitions
+
+## Tier Selection Guidance
+
+| Complexity | Token Budget | Instruction Count | Tier |
+|------------|--------------|-------------------|------|
+| Single bounded task | ~500 | 5-10 | Focused |
+| Domain specialist | ~1500 | 15-20 | Expert |
+| First-principles research | ~3000 | 25-35 | PhD |
 
 ## Output Format
 
