@@ -1,51 +1,288 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "name": "Claude Orchestra Agent Pool",
   "description": "Centralized agent definitions for Claude Orchestra",
-  "lastUpdated": "2024-01-15T10:30:00Z",
+  "lastUpdated": "2026-01-25",
   "author": "turbobeest",
   "repository": "https://github.com/turbobeest/agents",
   "categories": {
-    "orchestration-intelligence": {
-      "title": "Orchestration & Intelligence",
-      "description": "Core system coordination and planning agents",
+    "backend-ecosystems": {
+      "title": "Backend Ecosystems",
+      "description": "Backend development specialists",
+      "defaultExpanded": true,
+      "subcategories": {
+        "systems-languages": {
+          "title": "Systems Languages",
+          "description": "Low-level systems programming languages",
+          "defaultExpanded": false,
+          "agents": [
+            "c-pro",
+            "cpp-pro",
+            "golang-pro",
+            "rust-pro"
+          ]
+        },
+        "application-languages": {
+          "title": "Application Languages",
+          "description": "High-level application development languages",
+          "defaultExpanded": true,
+          "agents": [
+            "javascript-pro",
+            "python-pro",
+            "typescript-pro"
+          ]
+        },
+        "enterprise-languages": {
+          "title": "Enterprise Languages",
+          "description": "Enterprise-scale development platforms",
+          "defaultExpanded": false,
+          "agents": [
+            "csharp-pro",
+            "java-pro",
+            "scala-pro"
+          ]
+        },
+        "dynamic-languages": {
+          "title": "Dynamic Languages",
+          "description": "Dynamic and scripting languages",
+          "defaultExpanded": false,
+          "agents": [
+            "elixir-pro",
+            "php-pro",
+            "ruby-pro"
+          ]
+        }
+      }
+    },
+    "frontend-ecosystems": {
+      "title": "Frontend Ecosystems",
+      "description": "Frontend development and UI specialists",
+      "defaultExpanded": true,
+      "subcategories": {
+        "javascript-frameworks": {
+          "title": "JavaScript Frameworks",
+          "description": "Modern JavaScript framework specialists",
+          "defaultExpanded": true,
+          "agents": [
+            "nextjs-expert",
+            "reactjs-expert",
+            "svelte-expert"
+          ]
+        },
+        "mobile-development": {
+          "title": "Mobile Development",
+          "description": "Cross-platform and native mobile development",
+          "defaultExpanded": false,
+          "agents": [
+            "flutter-expert",
+            "ios-developer",
+            "mobile-developer"
+          ]
+        }
+      }
+    },
+    "cloud-infrastructure": {
+      "title": "Cloud Infrastructure",
+      "description": "Cloud platforms and infrastructure specialists",
       "defaultExpanded": false,
       "subcategories": {
-        "core-orchestration": {
-          "title": "Core Orchestration",
-          "description": "Primary orchestration and coordination agents",
+        "cloud-platforms": {
+          "title": "Cloud Platforms",
+          "description": "Cloud service specialists",
           "defaultExpanded": false,
           "agents": [
-            "orchestrator",
-            "agent-selector",
-            "collaborator-coordinator"
+            "aws-architect",
+            "azure-architect",
+            "gcp-architect",
+            "oracle-cloud-architect"
           ]
         },
-        "planning-assignment": {
-          "title": "Planning & Assignment",
-          "description": "Task planning and agent assignment specialists",
+        "container-orchestration": {
+          "title": "Container Orchestration",
+          "description": "Container orchestration specialists",
           "defaultExpanded": false,
           "agents": [
-            "planning-agent",
-            "assignment-agent",
-            "taskmaster-integrator"
+            "docker-agent",
+            "kubernetes-agent"
           ]
         },
-        "knowledge-management": {
-          "title": "Knowledge Management",
-          "description": "Knowledge curation and learning systems",
+        "deployment-operations": {
+          "title": "Deployment Operations",
+          "description": "Deployment and operations specialists",
           "defaultExpanded": false,
           "agents": [
-            "documentation-curator",
-            "first-principles-engineer"
+            "chaos-engineer",
+            "deployment-engineer",
+            "devops-troubleshooter",
+            "incident-responder"
           ]
         },
-        "quality-control": {
-          "title": "Quality Control",
-          "description": "Validation and quality assurance systems",
+        "infrastructure-as-code": {
+          "title": "Infrastructure as Code",
+          "description": "IaC and automation specialists",
           "defaultExpanded": false,
           "agents": [
-            "validation-depth-controller"
+            "terraform-specialist"
+          ]
+        }
+      }
+    },
+    "data-intelligence": {
+      "title": "Data & Intelligence Systems",
+      "description": "Data systems and AI specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "database-systems": {
+          "title": "Database Systems",
+          "description": "Database technology specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "falkordb-expert",
+            "neo4j-expert",
+            "sql-pro"
+          ]
+        },
+        "database-operations": {
+          "title": "Database Operations",
+          "description": "Database management and optimization",
+          "defaultExpanded": false,
+          "agents": [
+            "database-admin",
+            "database-optimizer"
+          ]
+        },
+        "data-processing": {
+          "title": "Data Processing",
+          "description": "Data pipelines and analytics",
+          "defaultExpanded": false,
+          "agents": [
+            "data-engineer",
+            "data-scientist"
+          ]
+        },
+        "machine-learning": {
+          "title": "Machine Learning",
+          "description": "ML and AI systems specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "ai-engineer",
+            "dspy-expert",
+            "kerasml-expert",
+            "ml-engineer",
+            "mlops-engineer",
+            "yolo-expert"
+          ]
+        },
+        "gpu-computing": {
+          "title": "GPU Computing",
+          "description": "GPU acceleration specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "cuda-expert",
+            "isaac-expert",
+            "jetson-expert",
+            "rapids-expert"
+          ]
+        }
+      }
+    },
+    "security-compliance": {
+      "title": "Security & Compliance",
+      "description": "Security and compliance specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "code-security": {
+          "title": "Code Security",
+          "description": "Code-level security specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "cryptography-specialist",
+            "rust-safety-validator",
+            "supply-chain-auditor"
+          ]
+        },
+        "compliance-audit": {
+          "title": "Compliance & Audit",
+          "description": "Compliance and audit specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "compliance-checker"
+          ]
+        },
+        "defensive-security": {
+          "title": "Defensive Security",
+          "description": "Security defense specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "security-auditor",
+            "zero-trust-architect"
+          ]
+        },
+        "offensive-security": {
+          "title": "Offensive Security",
+          "description": "Penetration testing and offensive security",
+          "defaultExpanded": false,
+          "agents": [
+            "kali-linux-expert",
+            "penetration-tester"
+          ]
+        }
+      }
+    },
+    "development-tooling": {
+      "title": "Development Tooling",
+      "description": "Development tools and quality specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "code-quality": {
+          "title": "Code Quality",
+          "description": "Code quality and review specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "code-reviewer",
+            "debugger",
+            "error-detective",
+            "legacy-modernizer",
+            "merger",
+            "sast-analyzer",
+            "type-safety-enforcer"
+          ]
+        },
+        "developer-experience": {
+          "title": "Developer Experience",
+          "description": "Developer experience optimization specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "context-manager",
+            "dx-optimizer",
+            "prompt-engineer",
+            "rapid-prototyper",
+            "workflow-optimizer"
+          ]
+        },
+        "formal-verification": {
+          "title": "Formal Verification",
+          "description": "Formal methods and verification specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "deductive-verifier",
+            "model-checker",
+            "property-verifier"
+          ]
+        },
+        "testing": {
+          "title": "Testing",
+          "description": "Testing and test automation specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "api-tester",
+            "integration-test-coordinator",
+            "playwright-automation-specialist",
+            "test-automation-expert-alt",
+            "test-automator",
+            "test-results-analyzer",
+            "tool-evaluator",
+            "unit-test-specialist"
           ]
         }
       }
@@ -70,83 +307,222 @@
           "description": "UI/UX design and user experience specialists",
           "defaultExpanded": false,
           "agents": [
+            "brand-guardian",
+            "frontend-developer",
             "ui-ux-designer",
-            "frontend-developer"
+            "ux-researcher",
+            "visual-storyteller",
+            "whimsy-injector"
           ]
         }
       }
     },
-    "frontend-ecosystems": {
-      "title": "Frontend Ecosystems",
-      "description": "Frontend development and UI specialists",
-      "defaultExpanded": true,
+    "documentation-content": {
+      "title": "Documentation & Content",
+      "description": "Documentation and content specialists",
+      "defaultExpanded": false,
       "subcategories": {
-        "javascript-frameworks": {
-          "title": "JavaScript Frameworks",
-          "description": "Modern JavaScript framework specialists",
-          "defaultExpanded": true,
-          "agents": [
-            "reactjs-expert",
-            "nextjs-expert",
-            "svelte-expert"
-          ]
-        },
-        "mobile-development": {
-          "title": "Mobile Development",
-          "description": "Cross-platform and native mobile development",
+        "seo-marketing": {
+          "title": "SEO & Marketing",
+          "description": "SEO and marketing specialists",
           "defaultExpanded": false,
           "agents": [
-            "flutter-expert",
-            "ios-developer",
-            "mobile-developer"
+            "content-marketer",
+            "search-specialist",
+            "seo-authority-builder",
+            "seo-cannibalization-detector",
+            "seo-content-auditor",
+            "seo-content-planner",
+            "seo-content-refresher",
+            "seo-content-writer",
+            "seo-keyword-strategist",
+            "seo-meta-optimizer",
+            "seo-snippet-hunter",
+            "seo-structure-architect"
+          ]
+        },
+        "technical-writing": {
+          "title": "Technical Writing",
+          "description": "Technical documentation specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "api-documenter",
+            "docs-architect",
+            "documentation-writer",
+            "mermaid-expert",
+            "reference-builder",
+            "tutorial-engineer"
+          ]
+        },
+        "marketing": {
+          "title": "Marketing",
+          "description": "Social media and marketing specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "app-store-optimizer",
+            "growth-hacker",
+            "instagram-curator",
+            "reddit-community-builder",
+            "tiktok-strategist",
+            "twitter-engager"
+          ]
+        },
+        "creative": {
+          "title": "Creative",
+          "description": "Creative content specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "snarky-sarcastic-wit"
           ]
         }
       }
     },
-    "backend-ecosystems": {
-      "title": "Backend Ecosystems",
-      "description": "Backend development specialists",
-      "defaultExpanded": true,
+    "business-operations": {
+      "title": "Business Operations",
+      "description": "Business and operations specialists",
+      "defaultExpanded": false,
       "subcategories": {
-        "systems-languages": {
-          "title": "Systems Languages",
-          "description": "Low-level systems programming languages",
+        "customer-relations": {
+          "title": "Customer Relations",
+          "description": "Customer support and sales specialists",
           "defaultExpanded": false,
           "agents": [
-            "rust-pro",
-            "golang-pro",
-            "c-pro",
-            "cpp-pro"
+            "customer-support",
+            "sales-automator"
           ]
         },
-        "application-languages": {
-          "title": "Application Languages",
-          "description": "High-level application development languages",
-          "defaultExpanded": true,
-          "agents": [
-            "python-pro",
-            "javascript-pro",
-            "typescript-pro"
-          ]
-        },
-        "enterprise-languages": {
-          "title": "Enterprise Languages",
-          "description": "Enterprise-scale development platforms",
+        "finance-risk": {
+          "title": "Finance & Risk",
+          "description": "Finance and risk management specialists",
           "defaultExpanded": false,
           "agents": [
-            "java-pro",
-            "csharp-pro",
-            "scala-pro"
+            "payment-integration",
+            "quant-analyst",
+            "risk-manager"
           ]
         },
-        "dynamic-languages": {
-          "title": "Dynamic Languages",
-          "description": "Dynamic and scripting languages",
+        "workforce-legal": {
+          "title": "Workforce & Legal",
+          "description": "HR and legal specialists",
           "defaultExpanded": false,
           "agents": [
-            "ruby-pro",
-            "php-pro",
-            "elixir-pro"
+            "business-analyst",
+            "hr-pro",
+            "legal-advisor"
+          ]
+        },
+        "product-management": {
+          "title": "Product Management",
+          "description": "Product management specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "feedback-synthesizer",
+            "sprint-prioritizer",
+            "trend-researcher"
+          ]
+        },
+        "project-management": {
+          "title": "Project Management",
+          "description": "Project management specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "experiment-tracker",
+            "project-shipper",
+            "studio-producer"
+          ]
+        },
+        "analytics": {
+          "title": "Analytics",
+          "description": "Business analytics specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "analytics-reporter",
+            "finance-tracker"
+          ]
+        }
+      }
+    },
+    "communication-protocols": {
+      "title": "Communication Protocols",
+      "description": "Communication and protocol specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "api-standards": {
+          "title": "API Standards",
+          "description": "API design and implementation specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "grpc-expert",
+            "openapi-rest-expert"
+          ]
+        },
+        "industrial-protocols": {
+          "title": "Industrial Protocols",
+          "description": "Industrial communication protocol specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "canbus-expert",
+            "coap-expert",
+            "modbus-expert",
+            "opcua-expert"
+          ]
+        },
+        "messaging-systems": {
+          "title": "Messaging Systems",
+          "description": "Message queue and streaming specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "amqp-rabbitmq-expert",
+            "dds-expert",
+            "kafka-expert",
+            "mqtt-expert",
+            "redis-expert",
+            "zenoh-expert"
+          ]
+        },
+        "realtime-protocols": {
+          "title": "Realtime Protocols",
+          "description": "Real-time communication specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "webrtc-expert",
+            "websocket-expert"
+          ]
+        }
+      }
+    },
+    "embedded-hardware": {
+      "title": "Embedded & Hardware",
+      "description": "Embedded systems and hardware specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "edge-platforms": {
+          "title": "Edge Platforms",
+          "description": "Edge computing platform specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "home-assistant-expert",
+            "raspberry-pi-expert"
+          ]
+        },
+        "microcontrollers": {
+          "title": "Microcontrollers",
+          "description": "Microcontroller specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "arduino-expert",
+            "deauther-esp32-expert",
+            "esp32-expert"
+          ]
+        },
+        "robotics-drones": {
+          "title": "Robotics & Drones",
+          "description": "Robotics and drone specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "arducopter-expert",
+            "flipper-zero-expert",
+            "marauder-expert"
           ]
         }
       }
@@ -156,15 +532,6 @@
       "description": "AR/VR and 3D computing specialists",
       "defaultExpanded": false,
       "subcategories": {
-        "augmented-reality": {
-          "title": "Augmented Reality",
-          "description": "AR platform specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "arkit-expert",
-            "arcore-expert"
-          ]
-        },
         "3d-visualization": {
           "title": "3D Visualization",
           "description": "3D rendering and visualization specialists",
@@ -173,6 +540,15 @@
             "cesiumjs-expert",
             "octree-voxel-expert",
             "unity-developer"
+          ]
+        },
+        "augmented-reality": {
+          "title": "Augmented Reality",
+          "description": "AR platform specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "arcore-expert",
+            "arkit-expert"
           ]
         },
         "collaborative-3d": {
@@ -185,174 +561,356 @@
         }
       }
     },
-    "data-intelligence": {
-      "title": "Data & Intelligence Systems",
-      "description": "Data systems and AI specialists",
+    "networking-telecom": {
+      "title": "Networking & Telecom",
+      "description": "Networking and telecommunications specialists",
       "defaultExpanded": false,
       "subcategories": {
-        "database-systems": {
-          "title": "Database Systems",
-          "description": "Database technology specialists",
+        "network-analysis": {
+          "title": "Network Analysis",
+          "description": "Network analysis specialists",
           "defaultExpanded": false,
           "agents": [
-            "neo4j-expert",
-            "falkordb-expert",
-            "sql-pro"
+            "wireshark-expert"
           ]
         },
-        "database-operations": {
-          "title": "Database Operations",
-          "description": "Database management and optimization",
+        "network-infrastructure": {
+          "title": "Network Infrastructure",
+          "description": "Network infrastructure specialists",
           "defaultExpanded": false,
           "agents": [
-            "database-optimizer",
-            "database-admin"
+            "network-engineer",
+            "ubiquiti-expert"
           ]
         },
-        "data-processing": {
-          "title": "Data Processing",
-          "description": "Data pipelines and analytics",
+        "wireless-protocols": {
+          "title": "Wireless Protocols",
+          "description": "Wireless communication specialists",
           "defaultExpanded": false,
           "agents": [
-            "data-engineer",
-            "data-scientist"
-          ]
-        },
-        "machine-learning": {
-          "title": "Machine Learning",
-          "description": "ML and AI systems specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "ai-engineer",
-            "ml-engineer",
-            "mlops-engineer"
-          ]
-        },
-        "gpu-computing": {
-          "title": "GPU Computing",
-          "description": "GPU acceleration specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "cuda-expert",
-            "rapids-expert",
-            "jetson-expert",
-            "isaac-expert"
+            "lorawan-expert"
           ]
         }
       }
     },
-    "infrastructure-security": {
-      "title": "Infrastructure & Security",
-      "description": "DevOps and security specialists",
+    "sensing-perception": {
+      "title": "Sensing & Perception",
+      "description": "Sensor and perception system specialists",
       "defaultExpanded": false,
       "subcategories": {
-        "cloud-platforms": {
-          "title": "Cloud Platforms",
-          "description": "Cloud service specialists",
+        "acoustic-sonar": {
+          "title": "Acoustic & Sonar",
+          "description": "Acoustic and sonar specialists",
           "defaultExpanded": false,
           "agents": [
-            "aws-expert",
-            "gcp-expert",
-            "azure-expert"
+            "acoustic-expert",
+            "sonar-expert"
           ]
         },
-        "containerization": {
-          "title": "Containerization",
-          "description": "Container orchestration specialists",
+        "optical-imaging": {
+          "title": "Optical Imaging",
+          "description": "Optical and imaging specialists",
           "defaultExpanded": false,
           "agents": [
-            "docker-expert",
-            "kubernetes-expert"
+            "electro-optical-expert",
+            "hyperspectral-expert",
+            "infrared-expert",
+            "lidar-expert"
           ]
         },
-        "infrastructure-code": {
-          "title": "Infrastructure as Code",
-          "description": "IaC and automation specialists",
+        "radar-systems": {
+          "title": "Radar Systems",
+          "description": "Radar system specialists",
           "defaultExpanded": false,
           "agents": [
-            "terraform-expert",
-            "ansible-expert",
-            "pulumi-expert"
+            "bistatic-radar-expert",
+            "monostatic-radar-expert"
           ]
         },
-        "monitoring-observability": {
-          "title": "Monitoring & Observability",
-          "description": "System monitoring specialists",
+        "ranging-systems": {
+          "title": "Ranging Systems",
+          "description": "Ranging and distance measurement specialists",
           "defaultExpanded": false,
           "agents": [
-            "prometheus-expert",
-            "grafana-expert",
-            "elk-expert"
-          ]
-        },
-        "security-compliance": {
-          "title": "Security & Compliance",
-          "description": "Security and compliance specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "security-auditor",
-            "penetration-tester",
-            "compliance-checker",
-            "rust-safety-validator"
+            "laser-ranging-expert"
           ]
         }
       }
     },
-    "specialized-domains": {
-      "title": "Specialized Domains",
-      "description": "Domain-specific expertise",
+    "signal-processing": {
+      "title": "Signal Processing",
+      "description": "Signal processing specialists",
       "defaultExpanded": false,
       "subcategories": {
-        "blockchain-web3": {
-          "title": "Blockchain & Web3",
-          "description": "Blockchain technology specialists",
+        "mission-systems": {
+          "title": "Mission Systems",
+          "description": "Mission system specialists",
           "defaultExpanded": false,
           "agents": [
-            "solidity-expert",
-            "web3-developer",
+            "bmc2-mission-planner"
+          ]
+        },
+        "rf-systems": {
+          "title": "RF Systems",
+          "description": "RF and SDR specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "ettus-expert",
+            "gnuradio-expert",
+            "rf-sdr-expert"
+          ]
+        }
+      }
+    },
+    "media-processing": {
+      "title": "Media Processing",
+      "description": "Media processing specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "audio-video": {
+          "title": "Audio & Video",
+          "description": "Audio and video processing specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "ffmpeg-expert",
+            "gstreamer-expert",
+            "vlc-expert"
+          ]
+        }
+      }
+    },
+    "performance-reliability": {
+      "title": "Performance & Reliability",
+      "description": "Performance and reliability specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "caching": {
+          "title": "Caching",
+          "description": "Caching specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "cache-expert"
+          ]
+        },
+        "memory-optimization": {
+          "title": "Memory Optimization",
+          "description": "Memory optimization specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "memory-optimizer"
+          ]
+        },
+        "performance": {
+          "title": "Performance",
+          "description": "General performance specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "performance-engineer"
+          ]
+        }
+      }
+    },
+    "orchestration-intelligence": {
+      "title": "Orchestration & Intelligence",
+      "description": "Orchestration and intelligence specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "task-assignment": {
+          "title": "Task Assignment",
+          "description": "Task assignment specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "assignment-agent"
+          ]
+        },
+        "validation": {
+          "title": "Validation",
+          "description": "Validation specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "validation-depth-controller"
+          ]
+        }
+      }
+    },
+    "blockchain-web3": {
+      "title": "Blockchain & Web3",
+      "description": "Blockchain and Web3 specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "defi": {
+          "title": "DeFi",
+          "description": "Decentralized finance specialists",
+          "defaultExpanded": false,
+          "agents": [
             "defi-architect"
           ]
-        },
-        "game-development": {
-          "title": "Game Development",
-          "description": "Game engine and development specialists",
+        }
+      }
+    },
+    "system-platforms": {
+      "title": "System Platforms",
+      "description": "Operating system and platform specialists",
+      "defaultExpanded": false,
+      "subcategories": {
+        "linux-distributions": {
+          "title": "Linux Distributions",
+          "description": "Linux distribution specialists",
           "defaultExpanded": false,
           "agents": [
-            "unreal-developer",
-            "godot-expert",
-            "game-designer"
+            "debian-expert",
+            "ubuntu-expert"
+          ]
+        }
+      }
+    }
+  },
+  "pipelineAgents": {
+    "-dev-system": {
+      "title": "Development System Pipeline",
+      "description": "Development lifecycle pipeline agents",
+      "defaultExpanded": false,
+      "subcategories": {
+        "01-02-ideation-discovery": {
+          "title": "Ideation & Discovery",
+          "description": "Initial ideation and discovery phase agents",
+          "defaultExpanded": false,
+          "agents": [
+            "discovery-agent",
+            "ideation-agent"
           ]
         },
-        "scientific-computing": {
-          "title": "Scientific Computing",
-          "description": "Scientific application specialists",
+        "03-05-validation-planning": {
+          "title": "Validation & Planning",
+          "description": "Validation and planning phase agents",
           "defaultExpanded": false,
           "agents": [
-            "matlab-expert",
-            "r-statistician",
-            "julia-expert"
+            "coupling-analyzer",
+            "prd-auditor",
+            "prd-validator",
+            "task-decomposer"
           ]
         },
-        "performance-optimization": {
-          "title": "Performance Optimization",
-          "description": "Performance and optimization specialists",
+        "06-09-implementation": {
+          "title": "Implementation",
+          "description": "Implementation phase agents",
           "defaultExpanded": false,
           "agents": [
-            "performance-engineer",
-            "memory-optimizer",
-            "cache-expert"
+            "code-review-gate",
+            "plan-guardian",
+            "specification-agent",
+            "tdd-implementation-agent",
+            "test-strategist"
+          ]
+        },
+        "10-testing": {
+          "title": "Testing",
+          "description": "Testing phase agents",
+          "defaultExpanded": false,
+          "agents": [
+            "e2e-testing-gate",
+            "integration-testing-gate"
+          ]
+        },
+        "11-12-deployment": {
+          "title": "Deployment",
+          "description": "Deployment phase agents",
+          "defaultExpanded": false,
+          "agents": [
+            "deployment-gate"
+          ]
+        }
+      }
+    },
+    "-pipeline-core": {
+      "title": "Pipeline Core",
+      "description": "Core pipeline infrastructure agents",
+      "defaultExpanded": false,
+      "subcategories": {
+        "agent-editors": {
+          "title": "Agent Editors",
+          "description": "Agent editing and modification specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "expert-agent-editor",
+            "focused-agent-editor",
+            "phd-agent-editor"
+          ]
+        },
+        "agent-infrastructure": {
+          "title": "Agent Infrastructure",
+          "description": "Agent infrastructure specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "mcp-orchestrator"
+          ]
+        },
+        "agent-research": {
+          "title": "Agent Research",
+          "description": "Agent research specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "agent-knowledge-researcher"
+          ]
+        },
+        "pipeline-advisors": {
+          "title": "Pipeline Advisors",
+          "description": "Pipeline advisory specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "first-principles-advisor",
+            "first-principles-engineer"
+          ]
+        },
+        "pipeline-control": {
+          "title": "Pipeline Control",
+          "description": "Pipeline orchestration and control specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "agent-selector",
+            "collaborator-coordinator",
+            "orchestrator",
+            "quality-gate-controller"
+          ]
+        },
+        "roster-management": {
+          "title": "Roster Management",
+          "description": "Agent roster management specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "browser",
+            "curator",
+            "inventor",
+            "provisioner",
+            "selector"
+          ]
+        },
+        "validation": {
+          "title": "Validation",
+          "description": "Validation and quality specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "agent-linter",
+            "agent-quality-auditor",
+            "audit-report-generator"
           ]
         }
       }
     }
   },
   "metadata": {
-    "totalAgents": 162,
-    "totalCategories": 8,
-    "totalSubcategories": 29,
+    "totalAgents": 217,
+    "totalExpertAgents": 184,
+    "totalPipelineAgents": 33,
+    "totalCategories": 20,
+    "totalSubcategories": 56,
+    "expertCategories": 20,
+    "expertSubcategories": 43,
+    "pipelineCategories": 2,
+    "pipelineSubcategories": 13,
     "supportedModels": ["opus", "sonnet", "haiku"],
     "requiredFields": ["Description", "Model", "Tools", "Behaviors", "System Prompt", "Knowledge Sources", "Human Interaction"],
-    "version": "1.0.0",
-    "schemaVersion": "1.0"
+    "version": "2.0.0",
+    "schemaVersion": "2.0"
   }
 }
