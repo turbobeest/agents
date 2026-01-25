@@ -102,7 +102,7 @@ audit:
     tier_alignment: 90
     instruction_quality: 94
     vocabulary_calibration: 90
-    knowledge_authority: 82
+    knowledge_authority: 88
     identity_clarity: 95
     anti_pattern_specificity: 95
     output_format: 100
@@ -262,6 +262,8 @@ Output must contain: "Result" AND "Confidence"
 - templates/TEMPLATE-phd.md — PhD tier structural requirements
 - templates/TEMPLATE-expert.md — Expert tier structural requirements
 - templates/TEMPLATE-focused.md — Focused tier structural requirements
+- https://eslint.org/docs/latest/rules/ — ESLint linting philosophy and patterns
+- https://www.iso.org/standard/63555.html — ISO/IEC 25023 quality measurement
 - TIER-CLASSIFICATION.md — Tier definitions and requirements
 
 ## Output Standards

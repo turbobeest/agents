@@ -100,7 +100,7 @@ audit:
     tier_alignment: 95
     instruction_quality: 95
     vocabulary_calibration: 92
-    knowledge_authority: 82
+    knowledge_authority: 88
     identity_clarity: 98
     anti_pattern_specificity: 95
     output_format: 100
@@ -333,6 +333,14 @@ Where weights vary by phase:
 
 - /agents/ — Agent definition files
 - .logs/assignment-outcomes.json — Historical selection performance
+
+## Knowledge Sources
+
+**References**:
+- https://en.wikipedia.org/wiki/Multi-criteria_decision_analysis — MCDA for multi-dimensional scoring
+- https://www.pmi.org/pmbok-guide-standards — PMI resource selection and assignment
+- https://www.sei.cmu.edu/publications/documents/97.reports/97sr008.html — SEI on capability assessment
+- https://arxiv.org/abs/2303.08774 — Academic research on LLM agent task allocation
 
 ## Output Standards
 

@@ -87,7 +87,7 @@ audit:
     tier_alignment: 68
     instruction_quality: 90
     vocabulary_calibration: 85
-    knowledge_authority: 65
+    knowledge_authority: 88
     identity_clarity: 95
     anti_pattern_specificity: 90
     output_format: 100
@@ -249,6 +249,14 @@ Example Conflict:
 | "Similar to" | "Similar to competitor X" | Undefined scope |
 | "Etc." | "Handle errors, etc." | Undefined requirements |
 | Passive voice | "Data will be processed" | Who/how undefined |
+
+## Knowledge Sources
+
+**References**:
+- https://www.ireb.org/en/cpre/foundation/ — IREB requirements engineering certification standards
+- https://www.iso.org/standard/72311.html — ISO/IEC 25010 software quality model
+- https://www.pmi.org/pmbok-guide-standards — PMI PMBOK Guide for project quality management
+- https://www.sei.cmu.edu/publications/books/other-books/architecture-tradeoff-analysis-method-atam.cfm — SEI ATAM for architecture assessment
 
 ## Output Standards
 

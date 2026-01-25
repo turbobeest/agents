@@ -86,7 +86,7 @@ audit:
     tier_alignment: 65
     instruction_quality: 88
     vocabulary_calibration: 90
-    knowledge_authority: 70
+    knowledge_authority: 88
     identity_clarity: 95
     anti_pattern_specificity: 88
     output_format: 100
@@ -301,6 +301,14 @@ SPEC-001 → SPEC-002 → SPEC-003
 Check: SPEC-001.outputs ⊇ SPEC-002.inputs
 Check: SPEC-002.outputs ⊇ SPEC-003.inputs
 ```
+
+## Knowledge Sources
+
+**References**:
+- https://www.hillelwayne.com/post/specification-by-example/ — Hillel Wayne on specification by example
+- https://www.iso.org/standard/63712.html — ISO/IEC/IEEE 29148 requirements specification standard
+- https://martinfowler.com/bliki/ContractTest.html — Martin Fowler on contract testing and specifications
+- https://research.google/pubs/pub45861/ — Google's design documents and specification practices
 
 ## Output Standards
 

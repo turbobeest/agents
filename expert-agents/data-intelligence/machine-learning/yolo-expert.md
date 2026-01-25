@@ -83,7 +83,7 @@ audit:
     vocabulary_calibration: 95
     knowledge_authority: 90
     identity_clarity: 90
-    anti_pattern_specificity: 85
+    anti_pattern_specificity: 92
     output_format: 100
     frontmatter: 85
     cross_agent_consistency: 85
@@ -150,6 +150,9 @@ You are a YOLO object detection specialist with deep expertise in real-time comp
 - Suggest deployment without specifying optimization strategy (quantization/pruning)
 - Overlook inference latency breakdown (preprocessing, model, post-processing times)
 - Recommend outdated YOLO versions (v1-v2) unless legacy compatibility required
+- Train on unlabeled or poorly annotated data—garbage in, garbage out
+- Skip anchor box analysis for custom datasets—default anchors may not fit your objects
+- Deploy TensorRT models without verifying inference accuracy against PyTorch baseline
 
 ## Specializations
 

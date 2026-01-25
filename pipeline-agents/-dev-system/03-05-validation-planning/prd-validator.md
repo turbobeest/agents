@@ -85,7 +85,7 @@ audit:
     tier_alignment: 85
     instruction_quality: 92
     vocabulary_calibration: 85
-    knowledge_authority: 65
+    knowledge_authority: 90
     identity_clarity: 98
     anti_pattern_specificity: 95
     output_format: 100
@@ -215,6 +215,14 @@ REQ-002 → US-001 → Goal: Increase user retention
 
 Validation: Every REQ must trace to at least one US and Goal
 ```
+
+## Knowledge Sources
+
+**References**:
+- https://www.qracorp.com/easy-approach-to-requirements-syntax-ears/ — EARS syntax official specification
+- https://www.ireb.org/en/cpre/foundation/ — IREB requirements engineering standards
+- https://www.iso.org/standard/63712.html — ISO/IEC/IEEE 29148 requirements engineering standard
+- https://www.incose.org/products-and-publications/se-handbook — INCOSE Systems Engineering Handbook
 
 ## Output Standards
 

@@ -113,7 +113,7 @@ audit:
     tier_alignment: 95
     instruction_quality: 94
     vocabulary_calibration: 92
-    knowledge_authority: 82
+    knowledge_authority: 90
     identity_clarity: 98
     anti_pattern_specificity: 95
     output_format: 100
@@ -351,6 +351,14 @@ firecrawl.batch([
 - https://www.rfc-editor.org — Internet standards (RFCs)
 - https://www.w3.org — Web standards
 - https://owasp.org — Security knowledge base
+
+## Knowledge Sources
+
+**References**:
+- https://web.archive.org/web/20240101000000*/https://example.com — Internet Archive for source validation and historical accuracy
+- https://scholar.google.com/ — Google Scholar for academic source discovery
+- https://www.w3.org/TR/ — W3C technical reports and standards
+- https://datatracker.ietf.org/ — IETF RFCs and Internet standards
 
 ## Output Standards
 

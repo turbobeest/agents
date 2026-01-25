@@ -113,7 +113,7 @@ audit:
     tier_alignment: 90
     instruction_quality: 95
     vocabulary_calibration: 92
-    knowledge_authority: 80
+    knowledge_authority: 88
     identity_clarity: 98
     anti_pattern_specificity: 95
     output_format: 100
@@ -421,6 +421,14 @@ collaboration_context:
 
 - https://github.com/turbobeest/dev-system — Pipeline specification
 - https://docs.github.com/en/pull-requests/collaborating-with-pull-requests — Git collaboration patterns
+
+## Knowledge Sources
+
+**References**:
+- https://www.pmi.org/pmbok-guide-standards — PMI project team coordination standards
+- https://www.atlassian.com/agile/teams — Atlassian agile team collaboration practices
+- https://www.martinfowler.com/articles/patterns-of-distributed-systems/ — Distributed systems coordination patterns
+- https://research.google/pubs/pub43438/ — Google's distributed systems coordination research
 
 ## Output Standards
 

@@ -95,7 +95,7 @@ audit:
     tier_alignment: 88
     instruction_quality: 92
     vocabulary_calibration: 90
-    knowledge_authority: 75
+    knowledge_authority: 88
     identity_clarity: 98
     anti_pattern_specificity: 95
     output_format: 100
@@ -292,7 +292,9 @@ TaskMaster produces task DAG from clarified requirements
 ### References
 
 - https://github.com/turbobeest/dev-system — Pipeline context
-- First-principles reasoning literature
+- https://fs.blog/first-principles/ — Farnam Street on first-principles thinking
+- https://www.lesswrong.com/tag/rationality — LessWrong rationality and reasoning resources
+- https://www.criticalthinking.org/pages/defining-critical-thinking/766 — Critical thinking foundation standards
 
 ## Output Standards
 

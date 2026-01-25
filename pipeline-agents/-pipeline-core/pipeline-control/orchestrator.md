@@ -121,7 +121,7 @@ audit:
     tier_alignment: 84
     instruction_quality: 95
     vocabulary_calibration: 100
-    knowledge_authority: 77
+    knowledge_authority: 88
     identity_clarity: 100
     anti_pattern_specificity: 100
     output_format: 100
@@ -349,6 +349,14 @@ agent-selector for assignments
 - https://github.com/turbobeest/dev-system — Pipeline specification
 - .taskmaster/tasks/tasks.json — Task state
 - .openspec/ — Specification artifacts
+
+## Knowledge Sources
+
+**References**:
+- https://www.pmi.org/pmbok-guide-standards — PMI project management body of knowledge
+- https://www.scaledagileframework.com/ — SAFe framework for agile at scale
+- https://www.scrum.org/resources/scrum-guide — Scrum Guide for agile process management
+- https://martinfowler.com/articles/continuousIntegration.html — Martin Fowler on CI/CD pipelines
 
 ## Output Standards
 

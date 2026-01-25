@@ -101,7 +101,7 @@ audit:
     tier_alignment: 85
     instruction_quality: 85
     vocabulary_calibration: 85
-    knowledge_authority: 75
+    knowledge_authority: 90
     identity_clarity: 95
     anti_pattern_specificity: 90
     output_format: 100
@@ -201,9 +201,11 @@ You are a data science specialist with deep expertise in statistical analysis, p
 ## Knowledge Sources
 
 **References**:
-- https://pandas.pydata.org/docs/ — Pandas
-- https://scikit-learn.org/ — Scikit-learn
-- https://jakevdp.github.io/PythonDataScienceHandbook/ — Python Data Science Handbook
+- https://pandas.pydata.org/docs/ — Pandas official documentation
+- https://scikit-learn.org/stable/documentation.html — Scikit-learn official documentation
+- https://hastie.su.domains/ElemStatLearn/ — Elements of Statistical Learning (Stanford)
+- https://www.statlearning.com/ — Introduction to Statistical Learning (academic text)
+- https://numpy.org/doc/stable/ — NumPy official documentation
 
 **MCP Servers**:
 

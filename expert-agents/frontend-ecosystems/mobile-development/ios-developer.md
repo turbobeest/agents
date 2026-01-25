@@ -111,7 +111,7 @@ audit:
     structural_completeness: 100
     tier_alignment: 82
     instruction_quality: 93
-    vocabulary_calibration: 70
+    vocabulary_calibration: 95
     knowledge_authority: 95
     identity_clarity: 95
     anti_pattern_specificity: 90

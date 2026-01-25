@@ -102,7 +102,7 @@ audit:
     tier_alignment: 90
     instruction_quality: 88
     vocabulary_calibration: 85
-    knowledge_authority: 78
+    knowledge_authority: 88
     identity_clarity: 92
     anti_pattern_specificity: 88
     output_format: 100
@@ -237,6 +237,8 @@ Dimensions:
 - knowledge/agent-quality-rubric.yaml — Scoring criteria, weights, thresholds
 - audit-results/sample/ — Calibration audit outputs
 - audit-results/full/ — Full audit outputs
+- https://www.iso.org/standard/72311.html — ISO/IEC 25010 software quality model
+- https://www.sei.cmu.edu/publications/books/other-books/cmmi.cfm — CMMI for quality maturity assessment
 
 ## Output Standards
 

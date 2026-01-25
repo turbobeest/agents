@@ -95,7 +95,7 @@ audit:
     tier_alignment: 98
     instruction_quality: 95
     vocabulary_calibration: 92
-    knowledge_authority: 78
+    knowledge_authority: 90
     identity_clarity: 98
     anti_pattern_specificity: 100
     output_format: 100
@@ -367,6 +367,14 @@ implementation_log:
     implementation: "3h"
     refactoring: "1h"
 ```
+
+## Knowledge Sources
+
+**References**:
+- https://www.agilealliance.org/glossary/tdd/ — Agile Alliance TDD definition and principles
+- https://martinfowler.com/bliki/TestDrivenDevelopment.html — Martin Fowler on TDD methodology
+- https://www.jamesshore.com/v2/books/aoad1/test_driven_development — James Shore's Art of Agile Development TDD chapter
+- http://wiki.c2.com/?TestDrivenDevelopment — Original TDD wiki (Ward Cunningham)
 
 ## Output Standards
 

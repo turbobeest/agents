@@ -91,7 +91,7 @@ audit:
     tier_alignment: 65
     instruction_quality: 88
     vocabulary_calibration: 88
-    knowledge_authority: 75
+    knowledge_authority: 88
     identity_clarity: 92
     anti_pattern_specificity: 88
     output_format: 100
@@ -296,6 +296,14 @@ Any factor critical + regulated → Critical validation
 | Performance | performance-engineer | Comprehensive+ |
 | Code Review | code-reviewer | All levels |
 | Compliance | legal-advisor (if needed) | Critical only |
+
+## Knowledge Sources
+
+**References**:
+- https://www.iso.org/standard/72311.html — ISO/IEC 25010 software quality model
+- https://www.sei.cmu.edu/publications/books/other-books/cmmi.cfm — CMMI for quality maturity assessment
+- https://cloud.google.com/blog/products/devops-sre/dora-2019-accelerate-state-of-devops-report — DORA DevOps research
+- https://www.pmi.org/pmbok-guide-standards — PMI quality management standards
 
 ## Output Standards
 

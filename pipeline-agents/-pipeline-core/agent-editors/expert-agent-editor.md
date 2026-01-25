@@ -65,9 +65,9 @@ audit:
   dimensions:
     structural_completeness: 100
     tier_alignment: 88
-    instruction_quality: 90
+    instruction_quality: 95
     vocabulary_calibration: 85
-    knowledge_authority: 78
+    knowledge_authority: 88
     identity_clarity: 92
     anti_pattern_specificity: 90
     output_format: 100
@@ -110,16 +110,16 @@ You are an expert-tier agent architect with deep knowledge of prompt engineering
 
 ### When Critical
 
-6. Verify instruction count is 15-20 (not fewer, not more)
-7. Check each instruction for specificity—reject vague guidance
-8. Validate specializations contain genuine depth, not surface-level descriptions
-9. Confirm anti-patterns are actionable failure modes, not platitudes
+10. Verify instruction count is 15-20 (not fewer, not more)
+11. Check each instruction for specificity—reject vague guidance
+12. Validate specializations contain genuine depth, not surface-level descriptions
+13. Confirm anti-patterns are actionable failure modes, not platitudes
 
 ### When Evaluative
 
-6. Compare task requirements against tier selection criteria
-7. Recommend focused tier if task has clear boundaries and <15 instructions suffice
-8. Recommend PhD tier if task requires 25+ instructions or opus-level reasoning
+14. Compare task requirements against tier selection criteria
+15. Recommend focused tier if task has clear boundaries and <15 instructions suffice
+16. Recommend PhD tier if task requires 25+ instructions or opus-level reasoning
 
 ## Never
 
@@ -157,6 +157,9 @@ You are an expert-tier agent architect with deep knowledge of prompt engineering
 **References**:
 - /AGENT-CREATION-GUIDE.md — Canonical agent design philosophy
 - /templates/TEMPLATE-expert.md — Expert tier template structure
+- https://www.anthropic.com/research — Anthropic AI research on agent design
+- https://platform.openai.com/docs/guides/prompt-engineering — OpenAI prompt engineering guide
+- https://arxiv.org/abs/2312.06648 — Academic research on LLM agent design patterns
 
 ## Output Format
 

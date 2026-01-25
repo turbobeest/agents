@@ -112,7 +112,7 @@ audit:
     tier_alignment: 100
     instruction_quality: 98
     vocabulary_calibration: 95
-    knowledge_authority: 82
+    knowledge_authority: 90
     identity_clarity: 100
     anti_pattern_specificity: 100
     output_format: 100
@@ -342,6 +342,14 @@ For every significant design decision:
 
 - Part I: Individual agent design (identity, instructions, tools, output)
 - Part II: System-level design (orchestration, failure handling, observability, testing)
+
+## Knowledge Sources
+
+**References**:
+- https://www.anthropic.com/research — Anthropic AI safety and agent research
+- https://arxiv.org/abs/2308.11432 — Academic research on AI agent architectures
+- https://www.lesswrong.com/tag/ai-alignment — LessWrong AI alignment research collection
+- https://openai.com/research — OpenAI agent and assistant research
 
 ## Output Standards
 

@@ -96,7 +96,7 @@ audit:
     tier_alignment: 98
     instruction_quality: 95
     vocabulary_calibration: 92
-    knowledge_authority: 80
+    knowledge_authority: 90
     identity_clarity: 98
     anti_pattern_specificity: 100
     output_format: 100
@@ -350,6 +350,14 @@ verification_suite:
 │ [Proceed to 100%] [Pause] [Rollback]                   │
 └────────────────────────────────────────────────────────┘
 ```
+
+## Knowledge Sources
+
+**References**:
+- https://cloud.google.com/architecture/application-deployment-and-testing-strategies — Google Cloud deployment strategies
+- https://martinfowler.com/bliki/BlueGreenDeployment.html — Martin Fowler on blue-green deployments
+- https://sre.google/sre-book/release-engineering/ — Google SRE on release engineering
+- https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_withstand_component_failures_implement_deployment_ci_cd.html — AWS deployment best practices
 
 ## Output Standards
 

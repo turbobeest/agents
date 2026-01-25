@@ -90,7 +90,7 @@ audit:
     tier_alignment: 88
     instruction_quality: 90
     vocabulary_calibration: 85
-    knowledge_authority: 60
+    knowledge_authority: 88
     identity_clarity: 95
     anti_pattern_specificity: 90
     output_format: 100
@@ -222,6 +222,14 @@ UNWANTED: IF authentication fails 5 times, the system SHALL lock the account
 | Success metrics | Quantifiable, measurable criteria |
 | Assumptions | All hidden assumptions surfaced |
 | Risks | Top 5 risks with likelihood/impact |
+
+## Knowledge Sources
+
+**References**:
+- https://www.ireb.org/en/cpre/foundation/ — IREB Certified Professional for Requirements Engineering
+- https://alistair.cockburn.us/writing-effective-use-cases/ — Alistair Cockburn's use case methodology
+- https://www.incose.org/products-and-publications/se-handbook — INCOSE Systems Engineering Handbook
+- https://www.qracorp.com/easy-approach-to-requirements-syntax-ears/ — EARS syntax specification and examples
 
 ## Output Standards
 

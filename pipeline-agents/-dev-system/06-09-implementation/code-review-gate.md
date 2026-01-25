@@ -95,7 +95,7 @@ audit:
     tier_alignment: 62
     instruction_quality: 88
     vocabulary_calibration: 85
-    knowledge_authority: 70
+    knowledge_authority: 88
     identity_clarity: 92
     anti_pattern_specificity: 90
     output_format: 100
@@ -270,6 +270,14 @@ You are the quality gatekeeper for code in Phases 6-9 of the dev-system pipeline
 | 0 | 0 | 3+ | **FAIL** |
 | 0 | 0 | 1-2 | **CONDITIONAL** |
 | 0 | 0 | 0 | **PASS** |
+
+## Knowledge Sources
+
+**References**:
+- https://google.github.io/eng-practices/review/ — Google Engineering Practices for code review
+- https://owasp.org/www-project-web-security-testing-guide/ — OWASP testing guide for security review
+- https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/ — SmartBear code review best practices
+- https://www.michaelagreiler.com/code-review-best-practices/ — Dr. Michaela Greiler's code review research
 
 ## Output Standards
 

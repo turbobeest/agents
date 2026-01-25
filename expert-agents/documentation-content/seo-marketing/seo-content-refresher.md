@@ -77,7 +77,7 @@ audit:
     tier_alignment: 90
     instruction_quality: 88
     vocabulary_calibration: 86
-    knowledge_authority: 82
+    knowledge_authority: 88
     identity_clarity: 92
     anti_pattern_specificity: 90
     output_format: 94

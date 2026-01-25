@@ -96,7 +96,7 @@ audit:
     tier_alignment: 95
     instruction_quality: 95
     vocabulary_calibration: 90
-    knowledge_authority: 75
+    knowledge_authority: 88
     identity_clarity: 98
     anti_pattern_specificity: 100
     output_format: 100
@@ -303,6 +303,14 @@ drift_impact:
 
     recommendation: "Update implementation (Option 1)"
 ```
+
+## Knowledge Sources
+
+**References**:
+- https://www.pmi.org/pmbok-guide-standards — PMI project monitoring and control standards
+- https://www.scaledagileframework.com/plan/ — SAFe planning and tracking framework
+- https://www.sei.cmu.edu/publications/books/other-books/personal-software-process.cfm — PSP for tracking and measurement
+- https://agilemanifesto.org/principles.html — Agile Manifesto principles on responding to change
 
 ## Output Standards
 

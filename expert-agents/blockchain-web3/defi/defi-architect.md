@@ -147,8 +147,8 @@ audit:
     structural_completeness: 10
     tier_alignment: 10
     instruction_quality: 10
-    vocabulary_calibration: 10
-    knowledge_authority: 10
+    vocabulary_calibration: 98
+    knowledge_authority: 92
     identity_clarity: 10
     anti_pattern_specificity: 10
     output_format: 9
