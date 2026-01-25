@@ -1,10 +1,11 @@
 {
   "version": "3.0.0",
   "name": "Claude Orchestra Agent Pool",
-  "description": "Centralized agent definitions for Claude Orchestra",
+  "description": "Centralized agent definitions for Claude Orchestra. Generated from agent-inventory.csv.",
   "lastUpdated": "2026-01-25",
   "author": "turbobeest",
   "repository": "https://github.com/turbobeest/agents",
+  "generatedFrom": "agent-inventory.csv",
   "agents": [
     {
       "name": "acoustic-expert",
@@ -16,7 +17,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "sensing-perception",
+      "subcategory": "acoustic-sonar",
       "description": "Masters acoustic sensor systems for defense applications, specializing in underwater acoustics, airborne sound detection, seismic monitoring, and advanced signal processing for tactical acoustic intelligence",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/sensing-perception/acoustic-sonar/acoustic-expert.md",
       "role": "executor"
     },
@@ -30,7 +35,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "00-agent-management",
+      "subcategory": "",
       "description": "Agent catalog navigator for SDLC pipelines. Searches, filters, and displays available agents by capability, phase, or domain to help users and orchestrators find the right agent for any task.",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "pipeline-agents/00-agent-management/agent-browser.md",
       "role": "advisor"
     },
@@ -44,7 +53,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "00-agent-management",
+      "subcategory": "",
       "description": "Agent refinement specialist for SDLC pipelines. Tailors existing agents for specific project needs by adjusting parameters, adding context, and optimizing collaboration patterns while maintaining quality standards.",
+      "grade": "A",
+      "composite_score": 90.2,
       "path": "pipeline-agents/00-agent-management/agent-curator.md",
       "role": "executor"
     },
@@ -58,7 +71,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "00-agent-management",
+      "subcategory": "",
       "description": "Custom agent creator for SDLC pipelines. Designs and builds new specialized agents when gaps are identified in the standard roster, ensuring PhD-grade expertise and clear domain boundaries.",
+      "grade": "A",
+      "composite_score": 90.5,
       "path": "pipeline-agents/00-agent-management/agent-inventor.md",
       "role": "executor"
     },
@@ -72,7 +89,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "02-discovery",
+      "subcategory": "",
       "description": "World-class knowledge curator for agent systems. Researches, validates, and adjudicates the true value of knowledge sources. Determines whether information warrants URL reference, local excerpt extraction, or agent embedding. Uses Firecrawl MCP for parallel intelligent scraping.",
+      "grade": "A",
+      "composite_score": 91.5,
       "path": "pipeline-agents/02-discovery/agent-knowledge-researcher.md",
       "role": "advisor"
     },
@@ -86,7 +107,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "00-quality-assurance",
+      "subcategory": "",
       "description": "Structural validation agent that evaluates agent definitions against objective, measurable criteria. Invoke for automated quality checks on agent structure, tier alignment, frontmatter completeness, and output format compliance.",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "pipeline-agents/00-quality-assurance/agent-linter.md",
       "role": "auditor"
     },
@@ -100,7 +125,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "00-agent-management",
+      "subcategory": "",
       "description": "Agent roster planner for SDLC pipelines. Analyzes project requirements and proposes which specialized agents should handle each phase and task, identifying gaps for custom agent creation.",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "pipeline-agents/00-agent-management/agent-provisioner.md",
       "role": "advisor"
     },
@@ -114,7 +143,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "00-quality-assurance",
+      "subcategory": "",
       "description": "Qualitative evaluation agent that assesses instruction quality, knowledge source authority, identity clarity, and anti-pattern specificity. Invoke for subjective quality dimensions that require expert judgment rather than pattern matching.",
+      "grade": "A",
+      "composite_score": 93.5,
       "path": "pipeline-agents/00-quality-assurance/agent-quality-auditor.md",
       "role": "auditor"
     },
@@ -128,7 +161,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "00-orchestration",
+      "subcategory": "",
       "description": "Phase-aware agent adjudication engine for multi-phase SDLC pipelines. Scores and selects optimal agents for each phase task, presents candidates with confidence scores for human adjudication, and maintains selection accuracy through feedback loops.",
+      "grade": "A",
+      "composite_score": 93.8,
       "path": "pipeline-agents/00-orchestration/agent-selector.md",
       "role": "advisor"
     },
@@ -142,7 +179,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "machine-learning",
       "description": "Architects AI systems and intelligent applications with focus on scalable AI infrastructure and model integration excellence",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/machine-learning/ai-engineer.md",
       "role": "executor"
     },
@@ -156,7 +197,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "messaging-systems",
       "description": "Masters AMQP protocol and RabbitMQ message broker for enterprise messaging systems, specializing in reliable message delivery, complex routing, and scalable asynchronous communication architectures",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/messaging-systems/amqp-rabbitmq-expert.md",
       "role": "executor"
     },
@@ -170,7 +215,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "analytics",
       "description": "Analytics and reporting specialist for business intelligence dashboards. Invoke for GA4 configuration, Mixpanel/Amplitude implementation, KPI tracking, funnel analysis, cohort analysis, and dashboard design.",
+      "grade": "A",
+      "composite_score": 9.0,
       "path": "expert-agents/business-operations/analytics/analytics-reporter.md",
       "role": "advisor"
     },
@@ -184,7 +233,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "technical-writing",
       "description": "Generates comprehensive API documentation and OpenAPI specifications with focus on developer experience and integration excellence",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/technical-writing/api-documenter.md",
       "role": "executor"
     },
@@ -198,7 +251,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "testing",
       "description": "API testing specialist for REST and GraphQL endpoints. Invoke for API test automation, contract testing, Postman/Newman workflows, OpenAPI validation, mock server setup, and API integration testing.",
+      "grade": "A",
+      "composite_score": 9.1,
       "path": "expert-agents/development-tooling/testing/api-tester.md",
       "role": "executor"
     },
@@ -212,7 +269,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "marketing",
       "description": "Optimizes mobile app listings for App Store and Google Play visibility, conversion, and ranking through keyword research, creative optimization, and performance analysis",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/documentation-content/marketing/app-store-optimizer.md",
       "role": "executor"
     },
@@ -221,7 +282,11 @@
       "tier": "expert",
       "model": "opus",
       "model_fallbacks": [],
+      "category": "development-architecture",
+      "subcategory": "system-architecture",
       "description": "Reviews and designs overall system architecture with focus on scalability, maintainability, and technical consistency across complex multi-component projects. Validates OpenSpec contracts and TaskMaster decomposition for architectural soundness.",
+      "grade": "A",
+      "composite_score": 9.4,
       "path": "expert-agents/development-architecture/system-architecture/architect-reviewer.md",
       "role": "auditor"
     },
@@ -235,7 +300,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "immersive-spatial",
+      "subcategory": "augmented-reality",
       "description": "ARCore and Android AR specialist. Invoke for ARCore implementations, cloud anchor integration, cross-device AR compatibility, and Android spatial computing.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/immersive-spatial/augmented-reality/arcore-expert.md",
       "role": "executor"
     },
@@ -249,7 +318,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "embedded-hardware",
+      "subcategory": "robotics-drones",
       "description": "Masters ArduCopter autopilot system for unmanned aerial vehicle development, flight control algorithms, mission planning, sensor integration, and custom firmware development with advanced autonomous flight capabilities",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/embedded-hardware/robotics-drones/arducopter-expert.md",
       "role": "executor"
     },
@@ -263,7 +336,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "embedded-hardware",
+      "subcategory": "microcontrollers",
       "description": "Masters Arduino microcontroller platform for embedded systems development, sensor integration, IoT applications, real-time control systems, and custom hardware prototyping with advanced programming techniques",
+      "grade": "A-",
+      "composite_score": 8.8,
       "path": "expert-agents/embedded-hardware/microcontrollers/arduino-expert.md",
       "role": "executor"
     },
@@ -277,7 +354,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "immersive-spatial",
+      "subcategory": "augmented-reality",
       "description": "ARKit spatial computing specialist for iOS-native augmented reality experiences that seamlessly blend digital content with physical environments",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "expert-agents/immersive-spatial/augmented-reality/arkit-expert.md",
       "role": "executor"
     },
@@ -291,7 +372,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "00-orchestration",
+      "subcategory": "",
       "description": "Assigns decomposed tasks to appropriate agents with priority, dependency resolution, and workload distribution optimization",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "pipeline-agents/00-orchestration/assignment-agent.md",
       "role": "executor"
     },
@@ -305,7 +390,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "00-quality-assurance",
+      "subcategory": "",
       "description": "Report aggregation agent that combines structural scores from agent-linter and qualitative assessments from agent-quality-auditor into comprehensive audit reports. Invoke after both automated and agent-evaluated audits are complete.",
+      "grade": "A",
+      "composite_score": 90.5,
       "path": "pipeline-agents/00-quality-assurance/audit-report-generator.md",
       "role": "executor"
     },
@@ -319,7 +408,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "cloud-infrastructure",
+      "subcategory": "cloud-platforms",
       "description": "Designs and implements scalable, secure, cost-optimized AWS architectures using Well-Architected Framework principles for mission-critical deployments. Invoke for AWS architecture design, service selection, and cost optimization.",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/cloud-infrastructure/cloud-platforms/aws-architect.md",
       "role": "architect"
     },
@@ -333,7 +426,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "cloud-infrastructure",
+      "subcategory": "cloud-platforms",
       "description": "Designs and implements robust, secure Azure architectures using Azure Well-Architected Framework for enterprise-scale deployments with Microsoft ecosystem integration",
+      "grade": "A",
+      "composite_score": 94.0,
       "path": "expert-agents/cloud-infrastructure/cloud-platforms/azure-architect.md",
       "role": "architect"
     },
@@ -342,7 +439,11 @@
       "tier": "expert",
       "model": "sonnet",
       "model_fallbacks": [],
+      "category": "development-architecture",
+      "subcategory": "system-architecture",
       "description": "Designs RESTful APIs, microservice boundaries, and database schemas with focus on performance, scalability, and integration efficiency",
+      "grade": "A-",
+      "composite_score": 8.8,
       "path": "expert-agents/development-architecture/system-architecture/backend-architect.md",
       "role": "executor"
     },
@@ -356,7 +457,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "sensing-perception",
+      "subcategory": "radar-systems",
       "description": "Masters bistatic radar systems for defense applications, specializing in separated transmitter/receiver configurations, passive radar operations, and advanced geometry optimization for enhanced detection capabilities and reduced vulnerability",
+      "grade": "A",
+      "composite_score": 9.1,
       "path": "expert-agents/sensing-perception/radar-systems/bistatic-radar-expert.md",
       "role": "executor"
     },
@@ -370,7 +475,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "signal-processing",
+      "subcategory": "mission-systems",
       "description": "Battle Management Command and Control mission planning specialist. Invoke for multi-domain operations, sensor-effector integration, tactical mission planning, and 3D tactical environment modeling.",
+      "grade": "A-",
+      "composite_score": 8.8,
       "path": "expert-agents/signal-processing/mission-systems/bmc2-mission-planner.md",
       "role": "executor"
     },
@@ -379,7 +488,11 @@
       "tier": "expert",
       "model": "sonnet",
       "model_fallbacks": [],
+      "category": "development-architecture",
+      "subcategory": "user-experience",
       "description": "Master of brand consistency enforcement specializing in brand voice, visual identity, style guide compliance, tone consistency, messaging alignment, and asset management for cohesive brand experiences",
+      "grade": "A",
+      "composite_score": 9.1,
       "path": "expert-agents/development-architecture/user-experience/brand-guardian.md",
       "role": "auditor"
     },
@@ -393,7 +506,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "workforce-legal",
       "description": "Analyzes business requirements and creates comprehensive specifications with stakeholder alignment and strategic business value focus",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/business-operations/workforce-legal/business-analyst.md",
       "role": "auditor"
     },
@@ -407,7 +524,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "systems-languages",
       "description": "C systems programming specialist for memory-efficient, performance-critical applications with manual memory management and hardware control",
+      "grade": "A",
+      "composite_score": 90.2,
       "path": "expert-agents/backend-ecosystems/systems-languages/c-pro.md",
       "role": "executor"
     },
@@ -421,7 +542,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "performance-reliability",
+      "subcategory": "caching",
       "description": "Designs and optimizes caching strategies for mission-critical application performance with deep expertise in invalidation, consistency, and multi-tier architectures",
+      "grade": "A",
+      "composite_score": 9.1,
       "path": "expert-agents/performance-reliability/caching/cache-expert.md",
       "role": "advisor"
     },
@@ -435,7 +560,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "industrial-protocols",
       "description": "Masters CAN (Controller Area Network) bus protocol for automotive and industrial embedded systems, specializing in real-time communication, fault tolerance, and distributed control networks with advanced diagnostics",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/industrial-protocols/canbus-expert.md",
       "role": "executor"
     },
@@ -449,7 +578,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "immersive-spatial",
+      "subcategory": "3d-visualization",
       "description": "CesiumJS 3D geospatial visualization specialist for immersive web-based spatial experiences with massive datasets and WebGL optimization",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/immersive-spatial/3d-visualization/cesiumjs-expert.md",
       "role": "executor"
     },
@@ -463,7 +596,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "cloud-infrastructure",
+      "subcategory": "deployment-operations",
       "description": "Implements resilience testing through fault injection, failure scenario validation, and system reliability assessment under adverse conditions. Invoke for chaos experiments, resilience testing, and system antifragility improvement.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/cloud-infrastructure/deployment-operations/chaos-engineer.md",
       "role": "executor"
     },
@@ -477,7 +614,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "industrial-protocols",
       "description": "Masters CoAP (Constrained Application Protocol) for IoT and constrained devices, specializing in lightweight HTTP alternative, resource-constrained networking, and efficient machine-to-machine communication",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/industrial-protocols/coap-expert.md",
       "role": "executor"
     },
@@ -491,7 +632,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "06-09-implementation",
+      "subcategory": "",
       "description": "Phase 6-9 code review gate agent for the SDLC pipeline. Reviews TDD implementations against specifications, enforces quality standards, validates test coverage, and provides gate pass/fail decisions with actionable feedback.",
+      "grade": "A",
+      "composite_score": 90.2,
       "path": "pipeline-agents/06-09-implementation/code-review-gate.md",
       "role": "gatekeeper"
     },
@@ -505,7 +650,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "code-quality",
       "description": "Reviews code for best practices, architectural consistency, and maintainability with focus on code quality, collaborative improvement, and OpenSpec contract verification",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/development-tooling/code-quality/code-reviewer.md",
       "role": "auditor"
     },
@@ -519,7 +668,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "00-orchestration",
+      "subcategory": "",
       "description": "Multi-agent collaboration architect for complex phase tasks. Designs team compositions, manages shared context, orchestrates handoffs, resolves conflicts, and drives convergence toward phase deliverables within SDLC pipelines.",
+      "grade": "A",
+      "composite_score": 93.2,
       "path": "pipeline-agents/00-orchestration/collaborator-coordinator.md",
       "role": "executor"
     },
@@ -533,7 +686,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "security-compliance",
+      "subcategory": "compliance-audit",
       "description": "Regulatory compliance and data protection specialist. Invoke for compliance audits, regulatory verification, PII protection validation, and data governance enforcement.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/security-compliance/compliance-audit/compliance-checker.md",
       "role": "auditor"
     },
@@ -547,7 +704,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Creates compelling marketing content and integrated campaigns with brand alignment and audience engagement excellence",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/documentation-content/seo-marketing/content-marketer.md",
       "role": "executor"
     },
@@ -561,7 +722,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "developer-experience",
       "description": "Manages and optimizes LLM context for long conversations with intelligent context compression and conversation continuity",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/developer-experience/context-manager.md",
       "role": "executor"
     },
@@ -575,7 +740,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "03-validation",
+      "subcategory": "",
       "description": "Task decomposition supporting agent for SDLC pipelines. Analyzes task DAG for coupling issues, identifies tight dependencies, recommends decoupling strategies, and validates task independence for parallel execution.",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "pipeline-agents/03-validation/coupling-analyzer.md",
       "role": "analyzer"
     },
@@ -589,7 +758,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "systems-languages",
       "description": "Modern C++ specialist for RAII patterns, template metaprogramming, and high-performance applications with zero-overhead abstractions",
+      "grade": "A",
+      "composite_score": 90.8,
       "path": "expert-agents/backend-ecosystems/systems-languages/cpp-pro.md",
       "role": "executor"
     },
@@ -603,7 +776,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "security-compliance",
+      "subcategory": "code-security",
       "description": "Implements secure cryptographic systems with advanced encryption, key management, and cryptographic protocol design for maximum security assurance",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/security-compliance/code-security/cryptography-specialist.md",
       "role": "advisor"
     },
@@ -617,7 +794,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "enterprise-languages",
       "description": "C# enterprise specialist for async/await patterns, LINQ optimization, .NET ecosystem integration, and enterprise-scale applications",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/backend-ecosystems/enterprise-languages/csharp-pro.md",
       "role": "executor"
     },
@@ -631,7 +812,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "gpu-computing",
       "description": "Masters NVIDIA CUDA programming with kernel optimization, memory management, and parallel computing architecture for maximum GPU performance and efficiency",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/gpu-computing/cuda-expert.md",
       "role": "executor"
     },
@@ -645,7 +830,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "customer-relations",
       "description": "Provides comprehensive customer support responses and troubleshooting with user experience focus and solution effectiveness",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/business-operations/customer-relations/customer-support.md",
       "role": "executor"
     },
@@ -659,7 +848,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "data-processing",
       "description": "Architects data pipelines, ETL processes, and data warehouse systems with focus on scalability, data quality, and production reliability",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/data-processing/data-engineer.md",
       "role": "executor"
     },
@@ -673,7 +866,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "data-processing",
       "description": "Performs advanced data analysis, statistical modeling, and visualization for data-driven insights and predictive analytics",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/data-processing/data-scientist.md",
       "role": "executor"
     },
@@ -687,7 +884,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "database-operations",
       "description": "Ensures mission-critical database operations including backup strategies, replication, monitoring, and disaster recovery for production systems",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/database-operations/database-admin.md",
       "role": "advisor"
     },
@@ -701,7 +902,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "database-operations",
       "description": "Specializes in database performance tuning, index strategy optimization, and query execution plan analysis for maximum efficiency",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/database-operations/database-optimizer.md",
       "role": "auditor"
     },
@@ -715,7 +920,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "messaging-systems",
       "description": "Expert in Data Distribution Service (DDS) for real-time, data-centric publish-subscribe models in distributed systems with reliability focus",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/messaging-systems/dds-expert.md",
       "role": "executor"
     },
@@ -729,7 +938,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "embedded-hardware",
+      "subcategory": "microcontrollers",
       "description": "Masters ESP32/ESP8266 Deauther firmware for WiFi security testing and research, deauthentication attacks, packet monitoring, beacon flooding, and wireless security assessment with strict ethical research principles",
+      "grade": "A",
+      "composite_score": 9.0,
       "path": "expert-agents/embedded-hardware/microcontrollers/deauther-esp32-expert.md",
       "role": "advisor"
     },
@@ -743,7 +956,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "system-platforms",
+      "subcategory": "linux-distributions",
       "description": "Masters Debian GNU/Linux distribution for stable server deployments, embedded systems, and security-focused environments, specializing in package management, system hardening, and minimal resource deployments. Invoke for Debian server setup, security hardening, and stable system administration.",
+      "grade": "A",
+      "composite_score": 9.0,
       "path": "expert-agents/system-platforms/linux-distributions/debian-expert.md",
       "role": "executor"
     },
@@ -757,7 +974,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "code-quality",
       "description": "Debugs code systematically, analyzes complex errors, and implements reliable fixes with comprehensive root cause analysis",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/code-quality/debugger.md",
       "role": "executor"
     },
@@ -771,7 +992,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "development-tooling",
+      "subcategory": "formal-verification",
       "description": "Implements deductive verification using tools like Prusti for program correctness proofs through precondition and postcondition analysis",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/development-tooling/formal-verification/deductive-verifier.md",
       "role": "executor"
     },
@@ -785,7 +1010,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "cloud-infrastructure",
+      "subcategory": "deployment-operations",
       "description": "Configures CI/CD pipelines and cloud deployments with sophisticated automation, parallel stages, and integrated security scanning. Invoke for pipeline design, deployment automation, and release management.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/cloud-infrastructure/deployment-operations/deployment-engineer.md",
       "role": "executor"
     },
@@ -799,7 +1028,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "11-12-deployment",
+      "subcategory": "",
       "description": "Phase 11-12 deployment agent for the SDLC pipeline. Manages deployment execution, rollback preparation, production verification, and final release gate. Ensures safe, monitored deployment with rollback capability.",
+      "grade": "A",
+      "composite_score": 94.2,
       "path": "pipeline-agents/11-12-deployment/deployment-gate.md",
       "role": "executor"
     },
@@ -813,7 +1046,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "cloud-infrastructure",
+      "subcategory": "deployment-operations",
       "description": "Debugs production issues, analyzes system logs, and resolves deployment failures with focus on cloud efficiency and monitoring excellence. Invoke for infrastructure debugging, log analysis, and performance troubleshooting.",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "expert-agents/cloud-infrastructure/deployment-operations/devops-troubleshooter.md",
       "role": "executor"
     },
@@ -827,7 +1064,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "02-discovery",
+      "subcategory": "",
       "description": "Phase 2 agent for SDLC pipelines. Creates C4 architecture diagrams, defines system scope, explores technical approaches, and prepares for validation gate.",
+      "grade": "A",
+      "composite_score": 90.2,
       "path": "pipeline-agents/02-discovery/discovery-agent.md",
       "role": "executor"
     },
@@ -841,7 +1082,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "cloud-infrastructure",
+      "subcategory": "container-orchestration",
       "description": "Builds, manages, and optimizes Docker containers for application deployment with focus on lightweight, secure container images. Invoke for Dockerfile optimization, container security, and multi-stage build design.",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "expert-agents/cloud-infrastructure/container-orchestration/docker-agent.md",
       "role": "executor"
     },
@@ -855,7 +1100,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "technical-writing",
       "description": "Designs comprehensive documentation architecture and knowledge base systems with focus on information organization and user discovery",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/technical-writing/docs-architect.md",
       "role": "architect"
     },
@@ -869,7 +1118,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "technical-writing",
       "description": "Creates comprehensive technical documentation, API references, and user guides with focus on clarity, accuracy, and user experience",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/technical-writing/documentation-writer.md",
       "role": "executor"
     },
@@ -883,7 +1136,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "machine-learning",
       "description": "Masters DSPy framework for systematic prompt engineering and LLM pipeline optimization, specializing in automatic prompt optimization, multi-step reasoning chains, and programmatic AI system development",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/machine-learning/dspy-expert.md",
       "role": "executor"
     },
@@ -897,7 +1154,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "developer-experience",
       "description": "Optimizes developer experience through toolchain improvements, workflow automation, and productivity tool integration",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/developer-experience/dx-optimizer.md",
       "role": "executor"
     },
@@ -911,7 +1172,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "10-testing",
+      "subcategory": "",
       "description": "Phase 10 end-to-end testing agent for the SDLC pipeline. Executes user journey tests, validates system behavior from user perspective, performs final GO/NO-GO validation before deployment phase.",
+      "grade": "A",
+      "composite_score": 90.2,
       "path": "pipeline-agents/10-testing/e2e-testing-gate.md",
       "role": "gatekeeper"
     },
@@ -925,7 +1190,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "sensing-perception",
+      "subcategory": "optical-imaging",
       "description": "Masters electro-optical sensor systems for defense applications, specializing in visible spectrum optics, reflected light analysis, precision imaging, computer vision integration, and tactical sensor deployment with Johnson criteria optimization",
+      "grade": "A",
+      "composite_score": 9.1,
       "path": "expert-agents/sensing-perception/optical-imaging/electro-optical-expert.md",
       "role": "executor"
     },
@@ -939,7 +1208,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "dynamic-languages",
       "description": "Elixir specialist for OTP patterns, functional programming, and Phoenix framework with highly concurrent, fault-tolerant systems",
+      "grade": "A",
+      "composite_score": 90.5,
       "path": "expert-agents/backend-ecosystems/dynamic-languages/elixir-pro.md",
       "role": "executor"
     },
@@ -953,7 +1226,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "code-quality",
       "description": "Detects and diagnoses code errors, edge cases, and potential failure modes with comprehensive analysis and prevention strategies",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/code-quality/error-detective.md",
       "role": "auditor"
     },
@@ -967,7 +1244,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "embedded-hardware",
+      "subcategory": "microcontrollers",
       "description": "Masters ESP32 microcontroller for WiFi/Bluetooth IoT applications, wireless communication, low-power design, real-time applications, and advanced ESP-IDF development with FreeRTOS integration",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/embedded-hardware/microcontrollers/esp32-expert.md",
       "role": "executor"
     },
@@ -981,7 +1262,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "signal-processing",
+      "subcategory": "rf-systems",
       "description": "Masters Ettus Research USRP platforms and UHD driver development for software-defined radio systems with RF optimization and multi-device synchronization",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/signal-processing/rf-systems/ettus-expert.md",
       "role": "executor"
     },
@@ -995,7 +1280,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "project-management",
       "description": "A/B testing and experimentation specialist. Invoke for experiment design, statistical significance analysis, feature flag management, hypothesis formation, test result analysis, and rollout decisions.",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/business-operations/project-management/experiment-tracker.md",
       "role": "auditor"
     },
@@ -1009,7 +1298,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "00-agent-management",
+      "subcategory": "",
       "description": "Creates and revises expert-tier agent definitions (~1500 tokens, 15-20 instructions). Invoke for specialized domain agents requiring depth.",
+      "grade": "A",
+      "composite_score": 91.2,
       "path": "pipeline-agents/00-agent-management/expert-agent-editor.md",
       "role": "executor"
     },
@@ -1023,7 +1316,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "database-systems",
       "description": "Master of FalkorDB graph database architecture, specializing in high-performance graph queries, real-time analytics, and Redis-integrated graph processing",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/database-systems/falkordb-expert.md",
       "role": "executor"
     },
@@ -1037,7 +1334,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "product-management",
       "description": "Synthesizes user feedback into actionable product insights. Invoke for NPS analysis, sentiment analysis, feedback categorization, user interview synthesis, and feature request prioritization.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/business-operations/product-management/feedback-synthesizer.md",
       "role": "advisor"
     },
@@ -1051,7 +1352,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "media-processing",
+      "subcategory": "audio-video",
       "description": "Masters FFmpeg multimedia framework for video/audio processing, transcoding, streaming, format conversion, and advanced media manipulation",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/media-processing/audio-video/ffmpeg-expert.md",
       "role": "executor"
     },
@@ -1065,7 +1370,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "analytics",
       "description": "Financial operations specialist for startup and business finance management. Invoke for budget tracking, burn rate analysis, revenue forecasting, expense categorization, runway calculation, and financial reporting.",
+      "grade": "A",
+      "composite_score": 9.0,
       "path": "expert-agents/business-operations/analytics/finance-tracker.md",
       "role": "advisor"
     },
@@ -1079,7 +1388,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "01-ideation",
+      "subcategory": "",
       "description": "First-principles problem decomposition specialist for SDLC pipelines. Invoked by orchestrator when tasks are novel, ambiguous, or require fundamental analysis beyond pattern-based task decomposition.",
+      "grade": "A",
+      "composite_score": 90.2,
       "path": "pipeline-agents/01-ideation/first-principles-advisor.md",
       "role": "advisor"
     },
@@ -1093,7 +1406,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "01-ideation",
+      "subcategory": "",
       "description": "World-class first-principles reasoning specialist for SDLC pipelines. Invoke for novel problems resisting pattern decomposition, fundamental architectural decisions, and assumption-laden requirements requiring Socratic analysis.",
+      "grade": "A",
+      "composite_score": 94.5,
       "path": "pipeline-agents/01-ideation/first-principles-engineer.md",
       "role": "advisor"
     },
@@ -1107,7 +1424,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "embedded-hardware",
+      "subcategory": "robotics-drones",
       "description": "Masters Flipper Zero multi-tool for hardware security research, sub-GHz communication, NFC/RFID analysis, infrared protocols, and GPIO-based hardware hacking with responsible security research principles",
+      "grade": "A",
+      "composite_score": 9.0,
       "path": "expert-agents/embedded-hardware/robotics-drones/flipper-zero-expert.md",
       "role": "advisor"
     },
@@ -1121,7 +1442,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "frontend-ecosystems",
+      "subcategory": "mobile-development",
       "description": "Master of Flutter cross-platform development specializing in widget architecture, Dart optimization, native platform integration, and performance tuning for iOS/Android",
+      "grade": "A",
+      "composite_score": 93.0,
       "path": "expert-agents/frontend-ecosystems/mobile-development/flutter-expert.md",
       "role": "executor"
     },
@@ -1135,7 +1460,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "00-agent-management",
+      "subcategory": "",
       "description": "Creates and revises focused-tier agent definitions (~500 tokens, 5-10 instructions). Invoke for bounded, well-defined agent roles.",
+      "grade": "A",
+      "composite_score": 90.5,
       "path": "pipeline-agents/00-agent-management/focused-agent-editor.md",
       "role": "executor"
     },
@@ -1144,7 +1473,11 @@
       "tier": "focused",
       "model": "sonnet",
       "model_fallbacks": [],
+      "category": "development-architecture",
+      "subcategory": "user-experience",
       "description": "Implements frontend components with accessibility compliance, responsive design, and performance optimization for SDLC pipeline",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-architecture/user-experience/frontend-developer.md",
       "role": "executor"
     },
@@ -1158,7 +1491,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "cloud-infrastructure",
+      "subcategory": "cloud-platforms",
       "description": "Designs and implements scalable, secure architectures on Google Cloud Platform leveraging GCP-specific services and Cloud Architecture Framework. Invoke for GCP architecture design, data analytics integration, and cloud-native solutions.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/cloud-infrastructure/cloud-platforms/gcp-architect.md",
       "role": "advisor"
     },
@@ -1172,7 +1509,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "signal-processing",
+      "subcategory": "rf-systems",
       "description": "Masters GNU Radio framework for software-defined radio development, specializing in digital signal processing, flowgraph design, custom block development, and real-time RF application implementation",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/signal-processing/rf-systems/gnuradio-expert.md",
       "role": "executor"
     },
@@ -1186,7 +1527,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "systems-languages",
       "description": "Go systems programming specialist for concurrent microservices, idiomatic patterns, and performance-optimized backend infrastructure",
+      "grade": "A",
+      "composite_score": 91.5,
       "path": "expert-agents/backend-ecosystems/systems-languages/golang-pro.md",
       "role": "executor"
     },
@@ -1195,7 +1540,11 @@
       "tier": "expert",
       "model": "sonnet",
       "model_fallbacks": [],
+      "category": "development-architecture",
+      "subcategory": "system-architecture",
       "description": "Specializes in GraphQL schema design, federation strategies, and resolver optimization for efficient data fetching and API composition",
+      "grade": "A-",
+      "composite_score": 8.7,
       "path": "expert-agents/development-architecture/system-architecture/graphql-architect.md",
       "role": "executor"
     },
@@ -1209,7 +1558,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "marketing",
       "description": "Designs and optimizes growth loops, viral mechanics, acquisition funnels, and retention systems using product-led growth principles and data-driven experimentation",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/documentation-content/marketing/growth-hacker.md",
       "role": "executor"
     },
@@ -1223,7 +1576,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "api-standards",
       "description": "Masters gRPC high-performance RPC framework for microservices communication, specializing in Protocol Buffers, streaming APIs, load balancing, and cross-language service integration with advanced performance optimization",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/api-standards/grpc-expert.md",
       "role": "executor"
     },
@@ -1237,7 +1594,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "media-processing",
+      "subcategory": "audio-video",
       "description": "Masters GStreamer multimedia framework for pipeline-based media processing, real-time streaming, plugin development, and cross-platform multimedia applications",
+      "grade": "A-",
+      "composite_score": 8.8,
       "path": "expert-agents/media-processing/audio-video/gstreamer-expert.md",
       "role": "executor"
     },
@@ -1251,7 +1612,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "embedded-hardware",
+      "subcategory": "edge-platforms",
       "description": "Masters Home Assistant home automation platform for smart home integration, automation scripting, device management, and comprehensive IoT ecosystem orchestration with advanced customization",
+      "grade": "A-",
+      "composite_score": 8.8,
       "path": "expert-agents/embedded-hardware/edge-platforms/home-assistant-expert.md",
       "role": "executor"
     },
@@ -1265,7 +1630,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "workforce-legal",
       "description": "Handles comprehensive HR processes including recruitment, policy development, and employee experience optimization",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/business-operations/workforce-legal/hr-pro.md",
       "role": "executor"
     },
@@ -1279,7 +1648,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "blockchain-web3",
+      "subcategory": "enterprise-blockchain",
       "description": "Enterprise blockchain specialist for permissioned networks using Hyperledger Fabric, focusing on chaincode development, channel architecture, and multi-organization governance",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/blockchain-web3/enterprise-blockchain/hyperledger-fabric-expert.md",
       "role": "executor"
     },
@@ -1293,7 +1666,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "sensing-perception",
+      "subcategory": "optical-imaging",
       "description": "Masters hyperspectral imaging systems for defense applications, specializing in spectral signature analysis, material identification, camouflage detection, and multi-dimensional data processing with advanced spectral libraries and classification algorithms",
+      "grade": "A",
+      "composite_score": 9.2,
       "path": "expert-agents/sensing-perception/optical-imaging/hyperspectral-expert.md",
       "role": "executor"
     },
@@ -1307,7 +1684,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "01-ideation",
+      "subcategory": "",
       "description": "Phase 1 agent for SDLC pipelines. Facilitates requirement gathering, stakeholder synthesis, and initial PRD drafting. Transforms vague ideas into structured product requirements.",
+      "grade": "A",
+      "composite_score": 90.5,
       "path": "pipeline-agents/01-ideation/ideation-agent.md",
       "role": "executor"
     },
@@ -1321,7 +1702,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "cloud-infrastructure",
+      "subcategory": "deployment-operations",
       "description": "Handles production incidents with urgency, precision, and systematic problem resolution for minimal service disruption. Invoke for incident management, rapid troubleshooting, root cause analysis, and post-incident reviews.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/cloud-infrastructure/deployment-operations/incident-responder.md",
       "role": "executor"
     },
@@ -1335,7 +1720,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "sensing-perception",
+      "subcategory": "optical-imaging",
       "description": "Masters infrared sensor systems across LWIR, MWIR, and SWIR spectrums for defense applications, specializing in thermal imaging, emitted radiation analysis, multi-spectral sensor fusion, and tactical IR deployment with advanced cooling systems",
+      "grade": "A",
+      "composite_score": 9.2,
       "path": "expert-agents/sensing-perception/optical-imaging/infrared-expert.md",
       "role": "executor"
     },
@@ -1349,7 +1738,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "blockchain-web3",
+      "subcategory": "smart-contracts",
       "description": "Rust smart contract specialist for Polkadot/Substrate ecosystems using ink!, focusing on WASM contracts, pallet integration, and cross-chain interoperability",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/blockchain-web3/smart-contracts/ink-substrate-developer.md",
       "role": "executor"
     },
@@ -1363,7 +1756,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "marketing",
       "description": "Develops Instagram content strategy including feed aesthetics, Stories, Reels, hashtag optimization, and engagement tactics for brand growth and community building",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/documentation-content/marketing/instagram-curator.md",
       "role": "executor"
     },
@@ -1377,7 +1774,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "testing",
       "description": "Orchestrates cross-service testing with contract validation, API compatibility verification, and end-to-end integration testing across distributed systems",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/testing/integration-test-coordinator.md",
       "role": "executor"
     },
@@ -1391,7 +1792,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "10-testing",
+      "subcategory": "",
       "description": "Phase 10 integration testing agent for the SDLC pipeline. Orchestrates cross-component testing, validates API contracts, verifies service boundaries, and ensures system integration before E2E testing.",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "pipeline-agents/10-testing/integration-testing-gate.md",
       "role": "gatekeeper"
     },
@@ -1405,7 +1810,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "frontend-ecosystems",
+      "subcategory": "mobile-development",
       "description": "Master of native iOS development specializing in Swift/SwiftUI, iOS ecosystem integration, Apple platform optimization, and App Store excellence",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/frontend-ecosystems/mobile-development/ios-developer.md",
       "role": "executor"
     },
@@ -1419,7 +1828,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "gpu-computing",
       "description": "Architect of NVIDIA Isaac robotics simulation and AI frameworks, specializing in photorealistic simulation, autonomous navigation, and GPU-accelerated robotics pipelines",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/gpu-computing/isaac-expert.md",
       "role": "executor"
     },
@@ -1433,7 +1846,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "enterprise-languages",
       "description": "Java enterprise specialist for modern streams, concurrency patterns, JVM optimization, and enterprise-scale architecture",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/backend-ecosystems/enterprise-languages/java-pro.md",
       "role": "executor"
     },
@@ -1447,7 +1864,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "application-languages",
       "description": "JavaScript specialist for modern ES6+ patterns, async/await architecture, and Node.js ecosystem integration across full-stack applications",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/backend-ecosystems/application-languages/javascript-pro.md",
       "role": "executor"
     },
@@ -1461,7 +1882,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "gpu-computing",
       "description": "Masters NVIDIA Jetson edge computing platforms with embedded AI, real-time inference optimization, and power-efficient deployment for edge applications",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/gpu-computing/jetson-expert.md",
       "role": "executor"
     },
@@ -1475,7 +1900,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "messaging-systems",
       "description": "Masters Apache Kafka for distributed event streaming and real-time data pipelines, specializing in high-throughput messaging, stream processing, and scalable data architecture with advanced cluster management",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/messaging-systems/kafka-expert.md",
       "role": "executor"
     },
@@ -1489,7 +1918,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "security-compliance",
+      "subcategory": "offensive-security",
       "description": "Masters Kali Linux penetration testing distribution, specializing in ethical hacking tools, security assessments, digital forensics, and comprehensive cybersecurity testing",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/security-compliance/offensive-security/kali-linux-expert.md",
       "role": "executor"
     },
@@ -1503,7 +1936,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "machine-learning",
       "description": "Masters Keras framework for streaming ML applications, specializing in real-time model inference, online learning, distributed training, and adaptive neural networks for continuous data streams",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/machine-learning/kerasml-expert.md",
       "role": "executor"
     },
@@ -1517,7 +1954,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "cloud-infrastructure",
+      "subcategory": "container-orchestration",
       "description": "Orchestrates Kubernetes clusters, manages deployments, and optimizes resource allocation for scalable, resilient application orchestration. Invoke for K8s cluster design, deployment management, and scaling optimization.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/cloud-infrastructure/container-orchestration/kubernetes-agent.md",
       "role": "executor"
     },
@@ -1531,7 +1972,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "sensing-perception",
+      "subcategory": "ranging-systems",
       "description": "Masters laser ranging systems for defense applications, specializing in precision distance measurement, target designation, and guided munition support with advanced laser technologies and atmospheric compensation",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/sensing-perception/ranging-systems/laser-ranging-expert.md",
       "role": "executor"
     },
@@ -1545,7 +1990,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "code-quality",
       "description": "Modernizes legacy codebases to current standards with systematic refactoring, technology updates, and maintainability improvements",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/code-quality/legacy-modernizer.md",
       "role": "executor"
     },
@@ -1559,7 +2008,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "business-operations",
+      "subcategory": "workforce-legal",
       "description": "Provides legal guidance and contract review with compliance focus and risk mitigation through legal best practices",
+      "grade": "A",
+      "composite_score": 9.0,
       "path": "expert-agents/business-operations/workforce-legal/legal-advisor.md",
       "role": "auditor"
     },
@@ -1573,7 +2026,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "sensing-perception",
+      "subcategory": "optical-imaging",
       "description": "Masters LiDAR systems for defense applications, specializing in 3D mapping, target identification, autonomous navigation, and precision ranging with advanced laser technologies and point cloud processing",
+      "grade": "A-",
+      "composite_score": 8.7,
       "path": "expert-agents/sensing-perception/optical-imaging/lidar-expert.md",
       "role": "executor"
     },
@@ -1587,7 +2044,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "networking-telecom",
+      "subcategory": "wireless-protocols",
       "description": "Masters LoRaWAN protocol for long-range IoT networks, specializing in low-power wide area networking, gateway management, and scalable IoT deployments. Invoke for LoRaWAN network design, gateway configuration, and LPWAN optimization.",
+      "grade": "A-",
+      "composite_score": 8.8,
       "path": "expert-agents/networking-telecom/wireless-protocols/lorawan-expert.md",
       "role": "executor"
     },
@@ -1601,7 +2062,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "embedded-hardware",
+      "subcategory": "robotics-drones",
       "description": "Masters WiFi Marauder firmware for ESP32-based wireless security testing, packet capture, deauthentication attacks, and wireless security assessment with strict ethical hacking principles",
+      "grade": "A",
+      "composite_score": 9.1,
       "path": "expert-agents/embedded-hardware/robotics-drones/marauder-expert.md",
       "role": "advisor"
     },
@@ -1615,7 +2080,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "00-orchestration",
+      "subcategory": "",
       "description": "World-class MCP infrastructure architect. Discovers, deploys, and integrates MCP servers for agents. Prefers Docker Desktop containerization with fallback to native deployment. Modifies agent definitions with optimal MCP configurations.",
+      "grade": "A",
+      "composite_score": 90.8,
       "path": "pipeline-agents/00-orchestration/mcp-orchestrator.md",
       "role": "executor"
     },
@@ -1629,7 +2098,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "performance-reliability",
+      "subcategory": "memory-optimization",
       "description": "Analyzes and optimizes memory usage patterns with deep expertise in heap profiling, leak detection, allocation optimization, and GC tuning",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/performance-reliability/memory-optimization/memory-optimizer.md",
       "role": "auditor"
     },
@@ -1643,7 +2116,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "code-quality",
       "description": "Integrates multi-agent code outputs into cohesive codebases with sophisticated conflict resolution, quality assurance, and codebase coherence preservation",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "expert-agents/development-tooling/code-quality/merger.md",
       "role": "executor"
     },
@@ -1657,7 +2134,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "technical-writing",
       "description": "Creates and optimizes Mermaid diagrams for technical documentation with focus on clarity, accuracy, and visual communication",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/technical-writing/mermaid-expert.md",
       "role": "executor"
     },
@@ -1671,7 +2152,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "machine-learning",
       "description": "Builds machine learning models, optimizes training pipelines, and deploys ML systems with GPU optimization and cloud integration excellence",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/machine-learning/ml-engineer.md",
       "role": "executor"
     },
@@ -1685,7 +2170,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "machine-learning",
       "description": "Implements MLOps pipelines for automated model deployment, monitoring, and lifecycle management in production environments",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/machine-learning/mlops-engineer.md",
       "role": "executor"
     },
@@ -1699,7 +2188,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "frontend-ecosystems",
+      "subcategory": "mobile-development",
       "description": "Specialist in cross-platform mobile development using React Native or Flutter with platform-adaptive UI, native integration, and performance optimization for iOS/Android",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/frontend-ecosystems/mobile-development/mobile-developer.md",
       "role": "executor"
     },
@@ -1713,7 +2206,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "industrial-protocols",
       "description": "Masters Modbus protocol for industrial control systems, specializing in PLC communication, sensor networks, SCADA integration, and reliable serial/Ethernet industrial data exchange",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/industrial-protocols/modbus-expert.md",
       "role": "executor"
     },
@@ -1727,7 +2224,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "development-tooling",
+      "subcategory": "formal-verification",
       "description": "Performs formal model checking using tools like Kani, CBMC, and TLA+ for mathematical verification of program correctness and rigorous property validation",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/formal-verification/model-checker.md",
       "role": "auditor"
     },
@@ -1741,7 +2242,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "sensing-perception",
+      "subcategory": "radar-systems",
       "description": "Masters monostatic radar systems for defense applications, specializing in target detection, tracking, and classification using co-located transmitter/receiver configurations with advanced waveform design and signal processing",
+      "grade": "A",
+      "composite_score": 9.2,
       "path": "expert-agents/sensing-perception/radar-systems/monostatic-radar-expert.md",
       "role": "executor"
     },
@@ -1755,7 +2260,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "messaging-systems",
       "description": "Expert in MQTT protocol design and implementation for lightweight publish-subscribe messaging in IoT and microservices with security focus",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/messaging-systems/mqtt-expert.md",
       "role": "executor"
     },
@@ -1769,7 +2278,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "database-systems",
       "description": "Master architect of Neo4j graph database ecosystems, specializing in enterprise-scale graph analytics, complex relationship modeling, and graph-native problem solving",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/data-intelligence/database-systems/neo4j-expert.md",
       "role": "executor"
     },
@@ -1783,7 +2296,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "networking-telecom",
+      "subcategory": "network-infrastructure",
       "description": "Designs and troubleshoots network architectures, firewalls, and VPN configurations for secure, efficient network infrastructure. Invoke for network design, firewall configuration, VPN setup, and network troubleshooting.",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/networking-telecom/network-infrastructure/network-engineer.md",
       "role": "executor"
     },
@@ -1797,7 +2314,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "frontend-ecosystems",
+      "subcategory": "javascript-frameworks",
       "description": "Architect of Next.js full-stack applications specializing in hybrid rendering strategies (SSR/SSG/ISR/CSR), performance optimization, SEO excellence, and modern web deployment",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/frontend-ecosystems/javascript-frameworks/nextjs-expert.md",
       "role": "executor"
     },
@@ -1811,7 +2332,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "immersive-spatial",
+      "subcategory": "3d-visualization",
       "description": "Spatial data structures and volumetric rendering specialist. Invoke for octree algorithm design, voxel architectures, massive 3D dataset management, and real-time spatial query optimization.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/immersive-spatial/3d-visualization/octree-voxel-expert.md",
       "role": "executor"
     },
@@ -1825,7 +2350,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "immersive-spatial",
+      "subcategory": "collaborative-3d",
       "description": "NVIDIA Omniverse and USD composition specialist. Invoke for real-time collaborative 3D workflows, physically accurate simulation, and multi-application interoperability.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/immersive-spatial/collaborative-3d/omniverse-expert.md",
       "role": "executor"
     },
@@ -1839,7 +2368,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "industrial-protocols",
       "description": "Masters OPC-UA (Open Platform Communications Unified Architecture) for industrial automation and SCADA systems, specializing in secure machine-to-machine communication, information modeling, and industrial IoT integration",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/industrial-protocols/opcua-expert.md",
       "role": "executor"
     },
@@ -1853,7 +2386,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "api-standards",
       "description": "Masters OpenAPI specification and RESTful API design, specializing in API documentation, service architecture, HTTP best practices, and comprehensive API lifecycle management with advanced tooling integration",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/api-standards/openapi-rest-expert.md",
       "role": "executor"
     },
@@ -1867,7 +2404,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "cloud-infrastructure",
+      "subcategory": "cloud-platforms",
       "description": "Designs and implements secure, high-performance architectures on Oracle Cloud Infrastructure utilizing OCI-specific services and enterprise best practices. Invoke for OCI architecture design, enterprise database integration, and performance optimization.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/cloud-infrastructure/cloud-platforms/oracle-cloud-architect.md",
       "role": "advisor"
     },
@@ -1881,7 +2422,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "finance-risk",
       "description": "Secure payment gateway integration specialist. Invoke for payment gateway integration, PCI DSS compliance, transaction security, and secure payment processing implementation.",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/business-operations/finance-risk/payment-integration.md",
       "role": "executor"
     },
@@ -1895,7 +2440,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "security-compliance",
+      "subcategory": "offensive-security",
       "description": "Performs comprehensive security testing through automated vulnerability exploitation, attack simulation, and security weakness identification with ethical hacking methodologies",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/security-compliance/offensive-security/penetration-tester.md",
       "role": "auditor"
     },
@@ -1909,7 +2458,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "performance-reliability",
+      "subcategory": "performance-engineer.md",
       "description": "Performance optimization and profiling specialist. Invoke for performance analysis, bottleneck identification, optimization strategies, and resource efficiency improvement.",
+      "grade": "A-",
+      "composite_score": 8.8,
       "path": "expert-agents/performance-reliability/performance-engineer.md",
       "role": "auditor"
     },
@@ -1923,7 +2476,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "00-agent-management",
+      "subcategory": "",
       "description": "World-class agent architect for PhD-tier definitions (~3000 tokens, 25-35 instructions). Invoke for complex specialists requiring first-principles design, architectural decisions, or novel agent domains.",
+      "grade": "A",
+      "composite_score": 95.8,
       "path": "pipeline-agents/00-agent-management/phd-agent-editor.md",
       "role": "executor"
     },
@@ -1937,7 +2494,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "dynamic-languages",
       "description": "Modern PHP specialist for Laravel/Symfony frameworks, typed code, performance optimization, and contemporary development practices",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/backend-ecosystems/dynamic-languages/php-pro.md",
       "role": "executor"
     },
@@ -1951,7 +2512,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "00-orchestration",
+      "subcategory": "",
       "description": "Central dispatcher for multi-phase SDLC pipelines. Coordinates phase transitions, manages human gates, routes tasks to agents via agent-selector, and ensures alignment with PRD through Plan Guardian integration.",
+      "grade": "A",
+      "composite_score": 93.5,
       "path": "pipeline-agents/00-orchestration/orchestrator.md",
       "role": "executor"
     },
@@ -1965,7 +2530,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "06-09-implementation",
+      "subcategory": "",
       "description": "Phases 6-9 continuous monitoring agent for the SDLC pipeline. Tracks implementation drift against PRD, specs, and task plan. Computes alignment scores (0.0-1.0) and triggers conditional gates when drift exceeds thresholds.",
+      "grade": "A",
+      "composite_score": 92.8,
       "path": "pipeline-agents/06-09-implementation/plan-guardian.md",
       "role": "monitor"
     },
@@ -1979,7 +2548,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "testing",
       "description": "Masters browser automation using Playwright for cross-browser testing, UI interaction automation, and visual regression testing across Chrome, Firefox, and Safari",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "expert-agents/development-tooling/testing/playwright-automation-specialist.md",
       "role": "executor"
     },
@@ -1993,7 +2566,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "04-audit",
+      "subcategory": "",
       "description": "Phase 4 agent for SDLC pipelines. Audits validated PRDs for quality, consistency, feasibility, and completeness. Performs deep review beyond structural validation to ensure PRD is implementation-ready.",
+      "grade": "A",
+      "composite_score": 90.5,
       "path": "pipeline-agents/04-audit/prd-auditor.md",
       "role": "auditor"
     },
@@ -2007,7 +2584,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "03-validation",
+      "subcategory": "",
       "description": "Phase 3 agent for SDLC pipelines. Validates PRD completeness against 19-section structure, verifies EARS syntax compliance, checks requirement traceability, and prepares for audit gate.",
+      "grade": "A",
+      "composite_score": 91.5,
       "path": "pipeline-agents/03-validation/prd-validator.md",
       "role": "validator"
     },
@@ -2021,7 +2602,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "project-management",
       "description": "Release management and launch coordination specialist. Invoke for launch coordination, go-live checklists, stakeholder alignment, risk mitigation, rollback planning, and post-launch monitoring.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/business-operations/project-management/project-shipper.md",
       "role": "executor"
     },
@@ -2035,7 +2620,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "developer-experience",
       "description": "Crafts and optimizes prompts for LLMs and AI systems with systematic optimization, performance measurement, and iterative refinement for maximum effectiveness",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "expert-agents/development-tooling/developer-experience/prompt-engineer.md",
       "role": "executor"
     },
@@ -2049,7 +2638,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "formal-verification",
       "description": "Validates system properties and invariants through comprehensive property-based testing and specification verification using tools like Hypothesis, QuickCheck, and PropEr",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/formal-verification/property-verifier.md",
       "role": "auditor"
     },
@@ -2063,7 +2656,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "application-languages",
       "description": "Python specialist for backend services, API development, and automation with Pythonic idioms, type safety, and security-first design",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/backend-ecosystems/application-languages/python-pro.md",
       "role": "executor"
     },
@@ -2077,7 +2674,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "00-quality-assurance",
+      "subcategory": "",
       "description": "Configures validation intensity and quality criteria for each SDLC pipeline gate. Scales testing depth by phase, risk tolerance, and human preferences. Prepares gate criteria for human decision points.",
+      "grade": "A",
+      "composite_score": 90.2,
       "path": "pipeline-agents/00-quality-assurance/quality-gate-controller.md",
       "role": "controller"
     },
@@ -2091,7 +2692,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "finance-risk",
       "description": "Quantitative modeling and financial algorithm specialist. Invoke for quantitative model development, financial algorithm design, risk quantification, and backtesting validation.",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/business-operations/finance-risk/quant-analyst.md",
       "role": "advisor"
     },
@@ -2105,7 +2710,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "developer-experience",
       "description": "Creates quick MVPs and proof-of-concept implementations with speed-over-polish approach, validation-focused development, and low-to-high fidelity progression",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "expert-agents/development-tooling/developer-experience/rapid-prototyper.md",
       "role": "executor"
     },
@@ -2119,7 +2728,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "gpu-computing",
       "description": "Specializes in NVIDIA RAPIDS GPU-accelerated data science ecosystem with cuDF, cuML, and cuGraph integration for high-performance analytics workflows",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/gpu-computing/rapids-expert.md",
       "role": "executor"
     },
@@ -2133,7 +2746,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "embedded-hardware",
+      "subcategory": "edge-platforms",
       "description": "Masters Raspberry Pi single-board computers for embedded Linux applications, IoT projects, edge computing, computer vision, and GPIO-based hardware control with advanced system optimization",
+      "grade": "A-",
+      "composite_score": 8.8,
       "path": "expert-agents/embedded-hardware/edge-platforms/raspberry-pi-expert.md",
       "role": "executor"
     },
@@ -2147,7 +2764,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "frontend-ecosystems",
+      "subcategory": "javascript-frameworks",
       "description": "Master architect of React.js component ecosystems specializing in modern patterns, performance optimization, hooks, state management, and scalable component architectures",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "expert-agents/frontend-ecosystems/javascript-frameworks/reactjs-expert.md",
       "role": "executor"
     },
@@ -2161,7 +2782,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "marketing",
       "description": "Develops Reddit engagement strategies including subreddit research, authentic community participation, AMA coordination, and karma-positive brand building",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/documentation-content/marketing/reddit-community-builder.md",
       "role": "executor"
     },
@@ -2175,7 +2800,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "messaging-systems",
       "description": "Masters Redis in-memory data structures and caching systems, specializing in high-performance data storage, pub/sub messaging, distributed caching, and real-time applications with advanced clustering and persistence",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/messaging-systems/redis-expert.md",
       "role": "executor"
     },
@@ -2189,7 +2818,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "technical-writing",
       "description": "Builds comprehensive reference materials and quick-start guides focused on developer productivity and rapid onboarding",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/technical-writing/reference-builder.md",
       "role": "executor"
     },
@@ -2203,7 +2836,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "signal-processing",
+      "subcategory": "rf-systems",
       "description": "Radio Frequency and Software Defined Radio specialist. Invoke for RF/SDR system design, signal intelligence, electronic warfare, spectrum analysis, and adaptive communication systems.",
+      "grade": "A-",
+      "composite_score": 8.8,
       "path": "expert-agents/signal-processing/rf-systems/rf-sdr-expert.md",
       "role": "executor"
     },
@@ -2217,7 +2854,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "business-operations",
+      "subcategory": "finance-risk",
       "description": "Enterprise risk assessment and mitigation specialist. Invoke for risk assessment, threat modeling, business continuity planning, and strategic risk mitigation.",
+      "grade": "A",
+      "composite_score": 9.0,
       "path": "expert-agents/business-operations/finance-risk/risk-manager.md",
       "role": "auditor"
     },
@@ -2231,7 +2872,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "00-agent-management",
+      "subcategory": "",
       "description": "Task-to-agent matcher for roster management. Selects appropriate agents for tasks based on phase context, requirements, and roster assignments. Distinct from the PhD-tier pipeline agent-selector.",
+      "grade": "A",
+      "composite_score": 90.2,
       "path": "pipeline-agents/00-agent-management/agent-selector-roster.md",
       "role": "advisor"
     },
@@ -2245,7 +2890,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "dynamic-languages",
       "description": "Ruby specialist for Rails framework, metaprogramming patterns, and elegant code architecture optimized for rapid development",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/backend-ecosystems/dynamic-languages/ruby-pro.md",
       "role": "executor"
     },
@@ -2259,7 +2908,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "systems-languages",
       "description": "Rust systems programming specialist for memory-safe, high-performance applications with ownership optimization and safety guarantees",
+      "grade": "A",
+      "composite_score": 91.2,
       "path": "expert-agents/backend-ecosystems/systems-languages/rust-pro.md",
       "role": "executor"
     },
@@ -2273,7 +2926,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "security-compliance",
+      "subcategory": "code-security",
       "description": "Validates Rust code for memory safety, unsafe code correctness, and soundness guarantees through comprehensive static and dynamic analysis",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/security-compliance/code-security/rust-safety-validator.md",
       "role": "auditor"
     },
@@ -2287,7 +2944,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "customer-relations",
       "description": "Sales automation and conversion optimization specialist. Invoke for lead generation system design, sales funnel optimization, CRM workflow automation, and conversion rate improvement.",
+      "grade": "A-",
+      "composite_score": 8.7,
       "path": "expert-agents/business-operations/customer-relations/sales-automator.md",
       "role": "executor"
     },
@@ -2301,7 +2962,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "code-quality",
       "description": "Performs comprehensive static application security testing using advanced SAST tools (Semgrep, Bandit, CodeQL) for vulnerability detection and security assessment",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/code-quality/sast-analyzer.md",
       "role": "auditor"
     },
@@ -2315,7 +2980,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "enterprise-languages",
       "description": "Scala specialist for functional programming, distributed systems with Akka, and big data processing with Spark",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/backend-ecosystems/enterprise-languages/scala-pro.md",
       "role": "executor"
     },
@@ -2329,7 +2998,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Implements advanced search algorithms, indexing systems, and search optimization for efficient information retrieval",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/seo-marketing/search-specialist.md",
       "role": "executor"
     },
@@ -2343,7 +3016,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "security-compliance",
+      "subcategory": "defensive-security",
       "description": "Security assessment specialist for SDLC pipelines. Performs threat modeling, vulnerability scanning, compliance validation, and security gate reviews at critical pipeline checkpoints. Integrates with code review and deployment phases.",
+      "grade": "A",
+      "composite_score": 95.0,
       "path": "expert-agents/security-compliance/defensive-security/security-auditor.md",
       "role": "auditor"
     },
@@ -2357,7 +3034,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Builds domain authority through strategic link building, content marketing, and authority development for sustainable growth",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/documentation-content/seo-marketing/seo-authority-builder.md",
       "role": "executor"
     },
@@ -2371,7 +3052,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Detects and resolves keyword cannibalization issues through comprehensive content analysis and strategic differentiation",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/seo-marketing/seo-cannibalization-detector.md",
       "role": "auditor"
     },
@@ -2385,7 +3070,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Audits content performance for SEO improvements through comprehensive analysis and strategic optimization recommendations",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/seo-marketing/seo-content-auditor.md",
       "role": "auditor"
     },
@@ -2399,7 +3088,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Plans comprehensive content strategies and editorial calendars with SEO optimization and content marketing integration",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/seo-marketing/seo-content-planner.md",
       "role": "executor"
     },
@@ -2413,7 +3106,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Refreshes and updates existing content for sustained SEO performance through strategic optimization and freshness improvements",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/documentation-content/seo-marketing/seo-content-refresher.md",
       "role": "executor"
     },
@@ -2427,7 +3124,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Creates SEO-optimized content with strategic keyword integration, user engagement focus, and search performance excellence",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/seo-marketing/seo-content-writer.md",
       "role": "executor"
     },
@@ -2441,7 +3142,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Researches and strategizes keyword optimization with comprehensive market analysis and search intent alignment",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/seo-marketing/seo-keyword-strategist.md",
       "role": "advisor"
     },
@@ -2455,7 +3160,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Optimizes meta tags and on-page SEO elements for search visibility and CTR with current best practices",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/seo-marketing/seo-meta-optimizer.md",
       "role": "executor"
     },
@@ -2469,7 +3178,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Optimizes content for featured snippets and rich search results through strategic formatting and schema markup",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/seo-marketing/seo-snippet-hunter.md",
       "role": "executor"
     },
@@ -2483,7 +3196,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "seo-marketing",
       "description": "Designs content structure and site architecture for optimal SEO performance with technical excellence and crawlability",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/seo-marketing/seo-structure-architect.md",
       "role": "advisor"
     },
@@ -2497,7 +3214,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "creative",
       "description": "Delivers sardonic commentary, dry humor, and playful snark that entertains without offending, specializing in tech roasts, clever error messages, and self-deprecating observations that find the humor in our collective suffering",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/documentation-content/creative/snarky-sarcastic-wit.md",
       "role": "executor"
     },
@@ -2511,7 +3232,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "blockchain-web3",
+      "subcategory": "smart-contracts",
       "description": "Smart contract security specialist for Ethereum/EVM chains focusing on secure Solidity development, vulnerability detection, gas optimization, and audit-grade contract patterns",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/blockchain-web3/smart-contracts/solidity-auditor.md",
       "role": "auditor"
     },
@@ -2525,7 +3250,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "sensing-perception",
+      "subcategory": "acoustic-sonar",
       "description": "Masters SONAR systems for defense applications, specializing in underwater detection, submarine warfare, mine countermeasures, and advanced acoustic signal processing for maritime defense operations",
+      "grade": "A",
+      "composite_score": 9.0,
       "path": "expert-agents/sensing-perception/acoustic-sonar/sonar-expert.md",
       "role": "executor"
     },
@@ -2539,7 +3268,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "06-09-implementation",
+      "subcategory": "",
       "description": "Phase 6-9 agent for the SDLC pipeline. Creates formal specifications for each task, defining precise implementation contracts with inputs, outputs, interfaces, and test criteria. Ensures 1:1 task-to-spec mapping.",
+      "grade": "A",
+      "composite_score": 90.2,
       "path": "pipeline-agents/06-09-implementation/specification-agent.md",
       "role": "executor"
     },
@@ -2553,7 +3286,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "product-management",
       "description": "Agile backlog management and sprint planning specialist. Invoke for story point estimation, sprint planning, backlog grooming, RICE/ICE scoring, dependency mapping, and velocity tracking.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/business-operations/product-management/sprint-prioritizer.md",
       "role": "advisor"
     },
@@ -2567,7 +3304,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "database-systems",
       "description": "Masters complex SQL queries, execution plan optimization, and normalized database schema design for high-performance relational systems",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/database-systems/sql-pro.md",
       "role": "executor"
     },
@@ -2581,7 +3322,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "project-management",
       "description": "Production management and cross-team coordination specialist. Invoke for resource allocation, timeline management, cross-team coordination, milestone tracking, blocker resolution, and capacity planning.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/business-operations/project-management/studio-producer.md",
       "role": "executor"
     },
@@ -2595,7 +3340,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "security-compliance",
+      "subcategory": "code-security",
       "description": "Analyzes software supply chain security with comprehensive dependency analysis, license compliance verification, and vulnerability chain assessment",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/security-compliance/code-security/supply-chain-auditor.md",
       "role": "auditor"
     },
@@ -2609,7 +3358,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "frontend-ecosystems",
+      "subcategory": "javascript-frameworks",
       "description": "Pioneer of Svelte's compilation-first approach specializing in reactive component architectures, build-time optimization, and exceptional developer ergonomics with minimal runtime overhead",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/frontend-ecosystems/javascript-frameworks/svelte-expert.md",
       "role": "executor"
     },
@@ -2623,7 +3376,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "05-task-decomposition",
+      "subcategory": "",
       "description": "Phase 5 agent for SDLC pipelines. Transforms audited PRDs into executable task DAGs with dependencies, complexity estimates, and acceptance criteria. Generates task graphs for implementation planning.",
+      "grade": "A",
+      "composite_score": 90.2,
       "path": "pipeline-agents/05-task-decomposition/task-decomposer.md",
       "role": "executor"
     },
@@ -2637,7 +3394,11 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "06-09-implementation",
+      "subcategory": "",
       "description": "Phase 6-9 core implementation agent for the SDLC pipeline. Implements tasks using strict TDD methodology—tests first, then implementation, then refactor. Works from specifications and test strategies to produce verified code.",
+      "grade": "A",
+      "composite_score": 93.5,
       "path": "pipeline-agents/06-09-implementation/tdd-implementation-agent.md",
       "role": "executor"
     },
@@ -2651,7 +3412,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "cloud-infrastructure",
+      "subcategory": "infrastructure-as-code",
       "description": "Masters Infrastructure as Code with advanced Terraform modules, state management, and infrastructure automation best practices. Validates infrastructure against OpenSpec contracts and enforces deployment gates. Invoke for IaC design, module development, state management, infrastructure automation, and deployment validation (phases 11-12).",
+      "grade": "A",
+      "composite_score": 93.0,
       "path": "expert-agents/cloud-infrastructure/infrastructure-as-code/terraform-specialist.md",
       "role": "executor"
     },
@@ -2665,7 +3430,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "testing",
       "description": "Specialized in automated testing frameworks, test strategy design, and quality assurance processes for complex software systems",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/testing/test-automation-expert-alt.md",
       "role": "executor"
     },
@@ -2679,7 +3448,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "testing",
       "description": "Automates comprehensive testing with unit, integration, and E2E coverage using modern frameworks (Jest, Pytest, Cypress) with reporting excellence",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "expert-agents/development-tooling/testing/test-automator.md",
       "role": "executor"
     },
@@ -2693,7 +3466,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "testing",
       "description": "Test analysis specialist for test report synthesis and quality assessment. Invoke for test result interpretation, flaky test detection, coverage gap analysis, failure pattern identification, and regression analysis.",
+      "grade": "A",
+      "composite_score": 9.0,
       "path": "expert-agents/development-tooling/testing/test-results-analyzer.md",
       "role": "auditor"
     },
@@ -2707,7 +3484,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "06-09-implementation",
+      "subcategory": "",
       "description": "Phase 6-9 agent for the SDLC pipeline. Designs test strategies for each specification, defining test types, coverage targets, and test case outlines. Prepares test plan before TDD implementation begins.",
+      "grade": "A",
+      "composite_score": 90.0,
       "path": "pipeline-agents/06-09-implementation/test-strategist.md",
       "role": "strategist"
     },
@@ -2721,7 +3502,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "marketing",
       "description": "Develops TikTok content strategies including trend identification, sound selection, algorithm optimization, and viral mechanics for authentic brand building on short-form video",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/documentation-content/marketing/tiktok-strategist.md",
       "role": "executor"
     },
@@ -2735,7 +3520,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "security-compliance",
+      "subcategory": "code-security",
       "description": "RFC 3161 timestamping and long-term signature validation specialist focusing on trusted timestamping, PKI integration, and regulatory compliance for digital evidence",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/security-compliance/code-security/timestamp-authority-expert.md",
       "role": "executor"
     },
@@ -2749,7 +3538,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "testing",
       "description": "Technology evaluation specialist for tool selection and vendor comparison. Invoke for tech stack assessment, vendor comparison, POC design, build vs buy analysis, migration planning, and adoption criteria definition.",
+      "grade": "A",
+      "composite_score": 9.1,
       "path": "expert-agents/development-tooling/testing/tool-evaluator.md",
       "role": "advisor"
     },
@@ -2763,7 +3556,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "business-operations",
+      "subcategory": "product-management",
       "description": "Market trends and competitive intelligence analyst. Invoke for technology trend analysis, competitor research, market landscape assessment, emerging pattern identification, and future forecasting.",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/business-operations/product-management/trend-researcher.md",
       "role": "advisor"
     },
@@ -2777,7 +3574,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "technical-writing",
       "description": "Creates comprehensive step-by-step tutorials and learning resources with focus on educational effectiveness and learner success",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/documentation-content/technical-writing/tutorial-engineer.md",
       "role": "executor"
     },
@@ -2791,7 +3592,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "documentation-content",
+      "subcategory": "marketing",
       "description": "Develops Twitter/X engagement strategies including thread optimization, community building, trending topic participation, and authentic brand voice development",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/documentation-content/marketing/twitter-engager.md",
       "role": "executor"
     },
@@ -2805,7 +3610,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "code-quality",
       "description": "Ensures comprehensive type safety using advanced type checkers (mypy, pyright, TypeScript) for runtime error prevention through sophisticated static type analysis",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/code-quality/type-safety-enforcer.md",
       "role": "auditor"
     },
@@ -2819,7 +3628,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "backend-ecosystems",
+      "subcategory": "application-languages",
       "description": "TypeScript specialist for advanced type systems, strict type safety, and enterprise-scale applications",
+      "grade": "A",
+      "composite_score": 91.3,
       "path": "expert-agents/backend-ecosystems/application-languages/typescript-pro.md",
       "role": "executor"
     },
@@ -2833,7 +3646,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "networking-telecom",
+      "subcategory": "network-infrastructure",
       "description": "Masters Ubiquiti networking equipment and UniFi ecosystem, specializing in enterprise-grade wireless networks, network management, security appliances, and comprehensive network infrastructure deployment. Invoke for UniFi configuration, wireless network design, and Ubiquiti deployment.",
+      "grade": "A-",
+      "composite_score": 8.8,
       "path": "expert-agents/networking-telecom/network-infrastructure/ubiquiti-expert.md",
       "role": "executor"
     },
@@ -2847,7 +3664,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "system-platforms",
+      "subcategory": "linux-distributions",
       "description": "Masters Ubuntu Linux distribution for development, server deployment, and desktop environments, specializing in system administration, package management, and enterprise-grade Ubuntu deployments with cloud integration. Invoke for Ubuntu server setup, system administration, and cloud deployment.",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/system-platforms/linux-distributions/ubuntu-expert.md",
       "role": "executor"
     },
@@ -2856,7 +3677,11 @@
       "tier": "expert",
       "model": "sonnet",
       "model_fallbacks": [],
+      "category": "development-architecture",
+      "subcategory": "user-experience",
       "description": "Master of user interface and experience design specializing in comprehensive design systems, accessibility-first approach, user-centered design, and implementation-ready specifications",
+      "grade": "A",
+      "composite_score": 9.1,
       "path": "expert-agents/development-architecture/user-experience/ui-ux-designer.md",
       "role": "advisor"
     },
@@ -2870,7 +3695,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "testing",
       "description": "TDD-focused specialist creating comprehensive unit tests with high coverage, mutation testing validation, and test-first development practices for bulletproof code quality",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/testing/unit-test-specialist.md",
       "role": "executor"
     },
@@ -2884,7 +3713,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "immersive-spatial",
+      "subcategory": "3d-visualization",
       "description": "Unity game engine specialist for interactive 3D experiences with C# scripting optimization and performance tuning",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/immersive-spatial/3d-visualization/unity-developer.md",
       "role": "executor"
     },
@@ -2893,7 +3726,11 @@
       "tier": "expert",
       "model": "sonnet",
       "model_fallbacks": [],
+      "category": "development-architecture",
+      "subcategory": "user-experience",
       "description": "Master of user research methodology specializing in user interviews, usability testing, persona creation, journey mapping, A/B test design, survey methodology, and behavioral analysis for evidence-based design decisions",
+      "grade": "A",
+      "composite_score": 9.2,
       "path": "expert-agents/development-architecture/user-experience/ux-researcher.md",
       "role": "advisor"
     },
@@ -2907,7 +3744,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "00-quality-assurance",
+      "subcategory": "",
       "description": "Validates task outputs and specifications against specification schemas in the SDLC pipeline, ensuring structural compliance and phase-entry criteria are met",
+      "grade": "A",
+      "composite_score": 9.2,
       "path": "pipeline-agents/00-quality-assurance/validation-depth-controller.md",
       "role": "auditor"
     },
@@ -2921,7 +3762,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "security-compliance",
+      "subcategory": "code-security",
       "description": "Merkle tree, append-only log, and cryptographic commitment specialist for building tamper-evident systems, audit trails, and verifiable transparency logs",
+      "grade": "A",
+      "composite_score": 92.0,
       "path": "expert-agents/security-compliance/code-security/verifiable-data-structures-expert.md",
       "role": "executor"
     },
@@ -2930,7 +3775,11 @@
       "tier": "expert",
       "model": "sonnet",
       "model_fallbacks": [],
+      "category": "development-architecture",
+      "subcategory": "user-experience",
       "description": "Master of visual narrative design specializing in presentation design, data visualization, infographics, slide decks, pitch materials, and visual communication for compelling story-driven content",
+      "grade": "A",
+      "composite_score": 9.2,
       "path": "expert-agents/development-architecture/user-experience/visual-storyteller.md",
       "role": "advisor"
     },
@@ -2944,7 +3793,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "media-processing",
+      "subcategory": "audio-video",
       "description": "Masters VLC media player framework and LibVLC for multimedia applications, specializing in media playback, streaming server deployment, and cross-platform multimedia integration",
+      "grade": "A-",
+      "composite_score": 8.8,
       "path": "expert-agents/media-processing/audio-video/vlc-expert.md",
       "role": "executor"
     },
@@ -2958,7 +3811,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "realtime-protocols",
       "description": "Masters WebRTC real-time peer-to-peer communication for web and mobile applications, specializing in video conferencing, audio streaming, data channels, and NAT traversal with advanced media optimization and security protocols",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/realtime-protocols/webrtc-expert.md",
       "role": "executor"
     },
@@ -2972,7 +3829,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "realtime-protocols",
       "description": "Masters WebSocket protocol for real-time bidirectional web communication, specializing in live data streaming, chat applications, gaming protocols, and scalable real-time web architectures with advanced connection management",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/realtime-protocols/websocket-expert.md",
       "role": "executor"
     },
@@ -2981,7 +3842,11 @@
       "tier": "expert",
       "model": "sonnet",
       "model_fallbacks": [],
+      "category": "development-architecture",
+      "subcategory": "user-experience",
       "description": "Master of creative delight specializing in Easter eggs, micro-interactions, playful copy, delight moments, surprise elements, and personality injection that balances fun with usability for memorable user experiences",
+      "grade": "A",
+      "composite_score": 9.1,
       "path": "expert-agents/development-architecture/user-experience/whimsy-injector.md",
       "role": "advisor"
     },
@@ -2995,7 +3860,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "networking-telecom",
+      "subcategory": "network-analysis",
       "description": "Masters Wireshark network protocol analysis for cybersecurity and network troubleshooting, specializing in packet capture, protocol dissection, network forensics, and advanced filtering techniques. Invoke for network traffic analysis, protocol debugging, and security incident investigation.",
+      "grade": "A-",
+      "composite_score": 8.9,
       "path": "expert-agents/networking-telecom/network-analysis/wireshark-expert.md",
       "role": "auditor"
     },
@@ -3009,7 +3878,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "development-tooling",
+      "subcategory": "developer-experience",
       "description": "Analyzes and optimizes developer workflows through bottleneck identification, automation opportunities, CI/CD pipeline efficiency, and build time reduction using data-driven DORA metrics",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/development-tooling/developer-experience/workflow-optimizer.md",
       "role": "executor"
     },
@@ -3023,7 +3896,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "data-intelligence",
+      "subcategory": "machine-learning",
       "description": "Masters YOLO object detection for real-time computer vision, specializing in model optimization, custom dataset training, and deployment across YOLOv3-YOLOv8+ architectures",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/data-intelligence/machine-learning/yolo-expert.md",
       "role": "executor"
     },
@@ -3037,7 +3914,11 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
+      "category": "communication-protocols",
+      "subcategory": "messaging-systems",
       "description": "Expert in Zenoh protocol for scalable, peer-to-peer communication enabling edge-to-cloud data flows with performance optimization",
+      "grade": "A",
+      "composite_score": null,
       "path": "expert-agents/communication-protocols/messaging-systems/zenoh-expert.md",
       "role": "executor"
     },
@@ -3051,898 +3932,13 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
+      "category": "security-compliance",
+      "subcategory": "defensive-security",
       "description": "Designs and implements zero trust architecture principles with secure identity verification, least privilege access, and continuous monitoring for mission-critical systems",
+      "grade": "A",
+      "composite_score": 91.0,
       "path": "expert-agents/security-compliance/defensive-security/zero-trust-architect.md",
       "role": "architect"
     }
-  ],
-  "categories": {
-    "backend-ecosystems": {
-      "title": "Backend Ecosystems",
-      "description": "Backend development specialists",
-      "defaultExpanded": true,
-      "subcategories": {
-        "application-languages": {
-          "title": "Application Languages",
-          "description": "High-level application development languages",
-          "defaultExpanded": true,
-          "agents": [
-            "javascript-pro",
-            "python-pro",
-            "typescript-pro"
-          ]
-        },
-        "dynamic-languages": {
-          "title": "Dynamic Languages",
-          "description": "Dynamic and scripting languages",
-          "defaultExpanded": false,
-          "agents": [
-            "elixir-pro",
-            "php-pro",
-            "ruby-pro"
-          ]
-        },
-        "enterprise-languages": {
-          "title": "Enterprise Languages",
-          "description": "Enterprise-scale development platforms",
-          "defaultExpanded": false,
-          "agents": [
-            "csharp-pro",
-            "java-pro",
-            "scala-pro"
-          ]
-        },
-        "systems-languages": {
-          "title": "Systems Languages",
-          "description": "Low-level systems programming languages",
-          "defaultExpanded": false,
-          "agents": [
-            "c-pro",
-            "cpp-pro",
-            "golang-pro",
-            "rust-pro"
-          ]
-        }
-      }
-    },
-    "blockchain-web3": {
-      "title": "Blockchain Web3",
-      "description": "Blockchain and Web3 specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "enterprise-blockchain": {
-          "title": "Enterprise Blockchain",
-          "description": "Enterprise and permissioned blockchain specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "hyperledger-fabric-expert"
-          ]
-        },
-        "smart-contracts": {
-          "title": "Smart Contracts",
-          "description": "Smart contract development and security specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "ink-substrate-developer",
-            "solidity-auditor"
-          ]
-        }
-      }
-    },
-    "business-operations": {
-      "title": "Business Operations",
-      "description": "Business and operations specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "analytics": {
-          "title": "Analytics",
-          "description": "Business analytics specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "analytics-reporter",
-            "finance-tracker"
-          ]
-        },
-        "customer-relations": {
-          "title": "Customer Relations",
-          "description": "Customer support and sales specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "customer-support",
-            "sales-automator"
-          ]
-        },
-        "finance-risk": {
-          "title": "Finance Risk",
-          "description": "Finance and risk management specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "payment-integration",
-            "quant-analyst",
-            "risk-manager"
-          ]
-        },
-        "product-management": {
-          "title": "Product Management",
-          "description": "Product management specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "feedback-synthesizer",
-            "sprint-prioritizer",
-            "trend-researcher"
-          ]
-        },
-        "project-management": {
-          "title": "Project Management",
-          "description": "Project management specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "experiment-tracker",
-            "project-shipper",
-            "studio-producer"
-          ]
-        },
-        "workforce-legal": {
-          "title": "Workforce Legal",
-          "description": "HR and legal specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "business-analyst",
-            "hr-pro",
-            "legal-advisor"
-          ]
-        }
-      }
-    },
-    "cloud-infrastructure": {
-      "title": "Cloud Infrastructure",
-      "description": "Cloud platforms and infrastructure specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "cloud-platforms": {
-          "title": "Cloud Platforms",
-          "description": "Cloud service specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "aws-architect",
-            "azure-architect",
-            "gcp-architect",
-            "oracle-cloud-architect"
-          ]
-        },
-        "container-orchestration": {
-          "title": "Container Orchestration",
-          "description": "Container orchestration specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "docker-agent",
-            "kubernetes-agent"
-          ]
-        },
-        "deployment-operations": {
-          "title": "Deployment Operations",
-          "description": "Deployment and operations specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "chaos-engineer",
-            "deployment-engineer",
-            "devops-troubleshooter",
-            "incident-responder"
-          ]
-        },
-        "infrastructure-as-code": {
-          "title": "Infrastructure as Code",
-          "description": "IaC and automation specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "terraform-specialist"
-          ]
-        }
-      }
-    },
-    "communication-protocols": {
-      "title": "Communication Protocols",
-      "description": "Communication and protocol specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "api-standards": {
-          "title": "API Standards",
-          "description": "API design and implementation specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "grpc-expert",
-            "openapi-rest-expert"
-          ]
-        },
-        "industrial-protocols": {
-          "title": "Industrial Protocols",
-          "description": "Industrial communication protocol specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "canbus-expert",
-            "coap-expert",
-            "modbus-expert",
-            "opcua-expert"
-          ]
-        },
-        "messaging-systems": {
-          "title": "Messaging Systems",
-          "description": "Message queue and streaming specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "amqp-rabbitmq-expert",
-            "dds-expert",
-            "kafka-expert",
-            "mqtt-expert",
-            "redis-expert",
-            "zenoh-expert"
-          ]
-        },
-        "realtime-protocols": {
-          "title": "Realtime Protocols",
-          "description": "Real-time communication specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "webrtc-expert",
-            "websocket-expert"
-          ]
-        }
-      }
-    },
-    "data-intelligence": {
-      "title": "Data Intelligence",
-      "description": "Data systems and AI specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "data-processing": {
-          "title": "Data Processing",
-          "description": "Data pipelines and analytics",
-          "defaultExpanded": false,
-          "agents": [
-            "data-engineer",
-            "data-scientist"
-          ]
-        },
-        "database-operations": {
-          "title": "Database Operations",
-          "description": "Database management and optimization",
-          "defaultExpanded": false,
-          "agents": [
-            "database-admin",
-            "database-optimizer"
-          ]
-        },
-        "database-systems": {
-          "title": "Database Systems",
-          "description": "Database technology specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "falkordb-expert",
-            "neo4j-expert",
-            "sql-pro"
-          ]
-        },
-        "gpu-computing": {
-          "title": "GPU Computing",
-          "description": "GPU acceleration specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "cuda-expert",
-            "isaac-expert",
-            "jetson-expert",
-            "rapids-expert"
-          ]
-        },
-        "machine-learning": {
-          "title": "Machine Learning",
-          "description": "ML and AI systems specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "ai-engineer",
-            "dspy-expert",
-            "kerasml-expert",
-            "ml-engineer",
-            "mlops-engineer",
-            "yolo-expert"
-          ]
-        }
-      }
-    },
-    "development-architecture": {
-      "title": "Development Architecture",
-      "description": "System architecture and design specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "system-architecture": {
-          "title": "System Architecture",
-          "description": "Core architecture and design specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "architect-reviewer",
-            "backend-architect",
-            "graphql-architect"
-          ]
-        },
-        "user-experience": {
-          "title": "User Experience",
-          "description": "UI/UX design and user experience specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "brand-guardian",
-            "frontend-developer",
-            "ui-ux-designer",
-            "ux-researcher",
-            "visual-storyteller",
-            "whimsy-injector"
-          ]
-        }
-      }
-    },
-    "development-tooling": {
-      "title": "Development Tooling",
-      "description": "Development tools and quality specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "code-quality": {
-          "title": "Code Quality",
-          "description": "Code quality and review specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "code-reviewer",
-            "debugger",
-            "error-detective",
-            "legacy-modernizer",
-            "merger",
-            "sast-analyzer",
-            "type-safety-enforcer"
-          ]
-        },
-        "developer-experience": {
-          "title": "Developer Experience",
-          "description": "Developer experience optimization specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "context-manager",
-            "dx-optimizer",
-            "prompt-engineer",
-            "rapid-prototyper",
-            "workflow-optimizer"
-          ]
-        },
-        "formal-verification": {
-          "title": "Formal Verification",
-          "description": "Formal methods and verification specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "deductive-verifier",
-            "model-checker",
-            "property-verifier"
-          ]
-        },
-        "testing": {
-          "title": "Testing",
-          "description": "Testing and test automation specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "api-tester",
-            "integration-test-coordinator",
-            "playwright-automation-specialist",
-            "test-automation-expert",
-            "test-automator",
-            "test-results-analyzer",
-            "tool-evaluator",
-            "unit-test-specialist"
-          ]
-        }
-      }
-    },
-    "documentation-content": {
-      "title": "Documentation Content",
-      "description": "Documentation and content specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "creative": {
-          "title": "Creative",
-          "description": "Creative content specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "snarky-sarcastic-wit"
-          ]
-        },
-        "marketing": {
-          "title": "Marketing",
-          "description": "Social media and marketing specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "app-store-optimizer",
-            "growth-hacker",
-            "instagram-curator",
-            "reddit-community-builder",
-            "tiktok-strategist",
-            "twitter-engager"
-          ]
-        },
-        "seo-marketing": {
-          "title": "SEO & Marketing",
-          "description": "SEO and marketing specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "content-marketer",
-            "search-specialist",
-            "seo-authority-builder",
-            "seo-cannibalization-detector",
-            "seo-content-auditor",
-            "seo-content-planner",
-            "seo-content-refresher",
-            "seo-content-writer",
-            "seo-keyword-strategist",
-            "seo-meta-optimizer",
-            "seo-snippet-hunter",
-            "seo-structure-architect"
-          ]
-        },
-        "technical-writing": {
-          "title": "Technical Writing",
-          "description": "Technical documentation specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "api-documenter",
-            "docs-architect",
-            "documentation-writer",
-            "mermaid-expert",
-            "reference-builder",
-            "tutorial-engineer"
-          ]
-        }
-      }
-    },
-    "embedded-hardware": {
-      "title": "Embedded Hardware",
-      "description": "Embedded systems and hardware specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "edge-platforms": {
-          "title": "Edge Platforms",
-          "description": "Edge computing platform specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "home-assistant-expert",
-            "raspberry-pi-expert"
-          ]
-        },
-        "microcontrollers": {
-          "title": "Microcontrollers",
-          "description": "Microcontroller specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "arduino-expert",
-            "deauther-esp32-expert",
-            "esp32-expert"
-          ]
-        },
-        "robotics-drones": {
-          "title": "Robotics Drones",
-          "description": "Robotics and drone specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "arducopter-expert",
-            "flipper-zero-expert",
-            "marauder-expert"
-          ]
-        }
-      }
-    },
-    "frontend-ecosystems": {
-      "title": "Frontend Ecosystems",
-      "description": "Frontend development and UI specialists",
-      "defaultExpanded": true,
-      "subcategories": {
-        "javascript-frameworks": {
-          "title": "Javascript Frameworks",
-          "description": "Modern JavaScript framework specialists",
-          "defaultExpanded": true,
-          "agents": [
-            "nextjs-expert",
-            "reactjs-expert",
-            "svelte-expert"
-          ]
-        },
-        "mobile-development": {
-          "title": "Mobile Development",
-          "description": "Cross-platform and native mobile development",
-          "defaultExpanded": false,
-          "agents": [
-            "flutter-expert",
-            "ios-developer",
-            "mobile-developer"
-          ]
-        }
-      }
-    },
-    "immersive-spatial": {
-      "title": "Immersive Spatial",
-      "description": "AR/VR and 3D computing specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "3d-visualization": {
-          "title": "3D Visualization",
-          "description": "3D rendering and visualization specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "cesiumjs-expert",
-            "octree-voxel-expert",
-            "unity-developer"
-          ]
-        },
-        "augmented-reality": {
-          "title": "Augmented Reality",
-          "description": "AR platform specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "arcore-expert",
-            "arkit-expert"
-          ]
-        },
-        "collaborative-3d": {
-          "title": "Collaborative 3D",
-          "description": "Multi-user 3D workflow specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "omniverse-expert"
-          ]
-        }
-      }
-    },
-    "media-processing": {
-      "title": "Media Processing",
-      "description": "Media processing specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "audio-video": {
-          "title": "Audio Video",
-          "description": "Audio and video processing specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "ffmpeg-expert",
-            "gstreamer-expert",
-            "vlc-expert"
-          ]
-        }
-      }
-    },
-    "networking-telecom": {
-      "title": "Networking Telecom",
-      "description": "Networking and telecommunications specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "network-analysis": {
-          "title": "Network Analysis",
-          "description": "Network analysis specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "wireshark-expert"
-          ]
-        },
-        "network-infrastructure": {
-          "title": "Network Infrastructure",
-          "description": "Network infrastructure specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "network-engineer",
-            "ubiquiti-expert"
-          ]
-        },
-        "wireless-protocols": {
-          "title": "Wireless Protocols",
-          "description": "Wireless communication specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "lorawan-expert"
-          ]
-        }
-      }
-    },
-    "performance-reliability": {
-      "title": "Performance Reliability",
-      "description": "Performance and reliability specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "caching": {
-          "title": "Caching",
-          "description": "Caching specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "cache-expert"
-          ]
-        },
-        "memory-optimization": {
-          "title": "Memory Optimization",
-          "description": "Memory optimization specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "memory-optimizer"
-          ]
-        },
-        "performance": {
-          "title": "Performance",
-          "description": "General performance specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "performance-engineer"
-          ]
-        }
-      }
-    },
-    "security-compliance": {
-      "title": "Security Compliance",
-      "description": "Security and compliance specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "code-security": {
-          "title": "Code Security",
-          "description": "Code-level security specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "cryptography-specialist",
-            "rust-safety-validator",
-            "supply-chain-auditor",
-            "timestamp-authority-expert",
-            "verifiable-data-structures-expert"
-          ]
-        },
-        "compliance-audit": {
-          "title": "Compliance Audit",
-          "description": "Compliance and audit specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "compliance-checker"
-          ]
-        },
-        "defensive-security": {
-          "title": "Defensive Security",
-          "description": "Security defense specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "security-auditor",
-            "zero-trust-architect"
-          ]
-        },
-        "offensive-security": {
-          "title": "Offensive Security",
-          "description": "Penetration testing and offensive security",
-          "defaultExpanded": false,
-          "agents": [
-            "kali-linux-expert",
-            "penetration-tester"
-          ]
-        }
-      }
-    },
-    "sensing-perception": {
-      "title": "Sensing Perception",
-      "description": "Sensor and perception system specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "acoustic-sonar": {
-          "title": "Acoustic Sonar",
-          "description": "Acoustic and sonar specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "acoustic-expert",
-            "sonar-expert"
-          ]
-        },
-        "optical-imaging": {
-          "title": "Optical Imaging",
-          "description": "Optical and imaging specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "electro-optical-expert",
-            "hyperspectral-expert",
-            "infrared-expert",
-            "lidar-expert"
-          ]
-        },
-        "radar-systems": {
-          "title": "Radar Systems",
-          "description": "Radar system specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "bistatic-radar-expert",
-            "monostatic-radar-expert"
-          ]
-        },
-        "ranging-systems": {
-          "title": "Ranging Systems",
-          "description": "Ranging and distance measurement specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "laser-ranging-expert"
-          ]
-        }
-      }
-    },
-    "signal-processing": {
-      "title": "Signal Processing",
-      "description": "Signal processing specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "mission-systems": {
-          "title": "Mission Systems",
-          "description": "Mission system specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "bmc2-mission-planner"
-          ]
-        },
-        "rf-systems": {
-          "title": "RF Systems",
-          "description": "RF and SDR specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "ettus-expert",
-            "gnuradio-expert",
-            "rf-sdr-expert"
-          ]
-        }
-      }
-    },
-    "system-platforms": {
-      "title": "System Platforms",
-      "description": "Operating system and platform specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "linux-distributions": {
-          "title": "Linux Distributions",
-          "description": "Linux distribution specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "debian-expert",
-            "ubuntu-expert"
-          ]
-        }
-      }
-    }
-  },
-  "pipelineAgents": {
-    "00-agent-management": {
-      "title": "Agent Management",
-      "description": "Agent creation, editing, and roster management",
-      "defaultExpanded": false,
-      "agents": [
-        "agent-browser",
-        "agent-curator",
-        "agent-inventor",
-        "agent-provisioner",
-        "expert-agent-editor",
-        "focused-agent-editor",
-        "phd-agent-editor",
-        "roster-agent-selector"
-      ]
-    },
-    "00-orchestration": {
-      "title": "Orchestration",
-      "description": "Pipeline orchestration and coordination",
-      "defaultExpanded": false,
-      "agents": [
-        "agent-selector",
-        "assignment-agent",
-        "collaborator-coordinator",
-        "mcp-orchestrator",
-        "pipeline-orchestrator"
-      ]
-    },
-    "00-quality-assurance": {
-      "title": "Quality Assurance",
-      "description": "Quality gates and validation",
-      "defaultExpanded": false,
-      "agents": [
-        "agent-linter",
-        "agent-quality-auditor",
-        "audit-report-generator",
-        "quality-gate-controller",
-        "validation-depth-controller"
-      ]
-    },
-    "01-ideation": {
-      "title": "Ideation",
-      "description": "Initial ideation and strategic thinking",
-      "defaultExpanded": false,
-      "agents": [
-        "first-principles-advisor",
-        "first-principles-engineer",
-        "ideation-agent"
-      ]
-    },
-    "02-discovery": {
-      "title": "Discovery",
-      "description": "Research and discovery phase",
-      "defaultExpanded": false,
-      "agents": [
-        "agent-knowledge-researcher",
-        "discovery-agent"
-      ]
-    },
-    "03-validation": {
-      "title": "Validation",
-      "description": "Requirements and design validation",
-      "defaultExpanded": false,
-      "agents": [
-        "coupling-analyzer",
-        "prd-validator"
-      ]
-    },
-    "04-audit": {
-      "title": "Audit",
-      "description": "Requirements and design audit",
-      "defaultExpanded": false,
-      "agents": [
-        "prd-auditor"
-      ]
-    },
-    "05-task-decomposition": {
-      "title": "Task Decomposition",
-      "description": "Breaking down work into actionable tasks",
-      "defaultExpanded": false,
-      "agents": [
-        "task-decomposer"
-      ]
-    },
-    "06-09-implementation": {
-      "title": "Implementation",
-      "description": "Code implementation and review",
-      "defaultExpanded": false,
-      "agents": [
-        "code-review-gate",
-        "plan-guardian",
-        "specification-agent",
-        "tdd-implementation-agent",
-        "test-strategist"
-      ]
-    },
-    "10-testing": {
-      "title": "Testing",
-      "description": "Integration and end-to-end testing",
-      "defaultExpanded": false,
-      "agents": [
-        "e2e-testing-gate",
-        "integration-testing-gate"
-      ]
-    },
-    "11-12-deployment": {
-      "title": "Deployment",
-      "description": "Deployment and release management",
-      "defaultExpanded": false,
-      "agents": [
-        "deployment-gate"
-      ]
-    }
-  },
-  "metadata": {
-    "totalAgents": 221,
-    "totalExpertAgents": 186,
-    "totalPipelineAgents": 35,
-    "totalCategories": 30,
-    "totalSubcategories": 61,
-    "expertCategories": 19,
-    "expertSubcategories": 61,
-    "pipelineCategories": 11,
-    "pipelineSubcategories": 0,
-    "supportedModels": [
-      "opus",
-      "sonnet",
-      "haiku"
-    ],
-    "requiredFields": [
-      "Description",
-      "Model",
-      "Tools",
-      "Behaviors",
-      "System Prompt",
-      "Knowledge Sources",
-      "Human Interaction"
-    ],
-    "version": "3.0.0",
-    "schemaVersion": "3.0"
-  }
+  ]
 }
