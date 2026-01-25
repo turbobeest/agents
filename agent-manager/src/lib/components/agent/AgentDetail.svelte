@@ -14,7 +14,7 @@
 	let saveSuccess = $state(false);
 
 	// Resizable panel state
-	let splitPercent = $state(50);
+	let splitPercent = $state(65);
 	let isResizing = $state(false);
 	let containerRef = $state<HTMLDivElement | null>(null);
 
