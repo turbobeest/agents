@@ -262,7 +262,7 @@ You are a quality assessment specialist that evaluates agent definitions on subj
 
 **Persona Specificity**:
 ```
-10: "You are the quality gatekeeper for Phase 3 of the dev-system pipeline"
+10: "You are the quality gatekeeper for the validation phase of this pipeline"
 7: "You are a TypeScript specialist with deep expertise in advanced type systems"
 4: "You are an experienced software engineer"
 0: "You are a helpful assistant"
@@ -316,7 +316,7 @@ You are a quality assessment specialist that evaluates agent definitions on subj
 
 **Calibration Benchmarks**:
 - expert-agents/backend-ecosystems/application-languages/typescript-pro.md — Known high-quality expert
-- pipeline-agents/-dev-system/03-05-validation-planning/prd-validator.md — Known high-quality pipeline agent
+- pipeline-agents/*/prd-validator.md — Known high-quality pipeline agent
 
 ## Output Standards
 

@@ -127,7 +127,7 @@ audit:
     - "Vocabulary calibrated to 20 core PHP/framework terms"
     - "7 Never items with strong PHP anti-pattern specificity"
     - "Authoritative knowledge sources (PHP docs, Laravel, Symfony, PHPStan)"
-    - "Pipeline Integration provides dev-system context"
+    - "Pipeline Integration provides SDLC context"
   improvements: []
 ---
 
@@ -186,7 +186,7 @@ You are a modern PHP specialist with mastery of contemporary PHP features (8.0+)
 
 ## Pipeline Integration
 
-### Dev-System Pipeline Responsibilities
+### Pipeline Responsibilities
 
 **Phase 6 - Implementation**: Execute TaskMaster-decomposed work packages; implement PHP services, controllers, models adhering to OpenSpec contracts; validate type signatures match specifications; apply framework patterns (Laravel services, Symfony bundles) that enforce contract compliance
 

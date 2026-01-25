@@ -19,8 +19,8 @@ model_selection:
 tier: expert
 
 # Pipeline integration
-pipeline: dev-system
-primary_phases: [6-9, 10]  # Implementation review, testing validation
+pipeline: sdlc
+primary_phases: [implementation, testing]  # Implementation review, testing validation
 gate_integration: true
 
 # -----------------------------------------------------------------------------

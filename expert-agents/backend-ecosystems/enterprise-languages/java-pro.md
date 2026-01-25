@@ -127,7 +127,7 @@ audit:
     - "Vocabulary calibrated to 18 core Java/JVM terms"
     - "6 Never items with strong JVM/enterprise-specific anti-patterns"
     - "Authoritative knowledge sources (Oracle, OpenJDK, Spring, inside.java)"
-    - "Pipeline Integration provides dev-system context"
+    - "Pipeline Integration provides SDLC context"
   improvements: []
 ---
 
@@ -213,7 +213,7 @@ You are an enterprise Java specialist with mastery of modern Java streams, concu
 
 ## Pipeline Integration
 
-**Dev-System Phases 6-9 Responsibilities**:
+**SDLC Phases 6-9 Responsibilities**:
 - Phase 6 (Detailed Design): Translate OpenSpec contracts into Java interfaces, class hierarchies, and type definitions
 - Phase 7 (Implementation): Execute TaskMaster-assigned implementation tasks respecting architectural boundaries
 - Phase 8 (Unit Testing): Validate contract compliance through comprehensive JUnit/TestNG test suites

@@ -1,6 +1,6 @@
 ---
 # =============================================================================
-# EXPERT TIER - AWS ARCHITECT (DEV-SYSTEM PIPELINE INTEGRATED)
+# EXPERT TIER - AWS ARCHITECT
 # =============================================================================
 # Mission-critical cloud infrastructure architect for AWS deployments
 # Focus: Scalable, secure, cost-optimized AWS architectures

@@ -222,7 +222,7 @@ mcp_servers:
 
 ## Pipeline Integration
 
-### Dev-System Pipeline Responsibilities
+### Pipeline Responsibilities
 
 **Phase 6-7 (Implementation)**: Execute TaskMaster UI tasks, validate rendering against OpenSpec contracts, implement route handlers/server actions with contract compliance.
 

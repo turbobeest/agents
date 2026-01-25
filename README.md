@@ -3,15 +3,15 @@
 
 # Claude Code Agent Directory
 
-A comprehensive collection of **217 PhD-grade agent definitions** for the dev-sys pipeline. Every agent has been audited against a 10-dimension quality framework and achieved **Grade A** certification.
+A comprehensive collection of **221 PhD-grade agent definitions** for the SDLC pipeline. Every agent has been audited against a 10-dimension quality framework and achieved **Grade A** certification.
 
 ## Statistics
 
 | Metric | Count |
 |--------|-------|
-| **Total Agents** | 217 |
-| Expert Agents | 184 |
-| Pipeline Agents | 33 |
+| **Total Agents** | 221 |
+| Expert Agents | 186 |
+| Pipeline Agents | 35 |
 | Quality Grade | All Grade A |
 | Categories | 20 |
 | Subcategories | 58 |
@@ -75,7 +75,7 @@ Each agent includes embedded audit metadata in YAML frontmatter.
 
 ---
 
-## Expert Agents (184)
+## Expert Agents (186)
 
 ### Backend Ecosystems
 
@@ -465,70 +465,64 @@ Each agent includes embedded audit metadata in YAML frontmatter.
 
 ---
 
-## Pipeline Agents (33)
+## Pipeline Agents (35)
 
-### Dev System
+### 00 - Agent Management
+- [agent-browser](./pipeline-agents/00-agent-management/agent-browser.md)
+- [agent-curator](./pipeline-agents/00-agent-management/agent-curator.md)
+- [agent-inventor](./pipeline-agents/00-agent-management/agent-inventor.md)
+- [agent-provisioner](./pipeline-agents/00-agent-management/agent-provisioner.md)
+- [agent-selector-roster](./pipeline-agents/00-agent-management/agent-selector-roster.md)
+- [expert-agent-editor](./pipeline-agents/00-agent-management/expert-agent-editor.md)
+- [focused-agent-editor](./pipeline-agents/00-agent-management/focused-agent-editor.md)
+- [phd-agent-editor](./pipeline-agents/00-agent-management/phd-agent-editor.md)
 
-#### 01-02 Ideation Discovery
-- [discovery-agent](./pipeline-agents/-dev-system/01-02-ideation-discovery/discovery-agent.md)
-- [ideation-agent](./pipeline-agents/-dev-system/01-02-ideation-discovery/ideation-agent.md)
+### 00 - Orchestration
+- [agent-selector](./pipeline-agents/00-orchestration/agent-selector.md)
+- [assignment-agent](./pipeline-agents/00-orchestration/assignment-agent.md)
+- [collaborator-coordinator](./pipeline-agents/00-orchestration/collaborator-coordinator.md)
+- [mcp-orchestrator](./pipeline-agents/00-orchestration/mcp-orchestrator.md)
+- [orchestrator](./pipeline-agents/00-orchestration/orchestrator.md)
 
-#### 03-05 Validation Planning
-- [coupling-analyzer](./pipeline-agents/-dev-system/03-05-validation-planning/coupling-analyzer.md)
-- [prd-auditor](./pipeline-agents/-dev-system/03-05-validation-planning/prd-auditor.md)
-- [prd-validator](./pipeline-agents/-dev-system/03-05-validation-planning/prd-validator.md)
-- [task-decomposer](./pipeline-agents/-dev-system/03-05-validation-planning/task-decomposer.md)
+### 00 - Quality Assurance
+- [agent-linter](./pipeline-agents/00-quality-assurance/agent-linter.md)
+- [agent-quality-auditor](./pipeline-agents/00-quality-assurance/agent-quality-auditor.md)
+- [audit-report-generator](./pipeline-agents/00-quality-assurance/audit-report-generator.md)
+- [quality-gate-controller](./pipeline-agents/00-quality-assurance/quality-gate-controller.md)
+- [validation-depth-controller](./pipeline-agents/00-quality-assurance/validation-depth-controller.md)
 
-#### 06-09 Implementation
-- [code-review-gate](./pipeline-agents/-dev-system/06-09-implementation/code-review-gate.md)
-- [plan-guardian](./pipeline-agents/-dev-system/06-09-implementation/plan-guardian.md)
-- [specification-agent](./pipeline-agents/-dev-system/06-09-implementation/specification-agent.md)
-- [tdd-implementation-agent](./pipeline-agents/-dev-system/06-09-implementation/tdd-implementation-agent.md)
-- [test-strategist](./pipeline-agents/-dev-system/06-09-implementation/test-strategist.md)
+### 01 - Ideation
+- [first-principles-advisor](./pipeline-agents/01-ideation/first-principles-advisor.md)
+- [first-principles-engineer](./pipeline-agents/01-ideation/first-principles-engineer.md)
+- [ideation-agent](./pipeline-agents/01-ideation/ideation-agent.md)
 
-#### 10 Testing
-- [e2e-testing-gate](./pipeline-agents/-dev-system/10-testing/e2e-testing-gate.md)
-- [integration-testing-gate](./pipeline-agents/-dev-system/10-testing/integration-testing-gate.md)
+### 02 - Discovery
+- [agent-knowledge-researcher](./pipeline-agents/02-discovery/agent-knowledge-researcher.md)
+- [discovery-agent](./pipeline-agents/02-discovery/discovery-agent.md)
 
-#### 11-12 Deployment
-- [deployment-gate](./pipeline-agents/-dev-system/11-12-deployment/deployment-gate.md)
+### 03 - Validation
+- [coupling-analyzer](./pipeline-agents/03-validation/coupling-analyzer.md)
+- [prd-validator](./pipeline-agents/03-validation/prd-validator.md)
 
----
+### 04 - Audit
+- [prd-auditor](./pipeline-agents/04-audit/prd-auditor.md)
 
-### Pipeline Core
+### 05 - Task Decomposition
+- [task-decomposer](./pipeline-agents/05-task-decomposition/task-decomposer.md)
 
-#### Agent Editors
-- [expert-agent-editor](./pipeline-agents/-pipeline-core/agent-editors/expert-agent-editor.md)
-- [focused-agent-editor](./pipeline-agents/-pipeline-core/agent-editors/focused-agent-editor.md)
-- [phd-agent-editor](./pipeline-agents/-pipeline-core/agent-editors/phd-agent-editor.md)
+### 06-09 - Implementation
+- [code-review-gate](./pipeline-agents/06-09-implementation/code-review-gate.md)
+- [plan-guardian](./pipeline-agents/06-09-implementation/plan-guardian.md)
+- [specification-agent](./pipeline-agents/06-09-implementation/specification-agent.md)
+- [tdd-implementation-agent](./pipeline-agents/06-09-implementation/tdd-implementation-agent.md)
+- [test-strategist](./pipeline-agents/06-09-implementation/test-strategist.md)
 
-#### Agent Infrastructure
-- [mcp-orchestrator](./pipeline-agents/-pipeline-core/agent-infrastructure/mcp-orchestrator.md)
+### 10 - Testing
+- [e2e-testing-gate](./pipeline-agents/10-testing/e2e-testing-gate.md)
+- [integration-testing-gate](./pipeline-agents/10-testing/integration-testing-gate.md)
 
-#### Agent Research
-- [agent-knowledge-researcher](./pipeline-agents/-pipeline-core/agent-research/agent-knowledge-researcher.md)
-
-#### Pipeline Advisors
-- [first-principles-advisor](./pipeline-agents/-pipeline-core/pipeline-advisors/first-principles-advisor.md)
-- [first-principles-engineer](./pipeline-agents/-pipeline-core/pipeline-advisors/first-principles-engineer.md)
-
-#### Pipeline Control
-- [agent-selector](./pipeline-agents/-pipeline-core/pipeline-control/agent-selector.md)
-- [collaborator-coordinator](./pipeline-agents/-pipeline-core/pipeline-control/collaborator-coordinator.md)
-- [orchestrator](./pipeline-agents/-pipeline-core/pipeline-control/orchestrator.md)
-- [quality-gate-controller](./pipeline-agents/-pipeline-core/pipeline-control/quality-gate-controller.md)
-
-#### Roster Management
-- [browser](./pipeline-agents/-pipeline-core/roster-management/browser/AGENT.md)
-- [curator](./pipeline-agents/-pipeline-core/roster-management/curator/AGENT.md)
-- [inventor](./pipeline-agents/-pipeline-core/roster-management/inventor/AGENT.md)
-- [provisioner](./pipeline-agents/-pipeline-core/roster-management/provisioner/AGENT.md)
-- [selector](./pipeline-agents/-pipeline-core/roster-management/selector/AGENT.md)
-
-#### Validation
-- [agent-linter](./pipeline-agents/-pipeline-core/validation/agent-linter.md)
-- [agent-quality-auditor](./pipeline-agents/-pipeline-core/validation/agent-quality-auditor.md)
-- [audit-report-generator](./pipeline-agents/-pipeline-core/validation/audit-report-generator.md)
+### 11-12 - Deployment
+- [deployment-gate](./pipeline-agents/11-12-deployment/deployment-gate.md)
 
 ---
 
@@ -561,4 +555,4 @@ git commit -m "improve: <agent-name> - <brief description>"
 git push
 ```
 
-Projects using dev-sys will receive updates via `cd agents && git pull`.
+Projects using this agent library will receive updates via `cd agents && git pull`.

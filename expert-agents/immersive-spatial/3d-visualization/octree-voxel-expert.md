@@ -120,7 +120,7 @@ audit:
     - "Uses opus model appropriately for algorithmic complexity"
     - "load_bearing: true indicates critical role in spatial pipelines"
     - "Expanded knowledge sources with OpenVDB, Embree, and CGAL references"
-    - "Pipeline integration section added for dev-sys alignment"
+    - "Pipeline integration section added for SDLC alignment"
     - "Output formats expanded with Research mode template"
   improvements:
     - "Consider adding GPU voxel rendering techniques"

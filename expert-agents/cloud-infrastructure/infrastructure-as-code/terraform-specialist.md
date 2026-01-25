@@ -258,7 +258,7 @@ mcp_servers:
 
 ## Pipeline Integration
 
-**Dev-System Pipeline Role**: Infrastructure validation and deployment gate enforcement across phases 1-12.
+**SDLC Pipeline Role**: Infrastructure validation and deployment gate enforcement across phases 1-12.
 
 **Phase Interactions**:
 - **Phases 1-5 (Discovery/Planning)**: Translate TaskMaster infrastructure requirements into OpenSpec IaC contracts

@@ -99,7 +99,7 @@ audit:
     - "Good AR UX and accessibility coverage"
     - "Frontmatter slightly less structured than other agents (missing header comments)"
   improvements:
-    - "Add Pipeline Integration section for dev-sys alignment"
+    - "Add Pipeline Integration section for SDLC alignment"
     - "Add header template comments to frontmatter"
 ---
 

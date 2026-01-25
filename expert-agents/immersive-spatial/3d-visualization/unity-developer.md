@@ -115,7 +115,7 @@ audit:
     - "Excellent C# performance optimization guidance"
     - "Vocabulary 20 terms within 15-20 target range"
     - "18 instructions within acceptable range"
-    - "Pipeline integration section added for dev-sys alignment"
+    - "Pipeline integration section added for SDLC alignment"
     - "Strong cross-platform development coverage (mobile, VR, WebGL)"
     - "Output formats expanded with Research mode template"
   improvements:

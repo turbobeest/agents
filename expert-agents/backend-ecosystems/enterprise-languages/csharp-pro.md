@@ -127,7 +127,7 @@ audit:
     - "Vocabulary calibrated to 19 core C#/.NET terms"
     - "7 Never items with strong async/LINQ-specific anti-patterns"
     - "Authoritative knowledge sources (Microsoft Learn, .NET blog, GitHub)"
-    - "Pipeline Integration provides dev-system context"
+    - "Pipeline Integration provides SDLC context"
   improvements: []
 ---
 

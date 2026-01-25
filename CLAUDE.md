@@ -1,16 +1,16 @@
 # Agents Repository
 
-217 Grade-A agent definitions for the dev-sys pipeline.
+221 Grade-A agent definitions for the SDLC pipeline.
 
-- **184 expert agents** across 20 domain categories
-- **33 pipeline agents** for dev-system and pipeline-core
+- **186 expert agents** across 20 domain categories
+- **35 pipeline agents** for orchestration, quality assurance, and SDLC phases
 - **10-dimension audit framework** with embedded quality metadata
 
 ## Directory Structure
 
 ```
-expert-agents/       # 184 domain specialists across 20 categories
-pipeline-agents/     # 33 dev-system and pipeline-core agents
+expert-agents/       # 186 domain specialists across 20 categories
+pipeline-agents/     # 35 SDLC pipeline agents organized by phase
 knowledge/           # Shared knowledge bases and quality rubric
 templates/           # Agent creation templates (focused, expert, phd)
 agent-manager/       # SvelteKit web interface for browsing agents
@@ -44,18 +44,18 @@ backend-ecosystems, blockchain-web3, cloud-infrastructure, communication-protoco
 
 ## Improving Agents
 
-Use roster-management agents in `pipeline-agents/-pipeline-core/roster-management/`:
+Use agent management tools in `pipeline-agents/00-agent-management/`:
 
-1. **curator/** - Refine existing agents (knowledge sources, instructions, vocabulary)
-2. **inventor/** - Create new agents from templates
-3. **selector/** - Choose appropriate agent for a task
-4. **browser/** - Explore agent capabilities
-5. **provisioner/** - Deploy agents to projects
+1. **agent-curator.md** - Refine existing agents (knowledge sources, instructions, vocabulary)
+2. **agent-inventor.md** - Create new agents from templates
+3. **agent-selector-roster.md** - Choose appropriate agent for a task
+4. **agent-browser.md** - Explore agent capabilities
+5. **agent-provisioner.md** - Deploy agents to projects
 
 ### Workflow
 
 1. Read the target agent to understand current state
-2. Read `curator/AGENT.md` for curation methodology
+2. Read `agent-curator.md` for curation methodology
 3. Apply improvements following `templates/` standards
 4. Verify against `knowledge/agent-quality-rubric.yaml`
 5. Document changes with rationale
@@ -68,4 +68,4 @@ git commit -m "improve: <agent-name> - <brief description>"
 git push
 ```
 
-Projects using dev-sys receive updates via `cd agents && git pull`.
+Projects using this agent library receive updates via `cd agents && git pull`.

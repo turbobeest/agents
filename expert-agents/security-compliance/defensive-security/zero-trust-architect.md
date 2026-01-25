@@ -19,8 +19,8 @@ model_selection:
 tier: expert
 
 # Pipeline integration
-pipeline: dev-system
-primary_phases: [3-5, 6-9]  # Planning/architecture, implementation review
+pipeline: sdlc
+primary_phases: [planning, implementation]  # Planning/architecture, implementation review
 gate_integration: true
 
 # -----------------------------------------------------------------------------

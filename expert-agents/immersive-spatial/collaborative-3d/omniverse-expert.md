@@ -118,7 +118,7 @@ audit:
     - "Vocabulary 18 terms within 15-20 target range"
     - "16 instructions within acceptable range"
     - "Uses opus model appropriately for complex multi-disciplinary workflows"
-    - "Pipeline integration section added for dev-sys alignment"
+    - "Pipeline integration section added for SDLC alignment"
     - "Expanded knowledge sources with PhysX, MDL, and Isaac Sim documentation"
     - "Output formats expanded with Research mode template"
   improvements:

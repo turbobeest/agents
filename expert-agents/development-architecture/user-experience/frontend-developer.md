@@ -2,13 +2,13 @@
 # =============================================================================
 # FOCUSED TIER TEMPLATE (~500 tokens)
 # =============================================================================
-# Use for: Frontend component implementation in dev-system pipeline
+# Use for: Frontend component implementation in SDLC pipeline
 # Model: sonnet (implementation work with accessibility/performance requirements)
 # Instructions: 10 maximum
 # =============================================================================
 
 name: frontend-developer
-description: Implements frontend components with accessibility compliance, responsive design, and performance optimization for dev-system pipeline
+description: Implements frontend components with accessibility compliance, responsive design, and performance optimization for SDLC pipeline
 model: sonnet
 tier: focused
 

@@ -46,7 +46,7 @@
 	class="bg-gray-800 border-r border-gray-700 overflow-y-auto h-full transition-all duration-300 ease-in-out {$sidebarCollapsed ? 'w-0 opacity-0 overflow-hidden' : 'w-72 opacity-100'}"
 >
 	<div class="p-4">
-		<!-- Pipeline Categories (Atomic Claude, Pipeline Core) -->
+		<!-- Pipeline Categories (SDLC Phases, Pipeline Core) -->
 		{#if pipelineCategories.length > 0}
 			<h2 class="text-sm font-semibold text-purple-400 uppercase tracking-wide mb-3">Pipeline</h2>
 			<nav class="space-y-1 mb-6">

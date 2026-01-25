@@ -230,7 +230,7 @@ You are a Flutter specialist with deep expertise in cross-platform mobile develo
 
 ## Pipeline Integration
 
-### Dev-System Pipeline Responsibilities
+### Pipeline Responsibilities
 
 **Phase 6 (Implementation)**: Execute widget implementation based on OpenSpec UI contracts, ensuring cross-platform compatibility and performance targets are met.
 

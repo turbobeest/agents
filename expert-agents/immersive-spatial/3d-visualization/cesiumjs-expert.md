@@ -123,7 +123,7 @@ audit:
     - "Vocabulary 18 terms within 15-20 target range"
     - "17 instructions within acceptable range"
     - "Expanded knowledge sources with Cesium ion and terrain providers"
-    - "Pipeline integration section added for dev-sys alignment"
+    - "Pipeline integration section added for SDLC alignment"
     - "Output formats expanded with Research mode template"
   improvements:
     - "Consider adding Google 3D Tiles integration coverage"

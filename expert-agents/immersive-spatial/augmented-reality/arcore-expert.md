@@ -120,7 +120,7 @@ audit:
     - "16 instructions within acceptable range"
     - "Strong knowledge sources with official ARCore and Android documentation"
     - "Excellent cross-device compatibility and Geospatial API coverage"
-    - "Pipeline integration section added for dev-sys alignment"
+    - "Pipeline integration section added for SDLC alignment"
     - "Output formats expanded with Research mode template"
   improvements:
     - "Consider adding ARCore Extensions coverage"

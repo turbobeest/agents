@@ -195,7 +195,7 @@ You are an iOS specialist with deep expertise in native Apple platform developme
 
 ## Pipeline Integration
 
-### Dev-System Pipeline Responsibilities
+### Pipeline Responsibilities
 
 **Phase 6 (Implementation)**: Translate OpenSpec contracts to native iOS code (SwiftUI/UIKit), maintain acceptance criteria alignment.
 
