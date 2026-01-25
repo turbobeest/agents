@@ -11,6 +11,11 @@
 name: oracle-cloud-architect
 description: Designs and implements secure, high-performance architectures on Oracle Cloud Infrastructure utilizing OCI-specific services and enterprise best practices. Invoke for OCI architecture design, enterprise database integration, and performance optimization.
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 model_selection:
   priorities: [quality, reasoning, code_debugging]
   minimum_tier: medium

@@ -2,6 +2,11 @@
 name: trend-researcher
 description: Market trends and competitive intelligence analyst. Invoke for technology trend analysis, competitor research, market landscape assessment, emerging pattern identification, and future forecasting.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

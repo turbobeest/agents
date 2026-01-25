@@ -11,6 +11,11 @@
 name: canbus-expert
 description: Masters CAN (Controller Area Network) bus protocol for automotive and industrial embedded systems, specializing in real-time communication, fault tolerance, and distributed control networks with advanced diagnostics
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

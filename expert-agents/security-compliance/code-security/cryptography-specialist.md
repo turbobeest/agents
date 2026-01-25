@@ -5,6 +5,11 @@
 name: cryptography-specialist
 description: Implements secure cryptographic systems with advanced encryption, key management, and cryptographic protocol design for maximum security assurance
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 model_selection:
   priorities: [quality, code_debugging, reasoning]
   minimum_tier: large

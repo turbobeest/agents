@@ -10,6 +10,11 @@
 name: data-scientist
 description: Performs advanced data analysis, statistical modeling, and visualization for data-driven insights and predictive analytics
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_generation, code_debugging, quality]
   minimum_tier: medium

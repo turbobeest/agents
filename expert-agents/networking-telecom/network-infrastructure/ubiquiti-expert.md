@@ -2,6 +2,11 @@
 name: ubiquiti-expert
 description: Masters Ubiquiti networking equipment and UniFi ecosystem, specializing in enterprise-grade wireless networks, network management, security appliances, and comprehensive network infrastructure deployment. Invoke for UniFi configuration, wireless network design, and Ubiquiti deployment.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

@@ -2,6 +2,11 @@
 name: seo-content-refresher
 description: Refreshes and updates existing content for sustained SEO performance through strategic optimization and freshness improvements
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [writing, quality, reasoning]
   minimum_tier: medium

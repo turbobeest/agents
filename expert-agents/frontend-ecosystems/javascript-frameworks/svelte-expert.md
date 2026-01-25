@@ -10,6 +10,11 @@
 name: svelte-expert
 description: Pioneer of Svelte's compilation-first approach specializing in reactive component architectures, build-time optimization, and exceptional developer ergonomics with minimal runtime overhead
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_generation, code_debugging, quality]
   minimum_tier: medium

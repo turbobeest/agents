@@ -11,6 +11,11 @@
 name: gcp-architect
 description: Designs and implements scalable, secure architectures on Google Cloud Platform leveraging GCP-specific services and Cloud Architecture Framework. Invoke for GCP architecture design, data analytics integration, and cloud-native solutions.
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 model_selection:
   priorities: [quality, reasoning, code_debugging]
   minimum_tier: medium

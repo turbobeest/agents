@@ -11,6 +11,11 @@
 name: python-pro
 description: Python specialist for backend services, API development, and automation with Pythonic idioms, type safety, and security-first design
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_generation, code_debugging, quality]
   minimum_tier: medium

@@ -2,6 +2,11 @@
 name: network-engineer
 description: Designs and troubleshoots network architectures, firewalls, and VPN configurations for secure, efficient network infrastructure. Invoke for network design, firewall configuration, VPN setup, and network troubleshooting.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

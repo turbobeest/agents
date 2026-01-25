@@ -11,6 +11,11 @@
 name: octree-voxel-expert
 description: Spatial data structures and volumetric rendering specialist. Invoke for octree algorithm design, voxel architectures, massive 3D dataset management, and real-time spatial query optimization.
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 tier: expert
 
 model_selection:

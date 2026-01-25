@@ -11,6 +11,11 @@
 name: integration-test-coordinator
 description: Orchestrates cross-service testing with contract validation, API compatibility verification, and end-to-end integration testing across distributed systems
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_generation, code_debugging, quality]
   minimum_tier: medium

@@ -2,6 +2,11 @@
 name: experiment-tracker
 description: A/B testing and experimentation specialist. Invoke for experiment design, statistical significance analysis, feature flag management, hypothesis formation, test result analysis, and rollout decisions.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

@@ -2,6 +2,11 @@
 name: reddit-community-builder
 description: Develops Reddit engagement strategies including subreddit research, authentic community participation, AMA coordination, and karma-positive brand building
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [reasoning, quality, writing]
   minimum_tier: medium

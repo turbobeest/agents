@@ -5,6 +5,11 @@
 name: bistatic-radar-expert
 description: Masters bistatic radar systems for defense applications, specializing in separated transmitter/receiver configurations, passive radar operations, and advanced geometry optimization for enhanced detection capabilities and reduced vulnerability
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 tier: expert
 
 model_selection:

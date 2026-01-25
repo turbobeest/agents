@@ -11,6 +11,11 @@
 name: hyperspectral-expert
 description: Masters hyperspectral imaging systems for defense applications, specializing in spectral signature analysis, material identification, camouflage detection, and multi-dimensional data processing with advanced spectral libraries and classification algorithms
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 tier: expert
 
 model_selection:

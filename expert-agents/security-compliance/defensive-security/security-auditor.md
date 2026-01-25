@@ -5,6 +5,11 @@
 name: security-auditor
 description: Security assessment specialist for dev-system pipeline. Performs threat modeling, vulnerability scanning, compliance validation, and security gate reviews at critical pipeline checkpoints. Integrates with code-review-gate and deployment-gate phases.
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 model_selection:
   priorities: [quality, code_debugging, reasoning]
   minimum_tier: large

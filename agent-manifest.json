@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "name": "Claude Orchestra Agent Pool",
   "description": "Centralized agent definitions for Claude Orchestra",
   "lastUpdated": "2026-01-25",
@@ -198,7 +198,9 @@
           "agents": [
             "cryptography-specialist",
             "rust-safety-validator",
-            "supply-chain-auditor"
+            "supply-chain-auditor",
+            "timestamp-authority-expert",
+            "verifiable-data-structures-expert"
           ]
         },
         "compliance-audit": {
@@ -710,40 +712,26 @@
         }
       }
     },
-    "orchestration-intelligence": {
-      "title": "Orchestration & Intelligence",
-      "description": "Orchestration and intelligence specialists",
-      "defaultExpanded": false,
-      "subcategories": {
-        "task-assignment": {
-          "title": "Task Assignment",
-          "description": "Task assignment specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "assignment-agent"
-          ]
-        },
-        "validation": {
-          "title": "Validation",
-          "description": "Validation specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "validation-depth-controller"
-          ]
-        }
-      }
-    },
     "blockchain-web3": {
       "title": "Blockchain & Web3",
       "description": "Blockchain and Web3 specialists",
       "defaultExpanded": false,
       "subcategories": {
-        "defi": {
-          "title": "DeFi",
-          "description": "Decentralized finance specialists",
+        "smart-contracts": {
+          "title": "Smart Contracts",
+          "description": "Smart contract development and security specialists",
           "defaultExpanded": false,
           "agents": [
-            "defi-architect"
+            "ink-substrate-developer",
+            "solidity-auditor"
+          ]
+        },
+        "enterprise-blockchain": {
+          "title": "Enterprise Blockchain",
+          "description": "Enterprise and permissioned blockchain specialists",
+          "defaultExpanded": false,
+          "agents": [
+            "hyperledger-fabric-expert"
           ]
         }
       }
@@ -766,151 +754,132 @@
     }
   },
   "pipelineAgents": {
-    "-dev-system": {
-      "title": "Development System Pipeline",
-      "description": "Development lifecycle pipeline agents",
+    "00-agent-management": {
+      "title": "Agent Management",
+      "description": "Agent creation, editing, and roster management",
       "defaultExpanded": false,
-      "subcategories": {
-        "01-02-ideation-discovery": {
-          "title": "Ideation & Discovery",
-          "description": "Initial ideation and discovery phase agents",
-          "defaultExpanded": false,
-          "agents": [
-            "discovery-agent",
-            "ideation-agent"
-          ]
-        },
-        "03-05-validation-planning": {
-          "title": "Validation & Planning",
-          "description": "Validation and planning phase agents",
-          "defaultExpanded": false,
-          "agents": [
-            "coupling-analyzer",
-            "prd-auditor",
-            "prd-validator",
-            "task-decomposer"
-          ]
-        },
-        "06-09-implementation": {
-          "title": "Implementation",
-          "description": "Implementation phase agents",
-          "defaultExpanded": false,
-          "agents": [
-            "code-review-gate",
-            "plan-guardian",
-            "specification-agent",
-            "tdd-implementation-agent",
-            "test-strategist"
-          ]
-        },
-        "10-testing": {
-          "title": "Testing",
-          "description": "Testing phase agents",
-          "defaultExpanded": false,
-          "agents": [
-            "e2e-testing-gate",
-            "integration-testing-gate"
-          ]
-        },
-        "11-12-deployment": {
-          "title": "Deployment",
-          "description": "Deployment phase agents",
-          "defaultExpanded": false,
-          "agents": [
-            "deployment-gate"
-          ]
-        }
-      }
+      "agents": [
+        "agent-browser",
+        "agent-curator",
+        "agent-inventor",
+        "agent-provisioner",
+        "agent-selector-roster",
+        "expert-agent-editor",
+        "focused-agent-editor",
+        "phd-agent-editor"
+      ]
     },
-    "-pipeline-core": {
-      "title": "Pipeline Core",
-      "description": "Core pipeline infrastructure agents",
+    "00-orchestration": {
+      "title": "Orchestration",
+      "description": "Pipeline orchestration and coordination",
       "defaultExpanded": false,
-      "subcategories": {
-        "agent-editors": {
-          "title": "Agent Editors",
-          "description": "Agent editing and modification specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "expert-agent-editor",
-            "focused-agent-editor",
-            "phd-agent-editor"
-          ]
-        },
-        "agent-infrastructure": {
-          "title": "Agent Infrastructure",
-          "description": "Agent infrastructure specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "mcp-orchestrator"
-          ]
-        },
-        "agent-research": {
-          "title": "Agent Research",
-          "description": "Agent research specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "agent-knowledge-researcher"
-          ]
-        },
-        "pipeline-advisors": {
-          "title": "Pipeline Advisors",
-          "description": "Pipeline advisory specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "first-principles-advisor",
-            "first-principles-engineer"
-          ]
-        },
-        "pipeline-control": {
-          "title": "Pipeline Control",
-          "description": "Pipeline orchestration and control specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "agent-selector",
-            "collaborator-coordinator",
-            "orchestrator",
-            "quality-gate-controller"
-          ]
-        },
-        "roster-management": {
-          "title": "Roster Management",
-          "description": "Agent roster management specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "browser",
-            "curator",
-            "inventor",
-            "provisioner",
-            "selector"
-          ]
-        },
-        "validation": {
-          "title": "Validation",
-          "description": "Validation and quality specialists",
-          "defaultExpanded": false,
-          "agents": [
-            "agent-linter",
-            "agent-quality-auditor",
-            "audit-report-generator"
-          ]
-        }
-      }
+      "agents": [
+        "agent-selector",
+        "assignment-agent",
+        "collaborator-coordinator",
+        "mcp-orchestrator",
+        "orchestrator"
+      ]
+    },
+    "00-quality-assurance": {
+      "title": "Quality Assurance",
+      "description": "Quality gates and validation",
+      "defaultExpanded": false,
+      "agents": [
+        "agent-linter",
+        "agent-quality-auditor",
+        "audit-report-generator",
+        "quality-gate-controller",
+        "validation-depth-controller"
+      ]
+    },
+    "01-ideation": {
+      "title": "Ideation",
+      "description": "Initial ideation and strategic thinking",
+      "defaultExpanded": false,
+      "agents": [
+        "first-principles-advisor",
+        "first-principles-engineer",
+        "ideation-agent"
+      ]
+    },
+    "02-discovery": {
+      "title": "Discovery",
+      "description": "Research and discovery phase",
+      "defaultExpanded": false,
+      "agents": [
+        "agent-knowledge-researcher",
+        "discovery-agent"
+      ]
+    },
+    "03-validation": {
+      "title": "Validation",
+      "description": "Requirements and design validation",
+      "defaultExpanded": false,
+      "agents": [
+        "coupling-analyzer",
+        "prd-validator"
+      ]
+    },
+    "04-audit": {
+      "title": "Audit",
+      "description": "Requirements and design audit",
+      "defaultExpanded": false,
+      "agents": [
+        "prd-auditor"
+      ]
+    },
+    "05-task-decomposition": {
+      "title": "Task Decomposition",
+      "description": "Breaking down work into actionable tasks",
+      "defaultExpanded": false,
+      "agents": [
+        "task-decomposer"
+      ]
+    },
+    "06-09-implementation": {
+      "title": "Implementation",
+      "description": "Code implementation and review",
+      "defaultExpanded": false,
+      "agents": [
+        "code-review-gate",
+        "plan-guardian",
+        "specification-agent",
+        "tdd-implementation-agent",
+        "test-strategist"
+      ]
+    },
+    "10-testing": {
+      "title": "Testing",
+      "description": "Integration and end-to-end testing",
+      "defaultExpanded": false,
+      "agents": [
+        "e2e-testing-gate",
+        "integration-testing-gate"
+      ]
+    },
+    "11-12-deployment": {
+      "title": "Deployment",
+      "description": "Deployment and release management",
+      "defaultExpanded": false,
+      "agents": [
+        "deployment-gate"
+      ]
     }
   },
   "metadata": {
-    "totalAgents": 217,
+    "totalAgents": 219,
     "totalExpertAgents": 184,
-    "totalPipelineAgents": 33,
-    "totalCategories": 20,
-    "totalSubcategories": 56,
-    "expertCategories": 20,
+    "totalPipelineAgents": 35,
+    "totalCategories": 18,
+    "totalSubcategories": 54,
+    "expertCategories": 18,
     "expertSubcategories": 43,
-    "pipelineCategories": 2,
-    "pipelineSubcategories": 13,
+    "pipelineCategories": 11,
+    "pipelineSubcategories": 0,
     "supportedModels": ["opus", "sonnet", "haiku"],
     "requiredFields": ["Description", "Model", "Tools", "Behaviors", "System Prompt", "Knowledge Sources", "Human Interaction"],
-    "version": "2.0.0",
-    "schemaVersion": "2.0"
+    "version": "2.1.0",
+    "schemaVersion": "2.1"
   }
 }

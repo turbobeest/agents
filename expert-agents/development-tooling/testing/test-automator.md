@@ -11,6 +11,11 @@
 name: test-automator
 description: Automates comprehensive testing with unit, integration, and E2E coverage using modern frameworks (Jest, Pytest, Cypress) with reporting excellence
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_generation, code_debugging, quality]
   minimum_tier: medium

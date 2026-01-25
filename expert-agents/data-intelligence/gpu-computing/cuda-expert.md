@@ -6,6 +6,11 @@
 name: cuda-expert
 description: Masters NVIDIA CUDA programming with kernel optimization, memory management, and parallel computing architecture for maximum GPU performance and efficiency
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [math, reasoning, quality]
   minimum_tier: medium

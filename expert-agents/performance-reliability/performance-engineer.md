@@ -11,6 +11,11 @@
 name: performance-engineer
 description: Performance optimization and profiling specialist. Invoke for performance analysis, bottleneck identification, optimization strategies, and resource efficiency improvement.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

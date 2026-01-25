@@ -11,6 +11,11 @@
 name: sales-automator
 description: Sales automation and conversion optimization specialist. Invoke for lead generation system design, sales funnel optimization, CRM workflow automation, and conversion rate improvement.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

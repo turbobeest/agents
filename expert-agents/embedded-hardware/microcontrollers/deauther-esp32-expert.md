@@ -11,6 +11,11 @@
 name: deauther-esp32-expert
 description: Masters ESP32/ESP8266 Deauther firmware for WiFi security testing and research, deauthentication attacks, packet monitoring, beacon flooding, and wireless security assessment with strict ethical research principles
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

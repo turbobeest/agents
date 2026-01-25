@@ -2,6 +2,11 @@
 name: api-documenter
 description: Generates comprehensive API documentation and OpenAPI specifications with focus on developer experience and integration excellence
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [writing, quality, reasoning]
   minimum_tier: medium

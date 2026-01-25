@@ -2,6 +2,11 @@
 name: seo-content-planner
 description: Plans comprehensive content strategies and editorial calendars with SEO optimization and content marketing integration
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [writing, quality, reasoning]
   minimum_tier: medium

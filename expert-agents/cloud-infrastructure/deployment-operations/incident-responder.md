@@ -11,6 +11,11 @@
 name: incident-responder
 description: Handles production incidents with urgency, precision, and systematic problem resolution for minimal service disruption. Invoke for incident management, rapid troubleshooting, root cause analysis, and post-incident reviews.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [quality, reasoning, code_debugging]
   minimum_tier: medium

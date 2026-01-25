@@ -11,6 +11,11 @@
 name: model-checker
 description: Performs formal model checking using tools like Kani, CBMC, and TLA+ for mathematical verification of program correctness and rigorous property validation
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 model_selection:
   priorities: [reasoning, quality, math]
   minimum_tier: large

@@ -11,6 +11,11 @@
 name: api-tester
 description: API testing specialist for REST and GraphQL endpoints. Invoke for API test automation, contract testing, Postman/Newman workflows, OpenAPI validation, mock server setup, and API integration testing.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

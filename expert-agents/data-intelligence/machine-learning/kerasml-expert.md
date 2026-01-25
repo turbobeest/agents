@@ -10,6 +10,11 @@
 name: kerasml-expert
 description: Masters Keras framework for streaming ML applications, specializing in real-time model inference, online learning, distributed training, and adaptive neural networks for continuous data streams
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [math, reasoning, quality]
   minimum_tier: medium

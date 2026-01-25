@@ -11,6 +11,11 @@
 name: ruby-pro
 description: Ruby specialist for Rails framework, metaprogramming patterns, and elegant code architecture optimized for rapid development
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_generation, code_debugging, quality]
   minimum_tier: medium

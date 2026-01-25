@@ -11,6 +11,11 @@
 name: context-manager
 description: Manages and optimizes LLM context for long conversations with intelligent context compression and conversation continuity
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [quality, writing, reasoning]
   minimum_tier: medium

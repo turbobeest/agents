@@ -11,6 +11,11 @@
 name: arduino-expert
 description: Masters Arduino microcontroller platform for embedded systems development, sensor integration, IoT applications, real-time control systems, and custom hardware prototyping with advanced programming techniques
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

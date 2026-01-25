@@ -11,6 +11,11 @@
 name: deductive-verifier
 description: Implements deductive verification using tools like Prusti for program correctness proofs through precondition and postcondition analysis
 model: opus  # Formal verification requires deep logical reasoning
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 model_selection:
   priorities: [reasoning, quality, math]
   minimum_tier: large

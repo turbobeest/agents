@@ -6,6 +6,11 @@
 name: jetson-expert
 description: Masters NVIDIA Jetson edge computing platforms with embedded AI, real-time inference optimization, and power-efficient deployment for edge applications
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [math, reasoning, quality]
   minimum_tier: medium

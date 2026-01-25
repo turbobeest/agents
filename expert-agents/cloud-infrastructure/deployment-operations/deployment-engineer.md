@@ -11,6 +11,11 @@
 name: deployment-engineer
 description: Configures CI/CD pipelines and cloud deployments with sophisticated automation, parallel stages, and integrated security scanning. Invoke for pipeline design, deployment automation, and release management.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [quality, reasoning, code_debugging]
   minimum_tier: medium

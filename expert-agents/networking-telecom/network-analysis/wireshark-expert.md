@@ -2,6 +2,11 @@
 name: wireshark-expert
 description: Masters Wireshark network protocol analysis for cybersecurity and network troubleshooting, specializing in packet capture, protocol dissection, network forensics, and advanced filtering techniques. Invoke for network traffic analysis, protocol debugging, and security incident investigation.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

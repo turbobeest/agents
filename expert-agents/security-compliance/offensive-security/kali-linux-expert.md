@@ -5,6 +5,11 @@
 name: kali-linux-expert
 description: Masters Kali Linux penetration testing distribution, specializing in ethical hacking tools, security assessments, digital forensics, and comprehensive cybersecurity testing
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [quality, code_debugging, reasoning]
   minimum_tier: large

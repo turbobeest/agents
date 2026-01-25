@@ -5,6 +5,11 @@
 name: acoustic-expert
 description: Masters acoustic sensor systems for defense applications, specializing in underwater acoustics, airborne sound detection, seismic monitoring, and advanced signal processing for tactical acoustic intelligence
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

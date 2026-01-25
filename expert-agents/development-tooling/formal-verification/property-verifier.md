@@ -11,6 +11,11 @@
 name: property-verifier
 description: Validates system properties and invariants through comprehensive property-based testing and specification verification using tools like Hypothesis, QuickCheck, and PropEr
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [reasoning, quality, math]
   minimum_tier: large

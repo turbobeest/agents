@@ -2,6 +2,11 @@
 name: instagram-curator
 description: Develops Instagram content strategy including feed aesthetics, Stories, Reels, hashtag optimization, and engagement tactics for brand growth and community building
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [writing, quality, creativity]
   minimum_tier: medium

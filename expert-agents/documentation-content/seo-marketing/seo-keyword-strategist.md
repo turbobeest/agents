@@ -2,6 +2,11 @@
 name: seo-keyword-strategist
 description: Researches and strategizes keyword optimization with comprehensive market analysis and search intent alignment
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [writing, quality, reasoning]
   minimum_tier: medium

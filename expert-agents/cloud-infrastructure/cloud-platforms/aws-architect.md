@@ -11,6 +11,11 @@
 name: aws-architect
 description: Designs and implements scalable, secure, cost-optimized AWS architectures using Well-Architected Framework principles for mission-critical deployments. Invoke for AWS architecture design, service selection, and cost optimization.
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 model_selection:
   priorities: [quality, reasoning, code_debugging]
   minimum_tier: medium

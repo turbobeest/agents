@@ -10,6 +10,11 @@
 name: sql-pro
 description: Masters complex SQL queries, execution plan optimization, and normalized database schema design for high-performance relational systems
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_generation, code_debugging, quality]
   minimum_tier: medium

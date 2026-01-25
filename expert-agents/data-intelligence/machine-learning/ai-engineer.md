@@ -6,6 +6,11 @@
 name: ai-engineer
 description: Architects AI systems and intelligent applications with focus on scalable AI infrastructure and model integration excellence
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 model_selection:
   priorities: [math, reasoning, quality]
   minimum_tier: medium

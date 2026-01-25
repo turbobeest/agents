@@ -11,6 +11,11 @@
 name: infrared-expert
 description: Masters infrared sensor systems across LWIR, MWIR, and SWIR spectrums for defense applications, specializing in thermal imaging, emitted radiation analysis, multi-spectral sensor fusion, and tactical IR deployment with advanced cooling systems
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 tier: expert
 
 model_selection:

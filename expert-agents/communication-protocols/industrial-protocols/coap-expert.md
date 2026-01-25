@@ -11,6 +11,11 @@
 name: coap-expert
 description: Masters CoAP (Constrained Application Protocol) for IoT and constrained devices, specializing in lightweight HTTP alternative, resource-constrained networking, and efficient machine-to-machine communication
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

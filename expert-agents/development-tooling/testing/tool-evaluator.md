@@ -11,6 +11,11 @@
 name: tool-evaluator
 description: Technology evaluation specialist for tool selection and vendor comparison. Invoke for tech stack assessment, vendor comparison, POC design, build vs buy analysis, migration planning, and adoption criteria definition.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

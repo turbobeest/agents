@@ -11,6 +11,11 @@
 name: webrtc-expert
 description: Masters WebRTC real-time peer-to-peer communication for web and mobile applications, specializing in video conferencing, audio streaming, data channels, and NAT traversal with advanced media optimization and security protocols
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

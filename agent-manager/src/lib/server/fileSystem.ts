@@ -32,8 +32,17 @@ export async function loadManifest(): Promise<AgentManifest> {
  * Special category name mappings
  */
 const CATEGORY_NAME_MAP: Record<string, string> = {
-	'dev-system': 'Atomic Claude',
-	'pipeline-core': 'Pipeline Core'
+	'00-agent-management': 'Agent Management',
+	'00-orchestration': 'Orchestration',
+	'00-quality-assurance': 'Quality Assurance',
+	'01-ideation': 'Ideation',
+	'02-discovery': 'Discovery',
+	'03-validation': 'Validation',
+	'04-audit': 'Audit',
+	'05-task-decomposition': 'Task Decomposition',
+	'06-09-implementation': 'Implementation',
+	'10-testing': 'Testing',
+	'11-12-deployment': 'Deployment'
 };
 
 /**

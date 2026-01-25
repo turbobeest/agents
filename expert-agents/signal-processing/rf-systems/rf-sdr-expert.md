@@ -11,6 +11,11 @@
 name: rf-sdr-expert
 description: Radio Frequency and Software Defined Radio specialist. Invoke for RF/SDR system design, signal intelligence, electronic warfare, spectrum analysis, and adaptive communication systems.
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 tier: expert
 
 model_selection:

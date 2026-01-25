@@ -11,6 +11,11 @@
 name: omniverse-expert
 description: NVIDIA Omniverse and USD composition specialist. Invoke for real-time collaborative 3D workflows, physically accurate simulation, and multi-application interoperability.
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 tier: expert
 
 model_selection:

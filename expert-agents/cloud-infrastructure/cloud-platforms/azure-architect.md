@@ -10,6 +10,11 @@
 name: azure-architect
 description: Designs and implements robust, secure Azure architectures using Azure Well-Architected Framework for enterprise-scale deployments with Microsoft ecosystem integration
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 model_selection:
   priorities: [quality, reasoning, code_debugging]
   minimum_tier: medium

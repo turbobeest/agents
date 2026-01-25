@@ -11,6 +11,11 @@
 name: merger
 description: Integrates multi-agent code outputs into cohesive codebases with sophisticated conflict resolution, quality assurance, and codebase coherence preservation
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_debugging, quality, reasoning]
   minimum_tier: medium

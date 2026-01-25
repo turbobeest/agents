@@ -47,6 +47,7 @@ export interface AgentFrontmatter {
 	name: string;
 	description: string;
 	model: 'opus' | 'sonnet' | 'haiku';
+	model_fallbacks?: string[];
 	tier: 'focused' | 'expert' | 'phd';
 	tools?: AgentTools;
 	mcp_servers?: Record<string, McpServer>;

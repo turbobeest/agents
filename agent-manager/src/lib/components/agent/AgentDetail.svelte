@@ -211,13 +211,23 @@
 				<h1 class="text-2xl font-bold text-gray-100">{agent.frontmatter.name}</h1>
 				<p class="text-gray-400 mt-1">{agent.frontmatter.description}</p>
 			</div>
-			<div class="flex items-center gap-2">
-				<span class="text-sm px-3 py-1 rounded border {getTierColor(agent.frontmatter.tier)}">
-					{agent.frontmatter.tier}
-				</span>
-				<span class="text-sm px-3 py-1 rounded {getModelColor(agent.frontmatter.model)}">
-					{agent.frontmatter.model}
-				</span>
+			<div class="flex flex-col items-end gap-2">
+				<div class="flex items-center gap-2">
+					<span class="text-sm px-3 py-1 rounded border {getTierColor(agent.frontmatter.tier)}">
+						{agent.frontmatter.tier}
+					</span>
+					<span class="text-sm px-3 py-1 rounded {getModelColor(agent.frontmatter.model)}">
+						{agent.frontmatter.model}
+					</span>
+				</div>
+				{#if agent.frontmatter.model_fallbacks && agent.frontmatter.model_fallbacks.length > 0}
+					<div class="flex items-center gap-1.5 text-xs text-gray-500">
+						<span class="text-gray-600">fallbacks:</span>
+						{#each agent.frontmatter.model_fallbacks as fallback, i}
+							<span class="px-1.5 py-0.5 bg-gray-700/50 rounded text-gray-400">{fallback}</span>
+						{/each}
+					</div>
+				{/if}
 			</div>
 		</div>
 

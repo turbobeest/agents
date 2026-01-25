@@ -2,6 +2,11 @@
 name: reference-builder
 description: Builds comprehensive reference materials and quick-start guides focused on developer productivity and rapid onboarding
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [writing, quality, reasoning]
   minimum_tier: medium

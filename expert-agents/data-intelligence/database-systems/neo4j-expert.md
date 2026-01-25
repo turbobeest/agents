@@ -6,6 +6,11 @@
 name: neo4j-expert
 description: Master architect of Neo4j graph database ecosystems, specializing in enterprise-scale graph analytics, complex relationship modeling, and graph-native problem solving
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 model_selection:
   priorities: [code_generation, code_debugging, quality]
   minimum_tier: medium

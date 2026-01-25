@@ -2,6 +2,11 @@
 name: search-specialist
 description: Implements advanced search algorithms, indexing systems, and search optimization for efficient information retrieval
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [writing, quality, reasoning]
   minimum_tier: medium

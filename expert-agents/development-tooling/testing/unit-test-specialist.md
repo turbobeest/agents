@@ -11,6 +11,11 @@
 name: unit-test-specialist
 description: TDD-focused specialist creating comprehensive unit tests with high coverage, mutation testing validation, and test-first development practices for bulletproof code quality
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_generation, code_debugging, quality]
   minimum_tier: medium

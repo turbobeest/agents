@@ -11,6 +11,11 @@
 name: javascript-pro
 description: JavaScript specialist for modern ES6+ patterns, async/await architecture, and Node.js ecosystem integration across full-stack applications
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_generation, code_debugging, quality]
   minimum_tier: medium

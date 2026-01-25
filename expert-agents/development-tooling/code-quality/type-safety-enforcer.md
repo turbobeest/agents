@@ -11,6 +11,11 @@
 name: type-safety-enforcer
 description: Ensures comprehensive type safety using advanced type checkers (mypy, pyright, TypeScript) for runtime error prevention through sophisticated static type analysis
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_debugging, quality, reasoning]
   minimum_tier: medium

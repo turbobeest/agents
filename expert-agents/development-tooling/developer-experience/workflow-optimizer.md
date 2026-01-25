@@ -11,6 +11,11 @@
 name: workflow-optimizer
 description: Analyzes and optimizes developer workflows through bottleneck identification, automation opportunities, CI/CD pipeline efficiency, and build time reduction using data-driven DORA metrics
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [quality, reasoning, speed]
   minimum_tier: medium

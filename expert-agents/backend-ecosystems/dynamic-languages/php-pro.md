@@ -11,6 +11,11 @@
 name: php-pro
 description: Modern PHP specialist for Laravel/Symfony frameworks, typed code, performance optimization, and contemporary development practices
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [code_generation, code_debugging, quality]
   minimum_tier: medium

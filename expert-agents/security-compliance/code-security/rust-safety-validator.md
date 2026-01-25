@@ -5,6 +5,11 @@
 name: rust-safety-validator
 description: Validates Rust code for memory safety, unsafe code correctness, and soundness guarantees through comprehensive static and dynamic analysis
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 model_selection:
   priorities: [quality, code_debugging, reasoning]
   minimum_tier: large

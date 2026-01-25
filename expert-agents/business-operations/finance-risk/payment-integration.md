@@ -11,6 +11,11 @@
 name: payment-integration
 description: Secure payment gateway integration specialist. Invoke for payment gateway integration, PCI DSS compliance, transaction security, and secure payment processing implementation.
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

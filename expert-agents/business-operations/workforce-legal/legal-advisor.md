@@ -2,6 +2,11 @@
 name: legal-advisor
 description: Provides legal guidance and contract review with compliance focus and risk mitigation through legal best practices
 model: opus
+model_fallbacks:
+  - DeepSeek-V3
+  - Kimi-K2-Thinking
+  - Qwen3-235B-A22B
+  - llama3.3:70b
 tier: expert
 
 model_selection:

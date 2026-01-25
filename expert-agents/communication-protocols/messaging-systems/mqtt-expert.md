@@ -11,6 +11,11 @@
 name: mqtt-expert
 description: Expert in MQTT protocol design and implementation for lightweight publish-subscribe messaging in IoT and microservices with security focus
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:

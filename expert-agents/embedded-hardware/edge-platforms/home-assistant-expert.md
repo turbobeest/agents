@@ -11,6 +11,11 @@
 name: home-assistant-expert
 description: Masters Home Assistant home automation platform for smart home integration, automation scripting, device management, and comprehensive IoT ecosystem orchestration with advanced customization
 model: sonnet
+model_fallbacks:
+  - DeepSeek-V3
+  - Qwen2.5-Coder-32B
+  - llama3.3:70b
+  - gemma3:27b
 tier: expert
 
 model_selection:
