@@ -10,7 +10,7 @@
 	<meta name="description" content={data.agent.frontmatter.description} />
 </svelte:head>
 
-<div class="max-w-5xl">
+<div class="w-full">
 	<!-- Breadcrumbs -->
 	<nav class="flex items-center gap-2 text-sm text-gray-400 mb-6">
 		<a href="{base}/" class="hover:text-gray-300">Home</a>
