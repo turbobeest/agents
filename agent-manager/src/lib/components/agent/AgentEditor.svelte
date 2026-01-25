@@ -26,6 +26,11 @@
 	let showPreview = $state(true);
 	let copiedCommand = $state(false);
 
+	// Resizable panel state
+	let splitPercent = $state(50);
+	let isResizing = $state(false);
+	let containerRef = $state<HTMLDivElement | null>(null);
+
 	// Check for saved draft on mount
 	$effect(() => {
 		const draft = loadDraftFromStorage(agent.id);
@@ -113,6 +118,28 @@
 		if (staticMode) return 'Submit as Issue';
 		return 'Save';
 	});
+
+	// Resizer drag handlers
+	function handleResizeStart(e: MouseEvent) {
+		e.preventDefault();
+		isResizing = true;
+		document.addEventListener('mousemove', handleResizeMove);
+		document.addEventListener('mouseup', handleResizeEnd);
+	}
+
+	function handleResizeMove(e: MouseEvent) {
+		if (!isResizing || !containerRef) return;
+		const rect = containerRef.getBoundingClientRect();
+		const newPercent = ((e.clientX - rect.left) / rect.width) * 100;
+		// Clamp between 20% and 80%
+		splitPercent = Math.max(20, Math.min(80, newPercent));
+	}
+
+	function handleResizeEnd() {
+		isResizing = false;
+		document.removeEventListener('mousemove', handleResizeMove);
+		document.removeEventListener('mouseup', handleResizeEnd);
+	}
 </script>
 
 <svelte:window onkeydown={handleKeydown} />
@@ -202,22 +229,54 @@
 	{/if}
 
 	<!-- Editor Area -->
-	<div class="flex-1 flex overflow-hidden">
+	<div
+		class="flex-1 flex overflow-hidden relative"
+		class:cursor-col-resize={isResizing}
+		class:select-none={isResizing}
+		bind:this={containerRef}
+	>
 		<!-- Code Editor -->
-		<div class={showPreview ? 'w-1/2' : 'w-full'}>
+		<div
+			class="flex flex-col overflow-hidden"
+			style={showPreview ? `width: ${splitPercent}%` : 'width: 100%'}
+		>
+			<div class="px-4 py-2 text-xs text-gray-400 bg-gray-850 border-b border-gray-700 font-medium">
+				Editor
+			</div>
 			<textarea
-				class="w-full h-full p-4 font-mono text-sm resize-none focus:outline-none bg-gray-900 text-gray-100"
+				class="flex-1 w-full p-4 font-mono text-sm resize-none focus:outline-none bg-gray-900 text-gray-100"
 				value={content}
 				oninput={handleInput}
 				spellcheck="false"
 			></textarea>
 		</div>
 
+		<!-- Resizable Divider -->
+		{#if showPreview}
+			<div
+				class="w-1 bg-gray-700 hover:bg-blue-500 cursor-col-resize transition-colors flex-shrink-0 relative group"
+				onmousedown={handleResizeStart}
+				role="separator"
+				aria-orientation="vertical"
+				tabindex="0"
+			>
+				<div class="absolute inset-y-0 -left-1 -right-1 group-hover:bg-blue-500/20"></div>
+			</div>
+		{/if}
+
 		<!-- Preview -->
 		{#if showPreview}
-			<div class="w-1/2 border-l border-gray-700 overflow-y-auto bg-gray-800">
-				<div class="p-6 prose prose-sm prose-invert max-w-none">
-					{@html renderPreview()}
+			<div
+				class="flex flex-col overflow-hidden bg-gray-800"
+				style="width: {100 - splitPercent}%"
+			>
+				<div class="px-4 py-2 text-xs text-gray-400 bg-gray-850 border-b border-gray-700 font-medium">
+					Preview
+				</div>
+				<div class="flex-1 overflow-y-auto">
+					<div class="p-6 prose prose-sm prose-invert max-w-none">
+						{@html renderPreview()}
+					</div>
 				</div>
 			</div>
 		{/if}

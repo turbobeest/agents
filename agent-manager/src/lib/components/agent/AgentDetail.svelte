@@ -13,6 +13,11 @@
 	let saveError = $state<string | null>(null);
 	let saveSuccess = $state(false);
 
+	// Resizable panel state
+	let splitPercent = $state(50);
+	let isResizing = $state(false);
+	let containerRef = $state<HTMLDivElement | null>(null);
+
 	// Check for saved draft when entering edit mode
 	$effect(() => {
 		if (isEditMode) {
@@ -172,6 +177,28 @@
 		document.body.removeChild(a);
 		URL.revokeObjectURL(url);
 	}
+
+	// Resizer drag handlers
+	function handleResizeStart(e: MouseEvent) {
+		e.preventDefault();
+		isResizing = true;
+		document.addEventListener('mousemove', handleResizeMove);
+		document.addEventListener('mouseup', handleResizeEnd);
+	}
+
+	function handleResizeMove(e: MouseEvent) {
+		if (!isResizing || !containerRef) return;
+		const rect = containerRef.getBoundingClientRect();
+		const newPercent = ((e.clientX - rect.left) / rect.width) * 100;
+		// Clamp between 20% and 80%
+		splitPercent = Math.max(20, Math.min(80, newPercent));
+	}
+
+	function handleResizeEnd() {
+		isResizing = false;
+		document.removeEventListener('mousemove', handleResizeMove);
+		document.removeEventListener('mouseup', handleResizeEnd);
+	}
 </script>
 
 <svelte:window onkeydown={handleKeydown} />
@@ -312,11 +339,16 @@
 	</div>
 
 	{#if isEditMode}
-		<!-- Edit Mode: Split Editor -->
-		<div class="flex h-[600px]">
+		<!-- Edit Mode: Split Editor with Resizable Divider -->
+		<div
+			class="flex h-[600px] relative"
+			class:cursor-col-resize={isResizing}
+			class:select-none={isResizing}
+			bind:this={containerRef}
+		>
 			<!-- Code Editor -->
-			<div class="w-1/2 border-r border-gray-700 flex flex-col">
-				<div class="px-4 py-2 bg-gray-900 border-b border-gray-700 text-xs text-gray-400">
+			<div class="flex flex-col overflow-hidden" style="width: {splitPercent}%">
+				<div class="px-4 py-2 bg-gray-850 border-b border-gray-700 text-xs text-gray-400 font-medium">
 					Editor · {editContent.split('\n').length} lines
 				</div>
 				<textarea
@@ -327,13 +359,26 @@
 				></textarea>
 			</div>
 
+			<!-- Resizable Divider -->
+			<div
+				class="w-1 bg-gray-700 hover:bg-blue-500 cursor-col-resize transition-colors flex-shrink-0 relative group"
+				onmousedown={handleResizeStart}
+				role="separator"
+				aria-orientation="vertical"
+				tabindex="0"
+			>
+				<div class="absolute inset-y-0 -left-1 -right-1 group-hover:bg-blue-500/20"></div>
+			</div>
+
 			<!-- Live Preview -->
-			<div class="w-1/2 overflow-y-auto bg-gray-850">
-				<div class="px-4 py-2 bg-gray-900 border-b border-gray-700 text-xs text-gray-400">
+			<div class="flex flex-col overflow-hidden bg-gray-800" style="width: {100 - splitPercent}%">
+				<div class="px-4 py-2 bg-gray-850 border-b border-gray-700 text-xs text-gray-400 font-medium">
 					Preview
 				</div>
-				<div class="p-6 prose prose-sm prose-invert max-w-none">
-					{@html renderEditPreview()}
+				<div class="flex-1 overflow-y-auto">
+					<div class="p-6 prose prose-sm prose-invert max-w-none">
+						{@html renderEditPreview()}
+					</div>
 				</div>
 			</div>
 		</div>
@@ -341,7 +386,7 @@
 		<!-- Status Bar -->
 		<div class="px-4 py-2 border-t border-gray-700 bg-gray-800 text-xs text-gray-400 flex items-center justify-between">
 			<span>{editContent.length} characters</span>
-			<span>Cmd/Ctrl+S to save · Esc to exit</span>
+			<span>Drag divider to resize · Cmd/Ctrl+S to save · Esc to exit</span>
 		</div>
 	{:else}
 		<!-- View Mode: Tabs -->
