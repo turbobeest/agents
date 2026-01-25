@@ -13,6 +13,14 @@ description: Masters WiFi Marauder firmware for ESP32-based wireless security te
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -83,6 +91,31 @@ proactive_triggers:
   - "*esp32*security*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 9.1
+  grade: A
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 9
+    identity_clarity: 10
+    anti_pattern_specificity: 10
+    output_format: 9
+    frontmatter: 9
+    cross_agent_consistency: 9
+  notes:
+    - "Exemplary ethical security research framing with authorization-first approach"
+    - "Strong never-do list emphasizing legal consequences and authorization requirements"
+    - "Appropriate advisor role with critical default cognitive mode"
+    - "Good defensive security improvement focus alongside offensive capabilities"
+  improvements: []
 ---
 
 # WiFi Marauder Expert

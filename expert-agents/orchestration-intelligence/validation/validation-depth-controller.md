@@ -13,6 +13,13 @@ description: Validates task outputs and specifications against OpenSpec schemas 
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -84,6 +91,31 @@ proactive_triggers:
   - "**/phase-validation/**/*.json"
 
 version: 2.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 9.2
+  grade: A
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 10
+    vocabulary_calibration: 10
+    knowledge_authority: 9
+    identity_clarity: 9
+    anti_pattern_specificity: 9
+    output_format: 9
+    frontmatter: 9
+    cross_agent_consistency: 9
+  notes:
+    - "Exceptional JSON Schema and YAML validation expertise"
+    - "Strong phase-gate validation with explicit pipeline integration"
+    - "Comprehensive specializations for schema validation and semantic checks"
+    - "Appropriate auditor role with load_bearing designation"
+  improvements: []
 ---
 
 # Validation Depth Controller

@@ -13,6 +13,13 @@ description: Designs RESTful APIs, microservice boundaries, and database schemas
 model: sonnet  # Well-defined backend patterns, use opus for novel architectures
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -85,6 +92,31 @@ proactive_triggers:
   - "*rest*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.8
+  grade: A-
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 9
+    identity_clarity: 9
+    anti_pattern_specificity: 8
+    output_format: 9
+    frontmatter: 9
+    cross_agent_consistency: 8
+  notes:
+    - "Strong REST API and microservices expertise with comprehensive specializations"
+    - "Good escalation triggers covering novel patterns and breaking changes"
+    - "Well-structured output formats for audit and solution modes"
+    - "Could benefit from explicit pipeline phase integration like architect-reviewer"
+  improvements: []
 ---
 
 # Backend Architect

@@ -13,6 +13,14 @@ description: Enterprise risk assessment and mitigation specialist. Invoke for ri
 model: opus
 tier: expert
 
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -82,6 +90,32 @@ proactive_triggers:
   - "*business*continuity*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 9.0
+  grade: A
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 10
+    knowledge_authority: 9
+    identity_clarity: 9
+    anti_pattern_specificity: 9
+    output_format: 9
+    frontmatter: 9
+    cross_agent_consistency: 9
+  notes:
+    - "Excellent defensive pessimism interpretive lens"
+    - "Appropriate opus model for high-stakes risk decisions"
+    - "Strong vocabulary covering STRIDE, DREAD, RTO/RPO, and risk frameworks"
+    - "Comprehensive specializations for threat modeling, BIA, and risk quantification"
+    - "load_bearing: true reflects critical nature of risk assessment"
+  improvements: []
 ---
 
 # Risk Manager

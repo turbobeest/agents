@@ -13,6 +13,14 @@ description: Masters ESP32/ESP8266 Deauther firmware for WiFi security testing a
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -83,6 +91,31 @@ proactive_triggers:
   - "*wireless*security*testing*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 9.0
+  grade: A
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 9
+    identity_clarity: 10
+    anti_pattern_specificity: 10
+    output_format: 9
+    frontmatter: 9
+    cross_agent_consistency: 9
+  notes:
+    - "Exemplary ethical security research framing matching marauder-expert"
+    - "Strong authorization-first approach with criminal liability emphasis"
+    - "Appropriate advisor role with critical default cognitive mode"
+    - "Good defensive security improvement focus"
+  improvements: []
 ---
 
 # ESP32/ESP8266 Deauther Expert

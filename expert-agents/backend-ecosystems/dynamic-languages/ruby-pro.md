@@ -11,6 +11,13 @@
 name: ruby-pro
 description: Ruby specialist for Rails framework, metaprogramming patterns, and elegant code architecture optimized for rapid development
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -89,6 +96,38 @@ proactive_triggers:
   - "**/spec/**/*_spec.rb"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88.3
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 74
+    instruction_quality: 88
+    vocabulary_calibration: 78
+    knowledge_authority: 88
+    identity_clarity: 92
+    anti_pattern_specificity: 94
+    output_format: 95
+    frontmatter: 95
+    cross_agent_consistency: 88
+  notes:
+    - "Token count approximately 85% over 1500 target (significantly over)"
+    - "Pipeline Integration section adds substantial content beyond core agent"
+    - "Vocabulary at 27 terms (over 15-20 target due to pipeline terms)"
+    - "7 Never items with strong Ruby-specific anti-patterns"
+    - "Strong metaprogramming and Rails convention focus"
+    - "Knowledge sources authoritative (ruby-doc, Rails guides, RuboCop)"
+  improvements:
+    - "Consider extracting Pipeline Integration to separate reference doc"
+    - "Reduce vocabulary to core Ruby/Rails terms (15-20 range)"
 ---
 
 # Ruby Pro

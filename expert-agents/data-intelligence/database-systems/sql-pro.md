@@ -6,6 +6,13 @@
 name: sql-pro
 description: Masters complex SQL queries, execution plan optimization, and normalized database schema design for high-performance relational systems
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 tools:
@@ -63,6 +70,34 @@ proactive_triggers:
   - "*query*optimization*"
 
 version: 1.1.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 85
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 95
+    tier_alignment: 80
+    instruction_quality: 75
+    vocabulary_calibration: 90
+    knowledge_authority: 85
+    identity_clarity: 85
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 90
+    cross_agent_consistency: 85
+  notes:
+    - "17 vocabulary terms - well calibrated"
+    - "Instruction numbering jumps (5 to 8, 12 to 13 to 18)"
+    - "Good official doc references (PostgreSQL, MySQL, MariaDB)"
+    - "Cognitive modes include risk field - inconsistent with others"
+  improvements:
+    - "Fix instruction numbering sequence gaps"
+    - "Remove risk field from cognitive modes for consistency"
+    - "Add frontmatter comment block with tier guidance"
 ---
 
 # SQL Pro

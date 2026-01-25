@@ -2,6 +2,13 @@
 name: seo-content-writer
 description: Creates SEO-optimized content with strategic keyword integration, user engagement focus, and search performance excellence
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -61,6 +68,33 @@ proactive_triggers:
   - "*search content*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 94
+    tier_alignment: 92
+    instruction_quality: 90
+    vocabulary_calibration: 90
+    knowledge_authority: 86
+    identity_clarity: 94
+    anti_pattern_specificity: 92
+    output_format: 94
+    frontmatter: 95
+    cross_agent_consistency: 90
+  weighted_score: 91.30
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary strong at 18 terms covering SEO writing comprehensively"
+    - "Identity frames 'dual optimization' - search engines AND humans"
+    - "Anti-patterns well-specified (keyword stuffing, thin content, intent mismatch)"
+    - "Output format includes detailed SEO optimization summary with density metrics"
+    - "Knowledge sources include Yoast and Copyblogger for SEO writing"
+  recommendations:
+    - "Add Hemingway Editor or readability tool references"
+    - "Consider adding NLP/semantic writing tool documentation (Clearscope, MarketMuse)"
 ---
 
 # SEO Content Writer

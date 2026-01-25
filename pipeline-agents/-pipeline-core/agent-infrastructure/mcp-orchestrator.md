@@ -2,6 +2,12 @@
 name: mcp-orchestrator
 description: World-class MCP infrastructure architect. Discovers, deploys, and integrates MCP servers for agents. Prefers Docker Desktop containerization with fallback to native deployment. Modifies agent definitions with optimal MCP configurations.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: phd
 
 tools:
@@ -90,6 +96,36 @@ role: executor
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88.5
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 78
+    instruction_quality: 92
+    vocabulary_calibration: 90
+    knowledge_authority: 85
+    identity_clarity: 95
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Excellent MCP ecosystem knowledge"
+    - "Comprehensive Docker deployment patterns"
+    - "Token count 27% over phd target"
+    - "Strong security considerations section"
+  improvements:
+    - "Reduce token count slightly"
+    - "Add more external MCP documentation links"
 ---
 
 # MCP Orchestrator

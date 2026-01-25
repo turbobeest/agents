@@ -11,6 +11,13 @@
 name: csharp-pro
 description: C# enterprise specialist for async/await patterns, LINQ optimization, .NET ecosystem integration, and enterprise-scale applications
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -88,6 +95,38 @@ proactive_triggers:
   - "**/Services/**"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88.5
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 74
+    instruction_quality: 90
+    vocabulary_calibration: 80
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 92
+    output_format: 95
+    frontmatter: 95
+    cross_agent_consistency: 90
+  notes:
+    - "Token count approximately 80% over 1500 target (significantly over)"
+    - "Pipeline Integration section adds substantial content beyond core agent"
+    - "Vocabulary at 26 terms (over 15-20 target due to pipeline terms)"
+    - "7 Never items with strong async/LINQ-specific anti-patterns"
+    - "Strong async/await and .NET ecosystem focus"
+    - "Knowledge sources authoritative (Microsoft Learn, .NET blog, GitHub)"
+  improvements:
+    - "Consider extracting Pipeline Integration to separate reference doc"
+    - "Reduce vocabulary to core C#/.NET terms (15-20 range)"
 ---
 
 # C# Pro

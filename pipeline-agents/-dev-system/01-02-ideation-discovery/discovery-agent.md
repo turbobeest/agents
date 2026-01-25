@@ -2,6 +2,12 @@
 name: discovery-agent
 description: Phase 2 agent for the dev-system pipeline. Creates C4 architecture diagrams, defines system scope, explores technical approaches, and prepares for validation gate.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: expert
 
 phase: 2
@@ -69,6 +75,37 @@ role: executor
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 83.2
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 70
+    instruction_quality: 88
+    vocabulary_calibration: 85
+    knowledge_authority: 60
+    identity_clarity: 95
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Excellent C4 model guidance with DOT syntax"
+    - "Strong ADR template"
+    - "Token count 58% over expert target"
+    - "Missing external knowledge sources"
+  improvements:
+    - "Reduce token count or upgrade to phd tier"
+    - "Add reference to C4 model official site"
+    - "Add ADR template references"
 ---
 
 # Discovery Agent

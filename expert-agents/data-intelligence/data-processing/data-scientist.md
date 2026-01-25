@@ -10,6 +10,13 @@
 name: data-scientist
 description: Performs advanced data analysis, statistical modeling, and visualization for data-driven insights and predictive analytics
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -81,6 +88,33 @@ proactive_triggers:
   - "*statistical*"
 
 version: 1.1.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 85
+    instruction_quality: 85
+    vocabulary_calibration: 85
+    knowledge_authority: 75
+    identity_clarity: 95
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Vocabulary has 17 terms - within range"
+    - "17 instructions total - appropriate for expert tier"
+    - "Knowledge sources could include more academic references"
+    - "Strong identity with statistical rigor lens"
+  improvements:
+    - "Add academic references (e.g., Elements of Statistical Learning)"
+    - "Consider adding more inference/Bayesian vocabulary"
 ---
 
 # Data Scientist

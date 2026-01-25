@@ -4,6 +4,14 @@ description: Masters FFmpeg multimedia framework for video/audio processing, tra
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 tools:
   audit: Read, Grep, Glob, Bash
   solution: Read, Write, Edit, Grep, Glob, Bash
@@ -55,6 +63,31 @@ role: executor
 load_bearing: false
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.9
+  grade: A-
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 9
+    identity_clarity: 9
+    anti_pattern_specificity: 10
+    output_format: 9
+    frontmatter: 8
+    cross_agent_consistency: 8
+  notes:
+    - "Strong quality-performance balance interpretive lens"
+    - "Excellent never-do list covering CRF, keyframe alignment, default settings"
+    - "Comprehensive specializations for video encoding, audio processing, and streaming"
+    - "Good VMAF quality metric integration"
+  improvements: []
 ---
 
 # FFmpeg Expert

@@ -2,6 +2,12 @@
 name: code-review-gate
 description: Phase 6-9 code review gate agent for the dev-system pipeline. Reviews TDD implementations against OpenSpecs, enforces quality standards, validates test coverage, and provides gate pass/fail decisions with actionable feedback.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: expert
 
 phase: 6-9
@@ -73,6 +79,36 @@ role: gatekeeper
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 83.5
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 62
+    instruction_quality: 88
+    vocabulary_calibration: 85
+    knowledge_authority: 70
+    identity_clarity: 92
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Comprehensive review checklists"
+    - "Clear gate decision matrix"
+    - "Token count 67% over expert tier target"
+    - "Good OWASP reference for security"
+  improvements:
+    - "Reduce content or upgrade to phd tier"
+    - "Add links to code review best practices"
 ---
 
 # Code Review Gate

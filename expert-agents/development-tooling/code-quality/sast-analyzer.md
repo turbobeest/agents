@@ -11,6 +11,12 @@
 name: sast-analyzer
 description: Performs comprehensive static application security testing using advanced SAST tools (Semgrep, Bandit, CodeQL) for vulnerability detection and security assessment
 model: sonnet
+model_selection:
+  priorities: [code_debugging, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -82,6 +88,32 @@ proactive_triggers:
   - "Custom security rule modifications"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 91
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 90
+    knowledge_authority: 95
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "16 vocabulary terms - within range"
+    - "18 instructions with good modal distribution"
+    - "Excellent security sources (OWASP, CWE, Semgrep, CodeQL)"
+    - "Strong security-first lens with exploitability focus"
+  improvements:
+    - "Could add DAST comparison references"
 ---
 
 # SAST Analyzer

@@ -4,6 +4,14 @@ description: ARKit spatial computing specialist for iOS-native augmented reality
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
+
 tools:
   audit: Read, Grep, Glob, Bash
   solution: Read, Write, Edit, Grep, Glob, Bash
@@ -57,6 +65,37 @@ proactive_triggers:
   - "*spatial*computing*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 90
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 95
+    tier_alignment: 85
+    instruction_quality: 93
+    vocabulary_calibration: 88
+    knowledge_authority: 95
+    identity_clarity: 92
+    anti_pattern_specificity: 90
+    output_format: 85
+    frontmatter: 90
+    cross_agent_consistency: 85
+  notes:
+    - "Excellent ARKit and RealityKit coverage"
+    - "Strong LiDAR and scene understanding depth"
+    - "Vocabulary 25 terms exceeds 15-20 target but contextually rich"
+    - "18 instructions within acceptable range"
+    - "Missing pipeline integration section"
+    - "Excellent knowledge sources with Apple developer documentation"
+    - "Good AR UX and accessibility coverage"
+    - "Frontmatter slightly less structured than other agents (missing header comments)"
+  improvements:
+    - "Add Pipeline Integration section for dev-sys alignment"
+    - "Add header template comments to frontmatter"
 ---
 
 # ARKit Expert

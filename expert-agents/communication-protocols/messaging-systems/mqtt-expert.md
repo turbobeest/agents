@@ -13,6 +13,14 @@ description: Expert in MQTT protocol design and implementation for lightweight p
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 mcp_servers:
   protocol-specs:
     description: "IETF RFCs and protocol specifications"
@@ -70,6 +78,34 @@ proactive_triggers:
   - "*pub/sub*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 92
+    vocabulary_calibration: 92
+    knowledge_authority: 94
+    identity_clarity: 94
+    anti_pattern_specificity: 94
+    output_format: 92
+    frontmatter: 95
+    cross_agent_consistency: 94
+  weighted_score: 93.55
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary excellent at 20 terms covering MQTT 5 comprehensively"
+    - "Knowledge sources strong with MQTT 5.0 spec (OASIS) and HiveMQ tutorials - authoritative"
+    - "Identity frames 'bandwidth efficiency, reliable delivery, defense-in-depth security'"
+    - "Anti-patterns excellent (no TLS, no auth, QoS 2 for telemetry, missing topic auth)"
+    - "Instructions at 18 - solid expert tier compliance"
+    - "Specializations cover QoS/reliability, security architecture, broker scalability"
+  recommendations:
+    - "Add Mosquitto (Eclipse) broker documentation"
+    - "Consider adding MQTT-SN (Sensor Networks) specification"
 ---
 
 # MQTT Expert

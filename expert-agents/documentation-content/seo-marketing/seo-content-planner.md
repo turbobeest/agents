@@ -2,6 +2,13 @@
 name: seo-content-planner
 description: Plans comprehensive content strategies and editorial calendars with SEO optimization and content marketing integration
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -61,6 +68,33 @@ proactive_triggers:
   - "*topical cluster*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 94
+    tier_alignment: 92
+    instruction_quality: 88
+    vocabulary_calibration: 90
+    knowledge_authority: 85
+    identity_clarity: 92
+    anti_pattern_specificity: 86
+    output_format: 96
+    frontmatter: 95
+    cross_agent_consistency: 90
+  weighted_score: 90.50
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary strong at 17 terms covering content strategy comprehensively"
+    - "Output format excellent with editorial calendar table structure"
+    - "Knowledge sources include Diataxis framework and topical cluster methodology"
+    - "Identity frames 'strategic alignment' ensuring content serves SEO, user, and business goals"
+    - "Instructions well-balanced across cognitive modes"
+  recommendations:
+    - "Add CoSchedule or similar editorial calendar tool documentation"
+    - "Consider adding content scoring/prioritization framework references"
 ---
 
 # SEO Content Planner

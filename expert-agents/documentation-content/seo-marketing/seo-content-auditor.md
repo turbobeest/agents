@@ -2,6 +2,13 @@
 name: seo-content-auditor
 description: Audits content performance for SEO improvements through comprehensive analysis and strategic optimization recommendations
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -61,6 +68,34 @@ proactive_triggers:
   - "*content optimization*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 92
+    vocabulary_calibration: 92
+    knowledge_authority: 86
+    identity_clarity: 94
+    anti_pattern_specificity: 90
+    output_format: 96
+    frontmatter: 95
+    cross_agent_consistency: 92
+  weighted_score: 92.45
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary excellent at 18 terms covering audit-specific metrics"
+    - "Role and default_mode correctly set to 'auditor' and 'audit'"
+    - "Output format exceptional with performance tiers structure (Top 20%, Bottom 40%)"
+    - "Knowledge sources include Screaming Frog for technical audit"
+    - "Identity frames 'measurable impact' for data-driven optimization"
+    - "Instructions comprehensive at 18 covering technical and content quality"
+  recommendations:
+    - "Add PageSpeed Insights API documentation for Core Web Vitals"
+    - "Consider adding GA4 exploration/reporting documentation"
 ---
 
 # SEO Content Auditor

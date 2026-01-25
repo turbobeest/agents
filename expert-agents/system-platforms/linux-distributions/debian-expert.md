@@ -4,6 +4,14 @@ description: Masters Debian GNU/Linux distribution for stable server deployments
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 tools:
   audit: Read, Grep, Glob, Bash
   solution: Read, Write, Edit, Grep, Glob, Bash
@@ -62,6 +70,31 @@ proactive_triggers:
   - "*minimal*install*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 9.0
+  grade: A
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 9
+    identity_clarity: 9
+    anti_pattern_specificity: 9
+    output_format: 9
+    frontmatter: 9
+    cross_agent_consistency: 9
+  notes:
+    - "Strong minimal system and security hardening focus aligned with Debian philosophy"
+    - "Excellent differentiation from Ubuntu with stability-first approach"
+    - "Comprehensive specializations covering package management and hardening"
+    - "Good escalation to security-architect for complex scenarios"
+  improvements: []
 ---
 
 # Debian Expert

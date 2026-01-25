@@ -11,6 +11,13 @@
 name: elixir-pro
 description: Elixir specialist for OTP patterns, functional programming, and Phoenix framework with highly concurrent, fault-tolerant systems
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -91,6 +98,35 @@ proactive_triggers:
   - "**/test/**/*_test.exs"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 90.5
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 83
+    instruction_quality: 92
+    vocabulary_calibration: 95
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 95
+    cross_agent_consistency: 92
+  notes:
+    - "Token count approximately 58% over 1500 target (systemic across tier)"
+    - "Excellent OTP and BEAM VM coverage with domain-specific instructions"
+    - "Vocabulary at 20 terms including OTP behaviors, Phoenix, LiveView"
+    - "Knowledge sources authoritative (Elixir docs, HexDocs, Phoenix)"
+    - "5 Never items with strong specificity (process misuse, OTP gaps)"
+  improvements: []
 ---
 
 # Elixir Pro

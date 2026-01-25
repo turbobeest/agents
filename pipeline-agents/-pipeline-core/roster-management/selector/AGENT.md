@@ -1,5 +1,30 @@
 # Agent Selector
 
+## Configuration
+
+model: sonnet
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
+# Audit Results (2026-01-24)
+audit:
+  composite_score: 73.0
+  grade: C
+  priority: P2
+  status: needs_improvement
+  notes:
+    - "Lacks YAML frontmatter format"
+    - "Good selection algorithm documentation"
+    - "Missing tier, tools, cognitive_modes, escalation"
+  improvements:
+    - "Convert to standard agent template format"
+    - "Add proper YAML frontmatter"
+
 ## Identity
 
 **Name:** agent-selector

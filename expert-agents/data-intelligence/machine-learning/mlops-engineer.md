@@ -6,6 +6,13 @@
 name: mlops-engineer
 description: Implements MLOps pipelines for automated model deployment, monitoring, and lifecycle management in production environments
 model: sonnet
+model_selection:
+  priorities: [math, reasoning, quality]
+  minimum_tier: medium
+  profiles:
+    default: math_reasoning
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -55,6 +62,33 @@ proactive_triggers:
   - "*model*deploy*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 84
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 80
+    instruction_quality: 75
+    vocabulary_calibration: 80
+    knowledge_authority: 80
+    identity_clarity: 85
+    anti_pattern_specificity: 90
+    output_format: 95
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "14 vocabulary terms - slightly below target"
+    - "Instruction numbering overlaps (11-12 in multiple modes)"
+    - "Good knowledge sources (Kubeflow, MLflow)"
+    - "Strong Never section with 7 anti-patterns"
+  improvements:
+    - "Fix instruction numbering overlap in modes"
+    - "Add vocabulary terms (data provenance, model lineage, etc.)"
 ---
 
 # Mlops Engineer

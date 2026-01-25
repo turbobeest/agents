@@ -11,6 +11,12 @@
 name: legacy-modernizer
 description: Modernizes legacy codebases to current standards with systematic refactoring, technology updates, and maintainability improvements
 model: sonnet
+model_selection:
+  priorities: [code_debugging, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -85,6 +91,37 @@ proactive_triggers:
   - "*migration*"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 83.0
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 81
+    instruction_quality: 68
+    vocabulary_calibration: 90
+    knowledge_authority: 77
+    identity_clarity: 70
+    anti_pattern_specificity: 84
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 88
+  notes:
+    - "Token count 73% over target"
+    - "Instruction redundancy between modes"
+    - "Knowledge sources Fowler-heavy, limited diversity"
+    - "Identity boundaries unclear vs code-reviewer"
+  improvements:
+    - "Consolidate testing instructions"
+    - "Diversify knowledge sources"
+    - "Sharpen identity differentiation"
 ---
 
 # Legacy Modernizer

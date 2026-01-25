@@ -11,6 +11,13 @@
 name: javascript-pro
 description: JavaScript specialist for modern ES6+ patterns, async/await architecture, and Node.js ecosystem integration across full-stack applications
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -91,6 +98,34 @@ proactive_triggers:
   - "*promise*"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88.7
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 82
+    instruction_quality: 88
+    vocabulary_calibration: 90
+    knowledge_authority: 85
+    identity_clarity: 85
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 95
+    cross_agent_consistency: 92
+  notes:
+    - "Token count approximately 55% over 1500 target (systemic across tier)"
+    - "Strong async/event-loop focus with domain-specific instructions"
+    - "Vocabulary at 17 terms, within 15-20 target range"
+    - "Knowledge sources are authoritative (MDN, TC39, Node.js docs)"
+  improvements: []
 ---
 
 # JavaScript Pro

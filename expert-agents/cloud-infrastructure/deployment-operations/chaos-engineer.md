@@ -11,6 +11,13 @@
 name: chaos-engineer
 description: Implements resilience testing through fault injection, failure scenario validation, and system reliability assessment under adverse conditions. Invoke for chaos experiments, resilience testing, and system antifragility improvement.
 model: sonnet
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -88,6 +95,36 @@ proactive_triggers:
   - "resilience-tests/*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 87
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 92
+    tier_alignment: 88
+    instruction_quality: 88
+    vocabulary_calibration: 90
+    knowledge_authority: 85
+    identity_clarity: 90
+    anti_pattern_specificity: 88
+    output_format: 92
+    frontmatter: 85
+    cross_agent_consistency: 80
+  notes:
+    - Excellent controlled failure methodology
+    - Strong blast radius awareness
+    - Good abort conditions emphasis
+    - Comprehensive output formats for experiments and results
+    - Missing pipeline integration
+    - Could add OpenSpec resilience contract validation
+  improvements:
+    - Add pipeline integration for resilience testing phase
+    - Add OpenSpec SLO validation integration
+    - Consider adding human gate triggers for production experiments
 ---
 
 # Chaos Engineer

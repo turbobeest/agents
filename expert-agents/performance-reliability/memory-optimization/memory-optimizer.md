@@ -13,6 +13,14 @@ description: Analyzes and optimizes memory usage patterns with deep expertise in
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -86,6 +94,32 @@ proactive_triggers:
   - "*allocation*"
 
 version: 2.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.2
+  grade: B+
+  priority: P3
+  status: good
+  dimensions:
+    structural_completeness: 8
+    tier_alignment: 9
+    instruction_quality: 8
+    vocabulary_calibration: 8
+    knowledge_authority: 8
+    identity_clarity: 9
+    anti_pattern_specificity: 8
+    output_format: 7
+    frontmatter: 9
+    cross_agent_consistency: 8
+  notes:
+    - "Strong resource scarcity interpretive lens"
+    - "Good leak detection and GC pressure focus"
+    - "Appropriate escalation to performance-engineer for architectural changes"
+    - "Output format minimal - could benefit from structured templates like cache-expert"
+  improvements:
+    - "Add structured output templates for audit and solution modes"
 ---
 
 # Memory Optimizer

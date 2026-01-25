@@ -2,6 +2,12 @@
 name: deployment-gate
 description: Phase 11-12 deployment agent for the dev-system pipeline. Manages deployment execution, rollback preparation, production verification, and final release gate. Ensures safe, monitored deployment with rollback capability.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: phd
 
 phase: 11-12
@@ -74,6 +80,35 @@ role: executor
 load_bearing: true
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 94.2
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 98
+    instruction_quality: 95
+    vocabulary_calibration: 92
+    knowledge_authority: 80
+    identity_clarity: 98
+    anti_pattern_specificity: 100
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 95
+  notes:
+    - "Exemplary deployment strategy documentation"
+    - "Perfect P0-P4 priority structure"
+    - "Excellent visual diagrams for blue-green and canary"
+    - "load_bearing correctly set to true"
+  improvements:
+    - "Add external deployment best practices references"
 ---
 
 # Deployment Gate

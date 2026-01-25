@@ -13,6 +13,13 @@ description: Assigns TaskMaster-decomposed tasks to appropriate agents with prio
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -85,6 +92,32 @@ proactive_triggers:
   - "**/agent-registry/**/*.yaml"
 
 version: 2.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.5
+  grade: B+
+  priority: P3
+  status: good
+  dimensions:
+    structural_completeness: 8
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 8
+    identity_clarity: 9
+    anti_pattern_specificity: 9
+    output_format: 7
+    frontmatter: 9
+    cross_agent_consistency: 8
+  notes:
+    - "Strong dependency DAG and pipeline phase awareness"
+    - "Good escalation triggers for circular dependencies and capacity issues"
+    - "Appropriate load_bearing designation for critical orchestration role"
+    - "Output format section is minimal - could benefit from structured templates"
+  improvements:
+    - "Add structured output templates for audit and solution modes"
 ---
 
 # Assignment Agent

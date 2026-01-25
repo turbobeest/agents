@@ -13,6 +13,14 @@ description: Masters ESP32 microcontroller for WiFi/Bluetooth IoT applications, 
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -83,6 +91,31 @@ proactive_triggers:
   - "*wifi*bluetooth*microcontroller*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.9
+  grade: A-
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 9
+    identity_clarity: 9
+    anti_pattern_specificity: 9
+    output_format: 9
+    frontmatter: 9
+    cross_agent_consistency: 8
+  notes:
+    - "Strong wireless reliability and power efficiency focus"
+    - "Comprehensive vocabulary with ESP-IDF, FreeRTOS, sleep modes"
+    - "Good specializations for wireless optimization, power management, FreeRTOS"
+    - "Clear never-do list covering watchdog, connection handling, and credentials"
+  improvements: []
 ---
 
 # ESP32 Expert

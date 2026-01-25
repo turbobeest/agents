@@ -2,6 +2,13 @@
 name: mermaid-expert
 description: Creates and optimizes Mermaid diagrams for technical documentation with focus on clarity, accuracy, and visual communication
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -56,6 +63,34 @@ proactive_triggers:
   - "*architecture diagram*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 88
+    vocabulary_calibration: 90
+    knowledge_authority: 90
+    identity_clarity: 94
+    anti_pattern_specificity: 88
+    output_format: 98
+    frontmatter: 95
+    cross_agent_consistency: 90
+  weighted_score: 92.15
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary excellent at 17 terms covering Mermaid diagram types"
+    - "Knowledge sources include official Mermaid docs and live editor"
+    - "Identity frames 'clarity and simplicity' for visual communication"
+    - "Output format exceptional with multiple diagram code examples (flowchart, sequence, state)"
+    - "Instructions at 16 - solid expert tier compliance"
+    - "Specializations cover diagram type selection, visual clarity, syntax mastery"
+  recommendations:
+    - "Add PlantUML comparison or migration documentation"
+    - "Consider adding GitHub/GitLab Mermaid rendering documentation"
 ---
 
 # Mermaid Expert

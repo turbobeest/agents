@@ -2,6 +2,12 @@
 name: first-principles-advisor
 description: First-principles problem decomposition specialist for the dev-system pipeline. Invoked by orchestrator when tasks are novel, ambiguous, or require fundamental analysis beyond TaskMaster's pattern-based decomposition.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: phd
 
 tools:
@@ -73,6 +79,36 @@ role: advisor
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 90.2
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 88
+    instruction_quality: 92
+    vocabulary_calibration: 90
+    knowledge_authority: 75
+    identity_clarity: 98
+    anti_pattern_specificity: 95
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 92
+  notes:
+    - "Excellent problem decomposition examples"
+    - "Strong Socratic lens in identity"
+    - "Good assumption identification framework"
+    - "Instruction count slightly under 25"
+  improvements:
+    - "Increase instruction count to 25+"
+    - "Add external first-principles reasoning references"
 ---
 
 # First-Principles Advisor

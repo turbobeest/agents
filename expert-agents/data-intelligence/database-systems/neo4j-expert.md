@@ -6,6 +6,13 @@
 name: neo4j-expert
 description: Master architect of Neo4j graph database ecosystems, specializing in enterprise-scale graph analytics, complex relationship modeling, and graph-native problem solving
 model: opus
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -77,6 +84,33 @@ proactive_triggers:
   - "*relationship*model*"
 
 version: 1.1.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 87
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 85
+    instruction_quality: 80
+    vocabulary_calibration: 90
+    knowledge_authority: 95
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "19 vocabulary terms - well calibrated"
+    - "Instruction numbering resets incorrectly in Critical mode"
+    - "Excellent knowledge sources (official Neo4j, Graph Academy)"
+    - "Uses opus model - appropriate for complex graph reasoning"
+  improvements:
+    - "Fix instruction numbering in Critical/Evaluative/Informative modes"
+    - "Instructions 6-10 duplicated as 6-8 in Evaluative mode"
 ---
 
 # Neo4j Expert

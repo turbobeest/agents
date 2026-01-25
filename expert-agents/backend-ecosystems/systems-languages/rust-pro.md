@@ -11,6 +11,13 @@
 name: rust-pro
 description: Rust systems programming specialist for memory-safe, high-performance applications with ownership optimization and safety guarantees
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -92,6 +99,36 @@ proactive_triggers:
   - "*lifetime*"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 91.2
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 88
+    instruction_quality: 92
+    vocabulary_calibration: 90
+    knowledge_authority: 92
+    identity_clarity: 90
+    anti_pattern_specificity: 92
+    output_format: 100
+    frontmatter: 95
+    cross_agent_consistency: 95
+  notes:
+    - "Token count approximately 48% over 1500 target (moderate variance)"
+    - "No Pipeline Integration section - cleaner focused agent"
+    - "Vocabulary at 16 terms, within 15-20 target range"
+    - "4 Never items with strong ownership/safety anti-patterns"
+    - "Excellent ownership, lifetime, and unsafe code coverage"
+    - "Knowledge sources authoritative (Rust Book, Nomicon, async-book)"
+  improvements: []
 ---
 
 # Rust Pro

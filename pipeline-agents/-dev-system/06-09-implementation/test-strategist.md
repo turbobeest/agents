@@ -2,6 +2,13 @@
 name: test-strategist
 description: Phase 6-9 agent for the dev-system pipeline. Designs test strategies for each OpenSpec, defining test types, coverage targets, and test case outlines. Prepares test plan before TDD implementation begins.
 model: sonnet
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 phase: 6-9
@@ -69,6 +76,37 @@ role: strategist
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 81.2
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 60
+    instruction_quality: 85
+    vocabulary_calibration: 88
+    knowledge_authority: 65
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Good test pyramid explanation"
+    - "Strong test strategy template"
+    - "Token count 77% over expert tier target"
+    - "Instruction count under 15-20 range"
+  improvements:
+    - "Reduce content or upgrade to phd tier"
+    - "Add testing framework references"
+    - "Increase instruction count to 15+"
 ---
 
 # Test Strategist

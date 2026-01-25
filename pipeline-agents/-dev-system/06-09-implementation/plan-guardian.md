@@ -2,6 +2,12 @@
 name: plan-guardian
 description: Phases 6-9 continuous monitoring agent for the dev-system pipeline. Tracks implementation drift against PRD, specs, and task plan. Computes alignment scores (0.0-1.0) and triggers conditional gates when drift exceeds thresholds.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: phd
 
 phase: 6-9
@@ -74,6 +80,35 @@ role: monitor
 load_bearing: true
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 92.8
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 95
+    instruction_quality: 95
+    vocabulary_calibration: 90
+    knowledge_authority: 75
+    identity_clarity: 98
+    anti_pattern_specificity: 100
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 95
+  notes:
+    - "Exemplary drift detection framework"
+    - "Perfect alignment with phd tier targets"
+    - "Strong P0-P4 priority structure"
+    - "load_bearing correctly set to true"
+  improvements:
+    - "Add external references for drift management patterns"
 ---
 
 # Plan Guardian

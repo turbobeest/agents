@@ -4,6 +4,13 @@ description: Masters LiDAR systems for defense applications, specializing in 3D 
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [math, reasoning, quality]
+  minimum_tier: medium
+  profiles:
+    default: math_reasoning
+    batch: budget
+
 tools:
   audit: Read, Grep, Glob, Bash
   solution: Read, Write, Edit, Grep, Glob, Bash
@@ -57,6 +64,31 @@ proactive_triggers:
   - "*laser scanning*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.7
+  grade: A-
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 8
+    identity_clarity: 9
+    anti_pattern_specificity: 9
+    output_format: 9
+    frontmatter: 8
+    cross_agent_consistency: 8
+  notes:
+    - "Strong laser physics and atmospheric propagation focus"
+    - "Good specializations for LiDAR technologies and point cloud processing"
+    - "Clear eye-safety compliance focus in never-do list"
+    - "Appropriate escalation to laser-ranging-expert"
+  improvements: []
 ---
 
 # LiDAR Expert

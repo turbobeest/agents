@@ -5,6 +5,12 @@
 name: kali-linux-expert
 description: Masters Kali Linux penetration testing distribution, specializing in ethical hacking tools, security assessments, digital forensics, and comprehensive cybersecurity testing
 model: sonnet
+model_selection:
+  priorities: [quality, code_debugging, reasoning]
+  minimum_tier: large
+  profiles:
+    default: security_audit
+    batch: quality_critical
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -84,6 +90,37 @@ proactive_triggers:
   - "*security assessment*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 85
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 88
+    tier_alignment: 85
+    instruction_quality: 88
+    vocabulary_calibration: 85
+    knowledge_authority: 85
+    identity_clarity: 88
+    anti_pattern_specificity: 88
+    output_format: 85
+    frontmatter: 85
+    cross_agent_consistency: 80
+  notes:
+    - Good ethical hacking focus
+    - Strong authorization emphasis
+    - Good tool coverage (Metasploit, Nmap, Burp Suite)
+    - Responsible disclosure awareness
+    - Load bearing correctly set to false
+    - Missing pipeline integration
+    - Overlaps with penetration-tester agent
+  improvements:
+    - Clarify differentiation from penetration-tester
+    - Add pipeline integration for security testing phase
+    - Consider adding human gate for scope decisions
 ---
 
 # Kali Linux Expert

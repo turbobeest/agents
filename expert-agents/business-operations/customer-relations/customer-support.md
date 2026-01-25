@@ -4,6 +4,14 @@ description: Provides comprehensive customer support responses and troubleshooti
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
+
 tools:
   audit: Read, Grep, Glob, Bash
   solution: Read, Write, Edit, Grep, Glob, Bash
@@ -61,6 +69,31 @@ proactive_triggers:
   - "*user*issue*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.5
+  grade: B+
+  priority: P3
+  status: good
+  dimensions:
+    structural_completeness: 8
+    tier_alignment: 9
+    instruction_quality: 8
+    vocabulary_calibration: 8
+    knowledge_authority: 8
+    identity_clarity: 9
+    anti_pattern_specificity: 9
+    output_format: 9
+    frontmatter: 8
+    cross_agent_consistency: 9
+  notes:
+    - "Strong empathy-first approach with customer satisfaction focus"
+    - "Good troubleshooting and communication specializations"
+    - "Clear never-do list addressing customer experience anti-patterns"
+    - "Appropriate escalation to technical-specialist for deep issues"
+  improvements: []
 ---
 
 # Customer Support Specialist

@@ -12,6 +12,13 @@ description: Master of user interface and experience design specializing in comp
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -84,6 +91,31 @@ proactive_triggers:
   - "accessibility-audit/**"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 9.1
+  grade: A
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 10
+    knowledge_authority: 9
+    identity_clarity: 9
+    anti_pattern_specificity: 9
+    output_format: 10
+    frontmatter: 9
+    cross_agent_consistency: 9
+  notes:
+    - "Extensive vocabulary covering full UX design spectrum"
+    - "Strong accessibility-first approach with WCAG compliance focus"
+    - "Comprehensive output formats for audit, solution, and research modes"
+    - "Excellent specializations covering accessibility, design systems, and user research"
+  improvements: []
 ---
 
 # UI/UX Designer

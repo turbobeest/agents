@@ -11,6 +11,13 @@
 name: test-automator
 description: Automates comprehensive testing with unit, integration, and E2E coverage using modern frameworks (Jest, Pytest, Cypress) with reporting excellence
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -90,6 +97,32 @@ proactive_triggers:
   - "CI/CD pipeline test failures"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 90
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 95
+    knowledge_authority: 90
+    identity_clarity: 95
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "23 vocabulary terms - extensive but specialized for pipeline integration"
+    - "19 instructions with OpenSpec/TaskMaster integration"
+    - "Excellent testing framework references"
+    - "Strong phase gate and acceptance criteria focus"
+  improvements:
+    - "Consider trimming vocabulary or splitting pipeline terms"
 ---
 
 # Test Automator

@@ -7,6 +7,13 @@ description: Masters acoustic sensor systems for defense applications, specializ
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [math, reasoning, quality]
+  minimum_tier: medium
+  profiles:
+    default: math_reasoning
+    batch: budget
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -81,6 +88,31 @@ proactive_triggers:
   - "*acoustic surveillance*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.9
+  grade: A-
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 9
+    identity_clarity: 9
+    anti_pattern_specificity: 9
+    output_format: 9
+    frontmatter: 9
+    cross_agent_consistency: 8
+  notes:
+    - "Strong acoustic physics vocabulary with propagation and array theory"
+    - "Comprehensive specializations covering underwater, airborne, and seismic acoustics"
+    - "Good never-do list covering environmental conditions and array design"
+    - "Appropriate escalation to sonar-expert for underwater specifics"
+  improvements: []
 ---
 
 # Acoustic Expert

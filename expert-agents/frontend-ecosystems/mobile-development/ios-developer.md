@@ -10,6 +10,13 @@
 name: ios-developer
 description: Master of native iOS development specializing in Swift/SwiftUI, iOS ecosystem integration, Apple platform optimization, and App Store excellence
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -92,6 +99,35 @@ proactive_triggers:
   - "Podfile"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 91
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 82
+    instruction_quality: 93
+    vocabulary_calibration: 70
+    knowledge_authority: 95
+    identity_clarity: 95
+    anti_pattern_specificity: 90
+    output_format: 98
+    frontmatter: 100
+    cross_agent_consistency: 93
+  notes:
+    - "Comprehensive Apple ecosystem coverage (SwiftUI, UIKit, ARKit, etc.)"
+    - "Strong pipeline integration with OpenSpec and phase gate references"
+    - "Excellent App Store compliance and HIG awareness"
+    - "Token count exceeds ~1500 target (systemic)"
+    - "Vocabulary 52 terms significantly exceeds 15-20 target"
+    - "High-quality knowledge sources with official Apple documentation"
+    - "Output formats are slightly condensed compared to other agents"
+  improvements:
+    - "Consider splitting into SwiftUI-expert and UIKit-expert for depth"
 ---
 
 # iOS Developer

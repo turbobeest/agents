@@ -11,6 +11,13 @@
 name: scala-pro
 description: Scala specialist for functional programming, distributed systems with Akka, and big data processing with Spark
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -87,6 +94,39 @@ proactive_triggers:
   - "**/src/main/scala/**"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 89.8
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 74
+    instruction_quality: 92
+    vocabulary_calibration: 82
+    knowledge_authority: 92
+    identity_clarity: 95
+    anti_pattern_specificity: 94
+    output_format: 98
+    frontmatter: 95
+    cross_agent_consistency: 90
+  notes:
+    - "Token count approximately 85% over 1500 target (significantly over)"
+    - "Extensive Pipeline Integration and Phase Gate Support sections"
+    - "Vocabulary at 28 terms (over 15-20 target due to pipeline terms)"
+    - "7 Never items with strong functional programming anti-patterns"
+    - "Excellent functional programming and type system coverage"
+    - "Strong Akka/Spark specializations with distributed system focus"
+    - "Knowledge sources authoritative (Scala docs, Akka, Typelevel)"
+  improvements:
+    - "Consider extracting Pipeline Integration to separate reference doc"
+    - "Reduce vocabulary to core Scala/FP terms (15-20 range)"
 ---
 
 # Scala Pro

@@ -11,6 +11,13 @@
 name: typescript-pro
 description: TypeScript specialist for advanced type systems, strict type safety, and enterprise-scale applications
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -91,6 +98,32 @@ proactive_triggers:
   - "*interface*"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 91.3
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 84
+    instruction_quality: 90
+    vocabulary_calibration: 85
+    knowledge_authority: 90
+    identity_clarity: 87
+    anti_pattern_specificity: 93
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 98
+  notes:
+    - "Token count 58% over target (systemic)"
+    - "Vocabulary 2 terms under target"
+  improvements: []
 ---
 
 # TypeScript Pro

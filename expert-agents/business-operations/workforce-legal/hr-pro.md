@@ -4,6 +4,14 @@ description: Handles comprehensive HR processes including recruitment, policy de
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
+
 tools:
   audit: Read, Grep, Glob, Bash
   solution: Read, Write, Edit, Grep, Glob, Bash
@@ -61,6 +69,31 @@ proactive_triggers:
   - "*performance*management*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.5
+  grade: B+
+  priority: P3
+  status: good
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 8
+    vocabulary_calibration: 8
+    knowledge_authority: 8
+    identity_clarity: 8
+    anti_pattern_specificity: 9
+    output_format: 9
+    frontmatter: 8
+    cross_agent_consistency: 8
+  notes:
+    - "Good balance of employee experience and organizational effectiveness"
+    - "Strong compliance focus with appropriate escalation to legal-advisor"
+    - "Comprehensive specializations covering full HR lifecycle"
+    - "Clear never-do list addressing common HR pitfalls"
+  improvements: []
 ---
 
 # HR Professional

@@ -2,6 +2,13 @@
 name: seo-content-refresher
 description: Refreshes and updates existing content for sustained SEO performance through strategic optimization and freshness improvements
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -61,6 +68,33 @@ proactive_triggers:
   - "*freshness optimization*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 93
+    tier_alignment: 90
+    instruction_quality: 88
+    vocabulary_calibration: 86
+    knowledge_authority: 82
+    identity_clarity: 92
+    anti_pattern_specificity: 90
+    output_format: 94
+    frontmatter: 95
+    cross_agent_consistency: 88
+  weighted_score: 89.25
+  grade: B
+  priority: P3
+  findings:
+    - "Vocabulary focused at 14 terms covering content decay and freshness"
+    - "Identity strongly frames 'lifecycle extension' for strategic updates"
+    - "Anti-patterns specific (superficial date-only updates, removing valuable history)"
+    - "Output format includes detailed per-page refresh plans with traffic metrics"
+    - "Instructions balanced with clear refresh vs rewrite distinction"
+  recommendations:
+    - "Expand vocabulary to include QDF (Query Deserves Freshness) algorithm signals"
+    - "Add ContentKing or similar change monitoring tool references"
 ---
 
 # SEO Content Refresher

@@ -2,6 +2,13 @@
 name: yolo-expert
 description: Masters YOLO object detection for real-time computer vision, specializing in model optimization, custom dataset training, and deployment across YOLOv3-YOLOv8+ architectures
 model: sonnet
+model_selection:
+  priorities: [math, reasoning, quality]
+  minimum_tier: medium
+  profiles:
+    default: math_reasoning
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -61,6 +68,33 @@ proactive_triggers:
   - "*computer*vision*deployment*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 89
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 95
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 95
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 85
+    cross_agent_consistency: 85
+  notes:
+    - "22 vocabulary terms - slightly over but specialized domain"
+    - "20 instructions with consistent modal distribution"
+    - "Excellent Ultralytics official docs as reference"
+    - "Clear real-time performance constraint lens"
+  improvements:
+    - "Add frontmatter comment block with tier guidance"
+    - "Could add ONNX/TensorRT documentation links"
 ---
 
 # YOLO Expert

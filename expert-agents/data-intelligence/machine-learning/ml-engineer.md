@@ -6,6 +6,13 @@
 name: ml-engineer
 description: Builds machine learning models, optimizes training pipelines, and deploys ML systems with GPU optimization and cloud integration excellence
 model: sonnet
+model_selection:
+  priorities: [math, reasoning, quality]
+  minimum_tier: medium
+  profiles:
+    default: math_reasoning
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -62,6 +69,33 @@ proactive_triggers:
   - "*.h5"
 
 version: 1.2.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 86
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 85
+    instruction_quality: 80
+    vocabulary_calibration: 85
+    knowledge_authority: 90
+    identity_clarity: 85
+    anti_pattern_specificity: 80
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "18 vocabulary terms - within range"
+    - "17 instructions but modal distribution uneven"
+    - "Excellent knowledge sources (PyTorch, TensorFlow, Transformers)"
+    - "Cognitive modes include risk_profile - inconsistent with template"
+  improvements:
+    - "Remove risk_profile from cognitive modes for consistency"
+    - "Add more specific anti-patterns in Never section"
 ---
 
 # ML Engineer

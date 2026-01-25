@@ -2,6 +2,12 @@
 name: focused-agent-editor
 description: Creates and revises focused-tier agent definitions (~500 tokens, 5-10 instructions). Invoke for bounded, well-defined agent roles.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: focused
 
 tools:
@@ -21,6 +27,37 @@ proactive_triggers:
   - "TEMPLATE-focused*"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 78.5
+  grade: C
+  priority: P2
+  status: needs_improvement
+  dimensions:
+    structural_completeness: 85
+    tier_alignment: 72
+    instruction_quality: 82
+    vocabulary_calibration: 75
+    knowledge_authority: 70
+    identity_clarity: 85
+    anti_pattern_specificity: 80
+    output_format: 90
+    frontmatter: 80
+    cross_agent_consistency: 80
+  notes:
+    - "Token count 36% over focused tier target"
+    - "Uses opus model but focused tier should use sonnet/haiku"
+    - "Good template reference section"
+    - "Cognitive modes minimal as expected for focused tier"
+  improvements:
+    - "Change model from opus to sonnet"
+    - "Reduce token count to ~500"
+    - "Add more cognitive mode detail or simplify further"
 ---
 
 # Focused Agent Editor

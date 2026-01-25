@@ -2,6 +2,13 @@
 name: quality-gate-controller
 description: Configures validation intensity and quality criteria for each dev-system pipeline gate. Scales testing depth by phase, risk tolerance, and human preferences. Prepares gate criteria for the 6 human decision points.
 model: sonnet
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -68,6 +75,37 @@ role: controller
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 84.5
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 65
+    instruction_quality: 88
+    vocabulary_calibration: 88
+    knowledge_authority: 75
+    identity_clarity: 92
+    anti_pattern_specificity: 88
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Good validation depth level framework"
+    - "Strong phase-specific gate criteria"
+    - "Token count 65% over expert tier target"
+    - "Instruction count slightly under 15-20"
+  improvements:
+    - "Reduce content or upgrade to phd tier"
+    - "Add external quality gate references"
+    - "Increase instruction count to 15+"
 ---
 
 # Quality Gate Controller

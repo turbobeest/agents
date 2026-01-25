@@ -11,6 +11,13 @@
 name: devops-troubleshooter
 description: Debugs production issues, analyzes system logs, and resolves deployment failures with focus on cloud efficiency and monitoring excellence. Invoke for infrastructure debugging, log analysis, and performance troubleshooting.
 model: sonnet
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -88,6 +95,36 @@ proactive_triggers:
   - "**/diagnostics/**"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 85
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 88
+    tier_alignment: 88
+    instruction_quality: 85
+    vocabulary_calibration: 88
+    knowledge_authority: 82
+    identity_clarity: 88
+    anti_pattern_specificity: 85
+    output_format: 88
+    frontmatter: 85
+    cross_agent_consistency: 80
+  notes:
+    - Good observability focus
+    - Strong log analysis and metrics coverage
+    - Default cognitive mode is critical (appropriate)
+    - Escalates to incident-responder correctly
+    - Missing pipeline integration
+    - Could add runbook automation specialization
+  improvements:
+    - Add pipeline integration for debugging during deployment
+    - Add OpenSpec SLO troubleshooting alignment
+    - Expand distributed tracing section
 ---
 
 # DevOps Troubleshooter

@@ -2,6 +2,12 @@
 name: phd-agent-editor
 description: World-class agent architect for PhD-tier definitions (~3000 tokens, 25-35 instructions). Invoke for complex specialists requiring first-principles design, architectural decisions, or novel agent domains.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: phd
 
 tools:
@@ -90,6 +96,35 @@ load_bearing: true
 
 version: 1.0.0
 created_for: agent-development
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 95.8
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 100
+    instruction_quality: 98
+    vocabulary_calibration: 95
+    knowledge_authority: 82
+    identity_clarity: 100
+    anti_pattern_specificity: 100
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 98
+  notes:
+    - "Exemplary identity with PhD-level expertise persona"
+    - "Perfect priority structure with P0-P3 and mode-specific"
+    - "Comprehensive reasoning framework section"
+    - "load_bearing correctly set to true"
+  improvements:
+    - "Add external prompt engineering references"
 ---
 
 # PhD Agent Editor

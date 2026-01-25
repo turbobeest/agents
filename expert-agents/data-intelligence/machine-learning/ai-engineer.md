@@ -6,6 +6,13 @@
 name: ai-engineer
 description: Architects AI systems and intelligent applications with focus on scalable AI infrastructure and model integration excellence
 model: opus
+model_selection:
+  priorities: [math, reasoning, quality]
+  minimum_tier: medium
+  profiles:
+    default: math_reasoning
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -54,6 +61,33 @@ proactive_triggers:
   - "*inference*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 83
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 80
+    instruction_quality: 75
+    vocabulary_calibration: 75
+    knowledge_authority: 85
+    identity_clarity: 80
+    anti_pattern_specificity: 90
+    output_format: 95
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "13 vocabulary terms - below 15 target"
+    - "Instruction numbering overlaps (11-12 in multiple modes)"
+    - "Uses opus model - appropriate for complex AI systems"
+    - "Strong Never section with 7 specific anti-patterns"
+  improvements:
+    - "Add 5+ vocabulary terms (latency SLA, feature drift, etc.)"
+    - "Fix instruction numbering overlap in modes"
 ---
 
 # Ai Engineer

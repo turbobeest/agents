@@ -13,6 +13,14 @@ description: Masters OPC-UA (Open Platform Communications Unified Architecture) 
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 mcp_servers:
   protocol-specs:
     description: "IETF RFCs and protocol specifications"
@@ -87,6 +95,34 @@ proactive_triggers:
   - "*industrial automation*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 92
+    vocabulary_calibration: 94
+    knowledge_authority: 92
+    identity_clarity: 94
+    anti_pattern_specificity: 94
+    output_format: 92
+    frontmatter: 95
+    cross_agent_consistency: 94
+  weighted_score: 93.35
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary excellent at 22 terms covering OPC-UA comprehensively"
+    - "Knowledge sources include OPC Foundation and open62541 - authoritative"
+    - "Identity frames 'security-first design, semantic interoperability, real-time industrial'"
+    - "Anti-patterns excellent (security policy None, trust any cert, inconsistent info model, missing real-time)"
+    - "Instructions at 18 - solid expert tier compliance"
+    - "Specializations cover security architecture, information modeling, industrial integration"
+  recommendations:
+    - "Add companion specification references (PLCopen, PackML)"
+    - "Consider adding IEC 62541 standard documentation"
 ---
 
 # OPC-UA Expert

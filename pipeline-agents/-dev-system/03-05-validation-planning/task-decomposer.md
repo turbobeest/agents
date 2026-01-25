@@ -2,6 +2,12 @@
 name: task-decomposer
 description: Phase 5 agent for the dev-system pipeline. Transforms audited PRDs into TaskMaster-compatible task DAGs with dependencies, complexity estimates, and acceptance criteria. Integrates with TaskMaster for DAG generation.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: expert
 
 phase: 5
@@ -65,6 +71,37 @@ role: executor
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 82.3
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 65
+    instruction_quality: 88
+    vocabulary_calibration: 80
+    knowledge_authority: 65
+    identity_clarity: 92
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Excellent TaskMaster DAG format specification"
+    - "Good complexity estimation table"
+    - "Token count 62% over expert tier target"
+    - "Instruction count slightly under 15-20 range"
+  improvements:
+    - "Reduce content or upgrade to phd tier"
+    - "Add external references for task decomposition patterns"
+    - "Increase instruction count to 15+"
 ---
 
 # Task Decomposer

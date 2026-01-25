@@ -11,6 +11,13 @@
 name: incident-responder
 description: Handles production incidents with urgency, precision, and systematic problem resolution for minimal service disruption. Invoke for incident management, rapid troubleshooting, root cause analysis, and post-incident reviews.
 model: sonnet
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -88,6 +95,35 @@ proactive_triggers:
   - "monitoring/alerts/*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 92
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 90
+    knowledge_authority: 85
+    identity_clarity: 92
+    anti_pattern_specificity: 88
+    output_format: 92
+    frontmatter: 88
+    cross_agent_consistency: 82
+  notes:
+    - Excellent time-bounded decision making focus
+    - Strong blameless culture emphasis
+    - Comprehensive incident response and postmortem formats
+    - Good escalation to human for data loss risk
+    - Load bearing flag correctly set to true
+    - Missing pipeline integration
+  improvements:
+    - Add pipeline integration for deployment failures
+    - Consider adding SLO breach detection triggers
 ---
 
 # Incident Responder

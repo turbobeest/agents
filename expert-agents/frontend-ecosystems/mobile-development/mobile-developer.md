@@ -10,6 +10,13 @@
 name: mobile-developer
 description: Specialist in cross-platform mobile development using React Native or Flutter with platform-adaptive UI, native integration, and performance optimization for iOS/Android
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -85,6 +92,36 @@ proactive_triggers:
   - "react-native.config.js"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 85
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 95
+    tier_alignment: 80
+    instruction_quality: 88
+    vocabulary_calibration: 82
+    knowledge_authority: 90
+    identity_clarity: 80
+    anti_pattern_specificity: 85
+    output_format: 95
+    frontmatter: 100
+    cross_agent_consistency: 80
+  notes:
+    - "Good cross-platform coverage spanning React Native and Flutter"
+    - "Missing pipeline integration section (unlike flutter-expert and ios-developer)"
+    - "Vocabulary 32 terms exceeds 15-20 target but less than specialized agents"
+    - "Identity overlaps significantly with flutter-expert - potential redundancy"
+    - "Good knowledge sources but fewer than specialized mobile agents"
+    - "18 instructions within acceptable range"
+  improvements:
+    - "Add Pipeline Integration section for consistency"
+    - "Clarify differentiation from flutter-expert (generalist vs specialist)"
+    - "Consider merging with flutter-expert or making React Native focused"
 ---
 
 # Mobile Developer

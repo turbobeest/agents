@@ -11,6 +11,13 @@
 name: terraform-specialist
 description: Masters Infrastructure as Code with advanced Terraform modules, state management, and infrastructure automation best practices. Validates infrastructure against OpenSpec contracts and enforces deployment gates. Invoke for IaC design, module development, state management, infrastructure automation, and deployment validation (phases 11-12).
 model: sonnet
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -94,6 +101,33 @@ proactive_triggers:
   - "**/modules/**"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 93
+  grade: A
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 98
+    tier_alignment: 95
+    instruction_quality: 95
+    vocabulary_calibration: 92
+    knowledge_authority: 90
+    identity_clarity: 95
+    anti_pattern_specificity: 92
+    output_format: 95
+    frontmatter: 92
+    cross_agent_consistency: 90
+  notes:
+    - Excellent OpenSpec contract integration
+    - Strong deployment gate enforcement
+    - Comprehensive pipeline integration section
+    - TaskMaster integration documented
+    - Good cost and drift thresholds
+    - Human gates for destructive changes
+  improvements: []
 ---
 
 # Terraform Specialist

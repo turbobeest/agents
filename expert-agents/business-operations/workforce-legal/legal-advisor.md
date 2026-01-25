@@ -4,6 +4,14 @@ description: Provides legal guidance and contract review with compliance focus a
 model: opus
 tier: expert
 
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
+
 tools:
   audit: Read, Grep, Glob, Bash
   solution: Read, Write, Edit, Grep, Glob, Bash
@@ -62,6 +70,32 @@ proactive_triggers:
   - "*regulatory*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 9.0
+  grade: A
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 9
+    identity_clarity: 10
+    anti_pattern_specificity: 9
+    output_format: 9
+    frontmatter: 9
+    cross_agent_consistency: 8
+  notes:
+    - "Excellent legal disclaimer clearly stating non-attorney status"
+    - "Appropriate opus model for high-stakes legal review"
+    - "Strong adversarial lens with critical default cognitive mode"
+    - "Appropriate escalation to licensed-attorney for high-stakes matters"
+    - "load_bearing: true reflects critical nature of legal review"
+  improvements: []
 ---
 
 # Legal Advisor

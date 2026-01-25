@@ -10,6 +10,13 @@
 name: nextjs-expert
 description: Architect of Next.js full-stack applications specializing in hybrid rendering strategies (SSR/SSG/ISR/CSR), performance optimization, SEO excellence, and modern web deployment
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -93,6 +100,32 @@ proactive_triggers:
   - "package.json with next dependency"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 92
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 82
+    instruction_quality: 95
+    vocabulary_calibration: 78
+    knowledge_authority: 95
+    identity_clarity: 95
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 95
+  notes:
+    - "Excellent pipeline integration with OpenSpec and TaskMaster references"
+    - "Comprehensive rendering strategy coverage (SSR/SSG/ISR/CSR)"
+    - "Token count exceeds ~1500 target (systemic across expert tier)"
+    - "Vocabulary 34 terms exceeds 15-20 target but contextually justified"
+    - "Strong knowledge sources with official Next.js, React, and Web.dev"
+  improvements: []
 ---
 
 # Next.js Expert

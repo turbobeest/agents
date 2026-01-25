@@ -13,6 +13,14 @@ description: Masters WebSocket protocol for real-time bidirectional web communic
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 mcp_servers:
   protocol-specs:
     description: "IETF RFCs and protocol specifications"
@@ -88,6 +96,34 @@ proactive_triggers:
   - "*bidirectional communication*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 92
+    vocabulary_calibration: 90
+    knowledge_authority: 92
+    identity_clarity: 94
+    anti_pattern_specificity: 92
+    output_format: 92
+    frontmatter: 95
+    cross_agent_consistency: 94
+  weighted_score: 93.15
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary excellent at 18 terms covering WebSocket comprehensively"
+    - "Knowledge sources strong with RFC 6455 and MDN - authoritative"
+    - "Identity frames 'persistent connections, event-driven architecture, horizontal scalability'"
+    - "Anti-patterns specific (no heartbeat, post-handshake auth, missing sticky sessions, ordering)"
+    - "Instructions at 18 - solid expert tier compliance"
+    - "Specializations cover connection management, message routing, scalability/load balancing"
+  recommendations:
+    - "Add Socket.IO documentation for abstraction layer"
+    - "Consider adding nginx/HAProxy WebSocket proxy configuration docs"
 ---
 
 # WebSocket Expert

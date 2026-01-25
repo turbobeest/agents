@@ -11,6 +11,13 @@
 name: deployment-engineer
 description: Configures CI/CD pipelines and cloud deployments with sophisticated automation, parallel stages, and integrated security scanning. Invoke for pipeline design, deployment automation, and release management.
 model: sonnet
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -92,6 +99,36 @@ proactive_triggers:
   - "**/deploy/**"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 86
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 90
+    tier_alignment: 88
+    instruction_quality: 88
+    vocabulary_calibration: 88
+    knowledge_authority: 85
+    identity_clarity: 88
+    anti_pattern_specificity: 90
+    output_format: 88
+    frontmatter: 85
+    cross_agent_consistency: 82
+  notes:
+    - Good progressive delivery focus
+    - Strong security scanning integration emphasis
+    - Comprehensive deployment patterns coverage
+    - Missing pipeline/OpenSpec integration
+    - Could benefit from deployment gate documentation
+    - DORA metrics mentioned in vocabulary
+  improvements:
+    - Add pipeline integration (natural fit for phases 11-12)
+    - Add OpenSpec deployment contract alignment
+    - Add human gate triggers for production deployments
 ---
 
 # Deployment Engineer

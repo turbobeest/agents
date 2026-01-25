@@ -5,6 +5,12 @@
 name: supply-chain-auditor
 description: Analyzes software supply chain security with comprehensive dependency analysis, license compliance verification, and vulnerability chain assessment
 model: sonnet
+model_selection:
+  priorities: [quality, code_debugging, reasoning]
+  minimum_tier: large
+  profiles:
+    default: security_audit
+    batch: quality_critical
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -86,6 +92,36 @@ proactive_triggers:
   - "*SBOM*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 89
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 92
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 90
+    knowledge_authority: 92
+    identity_clarity: 90
+    anti_pattern_specificity: 88
+    output_format: 90
+    frontmatter: 88
+    cross_agent_consistency: 82
+  notes:
+    - Excellent SBOM and SLSA focus
+    - Strong dependency confusion awareness
+    - Good license compliance coverage
+    - CISA SBOM Guide referenced
+    - Load bearing correctly set to true
+    - Missing pipeline integration
+  improvements:
+    - Add pipeline integration for dependency review phase
+    - Add gate blocking for critical vulnerabilities
+    - Add human gate for critical dependency decisions
 ---
 
 # Supply Chain Auditor

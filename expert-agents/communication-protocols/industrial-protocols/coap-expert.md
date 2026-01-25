@@ -13,6 +13,14 @@ description: Masters CoAP (Constrained Application Protocol) for IoT and constra
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 mcp_servers:
   protocol-specs:
     description: "IETF RFCs and protocol specifications"
@@ -70,6 +78,34 @@ proactive_triggers:
   - "*iot protocol*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 90
+    vocabulary_calibration: 90
+    knowledge_authority: 94
+    identity_clarity: 94
+    anti_pattern_specificity: 92
+    output_format: 92
+    frontmatter: 95
+    cross_agent_consistency: 94
+  weighted_score: 92.85
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary at 19 terms covering CoAP protocol comprehensively"
+    - "Knowledge sources excellent with RFC 7252 and RFC 7641 (Observe) - authoritative"
+    - "Identity frames 'minimal overhead, battery conservation, unreliable network adaptation'"
+    - "Anti-patterns specific (CON-only for telemetry, ignoring UDP unreliability, missing blockwise)"
+    - "Instructions at 18 - solid expert tier compliance"
+    - "Specializations cover message types, resource-constrained optimization, deployment"
+  recommendations:
+    - "Add LwM2M (OMA) specification for IoT device management"
+    - "Consider adding OSCORE (RFC 8613) for object security"
 ---
 
 # CoAP Expert

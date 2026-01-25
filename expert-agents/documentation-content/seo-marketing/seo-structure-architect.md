@@ -2,6 +2,13 @@
 name: seo-structure-architect
 description: Designs content structure and site architecture for optimal SEO performance with technical excellence and crawlability
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -61,6 +68,34 @@ proactive_triggers:
   - "*crawl budget*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 92
+    vocabulary_calibration: 88
+    knowledge_authority: 86
+    identity_clarity: 94
+    anti_pattern_specificity: 92
+    output_format: 96
+    frontmatter: 95
+    cross_agent_consistency: 92
+  weighted_score: 92.25
+  grade: A
+  priority: P4
+  findings:
+    - "Role correctly set to 'advisor' for architectural guidance"
+    - "default_mode set to 'audit' for structure analysis"
+    - "Vocabulary strong at 15 terms covering site architecture"
+    - "Identity frames 'dual optimization' - crawling AND user navigation"
+    - "Output format excellent with site hierarchy diagram and robots.txt examples"
+    - "Knowledge sources include Screaming Frog for crawl analysis"
+  recommendations:
+    - "Add Google Search Console crawl stats documentation"
+    - "Consider adding URL Inspection API documentation"
 ---
 
 # SEO Structure Architect

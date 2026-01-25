@@ -2,6 +2,13 @@
 name: seo-meta-optimizer
 description: Optimizes meta tags and on-page SEO elements for search visibility and CTR with current best practices
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -60,6 +67,33 @@ proactive_triggers:
   - "*meta descriptions*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 94
+    tier_alignment: 92
+    instruction_quality: 92
+    vocabulary_calibration: 86
+    knowledge_authority: 85
+    identity_clarity: 92
+    anti_pattern_specificity: 90
+    output_format: 94
+    frontmatter: 95
+    cross_agent_consistency: 90
+  weighted_score: 90.85
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary at 13 terms - could expand for Open Graph and structured data"
+    - "Instructions comprehensive at 21 - slightly above expert tier upper bound"
+    - "Identity frames 'dual optimization' for technical compliance AND compelling copy"
+    - "Anti-patterns specific (keyword stuffing, generic descriptions, ignoring mobile)"
+    - "Output format includes pixel width consideration for meta tags"
+  recommendations:
+    - "Expand vocabulary to include og:image, Twitter Card types, JSON-LD"
+    - "Add SERP preview tool documentation (serpsim.com, portent.com)"
 ---
 
 # SEO Meta Optimizer

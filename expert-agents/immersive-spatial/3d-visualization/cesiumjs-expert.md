@@ -13,6 +13,14 @@ description: CesiumJS 3D geospatial visualization specialist for immersive web-b
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -85,6 +93,36 @@ proactive_triggers:
   - "*terrain*3d*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 95
+    tier_alignment: 85
+    instruction_quality: 90
+    vocabulary_calibration: 90
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 85
+    frontmatter: 95
+    cross_agent_consistency: 85
+  notes:
+    - "Excellent 3D Tiles and geospatial data expertise"
+    - "Good WebGL and GLSL shader coverage"
+    - "Vocabulary 18 terms within 15-20 target range"
+    - "Missing pipeline integration section"
+    - "Output formats simpler than other expert agents"
+    - "15 instructions within acceptable range"
+    - "Knowledge sources include official CesiumJS and OGC standards"
+  improvements:
+    - "Add Pipeline Integration section for dev-sys alignment"
+    - "Expand output format templates to match other experts"
 ---
 
 # CesiumJS Expert

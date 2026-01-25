@@ -11,6 +11,13 @@
 name: kubernetes-agent
 description: Orchestrates Kubernetes clusters, manages deployments, and optimizes resource allocation for scalable, resilient application orchestration. Invoke for K8s cluster design, deployment management, and scaling optimization.
 model: sonnet
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -89,6 +96,37 @@ proactive_triggers:
   - "**/helm/**"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 86
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 90
+    tier_alignment: 88
+    instruction_quality: 88
+    vocabulary_calibration: 92
+    knowledge_authority: 85
+    identity_clarity: 88
+    anti_pattern_specificity: 90
+    output_format: 85
+    frontmatter: 85
+    cross_agent_consistency: 82
+  notes:
+    - Good declarative resilience focus
+    - Strong RBAC and security coverage
+    - Comprehensive vocabulary
+    - Missing pipeline/OpenSpec integration
+    - No deployment gate documentation
+    - Could add Helm/Kustomize specializations
+  improvements:
+    - Add pipeline integration section
+    - Add OpenSpec contract alignment
+    - Add deployment gate validation
+    - Expand specializations for GitOps patterns
 ---
 
 # Kubernetes Agent

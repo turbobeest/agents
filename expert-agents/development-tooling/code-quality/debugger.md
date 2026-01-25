@@ -5,6 +5,12 @@
 name: debugger
 description: Debugs code systematically, analyzes complex errors, and implements reliable fixes with comprehensive root cause analysis
 model: sonnet
+model_selection:
+  priorities: [code_debugging, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -76,6 +82,32 @@ proactive_triggers:
   - "*debug*"
 
 version: 1.1.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 89
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 95
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 80
+    knowledge_authority: 90
+    identity_clarity: 95
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 95
+    cross_agent_consistency: 90
+  notes:
+    - "14 vocabulary terms - slightly below target"
+    - "19 instructions with proper modal distribution"
+    - "Excellent knowledge sources (GDB, LLDB, rr)"
+    - "Strong root cause analysis lens"
+  improvements:
+    - "Add 3-5 more vocabulary terms (memory dump, core file, etc.)"
 ---
 
 # Debugger

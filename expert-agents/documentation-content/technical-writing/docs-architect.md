@@ -2,6 +2,13 @@
 name: docs-architect
 description: Designs comprehensive documentation architecture and knowledge base systems with focus on information organization and user discovery
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -55,6 +62,34 @@ role: architect
 load_bearing: false
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 94
+    tier_alignment: 92
+    instruction_quality: 90
+    vocabulary_calibration: 90
+    knowledge_authority: 90
+    identity_clarity: 94
+    anti_pattern_specificity: 88
+    output_format: 92
+    frontmatter: 95
+    cross_agent_consistency: 90
+  weighted_score: 91.45
+  grade: A
+  priority: P4
+  findings:
+    - "Role correctly set to 'architect' for structural design"
+    - "Vocabulary excellent at 15 terms covering information architecture"
+    - "Knowledge sources strong with Diataxis framework and NN Group IA guide"
+    - "Identity frames 'information findability' as primary lens"
+    - "Instructions at 20 - at expert tier upper bound"
+    - "Specializations cover IA patterns, taxonomy design, UX optimization"
+  recommendations:
+    - "Add DITA/topic-based authoring documentation"
+    - "Consider adding search analytics tools documentation for IA validation"
 ---
 
 # Documentation Architect

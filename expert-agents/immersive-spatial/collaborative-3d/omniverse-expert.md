@@ -13,6 +13,14 @@ description: NVIDIA Omniverse and USD composition specialist. Invoke for real-ti
 model: opus
 tier: expert
 
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -81,6 +89,38 @@ proactive_triggers:
   - "*nucleus*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 85
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 92
+    tier_alignment: 85
+    instruction_quality: 88
+    vocabulary_calibration: 92
+    knowledge_authority: 85
+    identity_clarity: 88
+    anti_pattern_specificity: 80
+    output_format: 80
+    frontmatter: 95
+    cross_agent_consistency: 78
+  notes:
+    - "Good USD composition and Omniverse collaboration coverage"
+    - "Vocabulary 18 terms within 15-20 target range"
+    - "15 instructions within acceptable range"
+    - "Uses opus model appropriately for complex multi-disciplinary workflows"
+    - "Missing pipeline integration section"
+    - "Output formats simpler than other expert agents"
+    - "Knowledge sources limited to two refs - could add more (PhysX, MDL)"
+    - "Good PhysX and RTX rendering coverage in specializations"
+  improvements:
+    - "Add Pipeline Integration section for dev-sys alignment"
+    - "Expand knowledge sources (add PhysX, MDL documentation)"
+    - "Expand output format templates"
 ---
 
 # Omniverse Expert

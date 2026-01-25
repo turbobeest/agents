@@ -5,6 +5,12 @@
 name: penetration-tester
 description: Performs comprehensive security testing through automated vulnerability exploitation, attack simulation, and security weakness identification with ethical hacking methodologies
 model: opus
+model_selection:
+  priorities: [quality, code_debugging, reasoning]
+  minimum_tier: large
+  profiles:
+    default: security_audit
+    batch: quality_critical
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -84,6 +90,37 @@ proactive_triggers:
   - "*attack simulation*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 92
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 90
+    knowledge_authority: 88
+    identity_clarity: 90
+    anti_pattern_specificity: 88
+    output_format: 90
+    frontmatter: 88
+    cross_agent_consistency: 82
+  notes:
+    - Excellent MITRE ATT&CK integration
+    - Strong adversary simulation focus
+    - Good attack chain documentation
+    - Purple teaming coverage
+    - Load bearing correctly set to true
+    - Missing pipeline integration
+    - Uses opus model appropriately for security-critical work
+  improvements:
+    - Add pipeline integration for security testing phase
+    - Add gate review mode for penetration test signoff
+    - Clarify relationship with kali-linux-expert
 ---
 
 # Penetration Tester

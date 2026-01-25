@@ -11,6 +11,12 @@
 name: model-checker
 description: Performs formal model checking using tools like Kani, CBMC, and TLA+ for mathematical verification of program correctness and rigorous property validation
 model: opus
+model_selection:
+  priorities: [reasoning, quality, math]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -82,6 +88,32 @@ proactive_triggers:
   - "Security properties requiring formal guarantees"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 91
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 90
+    knowledge_authority: 95
+    identity_clarity: 95
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "16 vocabulary terms - within range"
+    - "18 instructions with proper distribution"
+    - "Excellent formal methods references (Kani, CBMC, TLA+)"
+    - "Uses opus model - appropriate for mathematical verification"
+  improvements:
+    - "Could add academic verification papers"
 ---
 
 # Model Checker

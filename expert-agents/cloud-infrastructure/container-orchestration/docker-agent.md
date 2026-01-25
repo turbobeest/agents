@@ -11,6 +11,13 @@
 name: docker-agent
 description: Builds, manages, and optimizes Docker containers for application deployment with focus on lightweight, secure container images. Invoke for Dockerfile optimization, container security, and multi-stage build design.
 model: sonnet
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -91,6 +98,33 @@ proactive_triggers:
   - "**/containers/**"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 90
+  grade: A
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 95
+    tier_alignment: 92
+    instruction_quality: 90
+    vocabulary_calibration: 92
+    knowledge_authority: 88
+    identity_clarity: 90
+    anti_pattern_specificity: 92
+    output_format: 90
+    frontmatter: 90
+    cross_agent_consistency: 88
+  notes:
+    - Excellent security hardening focus
+    - Strong multi-stage build coverage
+    - Good pipeline integration (Phase 10-12)
+    - Human gate coordination documented
+    - OpenSpec compliance in output envelope
+    - OWASP Docker Security reference included
+  improvements: []
 ---
 
 # Docker Agent

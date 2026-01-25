@@ -2,6 +2,13 @@
 name: seo-cannibalization-detector
 description: Detects and resolves keyword cannibalization issues through comprehensive content analysis and strategic differentiation
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -61,6 +68,33 @@ proactive_triggers:
   - "*duplicate targeting*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 93
+    tier_alignment: 92
+    instruction_quality: 90
+    vocabulary_calibration: 88
+    knowledge_authority: 82
+    identity_clarity: 94
+    anti_pattern_specificity: 92
+    output_format: 94
+    frontmatter: 95
+    cross_agent_consistency: 90
+  weighted_score: 90.30
+  grade: A
+  priority: P4
+  findings:
+    - "Role correctly set to 'auditor' matching agent purpose"
+    - "default_mode correctly set to 'audit' for detection focus"
+    - "Identity clearly frames 'search intent clarity' for distinct keyword territory"
+    - "Anti-patterns specific to cannibalization (redirect chains, anchor text conflicts)"
+    - "Output format includes detailed cannibalization-specific findings structure"
+  recommendations:
+    - "Add Screaming Frog or similar crawl tools to knowledge sources"
+    - "Consider expanding vocabulary to include SERP volatility tools terminology"
 ---
 
 # SEO Cannibalization Detector

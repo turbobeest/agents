@@ -4,6 +4,14 @@ description: Masters Wireshark network protocol analysis for cybersecurity and n
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 mcp_servers:
   protocol-specs:
     description: "IETF RFCs and protocol specifications"
@@ -68,6 +76,31 @@ proactive_triggers:
   - "*tshark*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.9
+  grade: A-
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 9
+    identity_clarity: 9
+    anti_pattern_specificity: 9
+    output_format: 9
+    frontmatter: 8
+    cross_agent_consistency: 9
+  notes:
+    - "Strong protocol correctness interpretive lens"
+    - "Comprehensive specializations for capture strategy, protocol dissection, and forensics"
+    - "Good never-do list covering legal authorization and data handling"
+    - "Appropriate auditor role with critical default cognitive mode"
+  improvements: []
 ---
 
 # Wireshark Expert

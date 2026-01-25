@@ -4,6 +4,14 @@ description: Analyzes business requirements and creates comprehensive specificat
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
+
 tools:
   audit: Read, Grep, Glob, Bash
   solution: Read, Write, Edit, Grep, Glob, Bash
@@ -61,6 +69,31 @@ proactive_triggers:
   - "*specifications*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.6
+  grade: B+
+  priority: P3
+  status: good
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 8
+    vocabulary_calibration: 9
+    knowledge_authority: 8
+    identity_clarity: 9
+    anti_pattern_specificity: 8
+    output_format: 9
+    frontmatter: 8
+    cross_agent_consistency: 9
+  notes:
+    - "Strong stakeholder-focused requirements engineering approach"
+    - "Good specializations covering requirements, process modeling, stakeholder management"
+    - "Clear connection between requirements and business value"
+    - "Appropriate escalation to product-owner for conflicting stakeholder needs"
+  improvements: []
 ---
 
 # Business Analyst

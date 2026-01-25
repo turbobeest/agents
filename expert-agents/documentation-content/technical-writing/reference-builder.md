@@ -2,6 +2,13 @@
 name: reference-builder
 description: Builds comprehensive reference materials and quick-start guides focused on developer productivity and rapid onboarding
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -56,6 +63,34 @@ proactive_triggers:
   - "*developer guide*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 88
+    vocabulary_calibration: 88
+    knowledge_authority: 88
+    identity_clarity: 94
+    anti_pattern_specificity: 90
+    output_format: 98
+    frontmatter: 95
+    cross_agent_consistency: 92
+  weighted_score: 92.20
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary at 16 terms covering API reference documentation"
+    - "Identity frames 'rapid information retrieval' for minimal workflow interruption"
+    - "Output format exceptional with complete API reference template including tables"
+    - "Anti-patterns specific (missing examples, internal-structure organization, foo/bar placeholders)"
+    - "Knowledge sources include GitHub REST API docs as example"
+    - "Instructions at 16 - solid expert tier compliance"
+  recommendations:
+    - "Add TypeDoc, JSDoc, or language-specific doc generator references"
+    - "Consider adding API versioning documentation best practices"
 ---
 
 # Reference Builder

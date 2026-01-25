@@ -4,6 +4,13 @@ description: Masters Ettus Research USRP platforms and UHD driver development fo
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [math, reasoning, quality]
+  minimum_tier: medium
+  profiles:
+    default: math_reasoning
+    batch: budget
+
 tools:
   audit: Read, Grep, Glob, Bash
   solution: Read, Write, Edit, Grep, Glob, Bash
@@ -55,6 +62,31 @@ role: executor
 load_bearing: false
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.9
+  grade: A-
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 9
+    identity_clarity: 9
+    anti_pattern_specificity: 10
+    output_format: 9
+    frontmatter: 8
+    cross_agent_consistency: 8
+  notes:
+    - "Excellent USRP-specific technical depth with hardware selection guidance"
+    - "Strong never-do list covering synchronization, async messages, RF calibration"
+    - "Comprehensive specializations for hardware, synchronization, and UHD programming"
+    - "Good escalation to rf-engineer for FPGA and RF front-end requirements"
+  improvements: []
 ---
 
 # Ettus USRP Expert

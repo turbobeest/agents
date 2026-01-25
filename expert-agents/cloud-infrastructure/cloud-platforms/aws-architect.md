@@ -11,6 +11,13 @@
 name: aws-architect
 description: Designs and implements scalable, secure, cost-optimized AWS architectures using Well-Architected Framework principles for mission-critical deployments. Invoke for AWS architecture design, service selection, and cost optimization.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -90,6 +97,32 @@ proactive_triggers:
   - "infrastructure-*"
 
 version: 2.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 92
+  grade: A
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 95
+    tier_alignment: 95
+    instruction_quality: 95
+    vocabulary_calibration: 90
+    knowledge_authority: 85
+    identity_clarity: 95
+    anti_pattern_specificity: 90
+    output_format: 95
+    frontmatter: 95
+    cross_agent_consistency: 90
+  notes:
+    - Excellent Well-Architected Framework integration
+    - Strong mode-specific instructions with 20 total
+    - Comprehensive cost optimization focus
+    - OpenSpec and deployment gate integration
+    - Could add more authoritative references (AWS whitepapers)
+  improvements: []
 ---
 
 # AWS Architect

@@ -11,6 +11,12 @@
 name: compliance-checker
 description: Regulatory compliance and data protection specialist. Invoke for compliance audits, regulatory verification, PII protection validation, and data governance enforcement.
 model: sonnet
+model_selection:
+  priorities: [quality, code_debugging, reasoning]
+  minimum_tier: large
+  profiles:
+    default: security_audit
+    batch: quality_critical
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -86,6 +92,37 @@ proactive_triggers:
   - "*pii*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 84
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 88
+    tier_alignment: 82
+    instruction_quality: 85
+    vocabulary_calibration: 85
+    knowledge_authority: 85
+    identity_clarity: 88
+    anti_pattern_specificity: 85
+    output_format: 85
+    frontmatter: 85
+    cross_agent_consistency: 80
+  notes:
+    - Good regulatory focus (GDPR, HIPAA, SOC2, PCI-DSS)
+    - Strong data protection emphasis
+    - Appropriate blocking gate mentality
+    - Load bearing correctly set to true
+    - Fewer instructions than typical expert tier (15 vs 15-20)
+    - Missing pipeline integration
+    - Missing MCP server definition in frontmatter matches references
+  improvements:
+    - Add pipeline integration for compliance review phase
+    - Expand instructions to match expert tier guidelines
+    - Add human gate triggers for compliance exceptions
 ---
 
 # Compliance Checker

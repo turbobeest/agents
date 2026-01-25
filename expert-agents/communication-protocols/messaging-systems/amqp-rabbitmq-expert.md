@@ -13,6 +13,14 @@ description: Masters AMQP protocol and RabbitMQ message broker for enterprise me
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 mcp_servers:
   protocol-specs:
     description: "IETF RFCs and protocol specifications"
@@ -70,6 +78,34 @@ proactive_triggers:
   - "*enterprise messaging*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 90
+    vocabulary_calibration: 94
+    knowledge_authority: 92
+    identity_clarity: 94
+    anti_pattern_specificity: 92
+    output_format: 92
+    frontmatter: 95
+    cross_agent_consistency: 94
+  weighted_score: 93.05
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary excellent at 22 terms covering AMQP/RabbitMQ comprehensively"
+    - "Knowledge sources include AMQP 1.0 spec and RabbitMQ docs - authoritative"
+    - "Identity frames 'message durability, flexible routing, distributed system resilience'"
+    - "Anti-patterns specific (non-persistent messages, ignoring acks, auto-delete queues, missing monitoring)"
+    - "Instructions at 18 - solid expert tier compliance"
+    - "Specializations cover exchange patterns, reliability/durability, HA/clustering"
+  recommendations:
+    - "Add CloudAMQP or managed RabbitMQ documentation"
+    - "Consider adding RabbitMQ Streams (log-based) documentation"
 ---
 
 # AMQP RabbitMQ Expert

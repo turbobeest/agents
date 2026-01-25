@@ -2,6 +2,13 @@
 name: coupling-analyzer
 description: Phase 5 supporting agent for the dev-system pipeline. Analyzes task DAG for coupling issues, identifies tight dependencies, recommends decoupling strategies, and validates task independence for parallel execution.
 model: sonnet
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 phase: 5
@@ -68,6 +75,37 @@ role: analyzer
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 81.8
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 65
+    instruction_quality: 85
+    vocabulary_calibration: 85
+    knowledge_authority: 60
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Excellent coupling metrics and patterns"
+    - "Good YAML output structure"
+    - "Token count 65% over expert target"
+    - "Instruction count slightly under target"
+  improvements:
+    - "Reduce content or upgrade to phd tier"
+    - "Add graph theory references for DAG analysis"
+    - "Increase instruction count to 15-20"
 ---
 
 # Coupling Analyzer

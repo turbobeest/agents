@@ -5,6 +5,12 @@
 name: cryptography-specialist
 description: Implements secure cryptographic systems with advanced encryption, key management, and cryptographic protocol design for maximum security assurance
 model: opus
+model_selection:
+  priorities: [quality, code_debugging, reasoning]
+  minimum_tier: large
+  profiles:
+    default: security_audit
+    batch: quality_critical
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -86,6 +92,36 @@ proactive_triggers:
   - "*random*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 89
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 92
+    tier_alignment: 90
+    instruction_quality: 92
+    vocabulary_calibration: 92
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 90
+    output_format: 88
+    frontmatter: 88
+    cross_agent_consistency: 82
+  notes:
+    - Excellent cryptographic depth
+    - Strong provable security focus
+    - Good NIST and OWASP references
+    - Post-quantum cryptography awareness
+    - Load bearing correctly set to true
+    - Missing pipeline integration
+    - Default mode is audit (appropriate for security)
+  improvements:
+    - Add pipeline integration for security review phases
+    - Add gate review mode for cryptographic changes
 ---
 
 # Cryptography Specialist

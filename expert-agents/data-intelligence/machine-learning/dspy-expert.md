@@ -2,6 +2,13 @@
 name: dspy-expert
 description: Masters DSPy framework for systematic prompt engineering and LLM pipeline optimization, specializing in automatic prompt optimization, multi-step reasoning chains, and programmatic AI system development
 model: sonnet
+model_selection:
+  priorities: [math, reasoning, quality]
+  minimum_tier: medium
+  profiles:
+    default: math_reasoning
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -61,6 +68,33 @@ proactive_triggers:
   - "*reasoning*chain*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 89
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 95
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 95
+    knowledge_authority: 85
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 85
+    cross_agent_consistency: 85
+  notes:
+    - "25+ vocabulary terms - slightly over target but specialized domain"
+    - "20 instructions with proper numbering sequence"
+    - "Official DSPy docs as primary reference"
+    - "Missing frontmatter comment block template"
+  improvements:
+    - "Add frontmatter comment block with tier guidance"
+    - "Consider trimming vocabulary to 20 core terms"
 ---
 
 # DSPy Expert

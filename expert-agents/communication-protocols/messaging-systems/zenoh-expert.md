@@ -13,6 +13,14 @@ description: Expert in Zenoh protocol for scalable, peer-to-peer communication e
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 mcp_servers:
   protocol-specs:
     description: "IETF RFCs and protocol specifications"
@@ -88,6 +96,34 @@ proactive_triggers:
   - "*p2p communication*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 90
+    vocabulary_calibration: 88
+    knowledge_authority: 88
+    identity_clarity: 94
+    anti_pattern_specificity: 90
+    output_format: 92
+    frontmatter: 95
+    cross_agent_consistency: 94
+  weighted_score: 92.05
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary at 16 terms - solid but could expand for advanced Zenoh features"
+    - "Knowledge sources include zenoh.io docs and GitHub - emerging protocol, docs authoritative"
+    - "Identity frames 'zero-copy data flow, adaptive routing, edge computing efficiency'"
+    - "Anti-patterns specific (ignoring device constraints, network partitions, zero-copy assumptions)"
+    - "Instructions at 18 - solid expert tier compliance"
+    - "Specializations cover edge-to-cloud routing, P2P communication, performance optimization"
+  recommendations:
+    - "Add Eclipse Foundation Zenoh project documentation"
+    - "Expand vocabulary to include scouting, locators, key expressions"
 ---
 
 # Zenoh Expert

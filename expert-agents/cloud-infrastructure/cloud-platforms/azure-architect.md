@@ -10,6 +10,13 @@
 name: azure-architect
 description: Designs and implements robust, secure Azure architectures using Azure Well-Architected Framework for enterprise-scale deployments with Microsoft ecosystem integration
 model: opus
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -78,6 +85,33 @@ proactive_triggers:
   - "infrastructure-*"
 
 version: 2.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 94
+  grade: A
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 98
+    tier_alignment: 95
+    instruction_quality: 95
+    vocabulary_calibration: 92
+    knowledge_authority: 90
+    identity_clarity: 95
+    anti_pattern_specificity: 90
+    output_format: 98
+    frontmatter: 95
+    cross_agent_consistency: 92
+  notes:
+    - Most comprehensive cloud architect agent
+    - Excellent pipeline integration with phases 11-12
+    - Strong hybrid/enterprise focus
+    - TaskMaster integration well documented
+    - Detailed deployment phases 1-12
+    - OpenSpec compliance tracking in output
+  improvements: []
 ---
 
 # Azure Architect

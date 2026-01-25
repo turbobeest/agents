@@ -13,6 +13,14 @@ description: Masters Redis in-memory data structures and caching systems, specia
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 mcp_servers:
   protocol-specs:
     description: "IETF RFCs and protocol specifications"
@@ -87,6 +95,34 @@ proactive_triggers:
   - "*in-memory*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 92
+    vocabulary_calibration: 96
+    knowledge_authority: 94
+    identity_clarity: 94
+    anti_pattern_specificity: 92
+    output_format: 92
+    frontmatter: 95
+    cross_agent_consistency: 94
+  weighted_score: 93.75
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary exceptional at 26 terms covering Redis data structures comprehensively"
+    - "Knowledge sources strong with redis.io docs and Redis University - authoritative"
+    - "Identity frames 'sub-millisecond latency, memory efficiency, scalable pub/sub'"
+    - "Anti-patterns specific (no eviction policy, missing expiration, KEYS in prod, no persistence)"
+    - "Instructions at 18 - solid expert tier compliance"
+    - "Specializations cover data structures, caching/eviction, clustering/HA"
+  recommendations:
+    - "Add Redis Stack (search, JSON, graph) documentation"
+    - "Consider adding Valkey (Redis fork) as alternative"
 ---
 
 # Redis Expert

@@ -2,6 +2,13 @@
 name: seo-snippet-hunter
 description: Optimizes content for featured snippets and rich search results through strategic formatting and schema markup
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -61,6 +68,34 @@ proactive_triggers:
   - "*SERP features*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 94
+    tier_alignment: 92
+    instruction_quality: 90
+    vocabulary_calibration: 82
+    knowledge_authority: 86
+    identity_clarity: 94
+    anti_pattern_specificity: 92
+    output_format: 96
+    frontmatter: 95
+    cross_agent_consistency: 90
+  weighted_score: 90.95
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary at 12 terms - focused but could expand for SERP features"
+    - "Instructions at 18 - solid expert tier compliance"
+    - "Identity frames 'strategic positioning' for position zero capture"
+    - "Anti-patterns excellent (targeting queries without existing snippets, incorrect schema)"
+    - "Output format includes JSON-LD schema example for FAQ"
+    - "Knowledge sources include schema.org"
+  recommendations:
+    - "Expand vocabulary to include PAA, knowledge panel, video carousel"
+    - "Add Google Rich Results Test documentation"
 ---
 
 # SEO Snippet Hunter

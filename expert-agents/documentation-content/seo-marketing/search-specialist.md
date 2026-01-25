@@ -2,6 +2,13 @@
 name: search-specialist
 description: Implements advanced search algorithms, indexing systems, and search optimization for efficient information retrieval
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -61,6 +68,33 @@ proactive_triggers:
   - "*relevance*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 94
+    tier_alignment: 92
+    instruction_quality: 91
+    vocabulary_calibration: 92
+    knowledge_authority: 82
+    identity_clarity: 91
+    anti_pattern_specificity: 88
+    output_format: 94
+    frontmatter: 95
+    cross_agent_consistency: 90
+  weighted_score: 90.35
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary excellent at 18 terms covering full-text, vector, and hybrid search"
+    - "Instructions thorough with 20 items across modes - meets expert tier upper bound"
+    - "Knowledge sources could include Elasticsearch official docs more prominently"
+    - "Identity clearly frames 'user intent satisfaction' lens"
+    - "Output format includes search-specific metrics (zero-result queries, CTR)"
+  recommendations:
+    - "Add Algolia, Typesense documentation as additional search engine references"
+    - "Consider adding vocabulary for AI-powered search (RAG, embeddings, semantic similarity)"
 ---
 
 # Search Specialist

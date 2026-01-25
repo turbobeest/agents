@@ -5,6 +5,12 @@
 name: security-auditor
 description: Security assessment specialist for dev-system pipeline. Performs threat modeling, vulnerability scanning, compliance validation, and security gate reviews at critical pipeline checkpoints. Integrates with code-review-gate and deployment-gate phases.
 model: opus
+model_selection:
+  priorities: [quality, code_debugging, reasoning]
+  minimum_tier: large
+  profiles:
+    default: security_audit
+    batch: quality_critical
 tier: expert
 
 # Pipeline integration
@@ -113,6 +119,34 @@ human_decisions_required:
     - "Security improvement recommendations"
 
 version: 1.0.1
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 95
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 98
+    tier_alignment: 95
+    instruction_quality: 98
+    vocabulary_calibration: 95
+    knowledge_authority: 95
+    identity_clarity: 98
+    anti_pattern_specificity: 95
+    output_format: 98
+    frontmatter: 95
+    cross_agent_consistency: 92
+  notes:
+    - Exemplary pipeline integration with gate_integration flag
+    - Excellent gate review mode output format
+    - Strong OWASP and STRIDE methodology
+    - Human decisions required section well documented
+    - Context injection for escalation
+    - Dual MCP servers (security + compliance)
+    - Primary phases explicitly defined
+  improvements: []
 ---
 
 # Security Auditor

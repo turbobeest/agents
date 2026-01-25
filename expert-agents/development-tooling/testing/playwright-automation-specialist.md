@@ -11,6 +11,13 @@
 name: playwright-automation-specialist
 description: Masters browser automation using Playwright for cross-browser testing, UI interaction automation, and visual regression testing across Chrome, Firefox, and Safari
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -82,6 +89,32 @@ proactive_triggers:
   - "Flaky test failures in CI pipeline"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 90
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 80
+    knowledge_authority: 95
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "13 vocabulary terms - below 15 target"
+    - "18 instructions with proper distribution"
+    - "Excellent Playwright official documentation"
+    - "Strong cross-browser reliability lens"
+  improvements:
+    - "Add vocabulary terms (trace, snapshot, mobile emulation, etc.)"
 ---
 
 # Playwright Automation Specialist

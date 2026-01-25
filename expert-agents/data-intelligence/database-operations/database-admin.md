@@ -10,6 +10,13 @@
 name: database-admin
 description: Ensures mission-critical database operations including backup strategies, replication, monitoring, and disaster recovery for production systems
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -82,6 +89,33 @@ proactive_triggers:
   - "**/migrations/**"
 
 version: 1.1.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 84
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 85
+    instruction_quality: 85
+    vocabulary_calibration: 80
+    knowledge_authority: 65
+    identity_clarity: 95
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "13 vocabulary terms - slightly below target"
+    - "18 instructions with strong Never section"
+    - "Knowledge sources are generic best-practices blogs"
+    - "Excellent disaster recovery lens in identity"
+  improvements:
+    - "Add 5-7 more vocabulary terms (MTTR, MTBF, checkpoint, etc.)"
+    - "Replace blog sources with PostgreSQL/MySQL official docs"
 ---
 
 # Database Administrator

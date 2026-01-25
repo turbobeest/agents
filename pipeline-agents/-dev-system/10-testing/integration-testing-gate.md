@@ -2,6 +2,12 @@
 name: integration-testing-gate
 description: Phase 10 integration testing agent for the dev-system pipeline. Orchestrates cross-component testing, validates API contracts, verifies service boundaries, and ensures system integration before E2E testing.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: expert
 
 phase: 10
@@ -74,6 +80,36 @@ role: gatekeeper
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 83.0
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 65
+    instruction_quality: 88
+    vocabulary_calibration: 88
+    knowledge_authority: 72
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Excellent contract testing examples with Pact"
+    - "Good integration test types table"
+    - "Token count 58% over expert tier target"
+    - "Instruction count under 15-20 range"
+  improvements:
+    - "Reduce content or upgrade to phd tier"
+    - "Add Pact and TestContainers documentation links"
 ---
 
 # Integration Testing Gate

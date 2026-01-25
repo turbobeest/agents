@@ -2,6 +2,13 @@
 name: content-marketer
 description: Creates compelling marketing content and integrated campaigns with brand alignment and audience engagement excellence
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -55,6 +62,32 @@ role: executor
 load_bearing: false
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 92
+    tier_alignment: 90
+    instruction_quality: 88
+    vocabulary_calibration: 85
+    knowledge_authority: 78
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 92
+    frontmatter: 95
+    cross_agent_consistency: 88
+  weighted_score: 87.75
+  grade: B
+  priority: P3
+  findings:
+    - "Knowledge sources mix SEO references (Google, Moz, Ahrefs) with content marketing - could add HubSpot, Ann Handley"
+    - "Vocabulary strong at 15 terms, well-calibrated for marketing domain"
+    - "Instructions well-structured with 10 Always + mode-specific, meets expert tier"
+    - "Identity clearly frames 'audience engagement' lens"
+  recommendations:
+    - "Add content marketing-specific references (ContentMarketingInstitute blog, HubSpot Academy)"
+    - "Consider adding brand-specific vocabulary terms (tone of voice, brand guidelines, style guide)"
 ---
 
 # Content Marketer

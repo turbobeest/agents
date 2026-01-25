@@ -10,6 +10,13 @@
 name: svelte-expert
 description: Pioneer of Svelte's compilation-first approach specializing in reactive component architectures, build-time optimization, and exceptional developer ergonomics with minimal runtime overhead
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -92,6 +99,34 @@ proactive_triggers:
   - "package.json with svelte dependency"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 91
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 80
+    instruction_quality: 93
+    vocabulary_calibration: 75
+    knowledge_authority: 95
+    identity_clarity: 95
+    anti_pattern_specificity: 95
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 92
+  notes:
+    - "Excellent compilation-first perspective with reactive programming depth"
+    - "Strong pipeline integration with phase gate and human gate references"
+    - "Token count exceeds ~1500 target (systemic across expert tier)"
+    - "Vocabulary 36 terms exceeds 15-20 target"
+    - "Duplicate Knowledge Sources section detected - minor formatting issue"
+    - "Comprehensive SvelteKit coverage with adapters and prerendering"
+  improvements:
+    - "Remove duplicate Knowledge Sources section"
 ---
 
 # Svelte Expert

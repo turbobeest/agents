@@ -2,6 +2,13 @@
 name: tutorial-engineer
 description: Creates comprehensive step-by-step tutorials and learning resources with focus on educational effectiveness and learner success
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -56,6 +63,34 @@ proactive_triggers:
   - "*step-by-step*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 90
+    vocabulary_calibration: 92
+    knowledge_authority: 88
+    identity_clarity: 96
+    anti_pattern_specificity: 92
+    output_format: 98
+    frontmatter: 95
+    cross_agent_consistency: 92
+  weighted_score: 92.90
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary excellent at 17 terms covering instructional design (Bloom's taxonomy, scaffolding)"
+    - "Identity strongly frames 'learner success' with progressive skill building"
+    - "Output format exceptional with complete tutorial structure template"
+    - "Anti-patterns specific (cognitive overload, missing validation, assumed knowledge)"
+    - "Instructions at 16 - solid expert tier compliance"
+    - "Specializations cover instructional design, structure/flow, practical application"
+  recommendations:
+    - "Add learning management system integration documentation"
+    - "Consider adding accessibility guidelines for tutorials (WCAG)"
 ---
 
 # Tutorial Engineer

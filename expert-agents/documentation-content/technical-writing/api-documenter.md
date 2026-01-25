@@ -2,6 +2,13 @@
 name: api-documenter
 description: Generates comprehensive API documentation and OpenAPI specifications with focus on developer experience and integration excellence
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -55,6 +62,34 @@ role: executor
 load_bearing: false
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 92
+    vocabulary_calibration: 90
+    knowledge_authority: 92
+    identity_clarity: 94
+    anti_pattern_specificity: 92
+    output_format: 94
+    frontmatter: 95
+    cross_agent_consistency: 92
+  weighted_score: 93.00
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary excellent at 17 terms covering API documentation comprehensively"
+    - "Knowledge sources strong with OpenAPI spec and Swagger docs"
+    - "Identity frames 'developer success' - rapid, correct integration"
+    - "Anti-patterns well-specified (untested examples, missing auth, no error docs)"
+    - "Specializations cover OpenAPI design, DX optimization, integration patterns"
+    - "Instructions well-balanced across cognitive modes"
+  recommendations:
+    - "Add Redoc, Stoplight, or other API documentation platform docs"
+    - "Consider adding Postman collection documentation"
 ---
 
 # API Documenter

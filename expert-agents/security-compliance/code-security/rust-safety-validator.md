@@ -5,6 +5,12 @@
 name: rust-safety-validator
 description: Validates Rust code for memory safety, unsafe code correctness, and soundness guarantees through comprehensive static and dynamic analysis
 model: sonnet
+model_selection:
+  priorities: [quality, code_debugging, reasoning]
+  minimum_tier: large
+  profiles:
+    default: security_audit
+    batch: quality_critical
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -83,6 +89,35 @@ proactive_triggers:
   - "*soundness*"
 
 version: 2.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 91
+  grade: A
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 95
+    tier_alignment: 92
+    instruction_quality: 95
+    vocabulary_calibration: 92
+    knowledge_authority: 92
+    identity_clarity: 92
+    anti_pattern_specificity: 92
+    output_format: 90
+    frontmatter: 90
+    cross_agent_consistency: 85
+  notes:
+    - Excellent Miri and unsafe code focus
+    - Strong safety invariant documentation
+    - Comprehensive dynamic analysis coverage
+    - Rustonomicon and Unsafe Code Guidelines referenced
+    - Load bearing correctly set to true
+    - Good cargo-geiger integration
+  improvements:
+    - Add pipeline integration for Rust safety review phase
+    - Consider adding CI/CD safety gate integration
 ---
 
 # Rust Safety Validator

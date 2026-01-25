@@ -11,6 +11,13 @@
 name: golang-pro
 description: Go systems programming specialist for concurrent microservices, idiomatic patterns, and performance-optimized backend infrastructure
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -90,6 +97,36 @@ proactive_triggers:
   - "*channel*"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 91.5
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 88
+    instruction_quality: 92
+    vocabulary_calibration: 90
+    knowledge_authority: 95
+    identity_clarity: 90
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 95
+    cross_agent_consistency: 95
+  notes:
+    - "Token count approximately 45% over 1500 target (moderate variance)"
+    - "No Pipeline Integration section - cleaner focused agent"
+    - "Vocabulary at 17 terms, within 15-20 target range"
+    - "4 Never items with strong Go idiom anti-patterns"
+    - "Excellent concurrency, interface, and CSP coverage"
+    - "Knowledge sources authoritative (go.dev, Effective Go, Google/Uber style guides)"
+  improvements: []
 ---
 
 # Golang Pro

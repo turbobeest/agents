@@ -6,6 +6,13 @@
 name: jetson-expert
 description: Masters NVIDIA Jetson edge computing platforms with embedded AI, real-time inference optimization, and power-efficient deployment for edge applications
 model: sonnet
+model_selection:
+  priorities: [math, reasoning, quality]
+  minimum_tier: medium
+  profiles:
+    default: math_reasoning
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -55,6 +62,33 @@ proactive_triggers:
   - "*embedded*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 85
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 80
+    instruction_quality: 75
+    vocabulary_calibration: 75
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 90
+    output_format: 95
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "12 vocabulary terms - below 15 target"
+    - "Instruction numbering overlaps (11-12 in multiple modes)"
+    - "Official NVIDIA Jetson documentation"
+    - "Strong edge AI and power constraints lens"
+  improvements:
+    - "Fix instruction numbering overlap"
+    - "Add vocabulary terms (DLA, NVENC, power envelope, etc.)"
 ---
 
 # Jetson Expert

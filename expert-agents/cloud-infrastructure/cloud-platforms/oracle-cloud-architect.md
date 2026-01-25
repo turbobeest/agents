@@ -11,6 +11,13 @@
 name: oracle-cloud-architect
 description: Designs and implements secure, high-performance architectures on Oracle Cloud Infrastructure utilizing OCI-specific services and enterprise best practices. Invoke for OCI architecture design, enterprise database integration, and performance optimization.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -88,6 +95,37 @@ proactive_triggers:
   - "database/migration/*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 82
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 85
+    tier_alignment: 85
+    instruction_quality: 80
+    vocabulary_calibration: 85
+    knowledge_authority: 75
+    identity_clarity: 85
+    anti_pattern_specificity: 85
+    output_format: 85
+    frontmatter: 85
+    cross_agent_consistency: 78
+  notes:
+    - Good Oracle ecosystem focus
+    - Strong database integration coverage
+    - Missing pipeline/OpenSpec integration unlike AWS/Azure
+    - No deployment gate documentation
+    - Fewer instructions than AWS/Azure counterparts
+    - Duplicate instruction numbering in Critical mode (starts at 6)
+  improvements:
+    - Add pipeline integration section
+    - Add OpenSpec contract alignment
+    - Fix instruction numbering (critical mode duplicates)
+    - Expand to match AWS/Azure agent depth
 ---
 
 # Oracle Cloud Architect

@@ -2,6 +2,12 @@
 name: pipeline-orchestrator
 description: Central dispatcher for the dev-system 12-phase pipeline. Coordinates phase transitions, manages 6 human gates, routes tasks to agents via agent-selector, and ensures alignment with PRD through Plan Guardian integration.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: phd
 
 tools:
@@ -99,6 +105,35 @@ role: executor
 load_bearing: true
 
 version: 2.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 93.5
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 84
+    instruction_quality: 95
+    vocabulary_calibration: 100
+    knowledge_authority: 77
+    identity_clarity: 100
+    anti_pattern_specificity: 100
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 100
+  notes:
+    - "Exemplary identity section with vivid persona"
+    - "Perfect anti-pattern specificity"
+    - "Knowledge sources internal-only, needs external refs"
+    - "Token count 33% over target"
+  improvements:
+    - "Add external orchestration pattern references"
 ---
 
 # Pipeline Orchestrator

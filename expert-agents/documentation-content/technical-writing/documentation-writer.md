@@ -2,6 +2,13 @@
 name: documentation-writer
 description: Creates comprehensive technical documentation, API references, and user guides with focus on clarity, accuracy, and user experience
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -55,6 +62,34 @@ role: executor
 load_bearing: false
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 94
+    tier_alignment: 92
+    instruction_quality: 90
+    vocabulary_calibration: 88
+    knowledge_authority: 90
+    identity_clarity: 94
+    anti_pattern_specificity: 90
+    output_format: 92
+    frontmatter: 95
+    cross_agent_consistency: 92
+  weighted_score: 91.65
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary at 15 terms covering technical writing fundamentals"
+    - "Knowledge sources strong with Google Tech Writing and MS Style Guide"
+    - "Identity frames 'user success' - enabling goal completion"
+    - "Anti-patterns well-specified (passive voice, incomplete code, missing prerequisites)"
+    - "Instructions at 20 - at expert tier upper bound"
+    - "Specializations cover writing styles, structure patterns, quality"
+  recommendations:
+    - "Add readability tool documentation (Hemingway, Grammarly)"
+    - "Consider adding docs-as-code tooling documentation (MkDocs, Docusaurus)"
 ---
 
 # Documentation Writer

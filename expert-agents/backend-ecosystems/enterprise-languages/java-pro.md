@@ -11,6 +11,13 @@
 name: java-pro
 description: Java enterprise specialist for modern streams, concurrency patterns, JVM optimization, and enterprise-scale architecture
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -88,6 +95,38 @@ proactive_triggers:
   - "**/src/main/java/**"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88.9
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 76
+    instruction_quality: 90
+    vocabulary_calibration: 82
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 88
+    output_format: 95
+    frontmatter: 95
+    cross_agent_consistency: 92
+  notes:
+    - "Token count approximately 70% over 1500 target"
+    - "Pipeline Integration section adds content beyond core agent"
+    - "Vocabulary at 26 terms (over 15-20 target due to pipeline terms)"
+    - "6 Never items with strong JVM/enterprise-specific anti-patterns"
+    - "Strong streams, concurrency, and JVM optimization focus"
+    - "Knowledge sources authoritative (Oracle, OpenJDK, Spring, inside.java)"
+  improvements:
+    - "Consider extracting Pipeline Integration to separate reference doc"
+    - "Reduce vocabulary to core Java/JVM terms (15-20 range)"
 ---
 
 # Java Pro

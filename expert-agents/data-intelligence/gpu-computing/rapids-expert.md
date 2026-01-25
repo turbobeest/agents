@@ -6,6 +6,13 @@
 name: rapids-expert
 description: Specializes in NVIDIA RAPIDS GPU-accelerated data science ecosystem with cuDF, cuML, and cuGraph integration for high-performance analytics workflows
 model: sonnet
+model_selection:
+  priorities: [math, reasoning, quality]
+  minimum_tier: medium
+  profiles:
+    default: math_reasoning
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -55,6 +62,33 @@ proactive_triggers:
   - "*gpu*data*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 85
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 80
+    instruction_quality: 75
+    vocabulary_calibration: 75
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 90
+    output_format: 95
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "12 vocabulary terms - below 15 target"
+    - "Instruction numbering overlaps (11 in multiple modes)"
+    - "Excellent RAPIDS official documentation"
+    - "Strong GPU dataframes and memory efficiency focus"
+  improvements:
+    - "Fix instruction numbering overlap"
+    - "Add vocabulary terms (cuGraph, BlazingSQL, etc.)"
 ---
 
 # Rapids Expert

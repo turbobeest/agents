@@ -11,6 +11,13 @@
 name: python-pro
 description: Python specialist for backend services, API development, and automation with Pythonic idioms, type safety, and security-first design
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -92,6 +99,34 @@ proactive_triggers:
   - "*security*"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 89.2
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 82
+    instruction_quality: 90
+    vocabulary_calibration: 90
+    knowledge_authority: 90
+    identity_clarity: 88
+    anti_pattern_specificity: 92
+    output_format: 100
+    frontmatter: 95
+    cross_agent_consistency: 90
+  notes:
+    - "Token count approximately 52% over 1500 target (systemic across tier)"
+    - "Strong security-first focus with Pythonic idiom emphasis"
+    - "Vocabulary at 19 terms, within 15-20 target range"
+    - "Knowledge sources authoritative (Python docs, PEP 8, mypy, ruff)"
+  improvements: []
 ---
 
 # Python Pro

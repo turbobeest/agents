@@ -10,6 +10,13 @@
 name: data-engineer
 description: Architects data pipelines, ETL processes, and data warehouse systems with focus on scalability, data quality, and production reliability
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -82,6 +89,33 @@ proactive_triggers:
   - "*data*warehouse*"
 
 version: 2.1.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 91
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 95
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "19 vocabulary terms - excellent calibration"
+    - "18 instructions with good modal distribution"
+    - "Strong knowledge sources (Spark, Airflow, Kafka, dbt)"
+    - "Clear identity focused on idempotency and data quality"
+  improvements:
+    - "Consider adding streaming-specific anti-patterns"
+    - "Could reference data mesh/fabric patterns"
 ---
 
 # Data Engineer

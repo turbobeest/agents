@@ -11,6 +11,13 @@
 name: unit-test-specialist
 description: TDD-focused specialist creating comprehensive unit tests with high coverage, mutation testing validation, and test-first development practices for bulletproof code quality
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -89,6 +96,32 @@ proactive_triggers:
   - "Test failures in CI pipeline"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 91
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 95
+    knowledge_authority: 90
+    identity_clarity: 95
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "22 vocabulary terms including pipeline integration terms"
+    - "18 instructions with TDD focus"
+    - "Excellent testing references (Pytest, Jest, Stryker)"
+    - "Unique mutation testing validation emphasis"
+  improvements:
+    - "Could add more TDD-specific academic references"
 ---
 
 # Unit Test Specialist

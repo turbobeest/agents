@@ -12,6 +12,13 @@ description: World-class expert in decentralized finance architecture, cryptoeco
 model: opus  # REQUIRED—PhD-tier cryptoeconomic reasoning demands frontier capability
 tier: phd
 
+model_selection:
+  priorities: [quality, code_debugging, reasoning]
+  minimum_tier: large
+  profiles:
+    default: security_audit
+    batch: quality_critical
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -128,6 +135,32 @@ load_bearing: true  # Critical for DeFi protocol security in dev-system
 
 version: 1.0.0
 created_for: "dev-system DeFi protocol development"
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 9.6
+  grade: A+
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 10
+    tier_alignment: 10
+    instruction_quality: 10
+    vocabulary_calibration: 10
+    knowledge_authority: 10
+    identity_clarity: 10
+    anti_pattern_specificity: 10
+    output_format: 9
+    frontmatter: 9
+    cross_agent_consistency: 9
+  notes:
+    - "Exemplary PhD-tier agent with comprehensive cryptoeconomic expertise"
+    - "Exceptional depth in DeFi specializations - AMM, lending, oracles, MEV, governance"
+    - "Outstanding attack modeling protocol and economic security checklist"
+    - "Appropriate opus model for mission-critical financial systems"
+    - "Sets the standard for PhD-tier agent definitions"
+  improvements: []
 ---
 
 # DeFi Architect

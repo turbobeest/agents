@@ -8,6 +8,14 @@ description: Unity game engine specialist for interactive 3D experiences with C#
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
+
 # -----------------------------------------------------------------------------
 # TOOL MODES
 # -----------------------------------------------------------------------------
@@ -78,6 +86,36 @@ proactive_triggers:
   - "*c#*script*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 89
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 95
+    tier_alignment: 85
+    instruction_quality: 92
+    vocabulary_calibration: 88
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 90
+    output_format: 85
+    frontmatter: 95
+    cross_agent_consistency: 85
+  notes:
+    - "Comprehensive Unity coverage including URP, HDRP, scripting patterns"
+    - "Excellent C# performance optimization guidance"
+    - "Vocabulary 21 terms slightly exceeds 15-20 target"
+    - "18 instructions within acceptable range"
+    - "Missing pipeline integration section"
+    - "Strong cross-platform development coverage (mobile, VR, WebGL)"
+    - "Output formats simpler than frontend agents"
+  improvements:
+    - "Add Pipeline Integration section for dev-sys alignment"
+    - "Expand output format templates to match other experts"
 ---
 
 # Unity Developer

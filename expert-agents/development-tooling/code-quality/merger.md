@@ -11,6 +11,12 @@
 name: merger
 description: Integrates multi-agent code outputs into cohesive codebases with sophisticated conflict resolution, quality assurance, and codebase coherence preservation
 model: sonnet
+model_selection:
+  priorities: [code_debugging, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -82,6 +88,32 @@ proactive_triggers:
   - "Integration test failures after merge"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 90
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 90
+    instruction_quality: 90
+    vocabulary_calibration: 80
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "12 vocabulary terms - below 15 target"
+    - "18 instructions with proper distribution"
+    - "Excellent git and integration references"
+    - "Unique multi-agent focus in identity"
+  improvements:
+    - "Add vocabulary terms (rebase strategy, octopus merge, etc.)"
 ---
 
 # Merger

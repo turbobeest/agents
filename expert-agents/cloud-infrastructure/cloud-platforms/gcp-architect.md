@@ -11,6 +11,13 @@
 name: gcp-architect
 description: Designs and implements scalable, secure architectures on Google Cloud Platform leveraging GCP-specific services and Cloud Architecture Framework. Invoke for GCP architecture design, data analytics integration, and cloud-native solutions.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -94,6 +101,36 @@ proactive_triggers:
   - "dataflow/*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88
+  grade: B
+  priority: P2
+  status: production_ready
+  dimensions:
+    structural_completeness: 92
+    tier_alignment: 90
+    instruction_quality: 88
+    vocabulary_calibration: 90
+    knowledge_authority: 80
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 90
+    frontmatter: 90
+    cross_agent_consistency: 88
+  notes:
+    - Good data-centric design focus
+    - Strong BigQuery and Dataflow coverage
+    - Pipeline integration present
+    - Informative mode instruction is placeholder (Use Evaluative mode)
+    - Could expand specializations to match AWS/Azure depth
+    - Knowledge source URLs use non-standard format
+  improvements:
+    - Add concrete Informative mode instructions
+    - Expand deployment phases documentation
+    - Add more GCP-specific reference architectures
 ---
 
 # GCP Architect

@@ -11,6 +11,12 @@
 name: deductive-verifier
 description: Implements deductive verification using tools like Prusti for program correctness proofs through precondition and postcondition analysis
 model: opus  # Formal verification requires deep logical reasoning
+model_selection:
+  priorities: [reasoning, quality, math]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -85,6 +91,32 @@ proactive_triggers:
   - "*prusti*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 90
+    instruction_quality: 80
+    vocabulary_calibration: 90
+    knowledge_authority: 95
+    identity_clarity: 90
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "17 vocabulary terms - within range"
+    - "Instruction numbering restarts in Critical mode (6-10)"
+    - "Excellent formal verification references (Prusti, Dafny, Coq)"
+    - "Uses opus model - appropriate for deep reasoning"
+  improvements:
+    - "Fix instruction numbering in mode sections"
 ---
 
 # Deductive Verifier

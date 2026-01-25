@@ -2,6 +2,12 @@
 name: expert-agent-editor
 description: Creates and revises expert-tier agent definitions (~1500 tokens, 15-20 instructions). Invoke for specialized domain agents requiring depth.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: expert
 
 tools:
@@ -45,6 +51,36 @@ role: executor
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88.5
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 88
+    instruction_quality: 90
+    vocabulary_calibration: 85
+    knowledge_authority: 78
+    identity_clarity: 92
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Good template reference section"
+    - "Token count within expert tier target"
+    - "Strong specializations for instruction architecture"
+    - "Instruction count slightly under 15-20 range"
+  improvements:
+    - "Increase instruction count to 15+"
+    - "Add external agent design references"
 ---
 
 # Expert Agent Editor

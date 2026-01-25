@@ -11,6 +11,13 @@
 name: integration-test-coordinator
 description: Orchestrates cross-service testing with contract validation, API compatibility verification, and end-to-end integration testing across distributed systems
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -85,6 +92,32 @@ proactive_triggers:
   - "*cross-service*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 85
+    instruction_quality: 80
+    vocabulary_calibration: 85
+    knowledge_authority: 90
+    identity_clarity: 90
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "15 vocabulary terms - at target"
+    - "Instruction numbering restarts in Critical mode (6-10)"
+    - "Excellent contract testing references (Pact, Testcontainers)"
+    - "Clear service boundary testing focus"
+  improvements:
+    - "Fix instruction numbering in mode sections"
 ---
 
 # Integration Test Coordinator

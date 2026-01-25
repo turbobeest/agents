@@ -11,6 +11,12 @@
 name: error-detective
 description: Detects and diagnoses code errors, edge cases, and potential failure modes with comprehensive analysis and prevention strategies
 model: sonnet
+model_selection:
+  priorities: [code_debugging, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -84,6 +90,32 @@ proactive_triggers:
   - "*failure-mode*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 87
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 85
+    instruction_quality: 80
+    vocabulary_calibration: 85
+    knowledge_authority: 85
+    identity_clarity: 90
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "15 vocabulary terms - at minimum target"
+    - "Instruction numbering restarts in When Critical (6-10 duplicate)"
+    - "Good knowledge sources (Fuzzingbook, Hypothesis)"
+    - "Clear proactive error detection lens"
+  improvements:
+    - "Fix instruction numbering in Critical/Evaluative/Informative modes"
 ---
 
 # Error Detective

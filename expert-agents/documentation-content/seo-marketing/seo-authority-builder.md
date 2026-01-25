@@ -2,6 +2,13 @@
 name: seo-authority-builder
 description: Builds domain authority through strategic link building, content marketing, and authority development for sustainable growth
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -61,6 +68,33 @@ proactive_triggers:
   - "*backlink*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 92
+    tier_alignment: 90
+    instruction_quality: 86
+    vocabulary_calibration: 90
+    knowledge_authority: 85
+    identity_clarity: 92
+    anti_pattern_specificity: 90
+    output_format: 90
+    frontmatter: 95
+    cross_agent_consistency: 88
+  weighted_score: 89.15
+  grade: B
+  priority: P3
+  findings:
+    - "Vocabulary excellent at 20 terms covering link building comprehensively"
+    - "Instructions at 16 - solid expert tier compliance"
+    - "Identity strongly frames 'long-term trust accumulation' rejecting manipulation"
+    - "Anti-patterns well-specified (paid links, PBNs, link farms)"
+    - "Knowledge sources include backlinko which is authoritative for link building"
+  recommendations:
+    - "Add Google Webmaster Guidelines as primary reference"
+    - "Consider adding Majestic, Ahrefs link research methodology docs"
 ---
 
 # SEO Authority Builder

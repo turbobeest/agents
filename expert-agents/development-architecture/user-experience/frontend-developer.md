@@ -12,6 +12,13 @@ description: Implements frontend components with accessibility compliance, respo
 model: sonnet
 tier: focused
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -71,6 +78,31 @@ proactive_triggers:
   - "*.vue"
 
 version: 2.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.3
+  grade: B+
+  priority: P3
+  status: good
+  dimensions:
+    structural_completeness: 8
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 8
+    knowledge_authority: 8
+    identity_clarity: 8
+    anti_pattern_specificity: 8
+    output_format: 8
+    frontmatter: 9
+    cross_agent_consistency: 8
+  notes:
+    - "Focused tier appropriate for implementation work with clear accessibility requirements"
+    - "Strong WCAG 2.1 AA compliance focus with specific metric targets"
+    - "Good Lighthouse audit thresholds as verification criteria"
+    - "Simplified cognitive modes (generative/critical only) appropriate for focused tier"
+  improvements: []
 ---
 
 # Frontend Developer

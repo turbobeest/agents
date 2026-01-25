@@ -2,6 +2,12 @@
 name: agent-knowledge-researcher
 description: World-class knowledge curator for agent systems. Researches, validates, and adjudicates the true value of knowledge sources. Determines whether information warrants URL reference, local excerpt extraction, or agent embedding. Uses Firecrawl MCP for parallel intelligent scraping.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: phd
 
 tools:
@@ -91,6 +97,36 @@ role: advisor
 load_bearing: false
 
 version: 2.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 91.5
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 95
+    instruction_quality: 94
+    vocabulary_calibration: 92
+    knowledge_authority: 82
+    identity_clarity: 98
+    anti_pattern_specificity: 95
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 92
+  notes:
+    - "Exemplary knowledge adjudication framework"
+    - "Excellent materialization strategy section"
+    - "Good Firecrawl MCP integration"
+    - "Strong unique value test documentation"
+  improvements:
+    - "Increase instruction count to 25+"
+    - "Add more external research methodology references"
 ---
 
 # Agent Knowledge Researcher

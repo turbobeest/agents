@@ -2,6 +2,12 @@
 name: agent-selector
 description: Phase-aware agent adjudication engine for the dev-system pipeline. Scores and selects optimal agents for each phase task, presents candidates with confidence scores for human adjudication, and maintains selection accuracy through feedback loops.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: phd
 
 tools:
@@ -78,6 +84,35 @@ role: advisor
 load_bearing: true
 
 version: 2.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 93.8
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 95
+    instruction_quality: 95
+    vocabulary_calibration: 92
+    knowledge_authority: 82
+    identity_clarity: 98
+    anti_pattern_specificity: 95
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 95
+  notes:
+    - "Excellent multi-dimensional scoring algorithm"
+    - "Strong phase-aware selection heuristics"
+    - "Good candidate presentation formats"
+    - "load_bearing correctly set to true"
+  improvements:
+    - "Add external agent selection methodology references"
 ---
 
 # Agent Selector

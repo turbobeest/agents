@@ -10,6 +10,13 @@
 name: reactjs-expert
 description: Master architect of React.js component ecosystems specializing in modern patterns, performance optimization, hooks, state management, and scalable component architectures
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -87,6 +94,38 @@ proactive_triggers:
   - "package.json with react dependency"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 90
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 98
+    tier_alignment: 78
+    instruction_quality: 92
+    vocabulary_calibration: 80
+    knowledge_authority: 95
+    identity_clarity: 90
+    anti_pattern_specificity: 95
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 92
+  notes:
+    - "Comprehensive React patterns with hooks, state management, and performance"
+    - "Token count exceeds ~1500 target (20 instructions vs 15-18 max)"
+    - "Vocabulary 34 terms exceeds 15-20 target"
+    - "Missing pipeline integration section (unlike Next.js and Svelte experts)"
+    - "Excellent knowledge sources with react.dev, web.dev, ARIA patterns"
+    - "Strong anti-pattern coverage in Never section"
+  improvements:
+    - "Add Pipeline Integration section for consistency with other frontend agents"
+    - "Reduce instruction count from 20 to 15-18 range"
 ---
 
 # React.js Expert

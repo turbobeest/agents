@@ -2,6 +2,13 @@
 name: seo-keyword-strategist
 description: Researches and strategizes keyword optimization with comprehensive market analysis and search intent alignment
 model: sonnet
+model_selection:
+  priorities: [writing, quality, reasoning]
+  minimum_tier: medium
+  profiles:
+    default: documentation
+    interactive: interactive
+    batch: budget
 tier: expert
 
 tools:
@@ -60,6 +67,33 @@ proactive_triggers:
   - "*search intent*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 94
+    vocabulary_calibration: 88
+    knowledge_authority: 86
+    identity_clarity: 92
+    anti_pattern_specificity: 90
+    output_format: 96
+    frontmatter: 95
+    cross_agent_consistency: 92
+  weighted_score: 92.15
+  grade: A
+  priority: P4
+  findings:
+    - "Instructions comprehensive at 21 - slightly above expert tier upper bound but well-organized"
+    - "Role correctly set to 'advisor' for strategic guidance"
+    - "default_mode set to 'research' appropriately for keyword research"
+    - "Output format excellent with tiered keyword targets table"
+    - "Identity frames 'strategic value' balancing volume, feasibility, and business value"
+  recommendations:
+    - "Trim 1-2 instructions to fit within 15-20 expert tier guideline"
+    - "Add SEMrush or similar competitive keyword tool documentation"
 ---
 
 # SEO Keyword Strategist

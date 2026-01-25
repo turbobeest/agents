@@ -10,6 +10,13 @@
 name: database-optimizer
 description: Specializes in database performance tuning, index strategy optimization, and query execution plan analysis for maximum efficiency
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -81,6 +88,33 @@ proactive_triggers:
   - "*index*strategy*"
 
 version: 1.1.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 85
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 85
+    instruction_quality: 85
+    vocabulary_calibration: 90
+    knowledge_authority: 70
+    identity_clarity: 90
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 85
+  notes:
+    - "19 vocabulary terms - well calibrated"
+    - "18 instructions appropriately distributed"
+    - "Knowledge sources are blog posts, not official documentation"
+    - "Clear focus on execution plan analysis and index strategy"
+  improvements:
+    - "Replace blog sources with official PostgreSQL/MySQL docs"
+    - "Add database-specific optimization guides (pg_stat, EXPLAIN ANALYZE)"
 ---
 
 # Database Optimizer

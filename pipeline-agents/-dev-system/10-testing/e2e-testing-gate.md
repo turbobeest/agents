@@ -2,6 +2,12 @@
 name: e2e-testing-gate
 description: Phase 10 end-to-end testing agent for the dev-system pipeline. Executes user journey tests, validates system behavior from user perspective, performs final GO/NO-GO validation before deployment phase.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: expert
 
 phase: 10
@@ -73,6 +79,36 @@ role: gatekeeper
 load_bearing: true
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 83.8
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 62
+    instruction_quality: 88
+    vocabulary_calibration: 88
+    knowledge_authority: 75
+    identity_clarity: 92
+    anti_pattern_specificity: 85
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Excellent Playwright code examples"
+    - "Good GO/NO-GO decision matrix"
+    - "Token count 69% over expert tier target"
+    - "load_bearing correctly set to true"
+  improvements:
+    - "Reduce content or upgrade to phd tier"
+    - "Add Playwright and Cypress documentation links"
 ---
 
 # E2E Testing Gate

@@ -13,6 +13,14 @@ description: Masters CAN (Controller Area Network) bus protocol for automotive a
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 mcp_servers:
   protocol-specs:
     description: "IETF RFCs and protocol specifications"
@@ -70,6 +78,34 @@ proactive_triggers:
   - "*automotive network*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  auditor: claude-opus-4-5
+  scores:
+    structural_completeness: 95
+    tier_alignment: 94
+    instruction_quality: 90
+    vocabulary_calibration: 94
+    knowledge_authority: 90
+    identity_clarity: 94
+    anti_pattern_specificity: 92
+    output_format: 92
+    frontmatter: 95
+    cross_agent_consistency: 94
+  weighted_score: 92.75
+  grade: A
+  priority: P4
+  findings:
+    - "Vocabulary excellent at 21 terms covering CAN bus comprehensively"
+    - "Knowledge sources include ISO 11898-1:2024 standard - highly authoritative"
+    - "Identity frames 'priority-based arbitration, deterministic timing, robust error handling'"
+    - "Anti-patterns specific (missing termination, ignoring bus load, incompatible bit rates)"
+    - "Instructions at 18 - solid expert tier compliance"
+    - "Specializations cover message/arbitration, physical layer, fault tolerance"
+  recommendations:
+    - "Add SAE J1939 specification for heavy-duty vehicles"
+    - "Consider adding CANopen (CiA) documentation references"
 ---
 
 # CAN Bus Expert

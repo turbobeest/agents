@@ -4,6 +4,14 @@ description: Masters LoRaWAN protocol for long-range IoT networks, specializing 
 model: sonnet
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: medium
+  profiles:
+    default: quality_critical
+    interactive: interactive
+    batch: budget
+
 mcp_servers:
   protocol-specs:
     description: "IETF RFCs and protocol specifications"
@@ -68,6 +76,31 @@ proactive_triggers:
   - "*long*range*"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 8.8
+  grade: A-
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 9
+    tier_alignment: 9
+    instruction_quality: 9
+    vocabulary_calibration: 9
+    knowledge_authority: 9
+    identity_clarity: 9
+    anti_pattern_specificity: 9
+    output_format: 9
+    frontmatter: 8
+    cross_agent_consistency: 8
+  notes:
+    - "Strong LPWAN and coverage efficiency focus"
+    - "Good vocabulary with spreading factor, ADR, device classes"
+    - "Clear never-do list covering OTAA security and duty cycle compliance"
+    - "Comprehensive specializations for coverage planning, device config, and network server"
+  improvements: []
 ---
 
 # LoRaWAN Expert

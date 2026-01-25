@@ -11,6 +11,13 @@
 name: c-pro
 description: C systems programming specialist for memory-efficient, performance-critical applications with manual memory management and hardware control
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -89,6 +96,36 @@ proactive_triggers:
   - "*free*"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 90.2
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 88
+    instruction_quality: 90
+    vocabulary_calibration: 85
+    knowledge_authority: 92
+    identity_clarity: 88
+    anti_pattern_specificity: 92
+    output_format: 100
+    frontmatter: 95
+    cross_agent_consistency: 95
+  notes:
+    - "Token count approximately 45% over 1500 target (moderate variance)"
+    - "No Pipeline Integration section - cleaner focused agent"
+    - "Vocabulary at 16 terms, within 15-20 target range"
+    - "4 Never items with strong memory safety anti-patterns"
+    - "Strong memory management and systems programming focus"
+    - "Knowledge sources authoritative (cppreference, CERT C, kernel docs, GCC)"
+  improvements: []
 ---
 
 # C Pro

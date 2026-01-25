@@ -11,6 +11,13 @@
 name: php-pro
 description: Modern PHP specialist for Laravel/Symfony frameworks, typed code, performance optimization, and contemporary development practices
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -88,6 +95,38 @@ proactive_triggers:
   - "**/tests/**/*Test.php"
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 87.8
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 72
+    instruction_quality: 85
+    vocabulary_calibration: 80
+    knowledge_authority: 92
+    identity_clarity: 90
+    anti_pattern_specificity: 92
+    output_format: 95
+    frontmatter: 95
+    cross_agent_consistency: 88
+  notes:
+    - "Token count approximately 95% over 1500 target (significantly over)"
+    - "Pipeline Integration section adds substantial content beyond core agent"
+    - "Vocabulary at 30+ terms (over 15-20 target due to pipeline terms)"
+    - "7 Never items with strong specificity for PHP anti-patterns"
+    - "Extensive phase gate support section may belong in pipeline docs"
+    - "Knowledge sources authoritative (PHP docs, Laravel 12, Symfony 8)"
+  improvements:
+    - "Consider extracting Pipeline Integration to separate reference doc"
+    - "Reduce vocabulary to core PHP terms (15-20 range)"
 ---
 
 # PHP Pro

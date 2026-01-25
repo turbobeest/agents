@@ -2,6 +2,12 @@
 name: collaborator-coordinator
 description: Multi-agent collaboration architect for complex phase tasks. Designs team compositions, manages shared context, orchestrates handoffs, resolves conflicts, and drives convergence toward phase deliverables within the dev-system pipeline.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: phd
 
 tools:
@@ -91,6 +97,35 @@ role: executor
 load_bearing: true
 
 version: 2.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 93.2
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 90
+    instruction_quality: 95
+    vocabulary_calibration: 92
+    knowledge_authority: 80
+    identity_clarity: 98
+    anti_pattern_specificity: 95
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 95
+  notes:
+    - "Excellent collaboration architecture patterns"
+    - "Strong handoff protocol specification"
+    - "Comprehensive conflict resolution section"
+    - "load_bearing correctly set to true"
+  improvements:
+    - "Add external multi-agent coordination references"
 ---
 
 # Collaborator Coordinator

@@ -2,6 +2,12 @@
 name: prd-validator
 description: Phase 3 agent for the dev-system pipeline. Validates PRD completeness against 19-section structure, verifies EARS syntax compliance, checks requirement traceability, and prepares for audit gate.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: expert
 
 phase: 3
@@ -63,6 +69,36 @@ role: validator
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 88.5
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 85
+    instruction_quality: 92
+    vocabulary_calibration: 85
+    knowledge_authority: 65
+    identity_clarity: 98
+    anti_pattern_specificity: 95
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Exemplary identity with clear scope definition"
+    - "Excellent 19-section structure reference"
+    - "Strong EARS syntax validation guidance"
+    - "Missing external EARS specification link"
+  improvements:
+    - "Add EARS syntax official reference"
+    - "Add requirements engineering literature"
 ---
 
 # PRD Validator

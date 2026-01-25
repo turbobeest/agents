@@ -2,6 +2,12 @@
 name: ideation-agent
 description: Phase 1 agent for the dev-system pipeline. Facilitates requirement gathering, stakeholder synthesis, and initial PRD drafting. Transforms vague ideas into structured product requirements.
 model: opus
+model_selection:
+  priorities: [quality, reasoning, tool_use]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
 tier: expert
 
 phase: 1
@@ -68,6 +74,36 @@ role: executor
 load_bearing: false
 
 version: 1.0.0
+
+# -----------------------------------------------------------------------------
+# AUDIT RESULTS - Last quality assessment
+# -----------------------------------------------------------------------------
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 86.5
+  grade: B
+  priority: P3
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 88
+    instruction_quality: 90
+    vocabulary_calibration: 85
+    knowledge_authority: 60
+    identity_clarity: 95
+    anti_pattern_specificity: 90
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 90
+  notes:
+    - "Strong identity with archaeology metaphor"
+    - "Excellent EARS syntax guidance"
+    - "Token count within expert tier target"
+    - "Missing external knowledge sources"
+  improvements:
+    - "Add references to requirements engineering literature"
+    - "Add link to EARS specification"
 ---
 
 # Ideation Agent

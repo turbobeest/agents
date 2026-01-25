@@ -13,6 +13,13 @@ description: Reviews and designs overall system architecture with focus on scala
 model: opus  # Architecture decisions cascade downstream - requires Opus
 tier: expert
 
+model_selection:
+  priorities: [quality, reasoning, code_debugging]
+  minimum_tier: large
+  profiles:
+    default: quality_critical
+    batch: batch
+
 # -----------------------------------------------------------------------------
 # TOOL MODES - What tools are available in each operational mode
 # -----------------------------------------------------------------------------
@@ -93,6 +100,31 @@ proactive_triggers:
   - "*acceptance-criteria*"
 
 version: 2.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 9.4
+  grade: A
+  priority: P4
+  status: excellent
+  dimensions:
+    structural_completeness: 10
+    tier_alignment: 10
+    instruction_quality: 9
+    vocabulary_calibration: 10
+    knowledge_authority: 9
+    identity_clarity: 10
+    anti_pattern_specificity: 9
+    output_format: 10
+    frontmatter: 9
+    cross_agent_consistency: 9
+  notes:
+    - "Exceptional pipeline integration with explicit phase interactions and human gate awareness"
+    - "Strong OpenSpec and TaskMaster integration vocabulary and instructions"
+    - "Comprehensive output formats covering audit, solution modes with pipeline impact"
+    - "Uses opus model appropriately for high-stakes architectural decisions"
+  improvements: []
 ---
 
 # Architect Reviewer

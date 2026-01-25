@@ -10,6 +10,13 @@
 name: flutter-expert
 description: Master of Flutter cross-platform development specializing in widget architecture, Dart optimization, native platform integration, and performance tuning for iOS/Android
 model: sonnet
+model_selection:
+  priorities: [code_generation, code_debugging, quality]
+  minimum_tier: medium
+  profiles:
+    default: code_generation
+    review: code_review
+    batch: budget
 tier: expert
 
 # -----------------------------------------------------------------------------
@@ -93,6 +100,33 @@ proactive_triggers:
   - "ios/**"
 
 version: 1.0.0
+
+audit:
+  date: 2026-01-24
+  rubric_version: 1.0.0
+  composite_score: 93
+  grade: A
+  priority: P4
+  status: production_ready
+  dimensions:
+    structural_completeness: 100
+    tier_alignment: 85
+    instruction_quality: 95
+    vocabulary_calibration: 75
+    knowledge_authority: 95
+    identity_clarity: 95
+    anti_pattern_specificity: 95
+    output_format: 100
+    frontmatter: 100
+    cross_agent_consistency: 95
+  notes:
+    - "Excellent cross-platform coverage with iOS/Android platform specifics"
+    - "Strong pipeline integration with phase gate and TaskMaster references"
+    - "Comprehensive state management coverage (Provider, Riverpod, BLoC)"
+    - "Token count exceeds ~1500 target (systemic)"
+    - "Vocabulary 44 terms significantly exceeds 15-20 target"
+    - "High-quality knowledge sources with official Flutter, Dart, and HIG docs"
+  improvements: []
 ---
 
 # Flutter Expert
