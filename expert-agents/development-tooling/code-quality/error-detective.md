@@ -10,7 +10,7 @@
 
 name: error-detective
 description: Detects and diagnoses code errors, edge cases, and potential failure modes with comprehensive analysis and prevention strategies
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -1,7 +1,7 @@
 ---
 name: solidity-auditor
 description: Smart contract security specialist for Ethereum/EVM chains focusing on secure Solidity development, vulnerability detection, gas optimization, and audit-grade contract patterns
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

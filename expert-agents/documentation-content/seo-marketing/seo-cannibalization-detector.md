@@ -1,7 +1,7 @@
 ---
 name: seo-cannibalization-detector
 description: Detects and resolves keyword cannibalization issues through comprehensive content analysis and strategic differentiation
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

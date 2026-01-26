@@ -1,7 +1,7 @@
 ---
 name: ink-substrate-developer
 description: Rust smart contract specialist for Polkadot/Substrate ecosystems using ink!, focusing on WASM contracts, pallet integration, and cross-chain interoperability
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

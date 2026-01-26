@@ -10,7 +10,7 @@
 
 name: memory-optimizer
 description: Analyzes and optimizes memory usage patterns with deep expertise in heap profiling, leak detection, allocation optimization, and GC tuning
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

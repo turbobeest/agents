@@ -10,7 +10,7 @@
 
 name: java-pro
 description: Java enterprise specialist for modern streams, concurrency patterns, JVM optimization, and enterprise-scale architecture
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

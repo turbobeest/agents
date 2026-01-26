@@ -1,7 +1,7 @@
 ---
 name: lidar-expert
 description: Masters LiDAR systems for defense applications, specializing in 3D mapping, target identification, autonomous navigation, and precision ranging with advanced laser technologies and point cloud processing
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -10,7 +10,7 @@
 
 name: rust-pro
 description: Rust systems programming specialist for memory-safe, high-performance applications with ownership optimization and safety guarantees
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

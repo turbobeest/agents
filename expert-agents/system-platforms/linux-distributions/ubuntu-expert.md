@@ -1,7 +1,7 @@
 ---
 name: ubuntu-expert
 description: Masters Ubuntu Linux distribution for development, server deployment, and desktop environments, specializing in system administration, package management, and enterprise-grade Ubuntu deployments with cloud integration. Invoke for Ubuntu server setup, system administration, and cloud deployment.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

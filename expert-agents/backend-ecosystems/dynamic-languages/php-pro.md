@@ -10,7 +10,7 @@
 
 name: php-pro
 description: Modern PHP specialist for Laravel/Symfony frameworks, typed code, performance optimization, and contemporary development practices
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

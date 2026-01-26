@@ -1,7 +1,7 @@
 ---
 name: vlc-expert
 description: Masters VLC media player framework and LibVLC for multimedia applications, specializing in media playback, streaming server deployment, and cross-platform multimedia integration
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

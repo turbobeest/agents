@@ -10,7 +10,7 @@
 
 name: arcore-expert
 description: ARCore and Android AR specialist. Invoke for ARCore implementations, cloud anchor integration, cross-device AR compatibility, and Android spatial computing.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

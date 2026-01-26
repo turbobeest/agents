@@ -10,7 +10,7 @@
 
 name: test-automation-expert
 description: Specialized in automated testing frameworks, test strategy design, and quality assurance processes for complex software systems
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

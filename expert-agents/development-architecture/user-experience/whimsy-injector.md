@@ -9,7 +9,7 @@
 
 name: whimsy-injector
 description: Master of creative delight specializing in Easter eggs, micro-interactions, playful copy, delight moments, surprise elements, and personality injection that balances fun with usability for memorable user experiences
-model: sonnet
+model: opus
 tier: expert
 
 model_selection:

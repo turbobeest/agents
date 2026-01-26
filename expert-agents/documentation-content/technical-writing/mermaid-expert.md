@@ -1,7 +1,7 @@
 ---
 name: mermaid-expert
 description: Creates and optimizes Mermaid diagrams for technical documentation with focus on clarity, accuracy, and visual communication
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

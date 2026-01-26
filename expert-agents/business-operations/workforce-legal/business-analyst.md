@@ -1,7 +1,7 @@
 ---
 name: business-analyst
 description: Analyzes business requirements and creates comprehensive specifications with stakeholder alignment and strategic business value focus
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

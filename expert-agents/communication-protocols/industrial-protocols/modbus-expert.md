@@ -10,7 +10,7 @@
 
 name: modbus-expert
 description: Masters Modbus protocol for industrial control systems, specializing in PLC communication, sensor networks, SCADA integration, and reliable serial/Ethernet industrial data exchange
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

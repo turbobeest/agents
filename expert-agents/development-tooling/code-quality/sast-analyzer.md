@@ -10,7 +10,7 @@
 
 name: sast-analyzer
 description: Performs comprehensive static application security testing using advanced SAST tools (Semgrep, Bandit, CodeQL) for vulnerability detection and security assessment
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

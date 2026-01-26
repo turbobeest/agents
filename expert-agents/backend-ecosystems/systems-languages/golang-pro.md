@@ -10,7 +10,7 @@
 
 name: golang-pro
 description: Go systems programming specialist for concurrent microservices, idiomatic patterns, and performance-optimized backend infrastructure
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

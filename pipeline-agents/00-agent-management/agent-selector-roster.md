@@ -1,7 +1,7 @@
 ---
 name: roster-agent-selector
 description: Task-to-agent matcher for roster management. Selects appropriate agents for tasks based on phase context, requirements, and roster assignments. Distinct from the PhD-tier pipeline agent-selector.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

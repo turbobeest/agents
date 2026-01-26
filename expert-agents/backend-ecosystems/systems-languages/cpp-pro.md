@@ -10,7 +10,7 @@
 
 name: cpp-pro
 description: Modern C++ specialist for RAII patterns, template metaprogramming, and high-performance applications with zero-overhead abstractions
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

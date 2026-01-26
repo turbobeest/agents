@@ -10,7 +10,7 @@
 
 name: incident-responder
 description: Handles production incidents with urgency, precision, and systematic problem resolution for minimal service disruption. Invoke for incident management, rapid troubleshooting, root cause analysis, and post-incident reviews.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

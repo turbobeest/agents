@@ -10,7 +10,7 @@
 
 name: assignment-agent
 description: Assigns decomposed tasks to appropriate agents with priority, dependency resolution, and workload distribution optimization
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

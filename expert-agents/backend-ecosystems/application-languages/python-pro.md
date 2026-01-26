@@ -10,7 +10,7 @@
 
 name: python-pro
 description: Python specialist for backend services, API development, and automation with Pythonic idioms, type safety, and security-first design
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

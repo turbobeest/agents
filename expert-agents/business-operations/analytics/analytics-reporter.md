@@ -10,7 +10,7 @@
 
 name: analytics-reporter
 description: Analytics and reporting specialist for business intelligence dashboards. Invoke for GA4 configuration, Mixpanel/Amplitude implementation, KPI tracking, funnel analysis, cohort analysis, and dashboard design.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

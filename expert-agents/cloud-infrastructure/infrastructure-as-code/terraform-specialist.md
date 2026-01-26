@@ -10,7 +10,7 @@
 
 name: terraform-specialist
 description: Masters Infrastructure as Code with advanced Terraform modules, state management, and infrastructure automation best practices. Validates infrastructure against OpenSpec contracts and enforces deployment gates. Invoke for IaC design, module development, state management, infrastructure automation, and deployment validation (phases 11-12).
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

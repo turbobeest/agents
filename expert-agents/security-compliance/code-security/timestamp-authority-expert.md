@@ -1,7 +1,7 @@
 ---
 name: timestamp-authority-expert
 description: RFC 3161 timestamping and long-term signature validation specialist focusing on trusted timestamping, PKI integration, and regulatory compliance for digital evidence
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

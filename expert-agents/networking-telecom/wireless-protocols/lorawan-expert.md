@@ -1,7 +1,7 @@
 ---
 name: lorawan-expert
 description: Masters LoRaWAN protocol for long-range IoT networks, specializing in low-power wide area networking, gateway management, and scalable IoT deployments. Invoke for LoRaWAN network design, gateway configuration, and LPWAN optimization.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

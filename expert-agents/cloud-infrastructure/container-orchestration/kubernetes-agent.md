@@ -10,7 +10,7 @@
 
 name: kubernetes-agent
 description: Orchestrates Kubernetes clusters, manages deployments, and optimizes resource allocation for scalable, resilient application orchestration. Invoke for K8s cluster design, deployment management, and scaling optimization.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

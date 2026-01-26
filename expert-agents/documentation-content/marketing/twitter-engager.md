@@ -1,7 +1,7 @@
 ---
 name: twitter-engager
 description: Develops Twitter/X engagement strategies including thread optimization, community building, trending topic participation, and authentic brand voice development
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

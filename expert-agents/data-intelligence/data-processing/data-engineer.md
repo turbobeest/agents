@@ -9,7 +9,7 @@
 
 name: data-engineer
 description: Architects data pipelines, ETL processes, and data warehouse systems with focus on scalability, data quality, and production reliability
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -10,7 +10,7 @@
 
 name: compliance-checker
 description: Regulatory compliance and data protection specialist. Invoke for compliance audits, regulatory verification, PII protection validation, and data governance enforcement.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -10,7 +10,7 @@
 
 name: zenoh-expert
 description: Expert in Zenoh protocol for scalable, peer-to-peer communication enabling edge-to-cloud data flows with performance optimization
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

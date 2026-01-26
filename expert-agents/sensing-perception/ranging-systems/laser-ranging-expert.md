@@ -10,7 +10,7 @@
 
 name: laser-ranging-expert
 description: Masters laser ranging systems for defense applications, specializing in precision distance measurement, target designation, and guided munition support with advanced laser technologies and atmospheric compensation
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

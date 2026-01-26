@@ -10,7 +10,7 @@
 
 name: cesiumjs-expert
 description: CesiumJS 3D geospatial visualization specialist for immersive web-based spatial experiences with massive datasets and WebGL optimization
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -10,7 +10,7 @@
 
 name: prompt-engineer
 description: Crafts and optimizes prompts for LLMs and AI systems with systematic optimization, performance measurement, and iterative refinement for maximum effectiveness
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

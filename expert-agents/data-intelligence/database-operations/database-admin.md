@@ -9,7 +9,7 @@
 
 name: database-admin
 description: Ensures mission-critical database operations including backup strategies, replication, monitoring, and disaster recovery for production systems
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

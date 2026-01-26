@@ -10,7 +10,7 @@
 
 name: scala-pro
 description: Scala specialist for functional programming, distributed systems with Akka, and big data processing with Spark
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -1,7 +1,7 @@
 ---
 name: tutorial-engineer
 description: Creates comprehensive step-by-step tutorials and learning resources with focus on educational effectiveness and learner success
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

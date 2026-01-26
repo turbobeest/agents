@@ -4,7 +4,7 @@
 # =============================================================================
 name: supply-chain-auditor
 description: Analyzes software supply chain security with comprehensive dependency analysis, license compliance verification, and vulnerability chain assessment
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

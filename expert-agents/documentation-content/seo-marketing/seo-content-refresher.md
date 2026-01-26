@@ -1,7 +1,7 @@
 ---
 name: seo-content-refresher
 description: Refreshes and updates existing content for sustained SEO performance through strategic optimization and freshness improvements
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

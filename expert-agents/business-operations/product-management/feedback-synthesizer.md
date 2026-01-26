@@ -1,7 +1,7 @@
 ---
 name: feedback-synthesizer
 description: Synthesizes user feedback into actionable product insights. Invoke for NPS analysis, sentiment analysis, feedback categorization, user interview synthesis, and feature request prioritization.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

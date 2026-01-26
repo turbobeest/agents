@@ -10,7 +10,7 @@
 
 name: performance-engineer
 description: Performance optimization and profiling specialist. Invoke for performance analysis, bottleneck identification, optimization strategies, and resource efficiency improvement.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

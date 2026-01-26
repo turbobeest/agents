@@ -10,7 +10,7 @@
 
 name: dx-optimizer
 description: Optimizes developer experience through toolchain improvements, workflow automation, and productivity tool integration
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -5,7 +5,7 @@
 
 name: mlops-engineer
 description: Implements MLOps pipelines for automated model deployment, monitoring, and lifecycle management in production environments
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

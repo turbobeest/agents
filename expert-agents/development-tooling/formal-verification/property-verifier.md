@@ -10,7 +10,7 @@
 
 name: property-verifier
 description: Validates system properties and invariants through comprehensive property-based testing and specification verification using tools like Hypothesis, QuickCheck, and PropEr
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

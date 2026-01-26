@@ -10,7 +10,7 @@
 
 name: raspberry-pi-expert
 description: Masters Raspberry Pi single-board computers for embedded Linux applications, IoT projects, edge computing, computer vision, and GPIO-based hardware control with advanced system optimization
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

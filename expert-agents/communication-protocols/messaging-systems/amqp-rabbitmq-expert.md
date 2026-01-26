@@ -10,7 +10,7 @@
 
 name: amqp-rabbitmq-expert
 description: Masters AMQP protocol and RabbitMQ message broker for enterprise messaging systems, specializing in reliable message delivery, complex routing, and scalable asynchronous communication architectures
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

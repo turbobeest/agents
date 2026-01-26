@@ -5,7 +5,7 @@
 
 name: ml-engineer
 description: Builds machine learning models, optimizes training pipelines, and deploys ML systems with GPU optimization and cloud integration excellence
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -1,7 +1,7 @@
 ---
 name: growth-hacker
 description: Designs and optimizes growth loops, viral mechanics, acquisition funnels, and retention systems using product-led growth principles and data-driven experimentation
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

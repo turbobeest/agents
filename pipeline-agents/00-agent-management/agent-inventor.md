@@ -1,7 +1,7 @@
 ---
 name: agent-inventor
 description: Custom agent creator for SDLC pipelines. Designs and builds new specialized agents when gaps are identified in the standard roster, ensuring PhD-grade expertise and clear domain boundaries.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

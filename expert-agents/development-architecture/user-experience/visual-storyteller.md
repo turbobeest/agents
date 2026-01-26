@@ -9,7 +9,7 @@
 
 name: visual-storyteller
 description: Master of visual narrative design specializing in presentation design, data visualization, infographics, slide decks, pitch materials, and visual communication for compelling story-driven content
-model: sonnet
+model: opus
 tier: expert
 
 model_selection:

@@ -1,7 +1,7 @@
 ---
 name: coupling-analyzer
 description: Task decomposition supporting agent for SDLC pipelines. Analyzes task DAG for coupling issues, identifies tight dependencies, recommends decoupling strategies, and validates task independence for parallel execution.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

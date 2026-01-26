@@ -10,7 +10,7 @@
 
 name: javascript-pro
 description: JavaScript specialist for modern ES6+ patterns, async/await architecture, and Node.js ecosystem integration across full-stack applications
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

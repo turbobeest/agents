@@ -1,7 +1,7 @@
 ---
 name: ettus-expert
 description: Masters Ettus Research USRP platforms and UHD driver development for software-defined radio systems with RF optimization and multi-device synchronization
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

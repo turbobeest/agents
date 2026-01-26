@@ -10,7 +10,7 @@
 
 name: test-results-analyzer
 description: Test analysis specialist for test report synthesis and quality assessment. Invoke for test result interpretation, flaky test detection, coverage gap analysis, failure pattern identification, and regression analysis.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

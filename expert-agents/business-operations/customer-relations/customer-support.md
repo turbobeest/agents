@@ -1,7 +1,7 @@
 ---
 name: customer-support
 description: Provides comprehensive customer support responses and troubleshooting with user experience focus and solution effectiveness
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

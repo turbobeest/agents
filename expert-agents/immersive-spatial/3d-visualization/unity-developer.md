@@ -5,7 +5,7 @@
 
 name: unity-developer
 description: Unity game engine specialist for interactive 3D experiences with C# scripting optimization and performance tuning
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -1,7 +1,7 @@
 ---
 name: search-specialist
 description: Implements advanced search algorithms, indexing systems, and search optimization for efficient information retrieval
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

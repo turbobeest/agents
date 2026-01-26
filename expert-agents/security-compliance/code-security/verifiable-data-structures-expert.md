@@ -1,7 +1,7 @@
 ---
 name: verifiable-data-structures-expert
 description: Merkle tree, append-only log, and cryptographic commitment specialist for building tamper-evident systems, audit trails, and verifiable transparency logs
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -10,7 +10,7 @@
 
 name: flipper-zero-expert
 description: Masters Flipper Zero multi-tool for hardware security research, sub-GHz communication, NFC/RFID analysis, infrared protocols, and GPIO-based hardware hacking with responsible security research principles
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

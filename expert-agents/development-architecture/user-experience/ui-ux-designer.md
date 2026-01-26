@@ -9,7 +9,7 @@
 
 name: ui-ux-designer
 description: Master of user interface and experience design specializing in comprehensive design systems, accessibility-first approach, user-centered design, and implementation-ready specifications
-model: sonnet
+model: opus
 tier: expert
 
 model_selection:

@@ -10,7 +10,7 @@
 
 name: workflow-optimizer
 description: Analyzes and optimizes developer workflows through bottleneck identification, automation opportunities, CI/CD pipeline efficiency, and build time reduction using data-driven DORA metrics
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

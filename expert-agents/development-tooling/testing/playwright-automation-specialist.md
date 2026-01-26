@@ -10,7 +10,7 @@
 
 name: playwright-automation-specialist
 description: Masters browser automation using Playwright for cross-browser testing, UI interaction automation, and visual regression testing across Chrome, Firefox, and Safari
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -10,7 +10,7 @@
 
 name: marauder-expert
 description: Masters WiFi Marauder firmware for ESP32-based wireless security testing, packet capture, deauthentication attacks, and wireless security assessment with strict ethical hacking principles
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

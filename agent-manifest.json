@@ -10,7 +10,7 @@
     {
       "name": "acoustic-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -28,7 +28,7 @@
     {
       "name": "agent-browser",
       "tier": "focused",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -46,7 +46,7 @@
     {
       "name": "agent-curator",
       "tier": "focused",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -64,7 +64,7 @@
     {
       "name": "agent-inventor",
       "tier": "focused",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -118,7 +118,7 @@
     {
       "name": "agent-provisioner",
       "tier": "focused",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -190,7 +190,7 @@
     {
       "name": "amqp-rabbitmq-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -208,7 +208,7 @@
     {
       "name": "analytics-reporter",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -226,7 +226,7 @@
     {
       "name": "api-documenter",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -244,7 +244,7 @@
     {
       "name": "api-tester",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -262,7 +262,7 @@
     {
       "name": "app-store-optimizer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -293,7 +293,7 @@
     {
       "name": "arcore-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -311,7 +311,7 @@
     {
       "name": "arducopter-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -329,7 +329,7 @@
     {
       "name": "arduino-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -347,7 +347,7 @@
     {
       "name": "arkit-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -365,7 +365,7 @@
     {
       "name": "assignment-agent",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -383,7 +383,7 @@
     {
       "name": "audit-report-generator",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -437,7 +437,7 @@
     {
       "name": "backend-architect",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [],
       "category": "development-architecture",
       "subcategory": "system-architecture",
@@ -486,7 +486,7 @@
     {
       "name": "brand-guardian",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [],
       "category": "development-architecture",
       "subcategory": "user-experience",
@@ -499,7 +499,7 @@
     {
       "name": "business-analyst",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -517,7 +517,7 @@
     {
       "name": "c-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -535,7 +535,7 @@
     {
       "name": "cache-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -553,7 +553,7 @@
     {
       "name": "canbus-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -571,7 +571,7 @@
     {
       "name": "cesiumjs-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -589,7 +589,7 @@
     {
       "name": "chaos-engineer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -607,7 +607,7 @@
     {
       "name": "coap-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -643,7 +643,7 @@
     {
       "name": "code-reviewer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -679,7 +679,7 @@
     {
       "name": "compliance-checker",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -697,7 +697,7 @@
     {
       "name": "content-marketer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -715,7 +715,7 @@
     {
       "name": "context-manager",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -733,7 +733,7 @@
     {
       "name": "coupling-analyzer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -751,7 +751,7 @@
     {
       "name": "cpp-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -787,7 +787,7 @@
     {
       "name": "csharp-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -805,7 +805,7 @@
     {
       "name": "cuda-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -823,7 +823,7 @@
     {
       "name": "customer-support",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -841,7 +841,7 @@
     {
       "name": "data-engineer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -859,7 +859,7 @@
     {
       "name": "data-scientist",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -877,7 +877,7 @@
     {
       "name": "database-admin",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -895,7 +895,7 @@
     {
       "name": "database-optimizer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -913,7 +913,7 @@
     {
       "name": "dds-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -931,7 +931,7 @@
     {
       "name": "deauther-esp32-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -949,7 +949,7 @@
     {
       "name": "debian-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -967,7 +967,7 @@
     {
       "name": "debugger",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1003,7 +1003,7 @@
     {
       "name": "deployment-engineer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1039,7 +1039,7 @@
     {
       "name": "devops-troubleshooter",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1075,7 +1075,7 @@
     {
       "name": "docker-agent",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1093,7 +1093,7 @@
     {
       "name": "docs-architect",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1111,7 +1111,7 @@
     {
       "name": "documentation-writer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1129,7 +1129,7 @@
     {
       "name": "dspy-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1147,7 +1147,7 @@
     {
       "name": "dx-optimizer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1201,7 +1201,7 @@
     {
       "name": "elixir-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1219,7 +1219,7 @@
     {
       "name": "error-detective",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1237,7 +1237,7 @@
     {
       "name": "esp32-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1255,7 +1255,7 @@
     {
       "name": "ettus-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1273,7 +1273,7 @@
     {
       "name": "experiment-tracker",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1309,7 +1309,7 @@
     {
       "name": "falkordb-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1327,7 +1327,7 @@
     {
       "name": "feedback-synthesizer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1345,7 +1345,7 @@
     {
       "name": "ffmpeg-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1363,7 +1363,7 @@
     {
       "name": "finance-tracker",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1417,7 +1417,7 @@
     {
       "name": "flipper-zero-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1435,7 +1435,7 @@
     {
       "name": "flutter-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1453,7 +1453,7 @@
     {
       "name": "focused-agent-editor",
       "tier": "focused",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1471,7 +1471,7 @@
     {
       "name": "frontend-developer",
       "tier": "focused",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [],
       "category": "development-architecture",
       "subcategory": "user-experience",
@@ -1502,7 +1502,7 @@
     {
       "name": "gnuradio-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1520,7 +1520,7 @@
     {
       "name": "golang-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1538,7 +1538,7 @@
     {
       "name": "graphql-architect",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [],
       "category": "development-architecture",
       "subcategory": "system-architecture",
@@ -1551,7 +1551,7 @@
     {
       "name": "growth-hacker",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1569,7 +1569,7 @@
     {
       "name": "grpc-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1587,7 +1587,7 @@
     {
       "name": "gstreamer-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1605,7 +1605,7 @@
     {
       "name": "home-assistant-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1623,7 +1623,7 @@
     {
       "name": "hr-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1641,7 +1641,7 @@
     {
       "name": "hyperledger-fabric-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1695,7 +1695,7 @@
     {
       "name": "incident-responder",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1731,7 +1731,7 @@
     {
       "name": "ink-substrate-developer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1749,7 +1749,7 @@
     {
       "name": "instagram-curator",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1767,7 +1767,7 @@
     {
       "name": "integration-test-coordinator",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1803,7 +1803,7 @@
     {
       "name": "ios-developer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1839,7 +1839,7 @@
     {
       "name": "java-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1857,7 +1857,7 @@
     {
       "name": "javascript-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1875,7 +1875,7 @@
     {
       "name": "jetson-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1893,7 +1893,7 @@
     {
       "name": "kafka-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1911,7 +1911,7 @@
     {
       "name": "kali-linux-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1929,7 +1929,7 @@
     {
       "name": "kerasml-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1947,7 +1947,7 @@
     {
       "name": "kubernetes-agent",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1965,7 +1965,7 @@
     {
       "name": "laser-ranging-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -1983,7 +1983,7 @@
     {
       "name": "legacy-modernizer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2019,7 +2019,7 @@
     {
       "name": "lidar-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2037,7 +2037,7 @@
     {
       "name": "lorawan-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2055,7 +2055,7 @@
     {
       "name": "marauder-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2091,7 +2091,7 @@
     {
       "name": "memory-optimizer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2109,7 +2109,7 @@
     {
       "name": "merger",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2127,7 +2127,7 @@
     {
       "name": "mermaid-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2145,7 +2145,7 @@
     {
       "name": "ml-engineer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2163,7 +2163,7 @@
     {
       "name": "mlops-engineer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2181,7 +2181,7 @@
     {
       "name": "mobile-developer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2199,7 +2199,7 @@
     {
       "name": "modbus-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2253,7 +2253,7 @@
     {
       "name": "mqtt-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2289,7 +2289,7 @@
     {
       "name": "network-engineer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2307,7 +2307,7 @@
     {
       "name": "nextjs-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2361,7 +2361,7 @@
     {
       "name": "opcua-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2379,7 +2379,7 @@
     {
       "name": "openapi-rest-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2415,7 +2415,7 @@
     {
       "name": "payment-integration",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2451,7 +2451,7 @@
     {
       "name": "performance-engineer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2487,7 +2487,7 @@
     {
       "name": "php-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2541,7 +2541,7 @@
     {
       "name": "playwright-automation-specialist",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2595,7 +2595,7 @@
     {
       "name": "project-shipper",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2613,7 +2613,7 @@
     {
       "name": "prompt-engineer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2631,7 +2631,7 @@
     {
       "name": "property-verifier",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2649,7 +2649,7 @@
     {
       "name": "python-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2667,7 +2667,7 @@
     {
       "name": "quality-gate-controller",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2685,7 +2685,7 @@
     {
       "name": "quant-analyst",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2703,7 +2703,7 @@
     {
       "name": "rapid-prototyper",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2721,7 +2721,7 @@
     {
       "name": "rapids-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2739,7 +2739,7 @@
     {
       "name": "raspberry-pi-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2757,7 +2757,7 @@
     {
       "name": "reactjs-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2775,7 +2775,7 @@
     {
       "name": "reddit-community-builder",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2793,7 +2793,7 @@
     {
       "name": "redis-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2811,7 +2811,7 @@
     {
       "name": "reference-builder",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2865,7 +2865,7 @@
     {
       "name": "roster-agent-selector",
       "tier": "focused",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2883,7 +2883,7 @@
     {
       "name": "ruby-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2901,7 +2901,7 @@
     {
       "name": "rust-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2919,7 +2919,7 @@
     {
       "name": "rust-safety-validator",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2937,7 +2937,7 @@
     {
       "name": "sales-automator",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2955,7 +2955,7 @@
     {
       "name": "sast-analyzer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2973,7 +2973,7 @@
     {
       "name": "scala-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -2991,7 +2991,7 @@
     {
       "name": "search-specialist",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3027,7 +3027,7 @@
     {
       "name": "seo-authority-builder",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3045,7 +3045,7 @@
     {
       "name": "seo-cannibalization-detector",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3063,7 +3063,7 @@
     {
       "name": "seo-content-auditor",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3081,7 +3081,7 @@
     {
       "name": "seo-content-planner",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3099,7 +3099,7 @@
     {
       "name": "seo-content-refresher",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3117,7 +3117,7 @@
     {
       "name": "seo-content-writer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3135,7 +3135,7 @@
     {
       "name": "seo-keyword-strategist",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3153,7 +3153,7 @@
     {
       "name": "seo-meta-optimizer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3171,7 +3171,7 @@
     {
       "name": "seo-snippet-hunter",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3189,7 +3189,7 @@
     {
       "name": "seo-structure-architect",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3207,7 +3207,7 @@
     {
       "name": "snarky-sarcastic-wit",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3225,7 +3225,7 @@
     {
       "name": "solidity-auditor",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3243,7 +3243,7 @@
     {
       "name": "sonar-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3279,7 +3279,7 @@
     {
       "name": "sprint-prioritizer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3297,7 +3297,7 @@
     {
       "name": "sql-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3315,7 +3315,7 @@
     {
       "name": "studio-producer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3333,7 +3333,7 @@
     {
       "name": "supply-chain-auditor",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3351,7 +3351,7 @@
     {
       "name": "svelte-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3405,7 +3405,7 @@
     {
       "name": "terraform-specialist",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3423,7 +3423,7 @@
     {
       "name": "test-automation-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3441,7 +3441,7 @@
     {
       "name": "test-automator",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3459,7 +3459,7 @@
     {
       "name": "test-results-analyzer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3477,7 +3477,7 @@
     {
       "name": "test-strategist",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3495,7 +3495,7 @@
     {
       "name": "tiktok-strategist",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3513,7 +3513,7 @@
     {
       "name": "timestamp-authority-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3531,7 +3531,7 @@
     {
       "name": "tool-evaluator",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3549,7 +3549,7 @@
     {
       "name": "trend-researcher",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3567,7 +3567,7 @@
     {
       "name": "tutorial-engineer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3585,7 +3585,7 @@
     {
       "name": "twitter-engager",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3603,7 +3603,7 @@
     {
       "name": "type-safety-enforcer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3621,7 +3621,7 @@
     {
       "name": "typescript-pro",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3639,7 +3639,7 @@
     {
       "name": "ubiquiti-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3657,7 +3657,7 @@
     {
       "name": "ubuntu-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3675,7 +3675,7 @@
     {
       "name": "ui-ux-designer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [],
       "category": "development-architecture",
       "subcategory": "user-experience",
@@ -3688,7 +3688,7 @@
     {
       "name": "unit-test-specialist",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3706,7 +3706,7 @@
     {
       "name": "unity-developer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3724,7 +3724,7 @@
     {
       "name": "ux-researcher",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [],
       "category": "development-architecture",
       "subcategory": "user-experience",
@@ -3737,7 +3737,7 @@
     {
       "name": "validation-depth-controller",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3755,7 +3755,7 @@
     {
       "name": "verifiable-data-structures-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3773,7 +3773,7 @@
     {
       "name": "visual-storyteller",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [],
       "category": "development-architecture",
       "subcategory": "user-experience",
@@ -3786,7 +3786,7 @@
     {
       "name": "vlc-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3804,7 +3804,7 @@
     {
       "name": "webrtc-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3822,7 +3822,7 @@
     {
       "name": "websocket-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3840,7 +3840,7 @@
     {
       "name": "whimsy-injector",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [],
       "category": "development-architecture",
       "subcategory": "user-experience",
@@ -3853,7 +3853,7 @@
     {
       "name": "wireshark-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3871,7 +3871,7 @@
     {
       "name": "workflow-optimizer",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3889,7 +3889,7 @@
     {
       "name": "yolo-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",
@@ -3907,7 +3907,7 @@
     {
       "name": "zenoh-expert",
       "tier": "expert",
-      "model": "sonnet",
+      "model": "opus",
       "model_fallbacks": [
         "DeepSeek-V3",
         "Qwen2.5-Coder-32B",

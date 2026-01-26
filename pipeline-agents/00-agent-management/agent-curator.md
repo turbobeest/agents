@@ -1,7 +1,7 @@
 ---
 name: agent-curator
 description: Agent refinement specialist for SDLC pipelines. Tailors existing agents for specific project needs by adjusting parameters, adding context, and optimizing collaboration patterns while maintaining quality standards.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

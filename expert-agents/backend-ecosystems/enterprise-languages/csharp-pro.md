@@ -10,7 +10,7 @@
 
 name: csharp-pro
 description: C# enterprise specialist for async/await patterns, LINQ optimization, .NET ecosystem integration, and enterprise-scale applications
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

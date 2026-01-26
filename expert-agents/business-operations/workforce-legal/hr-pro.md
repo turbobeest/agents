@@ -1,7 +1,7 @@
 ---
 name: hr-pro
 description: Handles comprehensive HR processes including recruitment, policy development, and employee experience optimization
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

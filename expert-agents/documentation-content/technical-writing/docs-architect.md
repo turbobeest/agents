@@ -1,7 +1,7 @@
 ---
 name: docs-architect
 description: Designs comprehensive documentation architecture and knowledge base systems with focus on information organization and user discovery
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

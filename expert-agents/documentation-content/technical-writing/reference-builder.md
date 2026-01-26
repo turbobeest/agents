@@ -1,7 +1,7 @@
 ---
 name: reference-builder
 description: Builds comprehensive reference materials and quick-start guides focused on developer productivity and rapid onboarding
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -222,7 +222,7 @@ When creating expert-tier agents, follow this structure:
 ---
 name: {agent-name}
 description: {What it does and when to invoke}
-model: sonnet  # opus for security-critical, architecture, novel domains
+model: opus  # opus for security-critical, architecture, novel domains
 tier: expert
 tools:
   audit: Read, Grep, Glob, Bash

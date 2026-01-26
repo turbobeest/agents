@@ -1,7 +1,7 @@
 ---
 name: ffmpeg-expert
 description: Masters FFmpeg multimedia framework for video/audio processing, transcoding, streaming, format conversion, and advanced media manipulation
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

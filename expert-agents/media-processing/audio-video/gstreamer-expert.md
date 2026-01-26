@@ -1,7 +1,7 @@
 ---
 name: gstreamer-expert
 description: Masters GStreamer multimedia framework for pipeline-based media processing, real-time streaming, plugin development, and cross-platform multimedia applications
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

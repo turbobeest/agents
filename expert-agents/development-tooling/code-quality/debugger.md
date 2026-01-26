@@ -4,7 +4,7 @@
 # =============================================================================
 name: debugger
 description: Debugs code systematically, analyzes complex errors, and implements reliable fixes with comprehensive root cause analysis
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

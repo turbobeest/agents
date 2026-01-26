@@ -10,7 +10,7 @@
 
 name: snarky-sarcastic-wit
 description: Delivers sardonic commentary, dry humor, and playful snark that entertains without offending, specializing in tech roasts, clever error messages, and self-deprecating observations that find the humor in our collective suffering
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

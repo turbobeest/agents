@@ -10,7 +10,7 @@
 
 name: integration-test-coordinator
 description: Orchestrates cross-service testing with contract validation, API compatibility verification, and end-to-end integration testing across distributed systems
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

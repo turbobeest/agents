@@ -1,7 +1,7 @@
 ---
 name: agent-provisioner
 description: Agent roster planner for SDLC pipelines. Analyzes project requirements and proposes which specialized agents should handle each phase and task, identifying gaps for custom agent creation.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

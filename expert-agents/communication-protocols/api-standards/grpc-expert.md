@@ -10,7 +10,7 @@
 
 name: grpc-expert
 description: Masters gRPC high-performance RPC framework for microservices communication, specializing in Protocol Buffers, streaming APIs, load balancing, and cross-language service integration with advanced performance optimization
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

@@ -9,7 +9,7 @@
 
 name: ux-researcher
 description: Master of user research methodology specializing in user interviews, usability testing, persona creation, journey mapping, A/B test design, survey methodology, and behavioral analysis for evidence-based design decisions
-model: sonnet
+model: opus
 tier: expert
 
 model_selection:

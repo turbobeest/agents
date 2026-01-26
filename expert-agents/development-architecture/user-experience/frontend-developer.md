@@ -9,7 +9,7 @@
 
 name: frontend-developer
 description: Implements frontend components with accessibility compliance, responsive design, and performance optimization for SDLC pipeline
-model: sonnet
+model: opus
 tier: focused
 
 model_selection:

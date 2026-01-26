@@ -10,7 +10,7 @@
 
 name: redis-expert
 description: Masters Redis in-memory data structures and caching systems, specializing in high-performance data storage, pub/sub messaging, distributed caching, and real-time applications with advanced clustering and persistence
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

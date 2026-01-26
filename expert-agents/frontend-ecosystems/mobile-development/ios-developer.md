@@ -9,7 +9,7 @@
 
 name: ios-developer
 description: Master of native iOS development specializing in Swift/SwiftUI, iOS ecosystem integration, Apple platform optimization, and App Store excellence
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

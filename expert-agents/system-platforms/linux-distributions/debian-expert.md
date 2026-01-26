@@ -1,7 +1,7 @@
 ---
 name: debian-expert
 description: Masters Debian GNU/Linux distribution for stable server deployments, embedded systems, and security-focused environments, specializing in package management, system hardening, and minimal resource deployments. Invoke for Debian server setup, security hardening, and stable system administration.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

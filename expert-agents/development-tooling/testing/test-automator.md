@@ -10,7 +10,7 @@
 
 name: test-automator
 description: Automates comprehensive testing with unit, integration, and E2E coverage using modern frameworks (Jest, Pytest, Cypress) with reporting excellence
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

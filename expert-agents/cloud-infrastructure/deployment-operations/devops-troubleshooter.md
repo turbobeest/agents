@@ -10,7 +10,7 @@
 
 name: devops-troubleshooter
 description: Debugs production issues, analyzes system logs, and resolves deployment failures with focus on cloud efficiency and monitoring excellence. Invoke for infrastructure debugging, log analysis, and performance troubleshooting.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

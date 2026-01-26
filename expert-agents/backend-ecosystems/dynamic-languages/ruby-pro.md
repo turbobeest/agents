@@ -10,7 +10,7 @@
 
 name: ruby-pro
 description: Ruby specialist for Rails framework, metaprogramming patterns, and elegant code architecture optimized for rapid development
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

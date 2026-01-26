@@ -9,7 +9,7 @@
 
 name: reactjs-expert
 description: Master architect of React.js component ecosystems specializing in modern patterns, performance optimization, hooks, state management, and scalable component architectures
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

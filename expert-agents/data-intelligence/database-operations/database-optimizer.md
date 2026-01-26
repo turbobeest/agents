@@ -9,7 +9,7 @@
 
 name: database-optimizer
 description: Specializes in database performance tuning, index strategy optimization, and query execution plan analysis for maximum efficiency
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

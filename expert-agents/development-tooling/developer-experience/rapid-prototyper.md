@@ -10,7 +10,7 @@
 
 name: rapid-prototyper
 description: Creates quick MVPs and proof-of-concept implementations with speed-over-polish approach, validation-focused development, and low-to-high fidelity progression
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

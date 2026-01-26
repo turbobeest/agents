@@ -10,7 +10,7 @@
 
 name: backend-architect
 description: Designs RESTful APIs, microservice boundaries, and database schemas with focus on performance, scalability, and integration efficiency
-model: sonnet  # Well-defined backend patterns, use opus for novel architectures
+model: opus  # Well-defined backend patterns, use opus for novel architectures
 tier: expert
 
 model_selection:

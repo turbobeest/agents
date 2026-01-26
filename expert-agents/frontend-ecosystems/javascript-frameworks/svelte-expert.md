@@ -9,7 +9,7 @@
 
 name: svelte-expert
 description: Pioneer of Svelte's compilation-first approach specializing in reactive component architectures, build-time optimization, and exceptional developer ergonomics with minimal runtime overhead
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

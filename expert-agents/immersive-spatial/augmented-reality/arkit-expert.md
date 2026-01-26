@@ -1,7 +1,7 @@
 ---
 name: arkit-expert
 description: ARKit spatial computing specialist for iOS-native augmented reality experiences that seamlessly blend digital content with physical environments
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

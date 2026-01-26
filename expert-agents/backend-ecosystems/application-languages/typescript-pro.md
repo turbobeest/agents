@@ -10,7 +10,7 @@
 
 name: typescript-pro
 description: TypeScript specialist for advanced type systems, strict type safety, and enterprise-scale applications
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

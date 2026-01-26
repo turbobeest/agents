@@ -10,7 +10,7 @@
 
 name: graphql-architect
 description: Specializes in GraphQL schema design, federation strategies, and resolver optimization for efficient data fetching and API composition
-model: sonnet
+model: opus
 tier: expert
 
 model_selection:

@@ -10,7 +10,7 @@
 
 name: mqtt-expert
 description: Expert in MQTT protocol design and implementation for lightweight publish-subscribe messaging in IoT and microservices with security focus
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

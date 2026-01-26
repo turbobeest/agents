@@ -10,7 +10,7 @@
 
 name: validation-depth-controller
 description: Validates task outputs and specifications against specification schemas in the SDLC pipeline, ensuring structural compliance and phase-entry criteria are met
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

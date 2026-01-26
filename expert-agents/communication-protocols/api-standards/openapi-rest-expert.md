@@ -10,7 +10,7 @@
 
 name: openapi-rest-expert
 description: Masters OpenAPI specification and RESTful API design, specializing in API documentation, service architecture, HTTP best practices, and comprehensive API lifecycle management with advanced tooling integration
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

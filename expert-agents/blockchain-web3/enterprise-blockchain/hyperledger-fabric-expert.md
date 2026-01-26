@@ -1,7 +1,7 @@
 ---
 name: hyperledger-fabric-expert
 description: Enterprise blockchain specialist for permissioned networks using Hyperledger Fabric, focusing on chaincode development, channel architecture, and multi-organization governance
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

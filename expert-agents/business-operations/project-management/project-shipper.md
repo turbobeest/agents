@@ -1,7 +1,7 @@
 ---
 name: project-shipper
 description: Release management and launch coordination specialist. Invoke for launch coordination, go-live checklists, stakeholder alignment, risk mitigation, rollback planning, and post-launch monitoring.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

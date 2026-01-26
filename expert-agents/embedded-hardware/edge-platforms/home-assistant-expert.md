@@ -10,7 +10,7 @@
 
 name: home-assistant-expert
 description: Masters Home Assistant home automation platform for smart home integration, automation scripting, device management, and comprehensive IoT ecosystem orchestration with advanced customization
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

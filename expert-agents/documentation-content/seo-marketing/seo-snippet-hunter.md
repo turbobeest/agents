@@ -1,7 +1,7 @@
 ---
 name: seo-snippet-hunter
 description: Optimizes content for featured snippets and rich search results through strategic formatting and schema markup
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

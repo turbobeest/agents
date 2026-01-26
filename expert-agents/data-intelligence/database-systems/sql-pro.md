@@ -9,7 +9,7 @@
 
 name: sql-pro
 description: Masters complex SQL queries, execution plan optimization, and normalized database schema design for high-performance relational systems
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

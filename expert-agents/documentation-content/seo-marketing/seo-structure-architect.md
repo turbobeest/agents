@@ -1,7 +1,7 @@
 ---
 name: seo-structure-architect
 description: Designs content structure and site architecture for optimal SEO performance with technical excellence and crawlability
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

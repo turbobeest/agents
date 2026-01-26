@@ -9,7 +9,7 @@
 
 name: data-scientist
 description: Performs advanced data analysis, statistical modeling, and visualization for data-driven insights and predictive analytics
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

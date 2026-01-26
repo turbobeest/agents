@@ -9,7 +9,7 @@
 
 name: brand-guardian
 description: Master of brand consistency enforcement specializing in brand voice, visual identity, style guide compliance, tone consistency, messaging alignment, and asset management for cohesive brand experiences
-model: sonnet
+model: opus
 tier: expert
 
 model_selection:

@@ -1,7 +1,7 @@
 ---
 name: api-documenter
 description: Generates comprehensive API documentation and OpenAPI specifications with focus on developer experience and integration excellence
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

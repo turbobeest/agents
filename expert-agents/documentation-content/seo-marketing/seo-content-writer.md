@@ -1,7 +1,7 @@
 ---
 name: seo-content-writer
 description: Creates SEO-optimized content with strategic keyword integration, user engagement focus, and search performance excellence
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

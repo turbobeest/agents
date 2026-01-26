@@ -1,7 +1,7 @@
 ---
 name: documentation-writer
 description: Creates comprehensive technical documentation, API references, and user guides with focus on clarity, accuracy, and user experience
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

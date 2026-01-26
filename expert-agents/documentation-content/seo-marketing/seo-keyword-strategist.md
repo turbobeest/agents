@@ -1,7 +1,7 @@
 ---
 name: seo-keyword-strategist
 description: Researches and strategizes keyword optimization with comprehensive market analysis and search intent alignment
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

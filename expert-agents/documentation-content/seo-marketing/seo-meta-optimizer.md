@@ -1,7 +1,7 @@
 ---
 name: seo-meta-optimizer
 description: Optimizes meta tags and on-page SEO elements for search visibility and CTR with current best practices
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

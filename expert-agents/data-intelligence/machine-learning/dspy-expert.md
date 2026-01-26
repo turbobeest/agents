@@ -9,7 +9,7 @@
 
 name: dspy-expert
 description: Masters DSPy framework for systematic prompt engineering and LLM pipeline optimization, specializing in automatic prompt optimization, multi-step reasoning chains, and programmatic AI system development
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

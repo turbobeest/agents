@@ -1,7 +1,7 @@
 ---
 name: seo-authority-builder
 description: Builds domain authority through strategic link building, content marketing, and authority development for sustainable growth
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B

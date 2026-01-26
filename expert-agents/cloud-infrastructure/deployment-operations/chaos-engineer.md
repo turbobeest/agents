@@ -10,7 +10,7 @@
 
 name: chaos-engineer
 description: Implements resilience testing through fault injection, failure scenario validation, and system reliability assessment under adverse conditions. Invoke for chaos experiments, resilience testing, and system antifragility improvement.
-model: sonnet
+model: opus
 model_fallbacks:
   - DeepSeek-V3
   - Qwen2.5-Coder-32B
