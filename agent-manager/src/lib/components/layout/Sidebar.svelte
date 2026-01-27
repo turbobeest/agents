@@ -48,7 +48,22 @@
 	<div class="p-4">
 		<!-- Pipeline Categories (SDLC Phases, Pipeline Core) -->
 		{#if pipelineCategories.length > 0}
-			<h2 class="text-sm font-semibold text-purple-400 uppercase tracking-wide mb-3">Pipeline</h2>
+			<button
+				type="button"
+				class="w-full flex items-center justify-between mb-3 group"
+				onclick={() => toggleCategory('__pipeline__')}
+			>
+				<h2 class="text-sm font-semibold text-purple-400 uppercase tracking-wide">Pipeline</h2>
+				<svg
+					class="w-3.5 h-3.5 text-purple-400 transition-transform {isExpanded('__pipeline__', true) ? 'rotate-90' : ''}"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+				</svg>
+			</button>
+			{#if isExpanded('__pipeline__', true)}
 			<nav class="space-y-1 mb-6">
 				{#each pipelineCategories as category}
 					{@const isFlatCategory = category.subcategories.length === 1 && category.subcategories[0].id === 'general'}
@@ -163,6 +178,7 @@
 					</div>
 				{/each}
 			</nav>
+			{/if}
 			<div class="border-t border-gray-700 mb-4"></div>
 		{/if}
 

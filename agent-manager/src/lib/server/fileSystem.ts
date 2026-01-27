@@ -43,7 +43,9 @@ const CATEGORY_NAME_MAP: Record<string, string> = {
 	'06-09-implementation': '06 Build',
 	'10-testing': '07 Testing',
 	'11-12-deployment': '08 Deployment',
-	'signal-processing': 'Military & Defense Systems'
+	'signal-processing': 'Military & Defense Systems',
+	'backend-ecosystems': 'Languages',
+	'blockchain-web3': 'Blockchain'
 };
 
 /**
