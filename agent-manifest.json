@@ -2,7 +2,7 @@
   "version": "3.0.0",
   "name": "Claude Orchestra Agent Pool",
   "description": "Centralized agent definitions for Claude Orchestra. Generated from agent-inventory.csv.",
-  "lastUpdated": "2026-01-25",
+  "lastUpdated": "2026-01-27",
   "author": "turbobeest",
   "repository": "https://github.com/turbobeest/agents",
   "generatedFrom": "agent-inventory.csv",
@@ -2593,6 +2593,24 @@
       "role": "validator"
     },
     {
+      "name": "prd-writer",
+      "tier": "expert",
+      "model": "opus",
+      "model_fallbacks": [
+        "DeepSeek-V3",
+        "Kimi-K2-Thinking",
+        "Qwen3-235B-A22B",
+        "llama3.3:70b"
+      ],
+      "category": "02-discovery",
+      "subcategory": "",
+      "description": "Phase 2 agent for SDLC pipelines. Authors formal Product Requirements Documents using the 15-section template (sections 0-14), ensuring compatibility with TaskMaster task decomposition and OpenSpec spec-driven development workflows.",
+      "grade": "A",
+      "composite_score": 92.0,
+      "path": "pipeline-agents/02-discovery/prd-writer.md",
+      "role": "executor"
+    },
+    {
       "name": "project-shipper",
       "tier": "expert",
       "model": "opus",
@@ -2824,6 +2842,24 @@
       "grade": "A",
       "composite_score": null,
       "path": "expert-agents/documentation-content/technical-writing/reference-builder.md",
+      "role": "executor"
+    },
+    {
+      "name": "requirements-engineer",
+      "tier": "expert",
+      "model": "opus",
+      "model_fallbacks": [
+        "DeepSeek-V3",
+        "Kimi-K2-Thinking",
+        "Qwen3-235B-A22B",
+        "llama3.3:70b"
+      ],
+      "category": "02-discovery",
+      "subcategory": "",
+      "description": "Phase 2 agent for SDLC pipelines. Synthesizes project discovery artifacts into structured, traceable requirements using sphinx-needs taxonomy (req/spec/impl/test) and OpenSpec scenario format. Produces dependency-ordered requirements JSON for PRD authoring and TaskMaster consumption.",
+      "grade": "A",
+      "composite_score": 92.5,
+      "path": "pipeline-agents/02-discovery/requirements-engineer.md",
       "role": "executor"
     },
     {
