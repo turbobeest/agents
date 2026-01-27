@@ -32,17 +32,17 @@ export async function loadManifest(): Promise<AgentManifest> {
  * Special category name mappings
  */
 const CATEGORY_NAME_MAP: Record<string, string> = {
-	'00-agent-management': 'Agent Management',
-	'00-orchestration': 'Orchestration',
-	'00-quality-assurance': 'Quality Assurance',
-	'01-ideation': 'Ideation',
-	'02-discovery': 'Discovery',
-	'03-validation': 'Validation',
-	'04-audit': 'Audit',
-	'05-task-decomposition': 'Task Decomposition',
-	'06-09-implementation': 'Implementation',
-	'10-testing': 'Testing',
-	'11-12-deployment': 'Deployment'
+	'00-agent-management': '00 Agent Management',
+	'00-orchestration': '00 Orchestration',
+	'00-quality-assurance': '00 Quality Assurance',
+	'01-ideation': '01 Discovery',
+	'02-discovery': '02 PRD',
+	'03-validation': '03 Validation',
+	'04-audit': '04 Audit',
+	'05-task-decomposition': '05 Tasking',
+	'06-09-implementation': '06 Build',
+	'10-testing': '07 Testing',
+	'11-12-deployment': '08 Deployment'
 };
 
 /**
