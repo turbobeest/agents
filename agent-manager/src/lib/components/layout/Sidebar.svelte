@@ -51,6 +51,9 @@
 			<h2 class="text-sm font-semibold text-purple-400 uppercase tracking-wide mb-3">Pipeline</h2>
 			<nav class="space-y-1 mb-6">
 				{#each pipelineCategories as category}
+					{@const isFlatCategory = category.subcategories.length === 1 && category.subcategories[0].id === 'general'}
+					{@const flatAgents = isFlatCategory ? category.subcategories[0].agents : []}
+					{@const flatSubcategory = isFlatCategory ? category.subcategories[0] : null}
 					<div class="mb-2">
 						<button
 							type="button"
@@ -58,75 +61,104 @@
 							onclick={() => toggleCategory(category.id)}
 						>
 							<span class="truncate">{category.title}</span>
-							<svg
-								class="w-4 h-4 transition-transform {isExpanded(category.id, category.defaultExpanded)
-									? 'rotate-90'
-									: ''}"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-							>
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-							</svg>
+							<span class="flex items-center gap-1">
+								{#if isFlatCategory}
+									<span class="text-xs text-gray-500">{flatAgents.length}</span>
+								{/if}
+								<svg
+									class="w-4 h-4 transition-transform {isExpanded(category.id, category.defaultExpanded)
+										? 'rotate-90'
+										: ''}"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+								</svg>
+							</span>
 						</button>
 
 						{#if isExpanded(category.id, category.defaultExpanded)}
-							<div class="ml-3 mt-1 space-y-1">
-								{#each category.subcategories as subcategory}
-									<div>
-										<button
-											type="button"
-											class="w-full flex items-center justify-between px-3 py-1.5 text-sm text-gray-400 rounded hover:bg-gray-700 transition-colors"
-											onclick={() => toggleSubcategory(subcategory.id)}
+							{#if isFlatCategory}
+								<!-- Flat: render agents directly under category, skip "General" subcategory -->
+								<div class="ml-3 mt-1 space-y-0.5">
+									{#each flatAgents as agent}
+										<a
+											href="{base}/agents/{category.id}/{flatSubcategory?.id}/{agent.id.split('/').pop()}"
+											class="flex items-center gap-2 px-3 py-1.5 text-sm rounded transition-colors
+												{$page.url.pathname.includes(agent.id.split('/').pop() || '')
+												? 'bg-blue-900/50 text-blue-300'
+												: 'text-gray-400 hover:bg-gray-700'}"
 										>
-											<span class="truncate">{subcategory.title}</span>
-											<span class="flex items-center gap-1">
-												<span class="text-xs text-gray-500">{subcategory.agents.length}</span>
-												<svg
-													class="w-3 h-3 transition-transform {isExpanded(
-														subcategory.id,
-														subcategory.defaultExpanded
-													)
-														? 'rotate-90'
-														: ''}"
-													fill="none"
-													stroke="currentColor"
-													viewBox="0 0 24 24"
-												>
-													<path
-														stroke-linecap="round"
-														stroke-linejoin="round"
-														stroke-width="2"
-														d="M9 5l7 7-7 7"
-													/>
-												</svg>
+											<span class="truncate flex-1">{agent.name}</span>
+											<span
+												class="text-xs px-1.5 py-0.5 rounded {getTierColor(agent.tier)}"
+												title={agent.tier}
+											>
+												{agent.tier.charAt(0).toUpperCase()}
 											</span>
-										</button>
-
-										{#if isExpanded(subcategory.id, subcategory.defaultExpanded)}
-											<div class="ml-3 mt-1 space-y-0.5">
-												{#each subcategory.agents as agent}
-													<a
-														href="{base}/agents/{category.id}/{subcategory.id}/{agent.id.split('/').pop()}"
-														class="flex items-center gap-2 px-3 py-1.5 text-sm rounded transition-colors
-															{$page.url.pathname.includes(agent.id.split('/').pop() || '')
-															? 'bg-blue-900/50 text-blue-300'
-															: 'text-gray-400 hover:bg-gray-700'}"
+										</a>
+									{/each}
+								</div>
+							{:else}
+								<!-- Nested: real subcategories exist, show them -->
+								<div class="ml-3 mt-1 space-y-1">
+									{#each category.subcategories as subcategory}
+										<div>
+											<button
+												type="button"
+												class="w-full flex items-center justify-between px-3 py-1.5 text-sm text-gray-400 rounded hover:bg-gray-700 transition-colors"
+												onclick={() => toggleSubcategory(subcategory.id)}
+											>
+												<span class="truncate">{subcategory.title}</span>
+												<span class="flex items-center gap-1">
+													<span class="text-xs text-gray-500">{subcategory.agents.length}</span>
+													<svg
+														class="w-3 h-3 transition-transform {isExpanded(
+															subcategory.id,
+															subcategory.defaultExpanded
+														)
+															? 'rotate-90'
+															: ''}"
+														fill="none"
+														stroke="currentColor"
+														viewBox="0 0 24 24"
 													>
-														<span class="truncate flex-1">{agent.name}</span>
-														<span
-															class="text-xs px-1.5 py-0.5 rounded {getTierColor(agent.tier)}"
-															title={agent.tier}
+														<path
+															stroke-linecap="round"
+															stroke-linejoin="round"
+															stroke-width="2"
+															d="M9 5l7 7-7 7"
+														/>
+													</svg>
+												</span>
+											</button>
+
+											{#if isExpanded(subcategory.id, subcategory.defaultExpanded)}
+												<div class="ml-3 mt-1 space-y-0.5">
+													{#each subcategory.agents as agent}
+														<a
+															href="{base}/agents/{category.id}/{subcategory.id}/{agent.id.split('/').pop()}"
+															class="flex items-center gap-2 px-3 py-1.5 text-sm rounded transition-colors
+																{$page.url.pathname.includes(agent.id.split('/').pop() || '')
+																? 'bg-blue-900/50 text-blue-300'
+																: 'text-gray-400 hover:bg-gray-700'}"
 														>
-															{agent.tier.charAt(0).toUpperCase()}
-														</span>
-													</a>
-												{/each}
-											</div>
-										{/if}
-									</div>
-								{/each}
-							</div>
+															<span class="truncate flex-1">{agent.name}</span>
+															<span
+																class="text-xs px-1.5 py-0.5 rounded {getTierColor(agent.tier)}"
+																title={agent.tier}
+															>
+																{agent.tier.charAt(0).toUpperCase()}
+															</span>
+														</a>
+													{/each}
+												</div>
+											{/if}
+										</div>
+									{/each}
+								</div>
+							{/if}
 						{/if}
 					</div>
 				{/each}
