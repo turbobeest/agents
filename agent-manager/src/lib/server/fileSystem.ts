@@ -42,7 +42,8 @@ const CATEGORY_NAME_MAP: Record<string, string> = {
 	'05-task-decomposition': '05 Tasking',
 	'06-09-implementation': '06 Build',
 	'10-testing': '07 Testing',
-	'11-12-deployment': '08 Deployment'
+	'11-12-deployment': '08 Deployment',
+	'signal-processing': 'Military & Defense Systems'
 };
 
 /**

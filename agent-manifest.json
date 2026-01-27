@@ -1262,12 +1262,12 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
-      "category": "signal-processing",
+      "category": "sensing-perception",
       "subcategory": "rf-systems",
       "description": "Masters Ettus Research USRP platforms and UHD driver development for software-defined radio systems with RF optimization and multi-device synchronization",
       "grade": "A-",
       "composite_score": 8.9,
-      "path": "expert-agents/signal-processing/rf-systems/ettus-expert.md",
+      "path": "expert-agents/sensing-perception/rf-systems/ettus-expert.md",
       "role": "executor"
     },
     {
@@ -1509,12 +1509,12 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
-      "category": "signal-processing",
+      "category": "sensing-perception",
       "subcategory": "rf-systems",
       "description": "Masters GNU Radio framework for software-defined radio development, specializing in digital signal processing, flowgraph design, custom block development, and real-time RF application implementation",
       "grade": "A-",
       "composite_score": 8.9,
-      "path": "expert-agents/signal-processing/rf-systems/gnuradio-expert.md",
+      "path": "expert-agents/sensing-perception/rf-systems/gnuradio-expert.md",
       "role": "executor"
     },
     {
@@ -2872,12 +2872,12 @@
         "Qwen3-235B-A22B",
         "llama3.3:70b"
       ],
-      "category": "signal-processing",
+      "category": "sensing-perception",
       "subcategory": "rf-systems",
       "description": "Radio Frequency and Software Defined Radio specialist. Invoke for RF/SDR system design, signal intelligence, electronic warfare, spectrum analysis, and adaptive communication systems.",
       "grade": "A-",
       "composite_score": 8.8,
-      "path": "expert-agents/signal-processing/rf-systems/rf-sdr-expert.md",
+      "path": "expert-agents/sensing-perception/rf-systems/rf-sdr-expert.md",
       "role": "executor"
     },
     {
