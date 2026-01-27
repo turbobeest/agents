@@ -1442,12 +1442,12 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
-      "category": "frontend-ecosystems",
+      "category": "backend-ecosystems",
       "subcategory": "mobile-development",
       "description": "Master of Flutter cross-platform development specializing in widget architecture, Dart optimization, native platform integration, and performance tuning for iOS/Android",
       "grade": "A",
       "composite_score": 93.0,
-      "path": "expert-agents/frontend-ecosystems/mobile-development/flutter-expert.md",
+      "path": "expert-agents/backend-ecosystems/mobile-development/flutter-expert.md",
       "role": "executor"
     },
     {
@@ -1810,12 +1810,12 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
-      "category": "frontend-ecosystems",
+      "category": "backend-ecosystems",
       "subcategory": "mobile-development",
       "description": "Master of native iOS development specializing in Swift/SwiftUI, iOS ecosystem integration, Apple platform optimization, and App Store excellence",
       "grade": "A",
       "composite_score": 91.0,
-      "path": "expert-agents/frontend-ecosystems/mobile-development/ios-developer.md",
+      "path": "expert-agents/backend-ecosystems/mobile-development/ios-developer.md",
       "role": "executor"
     },
     {
@@ -2188,12 +2188,12 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
-      "category": "frontend-ecosystems",
+      "category": "backend-ecosystems",
       "subcategory": "mobile-development",
       "description": "Specialist in cross-platform mobile development using React Native or Flutter with platform-adaptive UI, native integration, and performance optimization for iOS/Android",
       "grade": "A",
       "composite_score": 91.0,
-      "path": "expert-agents/frontend-ecosystems/mobile-development/mobile-developer.md",
+      "path": "expert-agents/backend-ecosystems/mobile-development/mobile-developer.md",
       "role": "executor"
     },
     {
@@ -2314,12 +2314,12 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
-      "category": "frontend-ecosystems",
+      "category": "backend-ecosystems",
       "subcategory": "javascript-frameworks",
       "description": "Architect of Next.js full-stack applications specializing in hybrid rendering strategies (SSR/SSG/ISR/CSR), performance optimization, SEO excellence, and modern web deployment",
       "grade": "A",
       "composite_score": 92.0,
-      "path": "expert-agents/frontend-ecosystems/javascript-frameworks/nextjs-expert.md",
+      "path": "expert-agents/backend-ecosystems/javascript-frameworks/nextjs-expert.md",
       "role": "executor"
     },
     {
@@ -2782,12 +2782,12 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
-      "category": "frontend-ecosystems",
+      "category": "backend-ecosystems",
       "subcategory": "javascript-frameworks",
       "description": "Master architect of React.js component ecosystems specializing in modern patterns, performance optimization, hooks, state management, and scalable component architectures",
       "grade": "A",
       "composite_score": 90.0,
-      "path": "expert-agents/frontend-ecosystems/javascript-frameworks/reactjs-expert.md",
+      "path": "expert-agents/backend-ecosystems/javascript-frameworks/reactjs-expert.md",
       "role": "executor"
     },
     {
@@ -3394,12 +3394,12 @@
         "llama3.3:70b",
         "gemma3:27b"
       ],
-      "category": "frontend-ecosystems",
+      "category": "backend-ecosystems",
       "subcategory": "javascript-frameworks",
       "description": "Pioneer of Svelte's compilation-first approach specializing in reactive component architectures, build-time optimization, and exceptional developer ergonomics with minimal runtime overhead",
       "grade": "A",
       "composite_score": 91.0,
-      "path": "expert-agents/frontend-ecosystems/javascript-frameworks/svelte-expert.md",
+      "path": "expert-agents/backend-ecosystems/javascript-frameworks/svelte-expert.md",
       "role": "executor"
     },
     {
