@@ -69,7 +69,8 @@ with open(csv_file, 'r', encoding='utf-8') as f:
             'grade': row.get('grade', ''),
             'composite_score': score,
             'path': row['path'],
-            'role': row.get('role', 'executor')
+            'role': row.get('role', 'executor'),
+            'rationale': row.get('rationale', '')
         }
         agents.append(agent)
 
