@@ -2,7 +2,7 @@
   "version": "3.0.0",
   "name": "Claude Orchestra Agent Pool",
   "description": "Centralized agent definitions for Claude Orchestra. Generated from agent-inventory.csv.",
-  "lastUpdated": "2026-01-27",
+  "lastUpdated": "2026-01-28",
   "author": "turbobeest",
   "repository": "https://github.com/turbobeest/agents",
   "generatedFrom": "agent-inventory.csv",
@@ -1179,6 +1179,23 @@
       "composite_score": 90.2,
       "path": "pipeline-agents/10-testing/e2e-testing-gate.md",
       "role": "gatekeeper"
+    },
+    {
+      "name": "edge-case-hunter",
+      "tier": "focused",
+      "model": "sonnet",
+      "model_fallbacks": [
+        "DeepSeek-V3",
+        "Qwen2.5-Coder-32B",
+        "llama3.3:70b"
+      ],
+      "category": "development-tooling",
+      "subcategory": "testing",
+      "description": "Systematic edge case discovery specialist using equivalence partitioning, boundary value analysis, and state machine exploration to identify test cases that catch bugs others miss.",
+      "grade": "A",
+      "composite_score": 90.0,
+      "path": "expert-agents/development-tooling/testing/edge-case-hunter.md",
+      "role": "auditor"
     },
     {
       "name": "electro-optical-expert",
@@ -3059,6 +3076,24 @@
       "composite_score": 95.0,
       "path": "expert-agents/security-compliance/defensive-security/security-auditor.md",
       "role": "auditor"
+    },
+    {
+      "name": "security-specifier",
+      "tier": "expert",
+      "model": "opus",
+      "model_fallbacks": [
+        "DeepSeek-V3",
+        "Kimi-K2-Thinking",
+        "Qwen3-235B-A22B",
+        "llama3.3:70b"
+      ],
+      "category": "security-compliance",
+      "subcategory": "code-security",
+      "description": "Translates security requirements into specification-level constraints. Defines authentication contracts, encryption preconditions, audit logging postconditions, and data classification rules that become testable security acceptance criteria.",
+      "grade": "A",
+      "composite_score": 91.5,
+      "path": "expert-agents/security-compliance/code-security/security-specifier.md",
+      "role": "executor"
     },
     {
       "name": "seo-authority-builder",
