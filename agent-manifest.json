@@ -4449,6 +4449,36 @@
       "grade": "A",
       "score": 91.7,
       "description": "Masters HuggingFace model deployment and containerization for production inference, specializing in model downloading, Docker bundling, GPU configuration, and inference server setup."
+    },
+    {
+      "name": "webrtc-voice-client-expert",
+      "path": "expert-agents/media-processing/voice-ai/webrtc-voice-client-expert.md",
+      "tier": "expert",
+      "model": "opus",
+      "category": "voice-ai",
+      "grade": "A",
+      "score": 91.9,
+      "description": "Masters WebRTC browser voice client integration for voice AI applications, specializing in getUserMedia audio capture, peer connection setup, and low-latency voice streaming from browser to AI backend."
+    },
+    {
+      "name": "grpc-audio-streaming-expert",
+      "path": "expert-agents/communication-protocols/realtime-protocols/grpc-audio-streaming-expert.md",
+      "tier": "expert",
+      "model": "opus",
+      "category": "realtime-protocols",
+      "grade": "A",
+      "score": 91.7,
+      "description": "Masters gRPC bidirectional streaming for real-time audio applications, specializing in protobuf audio message design, HTTP/2 stream management, and low-latency voice streaming."
+    },
+    {
+      "name": "error-recovery-patterns-expert",
+      "path": "expert-agents/performance-reliability/fault-tolerance/error-recovery-patterns-expert.md",
+      "tier": "expert",
+      "model": "opus",
+      "category": "fault-tolerance",
+      "grade": "A",
+      "score": 92.1,
+      "description": "Masters error recovery and resilience patterns for distributed systems, specializing in circuit breakers, retry strategies, fallback mechanisms, and failure handling for voice AI components."
     }
   ]
 }
