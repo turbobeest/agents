@@ -4399,6 +4399,56 @@
       "grade": "A",
       "score": 93.5,
       "description": "World-class multi-tenant isolation architect for voice AI systems. Invoke for tenant data isolation, audio stream separation, resource quotas, secure tenant switching, and compliance-aware isolation boundaries in voice platforms."
+    },
+    {
+      "name": "haiku-orchestration-expert",
+      "path": "expert-agents/orchestration-intelligence/llm-routing/haiku-orchestration-expert.md",
+      "tier": "expert",
+      "model": "opus",
+      "category": "llm-routing",
+      "grade": "A",
+      "score": 91.8,
+      "description": "Masters Claude Haiku orchestration patterns for cost-effective multi-agent systems, specializing in prompt routing decisions, complexity classification, model tier selection, and hierarchical agent architectures."
+    },
+    {
+      "name": "websocket-audio-bridge-expert",
+      "path": "expert-agents/communication-protocols/realtime-protocols/websocket-audio-bridge-expert.md",
+      "tier": "expert",
+      "model": "opus",
+      "category": "realtime-protocols",
+      "grade": "A",
+      "score": 91.6,
+      "description": "Masters WebSocket audio streaming protocols for real-time voice applications, specializing in binary frame specifications, audio codec handling, latency optimization, and bidirectional streaming patterns."
+    },
+    {
+      "name": "state-machine-verification-phd-expert",
+      "path": "expert-agents/development-architecture/formal-methods/state-machine-verification-phd-expert.md",
+      "tier": "phd",
+      "model": "opus",
+      "category": "formal-methods",
+      "grade": "A",
+      "score": 94.2,
+      "description": "World-class formal verification specialist for state machines. Invoke for TLA+ specifications, model checking with TLC, safety and liveness property verification, deadlock detection, and session lifecycle verification."
+    },
+    {
+      "name": "vad-threshold-tuning-expert",
+      "path": "expert-agents/media-processing/voice-ai/vad-threshold-tuning-expert.md",
+      "tier": "expert",
+      "model": "opus",
+      "category": "voice-ai",
+      "grade": "A",
+      "score": 91.5,
+      "description": "Masters VAD threshold tuning and adaptive silence detection for voice applications, specializing in energy-based thresholds, neural VAD calibration, noise adaptation, and silence boundary optimization."
+    },
+    {
+      "name": "huggingface-deployment-expert",
+      "path": "expert-agents/cloud-infrastructure/model-serving/huggingface-deployment-expert.md",
+      "tier": "expert",
+      "model": "opus",
+      "category": "model-serving",
+      "grade": "A",
+      "score": 91.7,
+      "description": "Masters HuggingFace model deployment and containerization for production inference, specializing in model downloading, Docker bundling, GPU configuration, and inference server setup."
     }
   ]
 }
