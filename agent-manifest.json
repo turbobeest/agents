@@ -2,7 +2,7 @@
   "version": "3.0.0",
   "name": "Claude Orchestra Agent Pool",
   "description": "Centralized agent definitions for Claude Orchestra. Generated from agent-inventory.csv.",
-  "lastUpdated": "2026-01-28",
+  "lastUpdated": "2026-02-01",
   "author": "turbobeest",
   "repository": "https://github.com/turbobeest/agents",
   "generatedFrom": "agent-inventory.csv",
@@ -4235,6 +4235,120 @@
       "path": "expert-agents/security-compliance/defensive-security/zero-trust-architect.md",
       "role": "architect",
       "rationale": ""
+    },
+    {
+      "name": "firecrawl-expert",
+      "tier": "expert",
+      "model": "opus",
+      "model_fallbacks": [
+        "sonnet",
+        "DeepSeek-V3",
+        "Qwen2.5-Coder-32B",
+        "llama3.3:70b"
+      ],
+      "category": "development-tooling",
+      "subcategory": "web-scraping",
+      "description": "Masters Firecrawl API for intelligent web scraping and browser automation, specializing in LLM-ready content extraction, JavaScript rendering, structured data extraction, crawling strategies, and anti-bot handling",
+      "grade": "A",
+      "composite_score": 91.6,
+      "path": "expert-agents/development-tooling/web-scraping/firecrawl-expert.md",
+      "role": "executor",
+      "rationale": "Fills gap for browser automation and LLM-ready content extraction"
+    },
+    {
+      "name": "personaplex-phd-expert",
+      "tier": "phd",
+      "model": "opus",
+      "model_fallbacks": [
+        "sonnet",
+        "DeepSeek-V3",
+        "Qwen2.5-Coder-32B",
+        "llama3.3:70b"
+      ],
+      "category": "media-processing",
+      "subcategory": "voice-ai",
+      "description": "World-class NVIDIA PersonaPlex specialist for full-duplex voice AI integration, real-time speech-to-speech pipelines, persona conditioning, and latency-critical conversational systems",
+      "grade": "A",
+      "composite_score": 94.5,
+      "path": "expert-agents/media-processing/voice-ai/personaplex-phd-expert.md",
+      "role": "executor",
+      "rationale": "Fills gap for NVIDIA PersonaPlex full-duplex voice model integration"
+    },
+    {
+      "name": "realtime-audio-phd-expert",
+      "tier": "phd",
+      "model": "opus",
+      "model_fallbacks": [
+        "sonnet",
+        "DeepSeek-V3",
+        "Qwen2.5-Coder-32B",
+        "llama3.3:70b"
+      ],
+      "category": "media-processing",
+      "subcategory": "voice-ai",
+      "description": "World-class real-time audio processing specialist for low-latency PCM pipelines, codec selection, buffer management, sample rate conversion, and performance-critical audio systems with emphasis on Rust",
+      "grade": "A",
+      "composite_score": 94.6,
+      "path": "expert-agents/media-processing/voice-ai/realtime-audio-phd-expert.md",
+      "role": "executor",
+      "rationale": "Fills gap for real-time audio processing and PCM/codec handling"
+    },
+    {
+      "name": "resource-pooling-expert",
+      "tier": "expert",
+      "model": "opus",
+      "model_fallbacks": [
+        "sonnet",
+        "DeepSeek-V3",
+        "Qwen2.5-Coder-32B",
+        "llama3.3:70b"
+      ],
+      "category": "performance-reliability",
+      "subcategory": "resource-management",
+      "description": "Masters resource pooling and allocation patterns for high-performance systems, specializing in connection pools, session management, GPU/memory allocation, lifecycle management, and scaling strategies",
+      "grade": "A",
+      "composite_score": 91.8,
+      "path": "expert-agents/performance-reliability/resource-management/resource-pooling-expert.md",
+      "role": "executor",
+      "rationale": "Fills gap for session pooling and resource allocation patterns"
+    },
+    {
+      "name": "silero-vad-expert",
+      "tier": "expert",
+      "model": "opus",
+      "model_fallbacks": [
+        "sonnet",
+        "DeepSeek-V3",
+        "Qwen2.5-Coder-32B",
+        "llama3.3:70b"
+      ],
+      "category": "media-processing",
+      "subcategory": "voice-ai",
+      "description": "Masters Silero VAD for voice activity detection in real-time audio pipelines, specializing in threshold tuning, streaming inference, multi-language support, and integration with speech-to-text and conversational AI systems",
+      "grade": "A",
+      "composite_score": 91.8,
+      "path": "expert-agents/media-processing/voice-ai/silero-vad-expert.md",
+      "role": "executor",
+      "rationale": "Fills gap for voice activity detection optimization"
+    },
+    {
+      "name": "supermemory-expert",
+      "tier": "expert",
+      "model": "opus",
+      "model_fallbacks": [
+        "sonnet",
+        "DeepSeek-V3",
+        "Qwen2.5-Coder-32B",
+        "llama3.3:70b"
+      ],
+      "category": "data-intelligence",
+      "subcategory": "state-management",
+      "description": "Masters Supermemory API for persistent AI memory, specializing in memory CRUD operations, semantic search, session state management, MCP integration, and long-term context preservation across AI applications",
+      "grade": "A",
+      "composite_score": 91.5,
+      "path": "expert-agents/data-intelligence/state-management/supermemory-expert.md",
+      "role": "executor",
+      "rationale": "Fills gap for Supermemory API state persistence patterns"
     }
   ]
 }
