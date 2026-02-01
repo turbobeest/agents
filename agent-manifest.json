@@ -4349,6 +4349,56 @@
       "path": "expert-agents/data-intelligence/state-management/supermemory-expert.md",
       "role": "executor",
       "rationale": "Fills gap for Supermemory API state persistence patterns"
+    },
+    {
+      "name": "fullduplex-conversation-designer",
+      "path": "expert-agents/media-processing/voice-ai/fullduplex-conversation-designer.md",
+      "tier": "phd",
+      "model": "opus",
+      "category": "voice-ai",
+      "grade": "A",
+      "score": 93.5,
+      "description": "World-class full-duplex conversation architect. Invoke for turn-taking design, interrupt handling patterns, backchannel integration, barge-in strategies, and natural conversational flow in voice AI systems."
+    },
+    {
+      "name": "gpu-warmpool-expert",
+      "path": "expert-agents/performance-reliability/resource-management/gpu-warmpool-expert.md",
+      "tier": "expert",
+      "model": "opus",
+      "category": "resource-management",
+      "grade": "A",
+      "score": 91.5,
+      "description": "Masters GPU warm pool management and inference session lifecycle state machines, specializing in CUDA context preservation, session pre-warming, cold start elimination, and state transition optimization for ML inference workloads."
+    },
+    {
+      "name": "voice-biometrics-expert",
+      "path": "expert-agents/media-processing/voice-ai/voice-biometrics-expert.md",
+      "tier": "expert",
+      "model": "opus",
+      "category": "voice-ai",
+      "grade": "A",
+      "score": 92.0,
+      "description": "Masters voice biometrics and speaker identification for persona restoration, specializing in voiceprint extraction, speaker verification, speaker diarization, enrollment workflows, and anti-spoofing detection."
+    },
+    {
+      "name": "latency-hiding-expert",
+      "path": "expert-agents/performance-reliability/latency-optimization/latency-hiding-expert.md",
+      "tier": "expert",
+      "model": "opus",
+      "category": "latency-optimization",
+      "grade": "A",
+      "score": 91.4,
+      "description": "Masters latency-hiding and speculative execution patterns for responsive systems, specializing in prefetching strategies, optimistic execution, pipelining, predictive computation, and graceful fallback when speculation fails."
+    },
+    {
+      "name": "multitenant-voice-isolation-architect",
+      "path": "expert-agents/media-processing/voice-ai/multitenant-voice-isolation-architect.md",
+      "tier": "phd",
+      "model": "opus",
+      "category": "voice-ai",
+      "grade": "A",
+      "score": 93.5,
+      "description": "World-class multi-tenant isolation architect for voice AI systems. Invoke for tenant data isolation, audio stream separation, resource quotas, secure tenant switching, and compliance-aware isolation boundaries in voice platforms."
     }
   ]
 }
